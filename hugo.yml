@@ -58,3 +58,8 @@ menu:
       name: Tags
       url: /tags/
       weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

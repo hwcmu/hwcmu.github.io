@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Dr. Hairong Wang</title>
+    <title>Hairong Wang</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Dr. Hairong Wang</description>
+    <description>Recent content on Hairong Wang</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/</guid>
+      <description>&lt;h2 id=&#34;recent-publications&#34;&gt;Recent Publications&lt;/h2&gt;
+&lt;script src=&#34;https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F11551970%2Fcollections%2FCQJZKS2N%2Fitems%3Fkey%3DVdPd2eY3O5Fk4vh5ZUcs7jwL%26format%3Dbibtex%26limit%3D100&amp;jsonp=1&#34;&gt;&lt;/script&gt;</description>
+    </item>
   </channel>
 </rss>
