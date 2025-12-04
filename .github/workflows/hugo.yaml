@@ -1,9 +1,8 @@
-# GitHub Pages 自动化部署脚本
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # 监听 main 分支的变动
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -22,19 +21,22 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.128.0 # 使用较新的 Hugo 版本
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive # 这一步很重要，确保下载 PaperMod 主题
-      - name: Build with Hugo
+          submodules: recursive  # 确保下载主题
+          fetch-depth: 0         # 获取完整历史
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest' # 🌟 关键点：这里改成了 latest，永远使用最新版
+          extended: true         # 开启扩展版
+
+      - name: Build
         run: hugo --minify
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
