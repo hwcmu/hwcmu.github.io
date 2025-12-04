@@ -48,7 +48,7 @@ menu:
   main:
     - identifier: resume
       name: Resume
-      url: https://hwcmu.github.io/resume.pdf
+      url: /resume.pdf
       weight: 10
     - identifier: blog
       name: Blog
