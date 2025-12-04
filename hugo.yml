@@ -30,8 +30,8 @@ params:
     buttons:
       - name: Resume
         url: "/Resume.pdf"
-      - name: Research
-        url: "/tags/research"
+      - name: Publications  # 把名字改成 Publications (或者 "论文")
+        url: /publications  # 把链接改成 /publications
       - name: Email Me
         url: "mailto:hairongcmu@gmail.com"
 
