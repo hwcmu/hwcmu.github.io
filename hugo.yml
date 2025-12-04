@@ -48,7 +48,7 @@ menu:
   main:
     - identifier: resume
       name: Resume
-      url: /resume.pdf
+      url: https://vovwang.github.io/resume.pdf
       weight: 10
     - identifier: blog
       name: Blog
