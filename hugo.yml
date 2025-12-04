@@ -1,0 +1,60 @@
+baseURL: "https://hwcmu.github.io/"  # [修改这里] 换成你的GitHub用户名，注意最后有个斜杠
+languageCode: "en-us"
+title: "Hairong Wang"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Hairong Wang
+  description: "Ph.D. & Data Scientist | Deploying AI for Environmental & Healthcare Impact"
+  keywords: [Data Science, Environmental Engineering, Machine Learning, CMU, Georgia Tech]
+  author: Hairong Wang
+  # 默认使用系统主题，但也允许用户切换
+  defaultTheme: auto
+  
+  # 首页配置
+  profileMode:
+    enabled: true
+    title: "Hi 👋, I'm Hairong Wang"
+    subtitle: "Ph.D. (CMU) | M.S. (GT). Deploying actionable AI for Environmental & Healthcare impact."
+    imageUrl: "avatar.jpg" # 如果你有头像图片，放到 static 文件夹叫 avatar.jpg，然后这里填 "avatar.jpg"
+    buttons:
+      - name: Resume
+        url: "/Resume.pdf"
+      - name: Research
+        url: "/tags/research"
+      - name: Email Me
+        url: "mailto:hairongcmu@gmail.com"
+
+  # 社交链接 (显示在首页底部)
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/hairong-wang/"
+    - name: github
+      url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
+    - name: email
+      url: "mailto:hairongcmu@gmail.com"
+
+menu:
+  main:
+    - identifier: resume
+      name: Resume
+      url: /Resume.pdf
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
