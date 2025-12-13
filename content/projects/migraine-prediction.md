@@ -9,7 +9,7 @@ weight: 1
 ![Migraine Forecast Architecture](/images/migraine-forecast.png)
 
 ## 🍑 Project Context
-**[PeachyDay](https://peachyday.com)** is a digital health startup helping patients manage chronic migraines. As a Data Scientist, I bridged the gap between raw data and business strategy by defining the product metrics framework and building the core ML features.
+**[PeachyDay](https://www.peachyday.co/)** is a digital health startup helping patients manage chronic migraines. As a Data Scientist, I bridged the gap between raw data and business strategy by defining the product metrics framework and building the core ML features.
 
 ## 🛠 Technical Challenges
 1.  **Lack of Visibility**: The team had raw data but lacked defined KPIs to measure product health or feature success.
@@ -23,6 +23,16 @@ I established the internal analytics system to track product health and user beh
 * **KPI Definition**: Worked with stakeholders to define "North Star" metrics (e.g., DAU/MAU ratio, Feature Adoption Rate) and translated vague business questions into precise **SQL** queries.
 * **Monitoring**: Built automated dashboards to track user interaction flows, helping the team identify drop-off points in the onboarding process.
 * **Impact**: Transformed decision-making from intuition-based to data-driven, directly influencing the roadmap for the next 2 quarters.
+
+<div align="center" style="margin: 20px 0;">
+  <img src="/images/migraine-architecture.png" 
+       alt="PeachyDay Architecture" 
+       width="100%" 
+       style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.9em; color: #666; margin-top: 10px;">
+    <i>System Architecture with Physician-in-the-Loop</i>
+  </p>
+</div>
 
 ### 2. Physician-Guided Forecasting Engine
 I developed an end-to-end prediction pipeline that translates clinical expertise into mathematical models.
