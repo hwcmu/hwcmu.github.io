@@ -46,6 +46,10 @@ params:
 
 menu:
   main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2   # 这个数字决定顺序，您可以根据想把它放第几个来调整
     - identifier: resume
       name: Resume
       url: /resume.pdf
