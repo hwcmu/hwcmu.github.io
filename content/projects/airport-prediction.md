@@ -8,7 +8,7 @@ tags: ["Tableau", "Python", "Machine Learning", "TabPy", "API"]
 weight: 10  # 数字越小，排得越靠前
 ---
 
-![Dashboard Demo](/images/airport-dashboard-demo.png)
+![Dashboard Demo](/images/airport.png)
 
 ## 🚀 Project Overview
 This project demonstrates an end-to-end flight delay prediction system. By integrating **Tableau** with **Python (TabPy)**, the system fetches live weather data from the **NOAA API** and runs a Logistic Regression model (trained on **4M+ records**) to predict delays in real-time.
