@@ -9,7 +9,7 @@ weight: 1
 ![Migraine Forecast Architecture](/images/migraine-forecast.png)
 
 ## 🍑 Project Context
-**PeachyDay** is a digital health startup helping patients manage chronic migraines. As a Data Scientist, I bridged the gap between raw data and business strategy by defining the product metrics framework and building the core ML features.
+**[PeachyDay](https://peachyday.com)** is a digital health startup helping patients manage chronic migraines. As a Data Scientist, I bridged the gap between raw data and business strategy by defining the product metrics framework and building the core ML features.
 
 ## 🛠 Technical Challenges
 1.  **Lack of Visibility**: The team had raw data but lacked defined KPIs to measure product health or feature success.
@@ -30,44 +30,47 @@ I developed an end-to-end prediction pipeline that translates clinical expertise
 * **Clinical Calibration**: Applied post-processing techniques to smooth prediction curves based on doctors' advice, preventing false alarms and modeling the gradual onset of attacks.
 * **Model Performance**: The final **Random Forest** model achieved an **18% accuracy boost** over the baseline.
 
-
-<div class="mermaid" align="center">
+<div class="mermaid" align="center" style="background-color: #1a3c2b; padding: 30px; border-radius: 20px;">
 graph LR
-    %% --- 定义 PeachyDay 风格配色 ---
-    classDef input fill:#fff3e0,stroke:#ffb74d,stroke-width:2px,color:#333;
-    classDef doctor fill:#ffccbc,stroke:#ff5722,stroke-width:2px,stroke-dasharray: 5 5,color:#bf360c;
-    classDef process fill:#ffe0b2,stroke:#fb8c00,stroke-width:2px,color:#333;
-    classDef output fill:#ff6b6b,stroke:#c62828,stroke-width:2px,color:#fff;
+    classDef input fill:#dcedc8,stroke:#33691e,stroke-width:2px,color:#33691e
+    classDef doctor fill:#ffccbc,stroke:#ff5722,stroke-width:3px,stroke-dasharray: 7 5,color:#bf360c,font-weight:bold
+    classDef process fill:#fff9c4,stroke:#ff8a65,stroke-width:2px,color:#bf360c
+    classDef output fill:#ff7043,stroke:#d84315,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:1.1em
 
-    %% --- 节点定义 ---
-    subgraph Data Sources [Input Data]
-        A(📱 User Logs):::input
-        B(☁️ NOAA Weather):::input
+    subgraph Data["DATA INGESTION"]
+        A("📱 User Logs"):::input
+        B("☁️ NOAA Weather"):::input
     end
 
-    subgraph Intelligence [Core Engine]
-        Doc[👨‍⚕️ Neurologists<br/>(Clinical Expertise)]:::doctor
-        ETL{⚙️ ETL & <br/>Feature Selection}:::process
-        Model(🤖 Random Forest<br/>Model):::process
+    subgraph Engine["CORE INTELLIGENCE"]
+        Doc("👨‍⚕️ Neurologists<br/>(Clinical Guidance)"):::doctor
+        ETL{"⚙️ ETL & <br/>Feature Selection"}:::process
+        Model("🤖 Random Forest<br/>Model"):::process
     end
 
-    Result([✅ Risk Score<br/>with Curve Smoothing]):::output
+    Result(["✅ Risk Score<br/>(Curve Smoothed)"]):::output
 
-    %% --- 连线逻辑 ---
-    A --> ETL
-    B --> ETL
+    A ==> ETL
+    B ==> ETL
+    ETL ==> Model
+    Model ==> Result
+
+    Doc -.-> ETL
+    Doc -.-> Result
+
+    linkStyle 0,1,4,5 stroke:#fff9c4,stroke-width:3px
+    linkStyle 2,3 stroke:#ff8a65,stroke-width:3px,stroke-dasharray: 7 5
     
-    Doc -.->|Clinical Rules| ETL
-    Doc -.->|Smooth Logic| Result
-
-    ETL --> Model
-    Model --> Result
+    style Data fill:none,stroke:none,color:#dcedc8
+    style Engine fill:none,stroke:none,color:#dcedc8
 </div>
 
 <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
+    mermaid.initialize({ startOnLoad: true, theme: 'base' });
 </script>
+
+
 
 ### 3. "Migraine Wrapped" Data Product
 To improve retention, I engineered a Spotify-Wrapped style data story for **1,000+ users**.
