@@ -8,7 +8,7 @@ weight: 1
 
 ![Migraine Forecast Architecture](/images/migraine-forecast.png)
 
-## 💼 Project Context
+## 🍑 Project Context
 **PeachyDay** is a digital health startup helping patients manage chronic migraines. As a Data Scientist, I bridged the gap between raw data and business strategy by defining the product metrics framework and building the core ML features.
 
 ## 🛠 Technical Challenges
@@ -31,6 +31,7 @@ I developed an end-to-end prediction pipeline that translates clinical expertise
 * **Model Performance**: The final **Random Forest** model achieved an **18% accuracy boost** over the baseline.
 
 
+<div class="mermaid" align="center">
 graph LR
     %% --- 定义 PeachyDay 风格配色 ---
     classDef input fill:#fff3e0,stroke:#ffb74d,stroke-width:2px,color:#333;
@@ -56,12 +57,17 @@ graph LR
     A --> ETL
     B --> ETL
     
-    %% 医生的介入：用虚线表示“指导/规则注入”
     Doc -.->|Clinical Rules| ETL
     Doc -.->|Smooth Logic| Result
 
     ETL --> Model
     Model --> Result
+</div>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 ### 3. "Migraine Wrapped" Data Product
 To improve retention, I engineered a Spotify-Wrapped style data story for **1,000+ users**.
