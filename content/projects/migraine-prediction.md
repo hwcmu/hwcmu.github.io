@@ -40,48 +40,6 @@ I developed an end-to-end prediction pipeline that translates clinical expertise
 * **Clinical Calibration**: Applied post-processing techniques to smooth prediction curves based on doctors' advice, preventing false alarms and modeling the gradual onset of attacks.
 * **Model Performance**: The final **Random Forest** model achieved an **18% accuracy boost** over the baseline.
 
-<div class="mermaid" align="center" style="background-color: #1a3c2b; padding: 30px; border-radius: 20px;">
-graph LR
-    classDef input fill:#dcedc8,stroke:#33691e,stroke-width:2px,color:#33691e
-    classDef doctor fill:#ffccbc,stroke:#ff5722,stroke-width:3px,stroke-dasharray: 7 5,color:#bf360c,font-weight:bold
-    classDef process fill:#fff9c4,stroke:#ff8a65,stroke-width:2px,color:#bf360c
-    classDef output fill:#ff7043,stroke:#d84315,stroke-width:4px,color:#ffffff,font-weight:bold,font-size:1.1em
-
-    subgraph Data["DATA INGESTION"]
-        A("📱 User Logs"):::input
-        B("☁️ NOAA Weather"):::input
-    end
-
-    subgraph Engine["CORE INTELLIGENCE"]
-        Doc("👨‍⚕️ Neurologists<br/>(Clinical Guidance)"):::doctor
-        ETL{"⚙️ ETL & <br/>Feature Selection"}:::process
-        Model("🤖 Random Forest<br/>Model"):::process
-    end
-
-    Result(["✅ Risk Score<br/>(Curve Smoothed)"]):::output
-
-    A ==> ETL
-    B ==> ETL
-    ETL ==> Model
-    Model ==> Result
-
-    Doc -.-> ETL
-    Doc -.-> Result
-
-    linkStyle 0,1,4,5 stroke:#fff9c4,stroke-width:3px
-    linkStyle 2,3 stroke:#ff8a65,stroke-width:3px,stroke-dasharray: 7 5
-    
-    style Data fill:none,stroke:none,color:#dcedc8
-    style Engine fill:none,stroke:none,color:#dcedc8
-</div>
-
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true, theme: 'base' });
-</script>
-
-
-
 ### 3. "Migraine Wrapped" Data Product
 To improve retention, I engineered a Spotify-Wrapped style data story for **1,000+ users**.
 * **Visualization**: Showcased longitudinal behavioral trends (e.g., identifying personal habbits).
