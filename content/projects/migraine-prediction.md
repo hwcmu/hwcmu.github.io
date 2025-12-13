@@ -53,7 +53,7 @@ To improve retention, I engineered a Spotify-Wrapped style data story for **1,00
 * **12%** Uplift in User Engagement via Data Storytelling.
 
 <div style="display: flex; gap: 20px; margin-top: 30px;">
-  <a href="https://peachyday.com" target="_blank" style="background-color: #ff6b6b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+  <a href="https://www.peachyday.co/" target="_blank" style="background-color: #ff6b6b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
     Visit PeachyDay Website
   </a>
 </div>
