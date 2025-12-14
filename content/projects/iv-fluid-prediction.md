@@ -6,7 +6,7 @@ tags: ["NLP", "Machine Learning", "Healthcare", "Gradient Boosting", "Multimodal
 weight: 2
 ---
 
-<div align="center" style="background-color: #0f172a; padding: 25px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+<div align="center" style="margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
   <img src="/images/iv-fluid-architecture.svg" alt="Multimodal Architecture Diagram" width="100%" style="border-radius: 8px;">
 </div>
 
