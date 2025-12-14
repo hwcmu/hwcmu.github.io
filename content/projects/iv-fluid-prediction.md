@@ -45,7 +45,12 @@ I implemented an Early Fusion approach to combine distinct data modalities:
 
 <div style="display: flex; gap: 15px; margin-top: 20px;">
   
-  <a href="https://peerj.com/articles/cs-3441/" target="_blank" style="background-color: #0284c7; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+  <a href="https://peerj.com/articles/cs-3441/" target="_blank" style="background-color: #0284c7; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
     📄 Read Publication
   </a>
+
+  <a href="https://github.com/hwcmu/IVF-prediction" target="_blank" style="background-color: #333333; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+    💻 View Code
+  </a>
+
 </div>
