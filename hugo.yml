@@ -52,7 +52,7 @@ menu:
       weight: 2   # 这个数字决定顺序，您可以根据想把它放第几个来调整
     - identifier: resume
       name: Resume
-      url: /docs/resume.pdf
+      url: /docs/hairong_resume.pdf
       weight: 10
     - identifier: blog
       name: Blog
