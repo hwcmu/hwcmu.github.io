@@ -26,7 +26,7 @@ params:
     enabled: true
     title: "Hi 👋, I'm Hairong Wang"
     subtitle: "Ph.D. (CMU) | M.S. (GT). Deploying actionable AI for Environmental & Healthcare impact."
-    imageUrl: "/images/avatar.jpg" # 如果你有头像图片，放到 static 文件夹叫 avatar.jpg，然后这里填 "avatar.jpg"
+    imageUrl: "/images/avatar.png" # 如果你有头像图片，放到 static 文件夹叫 avatar.jpg，然后这里填 "avatar.jpg"
     # buttons:
     #   - name: Resume
     #     url: "/Resume.pdf"
