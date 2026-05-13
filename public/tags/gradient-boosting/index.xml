@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Gradient Boosting on Hairong Wang</title>
+    <link>https://hwcmu.github.io/tags/gradient-boosting/</link>
+    <description>Recent content in Gradient Boosting on Hairong Wang</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hwcmu.github.io/tags/gradient-boosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multimodal AI for ER Resource Prediction</title>
+      <link>https://hwcmu.github.io/projects/iv-fluid-prediction/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/projects/iv-fluid-prediction/</guid>
+      <description>Developed a hybrid predictive model fusing structured clinical data with NLP analysis of patient narratives to optimize IV fluid utilization in Emergency Departments.</description>
+    </item>
+  </channel>
+</rss>

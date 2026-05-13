@@ -42,7 +42,7 @@ I developed an end-to-end prediction pipeline that translates clinical expertise
 
 ### 3. "Migraine Wrapped" Data Product
 To improve retention, I engineered a Spotify-Wrapped style data story for **1,000+ users**.
-* **Visualization**: Showcased longitudinal behavioral trends (e.g., identifying personal habbits).
+* **Visualization**: Showcased longitudinal behavioral trends (e.g., identifying personal habits).
 * **Impact**: This personalized feedback loop drove a **12% increase** in user engagement.
 
 ---

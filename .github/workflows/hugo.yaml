@@ -31,7 +31,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest' # 🌟 关键点：这里改成了 latest，永远使用最新版
+          hugo-version: '0.152.2' # Pin to the locally verified Hugo version
           extended: true         # 开启扩展版
 
       - name: Build

@@ -2,14 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/publications/</loc>
+    <loc>https://hwcmu.github.io/projects/migraine-prediction/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/projects/iv-fluid-prediction/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/projects/airport-prediction/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/publications/</loc>
     <lastmod>2025-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-03T00:00:00+00:00</lastmod>
+    <loc>https://hwcmu.github.io/tags/api/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://hwcmu.github.io/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://hwcmu.github.io/tags/machine-learning/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/projects/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/python/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/tableau/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/tabpy/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/gradient-boosting/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/healthcare/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/multimodal/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/nlp/</loc>
+    <lastmod>2025-12-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/kpi-definition/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/product-analytics/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/sql/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/blogs/lca-ml-review/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/categories/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/lca/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/sustainability/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/blogs/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/categories/tech-trends/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://hwcmu.github.io/tags/thought-leadership/</loc>
+    <lastmod>2025-10-16T00:00:00+00:00</lastmod>
   </url>
 </urlset>
