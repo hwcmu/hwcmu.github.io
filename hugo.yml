@@ -15,8 +15,8 @@ minify:
 params:
   env: production
   title: Hairong Wang
-  description: "Ph.D. & Data Scientist | Deploying AI for Environmental & Healthcare Impact"
-  keywords: [Data Science, Environmental Engineering, Machine Learning, CMU, Georgia Tech]
+  description: "Data Analyst at the University of Pittsburgh | Healthcare AI, biostatistics, and environmental data science"
+  keywords: [Healthcare AI, Data Analysis, Biostatistics, Machine Learning, Environmental Data Science, University of Pittsburgh, CMU, Georgia Tech]
   author: Hairong Wang
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
@@ -25,7 +25,7 @@ params:
   profileMode:
     enabled: true
     title: "Hi 👋, I'm Hairong Wang"
-    subtitle: "Ph.D. (CMU) | M.S. (GT). Deploying actionable AI for Environmental & Healthcare impact."
+    subtitle: "Data Analyst at the University of Pittsburgh. I build healthcare AI, clinical analytics, and environmental data science workflows."
     imageUrl: "/images/avatar.png"
     # buttons:
     #   - name: Resume
