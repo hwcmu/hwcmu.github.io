@@ -46,10 +46,26 @@ params:
 
 menu:
   main:
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 2
+    - identifier: portfolio
+      name: Portfolio
+      url: /portfolio/
+      weight: 3
+    - identifier: method-map
+      name: Method Map
+      url: /method-map/
+      weight: 4
     - identifier: projects
       name: Projects
       url: /projects/
-      weight: 2   # 这个数字决定顺序，您可以根据想把它放第几个来调整
+      weight: 5
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 6
     - identifier: resume
       name: Resume
       url: /docs/hairong_resume.pdf

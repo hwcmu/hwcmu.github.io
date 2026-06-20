@@ -23,37 +23,47 @@
       <description>Developed a hybrid predictive model fusing structured clinical data with NLP analysis of patient narratives to optimize IV fluid utilization in Emergency Departments.</description>
     </item>
     <item>
-      <title>Real-Time Flight Delay Prediction</title>
-      <link>https://hwcmu.github.io/projects/airport-prediction/</link>
-      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://hwcmu.github.io/projects/airport-prediction/</guid>
-      <description>Predicts flight delays using 4M&#43; records and live NOAA weather via TabPy. Bridges ML &amp;amp; BI with real-time SHAP explanations.</description>
+      <title>Research</title>
+      <link>https://hwcmu.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/research/</guid>
+      <description>Research themes across clinical AI, healthcare analytics, sustainability systems, and autonomous sensing.</description>
+    </item>
+    <item>
+      <title>Portfolio</title>
+      <link>https://hwcmu.github.io/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/portfolio/</guid>
+      <description>Reusable analytical workflows, public assets, and planned research-backed portfolio components.</description>
+    </item>
+    <item>
+      <title>OMSA Method Map</title>
+      <link>https://hwcmu.github.io/method-map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/method-map/</guid>
+      <description>How OMSA coursework supports healthcare data science, clinical AI, and research workflow development.</description>
     </item>
     <item>
       <title>Publications</title>
       <link>https://hwcmu.github.io/publications/</link>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://hwcmu.github.io/publications/</guid>
-      <description>&lt;h2 id=&#34;publications&#34;&gt;Publications&lt;/h2&gt;
-&lt;h3 id=&#34;2026&#34;&gt;2026&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;Citation:&lt;/strong&gt; Wang, H., &amp;amp; Hong, C. (2026). &lt;em&gt;Energy, Ecology and Environment&lt;/em&gt;.&lt;br&gt;
-&lt;strong&gt;Links:&lt;/strong&gt; &lt;a href=&#34;https://doi.org/10.1007/s40974-026-00425-8&#34;&gt;DOI&lt;/a&gt; · &lt;a href=&#34;https://github.com/hwcmu/stock-based-power-transition-monitoring&#34;&gt;Code&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;Citation:&lt;/strong&gt; Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., &amp;amp; Lowry, G. V. (2026). &lt;em&gt;Journal of Hazardous Materials&lt;/em&gt;, 503, 141208.&lt;br&gt;
-&lt;strong&gt;Links:&lt;/strong&gt; &lt;a href=&#34;https://doi.org/10.1016/j.jhazmat.2026.141208&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;2025&#34;&gt;2025&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;selected-publications&#34;&gt;Selected Publications&lt;/h2&gt;
+&lt;p&gt;These selected papers represent the main arc of my work: clinical AI and healthcare analytics as the current focus, supported by prior research in sustainability systems, autonomous sensing, and applied environmental technologies.&lt;/p&gt;
+&lt;h3 id=&#34;clinical-ai--healthcare-analytics&#34;&gt;Clinical AI &amp;amp; Healthcare Analytics&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;Citation:&lt;/strong&gt; Zhang, X., Wang, H., Yu, G., &amp;amp; Zhang, W. (2025). &lt;em&gt;DIGITAL HEALTH&lt;/em&gt;, 11.&lt;br&gt;
+&lt;strong&gt;Tags:&lt;/strong&gt; Clinical AI · Emergency Care · NLP · Predictive Modeling&lt;br&gt;
 &lt;strong&gt;Links:&lt;/strong&gt; &lt;a href=&#34;https://doi.org/10.1177/20552076251331319&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real-Time Flight Delay Prediction</title>
+      <link>https://hwcmu.github.io/projects/airport-prediction/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/projects/airport-prediction/</guid>
+      <description>Predicts flight delays using 4M&#43; records and live NOAA weather via TabPy. Bridges ML &amp;amp; BI with real-time SHAP explanations.</description>
     </item>
     <item>
       <title>Beyond Excel: How Machine Learning is Revolutionizing Life Cycle Assessment</title>
