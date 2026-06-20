@@ -15,8 +15,8 @@ minify:
 params:
   env: production
   title: Hairong Wang
-  description: "Data Analyst at the University of Pittsburgh | Healthcare AI, biostatistics, and environmental data science"
-  keywords: [Healthcare AI, Data Analysis, Biostatistics, Machine Learning, Environmental Data Science, University of Pittsburgh, CMU, Georgia Tech]
+  description: "Data Analyst at the University of Pittsburgh | Clinical AI, real-world evidence, biostatistics, and reproducible data workflows"
+  keywords: [Clinical AI, Real-World Evidence, Biostatistics, Healthcare Data Science, Machine Learning, AI-assisted Analytics, Clinical Workflows, University of Pittsburgh, VA Pittsburgh, CMU, Georgia Tech]
   author: Hairong Wang
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
@@ -25,7 +25,7 @@ params:
   profileMode:
     enabled: true
     title: "Hi 👋, I'm Hairong Wang"
-    subtitle: "Data Analyst at the University of Pittsburgh. I build healthcare AI, clinical analytics, and environmental data science workflows."
+    subtitle: "Data Analyst at the University of Pittsburgh and Biostatistician at VA Pittsburgh. I build clinical AI, real-world evidence, and reproducible data workflows."
     imageUrl: "/images/avatar.png"
     # buttons:
     #   - name: Resume
