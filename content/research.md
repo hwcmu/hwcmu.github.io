@@ -6,7 +6,7 @@ weight: 2
 
 ## Research Themes
 
-My research portfolio is organized around a simple trajectory: early work in environmental and engineered systems trained me to analyze complex decision systems; my current work extends that systems-thinking background into healthcare, where clinical data, patient trajectories, resource utilization, and AI-enabled workflows form another complex decision environment.
+My research work is organized around a simple trajectory: early work in environmental and engineered systems trained me to analyze complex decision systems; my current work extends that systems-thinking background into healthcare, where clinical data, patient trajectories, resource utilization, and AI-enabled workflows form another complex decision environment.
 
 ### Clinical AI & Healthcare Analytics
 
