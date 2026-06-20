@@ -1,4 +1,4 @@
 ---
 title: "Projects"
-description: "My Data Science & Engineering Portfolio"
+description: "Selected data science, clinical analytics, and applied AI projects"
 ---
