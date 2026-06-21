@@ -34,8 +34,8 @@
 }
 
 .post-content .tone-notes {
-  --ink-rgb: 105, 98, 120;
-  --ink-strong: rgb(93, 82, 118);
+  --ink-rgb: 96, 104, 108;
+  --ink-strong: rgb(78, 91, 98);
 }
 
 .post-content .tone-papers {
@@ -184,7 +184,7 @@
 .post-content .tone-systems ~ .feature-grid .feature-card,
 .post-content .tone-systems ~ .work-list .work-item { border-color: rgba(91, 116, 86, 0.32); }
 .post-content .tone-notes ~ .feature-grid .feature-card,
-.post-content .tone-notes ~ .work-list .work-item { border-color: rgba(105, 98, 120, 0.32); }
+.post-content .tone-notes ~ .work-list .work-item { border-color: rgba(96, 104, 108, 0.32); }
 .post-content .tone-papers ~ .feature-grid .feature-card,
 .post-content .tone-papers ~ .work-list .work-item { border-color: rgba(92, 103, 118, 0.32); }
 .post-content .tone-about ~ .feature-grid .feature-card,
