@@ -2,11 +2,10 @@
 title: "Systems"
 description: "Systems analytics across energy transition, sustainability, environmental sensing, robotics, and applied environmental technologies."
 weight: 4
+hideMeta: true
 ---
 
-## Systems
-
-This section explains the cross-domain research background behind my current healthcare focus. My early work trained me to analyze complex environmental and engineered systems; I now carry that systems-thinking into clinical data, patient trajectories, resource utilization, and AI-enabled workflows.
+This page explains the cross-domain research background behind my current healthcare focus. My early work trained me to analyze complex environmental and engineered systems; I now carry that systems-thinking into clinical data, patient trajectories, resource utilization, and AI-enabled workflows.
 
 ### Sustainability & System-Level Analytics
 

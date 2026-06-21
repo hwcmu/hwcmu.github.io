@@ -2,9 +2,8 @@
 title: "About"
 description: "Bio, current role, research direction, and contact information."
 weight: 7
+hideMeta: true
 ---
-
-## About
 
 I am a Data Analyst at the University of Pittsburgh and a Biostatistician at VA Pittsburgh. My current direction is clinical AI, real-world evidence, biostatistics, EHR-based modeling, and AI-assisted research workflows.
 

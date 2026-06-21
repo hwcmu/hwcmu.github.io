@@ -2,6 +2,7 @@
 title: "Publications"
 date: 2025-12-03
 weight: 6
+hideMeta: true
 ---
 
 ## Selected Publications

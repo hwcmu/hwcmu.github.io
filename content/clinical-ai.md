@@ -2,11 +2,10 @@
 title: "Clinical AI"
 description: "Clinical AI, EHR-based modeling, clinical NLP, real-world evidence, and healthcare analytics."
 weight: 2
+hideMeta: true
 ---
 
-## Clinical AI
-
-This is my primary current direction: clinical analytics, EHR-based modeling, real-world evidence, biostatistics, clinical NLP, and practical model evaluation.
+My primary current direction is clinical analytics, EHR-based modeling, real-world evidence, biostatistics, clinical NLP, and practical model evaluation.
 
 I am especially interested in workflows that translate clinical questions into cohorts, variables, models, reports, and decision-ready evidence.
 
