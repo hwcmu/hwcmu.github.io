@@ -1,43 +1,41 @@
 ---
 title: "Clinical AI"
-description: "Clinical AI, EHR-based modeling, clinical NLP, real-world evidence, and healthcare analytics."
+description: "Healthcare prediction, EHR modeling, and model evaluation."
 weight: 2
 hideMeta: true
 ---
 
-My primary current direction is clinical analytics, EHR-based modeling, real-world evidence, biostatistics, clinical NLP, and practical model evaluation.
-
-I am especially interested in workflows that translate clinical questions into cohorts, variables, models, reports, and decision-ready evidence.
+<div class="page-hero">
+  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h4l2-7 4 13 2-6h4"/><path d="M12 3v3"/><path d="M12 18v3"/></svg></div>
+  <div>
+    <p class="eyebrow">Current direction</p>
+    <p class="lead">I build clinical analytics that connect patient data, model behavior, and decision-ready evidence.</p>
+    <div class="chip-row">
+      <span class="chip">EHR prediction</span>
+      <span class="chip">Clinical NLP</span>
+      <span class="chip">Model evaluation</span>
+      <span class="chip">Real-world evidence</span>
+    </div>
+  </div>
+</div>
 
 ### Focus Areas
 
-- EHR-based prediction and healthcare utilization modeling
-- Clinical NLP and multimodal healthcare data
-- Emergency care decision support
-- Model evaluation, calibration, and subgroup analysis
-- Reproducible clinical analytics workflows
+<div class="feature-grid">
+  <div class="feature-card"><h3>Prediction that can be checked</h3><p>Models for emergency care, utilization, and patient trajectories, with attention to calibration, subgroups, and practical interpretation.</p></div>
+  <div class="feature-card"><h3>Clinical text as signal</h3><p>NLP and multimodal workflows that combine structured variables with notes, narratives, and workflow context.</p></div>
+  <div class="feature-card"><h3>Evaluation before excitement</h3><p>Clearer thinking about what models can support, where they fail, and how evidence should be reported.</p></div>
+  <div class="feature-card"><h3>Reproducible analytics</h3><p>Analysis pipelines that make cohorts, variables, models, and reports easier to audit and revise.</p></div>
+</div>
 
 ### Representative Work
 
-1. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
-   *DIGITAL HEALTH*, 2025. [DOI](https://doi.org/10.1177/20552076251331319)
+<div class="work-list">
+  <div class="work-item"><strong>Hospital admission prediction using gradient boosting and GPT-2</strong><span><em>DIGITAL HEALTH</em>, 2025. <a href="https://doi.org/10.1177/20552076251331319">DOI</a></span></div>
+  <div class="work-item"><strong>Multimodal prediction of IV fluid utilization</strong><span><em>PeerJ Computer Science</em>, 2025. <a href="https://doi.org/10.7717/peerj-cs.3441">DOI</a> · <a href="https://github.com/hwcmu/IVF-prediction">Code</a></span></div>
+  <div class="work-item"><strong>Personalized prediction of EKG use in emergency care</strong><span><em>Journal of Personalized Medicine</em>, 2025. <a href="https://doi.org/10.3390/jpm15080358">DOI</a> · <a href="https://github.com/hwcmu/EKG-prediction">Code</a></span></div>
+</div>
 
-   This work reflects my interest in translating structured clinical variables and unstructured narratives into predictive signals for acute care settings.
+### Coming Next
 
-2. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization**  
-   *PeerJ Computer Science*, 2025. [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction)
-
-   This study connects clinical NLP, structured variables, and utilization prediction in emergency department data.
-
-3. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
-   *Journal of Personalized Medicine*, 2025. [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction)
-
-   This project demonstrates personalized clinical prediction and emergency care analytics.
-
-### Methods I Want This Page To Grow Into
-
-- Clinical model evaluation notes
-- Clinical NLP field notes
-- EHR prediction pipeline examples
-- Real-world evidence workflow examples
-- Healthcare data quality and missingness notes
+Short notes on clinical model evaluation, clinical NLP, EHR prediction pipelines, missingness, and real-world evidence workflows.

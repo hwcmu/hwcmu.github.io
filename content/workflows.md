@@ -1,22 +1,34 @@
 ---
 title: "Workflows"
-description: "AI-assisted research workflows for clinical analytics, biostatistics, manuscripts, and reproducible research."
+description: "Reusable systems for analysis, writing, review, and revision."
 weight: 3
 hideMeta: true
 ---
 
-Reusable research workflows help turn clinical or interdisciplinary research questions into structured analysis, writing, review, and reproducible outputs.
+<div class="page-hero">
+  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h3a3 3 0 0 1 3 3v4"/><path d="M7 10v4a3 3 0 0 0 3 3h4"/></svg></div>
+  <div>
+    <p class="eyebrow">Research production system</p>
+    <p class="lead">Workflows are where messy research questions become cohorts, tables, models, manuscripts, and replies that survive revision.</p>
+    <div class="chip-row">
+      <span class="chip">Table One</span>
+      <span class="chip">Analysis plans</span>
+      <span class="chip">Reviewer response</span>
+      <span class="chip">AI-assisted review</span>
+    </div>
+  </div>
+</div>
 
 ### Workflow Areas
 
-| Workflow | Purpose | Status |
-|---|---|---|
-| Table One Workflow | Build reproducible baseline characteristic tables from analysis-ready datasets. | In development |
-| Statistical Analysis Plan Workflow | Translate a clinical question into outcomes, exposures, covariates, estimands, models, and sensitivity analyses. | In development |
-| Manuscript Review Workflow | Review drafts for structure, claims, methods clarity, limitations, and evidence boundaries. | In development |
-| Reviewer Response Workflow | Organize reviewer comments, response strategy, revision tracking, and evidence-backed replies. | In development |
-| Data Dictionary to Analysis Dataset | Convert REDCap/EHR/data dictionary structures into analysis-ready variable maps. | Planned |
-| AI-Assisted Literature Review | Create reproducible literature screening, synthesis, and evidence mapping workflows. | Planned |
+<div class="feature-grid">
+  <div class="feature-card"><h3>Table One Workflow <span class="status-pill">In development</span></h3><p>Build reproducible baseline characteristic tables from analysis-ready datasets.</p></div>
+  <div class="feature-card"><h3>Statistical Analysis Plan <span class="status-pill">In development</span></h3><p>Translate a clinical question into outcomes, exposures, covariates, estimands, models, and sensitivity analyses.</p></div>
+  <div class="feature-card"><h3>Manuscript Review <span class="status-pill">In development</span></h3><p>Review drafts for structure, claims, methods clarity, limitations, and evidence boundaries.</p></div>
+  <div class="feature-card"><h3>Reviewer Response <span class="status-pill">In development</span></h3><p>Organize reviewer comments, response strategy, revision tracking, and evidence-backed replies.</p></div>
+  <div class="feature-card"><h3>Data Dictionary to Dataset <span class="status-pill">Planned</span></h3><p>Convert REDCap, EHR, or data dictionary structures into analysis-ready variable maps.</p></div>
+  <div class="feature-card"><h3>Literature Review Workflow <span class="status-pill">Planned</span></h3><p>Create reproducible screening, synthesis, and evidence mapping workflows.</p></div>
+</div>
 
 ### Direction
 
