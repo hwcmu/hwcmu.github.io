@@ -1,0 +1,17 @@
+{{/* Render Mermaid diagrams in Markdown code fences. */}}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+  document.querySelectorAll('pre > code.language-mermaid').forEach((codeBlock) => {
+    const diagram = document.createElement('div');
+    diagram.className = 'mermaid';
+    diagram.textContent = codeBlock.textContent;
+    codeBlock.parentElement.replaceWith(diagram);
+  });
+
+  mermaid.initialize({
+    startOnLoad: true,
+    securityLevel: 'strict',
+    theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default'
+  });
+</script>

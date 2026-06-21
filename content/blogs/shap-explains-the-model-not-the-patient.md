@@ -214,6 +214,10 @@ Let clinical evidence, validation, and causal reasoning answer:
 
 ## Sources
 
+For SHAP itself, the most authoritative sources are the original SHAP paper and the official SHAP documentation. For clinical AI review, I also link reporting and risk-of-bias guidance that is more directly relevant to prediction-model papers and clinical AI evaluation.
+
 - Lundberg, S. M., & Lee, S.-I. *A Unified Approach to Interpreting Model Predictions*. NeurIPS 2017 / arXiv. https://arxiv.org/abs/1705.07874
-- SHAP documentation: *An introduction to explainable AI with Shapley values*. https://shap.readthedocs.io/
-- Molnar, C. *Interpretable Machine Learning*, SHAP chapter. https://christophm.github.io/interpretable-ml-book/shap.html
+- SHAP documentation: *An introduction to explainable AI with Shapley values*. https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html
+- TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine-learning methods. *BMJ*, 2024. https://www.bmj.com/content/385/bmj-2023-078378
+- PROBAST-AI: risk-of-bias and applicability assessment for prediction model studies using artificial intelligence. *BMJ*, 2024. https://www.bmj.com/content/385/bmj-2023-078370
+- CONSORT-AI extension: reporting guidelines for clinical trial reports of interventions involving artificial intelligence. *Nature Medicine*, 2020. https://www.nature.com/articles/s41591-020-1034-x
