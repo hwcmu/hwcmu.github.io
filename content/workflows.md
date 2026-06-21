@@ -5,7 +5,7 @@ weight: 3
 hideMeta: true
 ---
 
-<div class="page-hero">
+<div class="page-hero tone-workflows">
   <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h3a3 3 0 0 1 3 3v4"/><path d="M7 10v4a3 3 0 0 0 3 3h4"/></svg></div>
   <div>
     <p class="eyebrow">Research production system</p>

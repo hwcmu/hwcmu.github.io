@@ -1,17 +1,51 @@
 
 /* Lightweight visual system for top-level portfolio pages. */
 .post-content .page-hero {
+  --ink-rgb: 74, 105, 105;
+  --ink-strong: rgb(68, 96, 96);
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1.1rem;
   align-items: start;
   margin: 0.25rem 0 1.6rem;
   padding: 1.1rem 1.2rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(var(--ink-rgb), 0.24);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(64, 128, 128, 0.10), transparent 42%),
+    radial-gradient(circle at 12% 18%, rgba(var(--ink-rgb), 0.16), transparent 34%),
+    linear-gradient(135deg, rgba(var(--ink-rgb), 0.10), transparent 48%),
     linear-gradient(180deg, var(--entry), var(--theme));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.post-content .tone-clinical {
+  --ink-rgb: 78, 108, 105;
+  --ink-strong: rgb(62, 100, 96);
+}
+
+.post-content .tone-workflows {
+  --ink-rgb: 105, 93, 75;
+  --ink-strong: rgb(104, 82, 58);
+}
+
+.post-content .tone-systems {
+  --ink-rgb: 91, 116, 86;
+  --ink-strong: rgb(78, 106, 72);
+}
+
+.post-content .tone-notes {
+  --ink-rgb: 105, 98, 120;
+  --ink-strong: rgb(93, 82, 118);
+}
+
+.post-content .tone-papers {
+  --ink-rgb: 92, 103, 118;
+  --ink-strong: rgb(76, 91, 112);
+}
+
+.post-content .tone-about {
+  --ink-rgb: 118, 91, 84;
+  --ink-strong: rgb(111, 76, 67);
 }
 
 .post-content .page-icon {
@@ -20,9 +54,9 @@
   width: 3rem;
   height: 3rem;
   border-radius: 8px;
-  color: var(--primary);
-  background: var(--theme);
-  border: 1px solid var(--border);
+  color: var(--ink-strong);
+  background: rgba(var(--ink-rgb), 0.08);
+  border: 1px solid rgba(var(--ink-rgb), 0.26);
 }
 
 .post-content .page-icon svg {
@@ -63,10 +97,10 @@
   align-items: center;
   min-height: 1.8rem;
   padding: 0.22rem 0.62rem;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(var(--ink-rgb), 0.22);
   border-radius: 999px;
   color: var(--secondary);
-  background: var(--theme);
+  background: rgba(var(--ink-rgb), 0.055);
   font-size: 0.82rem;
   line-height: 1.35;
 }
@@ -139,5 +173,39 @@
 
   .post-content .feature-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+.post-content .tone-clinical ~ .feature-grid .feature-card,
+.post-content .tone-clinical ~ .work-list .work-item { border-color: rgba(78, 108, 105, 0.32); }
+.post-content .tone-workflows ~ .feature-grid .feature-card,
+.post-content .tone-workflows ~ .work-list .work-item { border-color: rgba(105, 93, 75, 0.32); }
+.post-content .tone-systems ~ .feature-grid .feature-card,
+.post-content .tone-systems ~ .work-list .work-item { border-color: rgba(91, 116, 86, 0.32); }
+.post-content .tone-notes ~ .feature-grid .feature-card,
+.post-content .tone-notes ~ .work-list .work-item { border-color: rgba(105, 98, 120, 0.32); }
+.post-content .tone-papers ~ .feature-grid .feature-card,
+.post-content .tone-papers ~ .work-list .work-item { border-color: rgba(92, 103, 118, 0.32); }
+.post-content .tone-about ~ .feature-grid .feature-card,
+.post-content .tone-about ~ .work-list .work-item { border-color: rgba(118, 91, 84, 0.32); }
+
+.post-content .tone-workflows ~ .feature-grid .status-pill {
+  border-color: rgba(105, 93, 75, 0.26);
+  background: rgba(105, 93, 75, 0.055);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-content .page-hero {
+    border-color: rgba(var(--ink-rgb), 0.34);
+    background:
+      radial-gradient(circle at 12% 18%, rgba(var(--ink-rgb), 0.18), transparent 34%),
+      linear-gradient(135deg, rgba(var(--ink-rgb), 0.13), transparent 48%),
+      linear-gradient(180deg, var(--entry), var(--theme));
+  }
+
+  .post-content .page-icon {
+    color: color-mix(in srgb, var(--ink-strong) 70%, var(--primary));
+    background: rgba(var(--ink-rgb), 0.12);
   }
 }

@@ -5,7 +5,7 @@ weight: 2
 hideMeta: true
 ---
 
-<div class="page-hero">
+<div class="page-hero tone-clinical">
   <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h4l2-7 4 13 2-6h4"/><path d="M12 3v3"/><path d="M12 18v3"/></svg></div>
   <div>
     <p class="eyebrow">Current direction</p>

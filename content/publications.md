@@ -5,7 +5,7 @@ date: 2025-12-03
 weight: 6
 hideMeta: true
 ---
-<div class="page-hero">
+<div class="page-hero tone-papers">
   <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h8l4 4v12H7z"/><path d="M15 4v5h5"/><path d="M9 13h6"/><path d="M9 16h6"/></svg></div>
   <div>
     <p class="eyebrow">Publication record</p>

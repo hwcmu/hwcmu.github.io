@@ -5,7 +5,7 @@ weight: 4
 hideMeta: true
 ---
 
-<div class="page-hero">
+<div class="page-hero tone-systems">
   <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M4 12h16"/><path d="M12 4a12 12 0 0 1 0 16"/><path d="M12 4a12 12 0 0 0 0 16"/></svg></div>
   <div>
     <p class="eyebrow">Research background</p>
