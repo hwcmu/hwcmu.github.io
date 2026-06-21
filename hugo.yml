@@ -20,6 +20,9 @@ params:
   author: Hairong Wang
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
+
+  label:
+    text: Home
   
   # 首页配置
   profileMode:
