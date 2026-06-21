@@ -23,11 +23,25 @@
       <description>Developed a hybrid predictive model fusing structured clinical data with NLP analysis of patient narratives to optimize IV fluid utilization in Emergency Departments.</description>
     </item>
     <item>
-      <title>Research</title>
-      <link>https://hwcmu.github.io/research/</link>
+      <title>Clinical AI</title>
+      <link>https://hwcmu.github.io/clinical-ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hwcmu.github.io/research/</guid>
-      <description>Research themes across clinical AI, healthcare analytics, sustainability systems, and autonomous sensing.</description>
+      <guid>https://hwcmu.github.io/clinical-ai/</guid>
+      <description>Clinical AI, EHR-based modeling, clinical NLP, real-world evidence, and healthcare analytics.</description>
+    </item>
+    <item>
+      <title>Workflows</title>
+      <link>https://hwcmu.github.io/workflows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/workflows/</guid>
+      <description>AI-assisted research workflows for clinical analytics, biostatistics, manuscripts, and reproducible research.</description>
+    </item>
+    <item>
+      <title>Systems</title>
+      <link>https://hwcmu.github.io/systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/systems/</guid>
+      <description>Systems analytics across energy transition, sustainability, environmental sensing, robotics, and applied environmental technologies.</description>
     </item>
     <item>
       <title>Publications</title>
@@ -43,6 +57,13 @@
 &lt;strong&gt;Citation:&lt;/strong&gt; Zhang, X., Wang, H., Yu, G., &amp;amp; Zhang, W. (2025). &lt;em&gt;DIGITAL HEALTH&lt;/em&gt;, 11.&lt;br&gt;
 &lt;strong&gt;Tags:&lt;/strong&gt; Clinical AI · Emergency Care · NLP · Predictive Modeling&lt;br&gt;
 &lt;strong&gt;Links:&lt;/strong&gt; &lt;a href=&#34;https://doi.org/10.1177/20552076251331319&#34;&gt;DOI&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://hwcmu.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/about/</guid>
+      <description>Bio, current role, research direction, and contact information.</description>
     </item>
     <item>
       <title>Real-Time Flight Delay Prediction</title>

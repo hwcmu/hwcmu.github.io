@@ -46,30 +46,30 @@ params:
 
 menu:
   main:
-    - identifier: research
-      name: Research
-      url: /research/
+    - identifier: clinical-ai
+      name: Clinical AI
+      url: /clinical-ai/
       weight: 2
-    - identifier: projects
-      name: Projects
-      url: /projects/
+    - identifier: workflows
+      name: Workflows
+      url: /workflows/
       weight: 3
-    - identifier: publications
-      name: Publications
-      url: /publications/
+    - identifier: systems
+      name: Systems
+      url: /systems/
       weight: 4
-    - identifier: resume
-      name: Resume
-      url: /docs/hairong_resume.pdf
-      weight: 10
-    - identifier: blog
-      name: Blog
+    - identifier: notes
+      name: Notes
       url: /blogs/
-      weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
+      weight: 5
+    - identifier: papers
+      name: Papers
+      url: /publications/
+      weight: 6
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 7
 
 markup:
   goldmark:
