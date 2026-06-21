@@ -6,7 +6,7 @@
     <description>Recent content on Hairong Wang</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hwcmu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI-Powered Migraine Forecast System</title>
@@ -71,6 +71,13 @@
       <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://hwcmu.github.io/projects/airport-prediction/</guid>
       <description>Predicts flight delays using 4M&#43; records and live NOAA weather via TabPy. Bridges ML &amp;amp; BI with real-time SHAP explanations.</description>
+    </item>
+    <item>
+      <title>SHAP Explains the Model, Not the Patient</title>
+      <link>https://hwcmu.github.io/blogs/shap-explains-the-model-not-the-patient/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://hwcmu.github.io/blogs/shap-explains-the-model-not-the-patient/</guid>
+      <description>A concise clinical AI review note on what SHAP can and cannot tell clinicians, researchers, and reviewers.</description>
     </item>
     <item>
       <title>Beyond Excel: How Machine Learning is Revolutionizing Life Cycle Assessment</title>
