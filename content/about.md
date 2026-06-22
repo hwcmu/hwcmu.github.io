@@ -1,27 +1,27 @@
 ---
 title: "About"
-description: "Current role, research direction, and contact."
+description: "How I work, collaborate, and connect ideas across clinical AI, biostatistics, and systems analytics."
 weight: 7
 hideMeta: true
 ---
 
 <div class="page-hero tone-about">
-  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></div>
+  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h10"/><path d="M4 17h7"/><circle cx="18" cy="15" r="2.5"/></svg></div>
   <div>
-    <p class="eyebrow">Profile</p>
-    <p class="lead">I am a Data Analyst at the University of Pittsburgh and a Biostatistician at VA Pittsburgh, building toward a clinical AI workflow scientist identity.</p>
+    <p class="eyebrow">How I Work</p>
+    <p class="lead">I like turning messy research questions into clear data boundaries, reproducible workflows, and clinical AI analyses that people can actually inspect.</p>
     <div class="chip-row">
-      <span class="chip">Pitt Data Analyst</span>
-      <span class="chip">VA Pittsburgh Biostatistician</span>
-      <span class="chip">CMU Ph.D.</span>
-      <span class="chip">Georgia Tech M.S.</span>
+      <span class="chip">Question first</span>
+      <span class="chip">Reproducible files</span>
+      <span class="chip">Clinical context</span>
+      <span class="chip">Careful claims</span>
     </div>
   </div>
 </div>
 
-### Current Direction
+### Working Lens
 
-I work on clinical AI, real-world evidence, biostatistics, EHR-based modeling, and AI-assisted research workflows. My earlier research in sustainability, environmental systems, autonomous sensing, and applied machine learning still shapes how I think about data: as part of a larger system, not just a table.
+Most of my work sits at the intersection of clinical analytics, biostatistics, machine learning, and research workflow design. I care less about showing a complicated model for its own sake, and more about whether the data, timing, assumptions, and interpretation can survive review.
 
 ### Explore by Topic
 
