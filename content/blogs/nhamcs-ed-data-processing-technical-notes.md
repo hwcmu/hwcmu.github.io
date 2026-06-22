@@ -1,18 +1,12 @@
 ---
-title: "The Hard Part of Clinical AI Is Not the Model"
+title: "NHAMCS-ED: The Hard Part of Clinical AI Is Not the Model"
 date: 2026-06-22
 draft: false
-description: "What NHAMCS-ED teaches about prediction timing, survey design, data cleaning, and clinical NLP boundaries."
+description: "Practical notes on prediction timing, survey design, data cleaning, and clinical NLP boundaries."
 tags: ["NHAMCS", "Clinical AI", "EHR Prediction", "NLP", "Survey Data", "Data Cleaning"]
 ---
 
-## What NHAMCS-ED Taught Me About Data Boundaries
-
-I keep coming back to NHAMCS-ED in my own work because it looks almost ideal for clinical AI experiments. The emergency department files combine structured visit-level variables with short reason-for-visit text, which makes them useful for questions like: can triage data predict admission? Does short patient narrative text add value beyond vitals and acuity? Are simple text features enough for emergency department complaints?
-
-But NHAMCS-ED is not a hospital EHR extract. It is a national probability survey of emergency department visits. You can load it into a dataframe, but if you treat every row like a standard EHR record, you may end up with results that are technically impressive but hard to defend.
-
-Across my work on IV fluid utilization and hospital admission prediction, the biggest lesson was this: the hard part of clinical AI is not always the model. The hard part is deciding what the model is allowed to know, what the data actually represent, and what claims the analysis can support.
+NHAMCS-ED looks almost ideal for clinical AI experiments: it combines structured emergency department visit variables with short reason-for-visit text. But it is a national probability survey, not a hospital EHR extract. Across my IV fluid utilization and hospital admission prediction projects, the biggest lesson was that the hard part is often not the model itself; it is deciding what the model is allowed to know, what the data actually represent, and what claims the analysis can support.
 
 ## 1. Define the Prediction Moment First
 
