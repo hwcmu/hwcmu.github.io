@@ -1,6 +1,6 @@
 ---
-title: "Systems"
-description: "Energy, sustainability, environmental sensing, and cross-domain analytics."
+title: "Systems Analytics"
+description: "Cross-domain analytics across energy, sustainability, environmental sensing, and applied systems."
 weight: 4
 hideMeta: true
 ---
