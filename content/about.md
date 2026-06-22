@@ -1,6 +1,5 @@
 ---
 title: "About"
-description: "How I work, collaborate, and connect ideas across clinical AI, biostatistics, and systems analytics."
 weight: 7
 hideMeta: true
 ---
