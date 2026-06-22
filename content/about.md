@@ -23,6 +23,19 @@ hideMeta: true
 
 I work on clinical AI, real-world evidence, biostatistics, EHR-based modeling, and AI-assisted research workflows. My earlier research in sustainability, environmental systems, autonomous sensing, and applied machine learning still shapes how I think about data: as part of a larger system, not just a table.
 
+### Explore by Topic
+
+Choose a topic path if you want to browse notes, projects, and papers by theme.
+
+<div class="topic-grid">
+  <a class="topic-card" href="/tags/clinical-ai/"><strong>Clinical AI</strong><span>EHR prediction, model evaluation, and clinical analytics notes.</span></a>
+  <a class="topic-card" href="/tags/nhamcs/"><strong>NHAMCS</strong><span>Public ED survey data, survey design, and clinical AI examples.</span></a>
+  <a class="topic-card" href="/tags/nlp/"><strong>NLP</strong><span>Reason-for-visit text, multimodal modeling, and short clinical narratives.</span></a>
+  <a class="topic-card" href="/tags/survey-data/"><strong>Survey Data</strong><span>Weights, design variables, and sample-vs-national interpretation.</span></a>
+  <a class="topic-card" href="/tags/machine-learning/"><strong>Machine Learning</strong><span>Predictive modeling, baselines, validation, and practical tradeoffs.</span></a>
+  <a class="topic-card" href="/tags/sustainability/"><strong>Sustainability</strong><span>LCA, energy transition, and systems analytics background.</span></a>
+</div>
+
 ### Contact
 
 - Email: **hairongcmu@gmail.com**
