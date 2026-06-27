@@ -49,10 +49,6 @@ params:
 
 menu:
   main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 1
     - identifier: notes
       name: Notes
       url: /blogs/
