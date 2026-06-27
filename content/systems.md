@@ -14,7 +14,6 @@ hideMeta: true
       <span class="chip">Energy transition</span>
       <span class="chip">LCA + ML</span>
       <span class="chip">Environmental sensing</span>
-      <span class="chip">Field robotics</span>
     </div>
   </div>
 </div>

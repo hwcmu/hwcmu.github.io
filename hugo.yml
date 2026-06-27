@@ -46,6 +46,9 @@ params:
       url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
     - name: email
       url: "mailto:hairongcmu@gmail.com"
+    - name: cv
+      title: CV
+      url: "/docs/hairong_resume.pdf"
 
 menu:
   main:

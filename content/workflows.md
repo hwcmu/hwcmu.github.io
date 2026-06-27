@@ -14,7 +14,6 @@ hideMeta: true
       <span class="chip">Table One</span>
       <span class="chip">Analysis plans</span>
       <span class="chip">Reviewer response</span>
-      <span class="chip">AI-assisted review</span>
     </div>
   </div>
 </div>

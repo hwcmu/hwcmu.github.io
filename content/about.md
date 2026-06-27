@@ -24,7 +24,6 @@ hideMeta: true
       <span class="chip">Question first</span>
       <span class="chip">Reproducible files</span>
       <span class="chip">Clinical context</span>
-      <span class="chip">Careful claims</span>
     </div>
   </div>
 </div>

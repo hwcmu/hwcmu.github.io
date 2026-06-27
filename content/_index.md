@@ -23,7 +23,6 @@ hideMeta: true
       <span class="chip">Question first</span>
       <span class="chip">Reproducible files</span>
       <span class="chip">Clinical context</span>
-      <span class="chip">Careful claims</span>
     </div>
   </div>
 </div>
@@ -36,13 +35,13 @@ Most of my work sits at the intersection of clinical analytics, biostatistics, m
 
 Choose a topic path if you want to browse notes, projects, and papers by theme.
 
-<div class="topic-grid">
-  <a class="topic-card" href="/tags/clinical-ai/"><strong>Clinical AI</strong><span>EHR prediction, model evaluation, and clinical analytics notes.</span></a>
-  <a class="topic-card" href="/tags/nhamcs/"><strong>NHAMCS</strong><span>Public ED survey data, survey design, and clinical AI examples.</span></a>
-  <a class="topic-card" href="/tags/nlp/"><strong>NLP</strong><span>Reason-for-visit text, multimodal modeling, and short clinical narratives.</span></a>
-  <a class="topic-card" href="/tags/survey-data/"><strong>Survey Data</strong><span>Weights, design variables, and sample-vs-national interpretation.</span></a>
-  <a class="topic-card" href="/tags/machine-learning/"><strong>Machine Learning</strong><span>Predictive modeling, baselines, validation, and practical tradeoffs.</span></a>
-  <a class="topic-card" href="/tags/sustainability/"><strong>Sustainability</strong><span>LCA, energy transition, and systems analytics background.</span></a>
+<div class="topic-tag-row">
+  <a class="topic-tag" href="/tags/clinical-ai/">Clinical AI</a>
+  <a class="topic-tag" href="/tags/nhamcs/">NHAMCS</a>
+  <a class="topic-tag" href="/tags/nlp/">NLP</a>
+  <a class="topic-tag" href="/tags/survey-data/">Survey Data</a>
+  <a class="topic-tag" href="/tags/machine-learning/">Machine Learning</a>
+  <a class="topic-tag" href="/tags/sustainability/">Sustainability</a>
 </div>
 
 ### Open Collaboration
@@ -54,12 +53,3 @@ I sometimes have more research ideas than time. I am open to voluntary, interest
   <div class="collab-card"><strong>How collaboration works</strong><span>We define a small scope, agree on concrete contributions, use reproducible files, and make authorship or credit proportional to actual work.</span></div>
   <div class="collab-card"><strong>Important boundary</strong><span>This is not a paid position or formal employment opportunity. It is best for people who want to learn, contribute, and build publishable work together.</span></div>
 </div>
-
-If you are interested, email me with a short note about your background, the topic you want to work on, and the kind of contribution you can realistically make.
-
-### Contact
-
-- Email: **hairongcmu@gmail.com**
-- LinkedIn: [linkedin.com/in/hairong-wang](https://www.linkedin.com/in/hairong-wang/)
-- GitHub: [github.com/hwcmu](https://github.com/hwcmu)
-- CV: [Resume PDF](/docs/hairong_resume.pdf)

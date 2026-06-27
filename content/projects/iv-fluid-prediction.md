@@ -2,7 +2,7 @@
 title: "Multimodal AI for ER Resource Prediction"
 date: 2025-12-09
 description: "Developed a hybrid predictive model fusing structured clinical data with NLP analysis of patient narratives to optimize IV fluid utilization in Emergency Departments."
-tags: ["NLP", "Machine Learning", "Healthcare", "Gradient Boosting", "Multimodal"]
+tags: ["NLP", "Machine Learning", "Healthcare"]
 weight: 2
 ---
 

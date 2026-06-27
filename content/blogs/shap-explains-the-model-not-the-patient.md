@@ -4,7 +4,7 @@ date: 2026-06-21
 draft: false
 description: "A concise clinical AI review note on what SHAP can and cannot tell clinicians, researchers, and reviewers."
 series: ["Boundary Notes"]
-tags: ["Clinical AI", "Model Interpretation", "SHAP", "Machine Learning", "Peer Review", "Boundary Notes"]
+tags: ["Clinical AI", "Model Interpretation", "SHAP"]
 ---
 
 # SHAP Explains the Model, Not the Patient

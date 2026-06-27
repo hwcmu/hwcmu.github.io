@@ -13,7 +13,6 @@ hideMeta: true
       <span class="chip">Dataset autopsies</span>
       <span class="chip">Boundary notes</span>
       <span class="chip">Paper reality checks</span>
-      <span class="chip">Systems notes</span>
     </div>
   </div>
 </div>

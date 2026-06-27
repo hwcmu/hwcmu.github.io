@@ -14,7 +14,6 @@ hideMeta: true
       <span class="chip">Clinical AI</span>
       <span class="chip">Sustainability analytics</span>
       <span class="chip">Environmental sensing</span>
-      <span class="chip">Open code when available</span>
     </div>
   </div>
 </div>

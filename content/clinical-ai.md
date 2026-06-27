@@ -14,7 +14,6 @@ hideMeta: true
       <span class="chip">EHR prediction</span>
       <span class="chip">Clinical NLP</span>
       <span class="chip">Model evaluation</span>
-      <span class="chip">Real-world evidence</span>
     </div>
   </div>
 </div>
