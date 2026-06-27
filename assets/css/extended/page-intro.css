@@ -49,6 +49,16 @@
   --ink-strong: rgb(111, 76, 67);
 }
 
+.home-about-section {
+  margin-top: calc(var(--gap) * 2);
+  padding-top: calc(var(--gap) * 1.35);
+  border-top: 1px solid var(--border);
+}
+
+.home-about-section .page-hero {
+  margin-top: 0;
+}
+
 .post-content .tone-persona {
   --ink-rgb: 99, 85, 124;
   --ink-strong: rgb(88, 72, 116);

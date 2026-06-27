@@ -49,6 +49,10 @@ params:
 
 menu:
   main:
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 1
     - identifier: notes
       name: Notes
       url: /blogs/
@@ -57,10 +61,6 @@ menu:
       name: Papers
       url: /publications/
       weight: 3
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 4
 
 markup:
   goldmark:
