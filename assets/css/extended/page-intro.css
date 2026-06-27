@@ -342,27 +342,21 @@
   line-height: 1.55;
 }
 
-.post-content .persona-mask-link {
-  position: absolute;
-  top: 0.72rem;
-  right: 0.78rem;
-  display: grid;
-  place-items: center;
-  width: 3.55rem;
-  height: 2.65rem;
-  border: 1px solid rgba(99, 85, 124, 0.26);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.36);
+.post-content .persona-hero-link {
+  width: 4.35rem;
+  height: 4.15rem;
+  gap: 0.18rem;
+  align-content: center;
   color: var(--primary);
   text-decoration: none;
 }
 
-.post-content .persona-mask-link:hover {
+.post-content .persona-hero-link:hover {
   border-color: rgba(99, 85, 124, 0.48);
   transform: translateY(-1px);
 }
 
-.post-content .persona-mask-link svg,
+.post-content .persona-hero-link svg,
 .post-content .persona-icon svg {
   width: 2.9rem;
   height: 1.85rem;
@@ -370,6 +364,13 @@
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.post-content .persona-hero-link span {
+  color: var(--secondary);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .post-content .persona-icon {
@@ -401,10 +402,6 @@
 .post-content .mask-eye-right,
 .post-content .mask-mouth-right {
   stroke: #ffffff;
-}
-
-.post-content .persona-tags {
-  padding-right: 3.8rem;
 }
 
 .post-content .persona-tag {
@@ -489,12 +486,4 @@
     min-height: 0;
   }
 
-  .post-content .persona-mask-link {
-    top: 0.65rem;
-    right: 0.65rem;
-  }
-
-  .post-content .persona-tags {
-    padding-right: 0;
-  }
 }
