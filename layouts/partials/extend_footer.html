@@ -15,3 +15,40 @@
     theme: document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default'
   });
 </script>
+
+{{- if eq .RelPermalink "/persona/" }}
+<script>
+  (() => {
+    const input = document.getElementById('persona-search-input');
+    const entries = Array.from(document.querySelectorAll('.persona-entry'));
+    const tags = Array.from(document.querySelectorAll('.persona-tag'));
+    const empty = document.getElementById('persona-empty');
+    let activeTag = 'all';
+
+    const filterEntries = () => {
+      const query = (input?.value || '').trim().toLowerCase();
+      let visibleCount = 0;
+
+      entries.forEach((entry) => {
+        const tagMatch = activeTag === 'all' || entry.dataset.tags.split(' ').includes(activeTag);
+        const textMatch = !query || entry.textContent.toLowerCase().includes(query) || entry.dataset.text.includes(query);
+        const isVisible = tagMatch && textMatch;
+        entry.hidden = !isVisible;
+        if (isVisible) visibleCount += 1;
+      });
+
+      if (empty) empty.hidden = visibleCount !== 0;
+    };
+
+    tags.forEach((tag) => {
+      tag.addEventListener('click', () => {
+        activeTag = tag.dataset.tag;
+        tags.forEach((item) => item.classList.toggle('active', item === tag));
+        filterEntries();
+      });
+    });
+
+    input?.addEventListener('input', filterEntries);
+  })();
+</script>
+{{- end }}

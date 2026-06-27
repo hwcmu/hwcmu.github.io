@@ -3,7 +3,8 @@ title: "NHAMCS-ED: The Hard Part of Clinical AI Is Not the Model"
 date: 2026-06-22
 draft: false
 description: "Practical notes on prediction timing, survey design, data cleaning, and clinical NLP boundaries."
-tags: ["NHAMCS", "Clinical AI", "EHR Prediction", "NLP", "Survey Data", "Data Cleaning"]
+series: ["Dataset Autopsies", "Boundary Notes"]
+tags: ["NHAMCS", "Clinical AI", "EHR Prediction", "NLP", "Survey Data", "Data Cleaning", "Dataset Autopsies", "Boundary Notes"]
 ---
 
 NHAMCS-ED looks almost ideal for clinical AI experiments: it combines structured emergency department visit variables with short reason-for-visit text. But it is a national probability survey, not a hospital EHR extract. Across my IV fluid utilization and hospital admission prediction projects, the biggest lesson was that the hard part is often not the model itself; it is deciding what the model is allowed to know, what the data actually represent, and what claims the analysis can support.

@@ -2,7 +2,8 @@
 title: "Beyond Excel: How Machine Learning is Revolutionizing Life Cycle Assessment"
 date: 2025-10-16
 description: "Traditional environmental assessments are slow and data-hungry. Here is a framework on how NLP and Deep Learning can fix them."
-tags: ["Sustainability", "Machine Learning", "Thought Leadership", "LCA"]
+series: ["Systems / Water / Energy Notes"]
+tags: ["Sustainability", "Machine Learning", "Thought Leadership", "LCA", "Systems Analytics", "Water Quality", "Energy Analytics"]
 categories: ["Tech Trends"]
 # 封面图，如果在主页显示的话
 # image: "/images/lca-ml-framework.svg" 

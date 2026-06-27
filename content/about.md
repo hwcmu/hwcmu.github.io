@@ -5,6 +5,13 @@ hideMeta: true
 ---
 
 <div class="page-hero tone-about">
+  <a class="persona-mask-link" href="/persona/" aria-label="Open Persona">
+    <svg viewBox="0 0 48 32" aria-hidden="true">
+      <path class="mask-left" d="M23.5 9.5c-4.8-3.2-10-4.5-18-2.3-1.4 8.1 1.2 15.3 7 17.1 5 1.5 9.8-2.5 11-8.7z"/>
+      <path class="mask-right" d="M24.5 9.5c4.8-3.2 10-4.5 18-2.3 1.4 8.1-1.2 15.3-7 17.1-5 1.5-9.8-2.5-11-8.7z"/>
+      <path d="M16 15.5c1.5-.7 3-.7 4.5 0M27.5 15.5c1.5-.7 3-.7 4.5 0M22.6 22c.9.7 1.9 1 2.9 0"/>
+    </svg>
+  </a>
   <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h10"/><path d="M4 17h7"/><circle cx="18" cy="15" r="2.5"/></svg></div>
   <div>
     <p class="eyebrow">How I Work</p>

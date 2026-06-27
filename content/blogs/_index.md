@@ -7,13 +7,31 @@ hideMeta: true
 <div class="page-hero tone-notes">
   <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"/><path d="M15 4v5h5"/><path d="M8 13h8"/><path d="M8 17h5"/></svg></div>
   <div>
-    <p class="eyebrow">Working notes</p>
-    <p class="lead">Short pieces on clinical AI, model interpretation, research methods, and the small decisions that make analysis more trustworthy.</p>
+    <p class="eyebrow">Writing system</p>
+    <p class="lead">Argument-driven notes on clinical AI, public datasets, research workflows, and systems analytics. The goal is to make the boundary of a claim easier to inspect.</p>
     <div class="chip-row">
-      <span class="chip">Method notes</span>
-      <span class="chip">Research summaries</span>
-      <span class="chip">Reviewer lens</span>
-      <span class="chip">Plain language</span>
+      <span class="chip">Dataset autopsies</span>
+      <span class="chip">Boundary notes</span>
+      <span class="chip">Paper reality checks</span>
+      <span class="chip">Systems notes</span>
     </div>
   </div>
+</div>
+
+<div class="series-grid">
+  <a class="series-card" href="/blogs/nhamcs-ed-data-processing-technical-notes/">
+    <span class="series-kicker">Dataset Autopsies</span>
+    <strong>What does the data really represent?</strong>
+    <span>Public datasets, codebooks, survey design, leakage, missingness, and the small choices that shape model claims.</span>
+  </a>
+  <a class="series-card" href="/blogs/shap-explains-the-model-not-the-patient/">
+    <span class="series-kicker">Boundary Notes</span>
+    <strong>What can this method honestly say?</strong>
+    <span>Short clinical AI notes on prediction timing, SHAP, calibration, text boundaries, and review-ready interpretation.</span>
+  </a>
+  <a class="series-card" href="/blogs/lca-ml-review/">
+    <span class="series-kicker">Systems / Water / Energy Notes</span>
+    <strong>What system boundary comes before the model?</strong>
+    <span>Environmental systems, water quality, energy analytics, LCA, sensing, and measurement limits in applied ML.</span>
+  </a>
 </div>
