@@ -5,7 +5,7 @@ hideMeta: true
 ---
 
 <div class="page-hero tone-notes">
-  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5z"/><path d="M15 4v5h5"/><path d="M8 13h8"/><path d="M8 17h5"/></svg></div>
+  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5 5.2 15l9.6-9.6a2.1 2.1 0 0 1 3 3L8.2 18z"/><path d="M13.5 6.7 17.3 10.5"/><path d="M5.2 15 8.2 18"/><path d="M12 20h8"/></svg></div>
   <div>
     <p class="eyebrow">Writing system</p>
     <p class="lead">Argument-driven notes on clinical AI, public datasets, research workflows, and systems analytics. The goal is to make the boundary of a claim easier to inspect.</p>

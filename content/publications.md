@@ -6,7 +6,7 @@ weight: 6
 hideMeta: true
 ---
 <div class="page-hero tone-papers">
-  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h8l4 4v12H7z"/><path d="M15 4v5h5"/><path d="M9 13h6"/><path d="M9 16h6"/></svg></div>
+  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v14H6z"/><path d="M15 3v4h4"/><path d="M9 9h5"/><path d="M9 12h4"/><circle cx="15.5" cy="16.5" r="2.2"/><path d="m14.2 18.2-.7 2.3 2-1 2 1-.7-2.3"/></svg></div>
   <div>
     <p class="eyebrow">Publication record</p>
     <p class="lead">A compact publication list with DOI links and code repositories where they are available.</p>

@@ -20,9 +20,9 @@ hideMeta: true
     <p class="eyebrow">How I Work</p>
     <p class="lead">I like turning messy research questions into clear data boundaries, reproducible workflows, and clinical AI analyses that people can actually inspect.</p>
     <div class="chip-row">
-      <span class="chip">Question first</span>
-      <span class="chip">Reproducible files</span>
-      <span class="chip">Clinical context</span>
+      <span class="chip">Curious</span>
+      <span class="chip">Careful</span>
+      <span class="chip">Builder-minded</span>
     </div>
   </div>
 </div>
