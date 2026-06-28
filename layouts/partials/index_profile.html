@@ -58,7 +58,7 @@
 </div>
 
 {{- if .Content }}
-<section class="home-about-section post-content" id="about">
+<section class="home-content-section post-content" id="home-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
   {{- else }}{{ .Content }}{{ end }}
