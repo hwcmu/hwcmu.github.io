@@ -3,7 +3,7 @@
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
-            {{- $home_url := printf "%s?v=20260622-nav2" ("" | absLangURL) }}
+            {{- $home_url := "" | absLangURL }}
             <a href="{{ $home_url }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if site.Params.label.icon }}
                 {{- $img := resources.Get site.Params.label.icon }}
@@ -90,9 +90,6 @@
             {{- $is_search := eq (site.GetPage .KeyName).Layout `search` }}
             <li>
                 {{- $menu_href := .URL | absLangURL }}
-                {{- if not (findRE "://" .URL) }}
-                    {{- $menu_href = printf "%s?v=20260622-nav2" $menu_href }}
-                {{- end }}
                 <a href="{{ $menu_href }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
                     <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
