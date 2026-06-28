@@ -30,6 +30,9 @@ params:
     title: "Hi 👋, I'm Hairong Wang"
     subtitle: "Research health data scientist and data analyst at the University of Pittsburgh. I build clinical AI, healthcare data workflows, and interpretable models for real-world research."
     imageUrl: "/images/avatar.png"
+    buttons:
+      - name: CV
+        url: "/cv/"
   # 社交链接 (显示在首页底部)
   socialIcons:
     - name: linkedin
@@ -38,9 +41,6 @@ params:
       url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
     - name: email
       url: "mailto:hairongcmu@gmail.com"
-    - name: cv
-      title: CV
-      url: "/cv/"
 
 menu:
   main:
