@@ -67,6 +67,7 @@ For the Hugo website:
 - `About` is not used as a navigation page.
 - `Persona` is not a main navigation item. It is reached from the two-color mask button on the homepage, linking to `/persona/`.
 - The Persona page is a light reflective blog, tag, and search space. Do not add complex taxonomy or category machinery by default.
+- The public CV is a webpage at `/cv/`, not a PDF download. Do not add a CV download button unless the user explicitly asks.
 
 ## Research Collaboration Safety
 

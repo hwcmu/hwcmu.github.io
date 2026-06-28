@@ -1,4 +1,7 @@
 .DS_Store
 ._*
 .hugo_build.lock
+.hugo-check/
 resources/_gen/
+static/CV.docx
+.private/

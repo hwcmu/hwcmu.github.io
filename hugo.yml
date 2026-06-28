@@ -15,7 +15,7 @@ minify:
 params:
   env: production
   title: Hairong Wang
-  description: "Data Analyst at the University of Pittsburgh | Clinical AI, real-world evidence, biostatistics, and reproducible data workflows"
+  description: "Research health data scientist and data analyst at the University of Pittsburgh | Clinical AI, real-world evidence, healthcare data workflows, and interpretable modeling"
   keywords: [Clinical AI, Real-World Evidence, Biostatistics, Healthcare Data Science, Machine Learning, AI-assisted Analytics, Clinical Workflows, University of Pittsburgh, VA Pittsburgh, CMU, Georgia Tech]
   author: Hairong Wang
   # 默认使用系统主题，但也允许用户切换
@@ -28,16 +28,8 @@ params:
   profileMode:
     enabled: true
     title: "Hi 👋, I'm Hairong Wang"
-    subtitle: "Data Analyst at the University of Pittsburgh and Biostatistician at VA Pittsburgh. I build clinical AI, real-world evidence, and reproducible data workflows."
+    subtitle: "Research health data scientist and data analyst at the University of Pittsburgh. I build clinical AI, healthcare data workflows, and interpretable models for real-world research."
     imageUrl: "/images/avatar.png"
-    # buttons:
-    #   - name: Resume
-    #     url: "/docs/hairong_resume.pdf"
-    #   - name: Publications  # 把名字改成 Publications (或者 "论文")
-    #     url: /publications  # 把链接改成 /publications
-    #   - name: Email Me
-    #     url: "mailto:hairongcmu@gmail.com"
-
   # 社交链接 (显示在首页底部)
   socialIcons:
     - name: linkedin
@@ -48,7 +40,7 @@ params:
       url: "mailto:hairongcmu@gmail.com"
     - name: cv
       title: CV
-      url: "/docs/hairong_resume.pdf"
+      url: "/cv/"
 
 menu:
   main:
