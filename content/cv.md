@@ -4,24 +4,9 @@ description: "Clinical health data work, education, experience, skills, and publ
 hideMeta: true
 ---
 
-<div class="page-hero tone-projects">
-  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v16H6z"/><path d="M9 8h6"/><path d="M9 12h6"/><path d="M9 16h4"/><path d="M4 7h2"/><path d="M4 12h2"/><path d="M4 17h2"/></svg></div>
-  <div>
-    <p class="eyebrow">Professional CV</p>
-    <p class="lead">Clinical health data work, applied statistics, machine learning, and reproducible research workflows.</p>
-    <div class="chip-row">
-      <span class="chip">Clinical AI</span>
-      <span class="chip">Healthcare data</span>
-      <span class="chip">Review-ready analysis</span>
-    </div>
-  </div>
-</div>
+## Personal Statement
 
-## Professional Summary
-
-Data analyst and research health data scientist focused on clinical analytics, healthcare data workflows, biostatistics, machine learning, and research workflow design. I work with structured EHR data, public clinical datasets, and short clinical narratives, with emphasis on cohort construction, SQL-based extraction, data cleaning, ETL pipelines, applied modeling, and interpretable results.
-
-My work centers on translating clinical and research questions into analysis-ready datasets, reproducible code, tables, figures, manuscripts, and reviewer-facing evidence. I care less about complicated models for their own sake, and more about whether the data, timing, assumptions, and interpretation can survive clinical and methodological review.
+Data analyst and research health data scientist focused on clinical analytics, healthcare data workflows, biostatistics, machine learning, and research workflow design. I work with structured EHR data, public clinical datasets, and short clinical narratives, with emphasis on cohort construction, SQL-based extraction, data cleaning, ETL pipelines, applied modeling, and interpretable results. My work centers on translating clinical and research questions into analysis-ready datasets, reproducible code, tables, figures, manuscripts, and reviewer-facing evidence, with particular attention to whether the data, timing, assumptions, and interpretation can survive clinical and methodological review.
 
 ## Education
 
@@ -34,31 +19,28 @@ My work centers on translating clinical and research questions into analysis-rea
 ## Work Experience
 
 <div class="work-list">
-  <div class="work-item"><strong>Data Analyst, University of Pittsburgh</strong><span>Jan 2026 - present. Develop clinical NLP and multimodal modeling workflows for emergency department data, including structured EHR variables, reason-for-visit text, and care-utilization outcomes. Build reproducible analysis files for publication-oriented clinical research.</span></div>
-  <div class="work-item"><strong>Research Health Data Scientist, University of Pittsburgh</strong><span>Jan 2026 - present. Translate investigator questions into data queries, analytic datasets, statistical strategies, interpretable models, and evidence summaries for healthcare research.</span></div>
+  <div class="work-item"><strong>Research Health Data Scientist, University of Pittsburgh</strong><span>Jan 2026 - present. Build the main clinical analytics thread of my current work: clinical NLP, multimodal prediction, EHR and public clinical data workflows, model evaluation, and reproducible evidence for emergency care and real-world healthcare research.</span></div>
+  <div class="work-item"><strong>Data Analyst, University of Pittsburgh</strong><span>Jan 2026 - present. Support Alzheimer’s disease and cognitive-health research through AI literature synthesis, clinical NLP, network analysis of symptoms and comorbidities, dataset preparation, statistical analysis, and manuscript-oriented evidence summaries.</span></div>
   <div class="work-item"><strong>Data Scientist, Peachy Day</strong><span>Oct 2025 - Dec 2026. Built SQL-based pipelines for user health, weather, and app activity data; developed migraine-risk and recurrent-event modeling workflows; supported product analytics, feature attribution, and user-level reporting for personalized insights.</span></div>
   <div class="work-item"><strong>Graduate Research Assistant, Carnegie Mellon University</strong><span>Aug 2021 - Oct 2025. Developed computer vision, Gaussian process regression, active learning, geospatial modeling, and uncertainty-aware workflows for environmental sensing and system-level analytics.</span></div>
-  <div class="work-item"><strong>Lab Research Assistant, Solvay</strong><span>Sep 2018 - May 2019. Supported advanced oxidation process experiments for industrial wastewater treatment and performed standardized testing for BOD, COD, total nitrogen, and total phosphorus.</span></div>
 </div>
 
 ## Selected Research and Project Experience
 
 <div class="work-list">
   <div class="work-item"><strong>Clinical NLP and multimodal ED prediction</strong><span>Built workflows using structured emergency department variables and text-derived features for IV fluid utilization, EKG use, and hospital admission prediction. Compared simple text methods, embeddings, and gradient boosting models with attention to clinical interpretation. <a href="/projects/iv-fluid-prediction/">IV fluid project</a> · <a href="https://doi.org/10.7717/peerj-cs.3441">IV fluid DOI</a></span></div>
-  <div class="work-item"><strong>Healthcare data workflow design</strong><span>Constructed analysis-ready clinical datasets from heterogeneous data sources, focusing on cohort definitions, outcome timing, leakage control, survey-data boundaries, and reproducible transformation logic.</span></div>
-  <div class="work-item"><strong>Digital health product analytics</strong><span>Defined product metrics, built SQL analytics workflows, designed physician-guided migraine forecasting logic, and developed personalized data-story outputs for patient engagement. <a href="/projects/migraine-prediction/">Project</a></span></div>
+  <div class="work-item"><strong>Migraine prediction and digital health analytics</strong><span>Defined product metrics, built SQL analytics workflows, designed physician-guided migraine forecasting logic, and developed personalized data-story outputs for patient engagement. <a href="/projects/migraine-prediction/">Project</a></span></div>
   <div class="work-item"><strong>Environmental computer vision and spatial modeling</strong><span>Applied Mask R-CNN, Gaussian process regression, active learning, geospatial modeling, and sensor-data integration for environmental monitoring and uncertainty-aware sampling.</span></div>
   <div class="work-item"><strong>Applied ML and BI systems</strong><span>Built a real-time flight delay prediction workflow combining historical records, live weather data, TabPy, Tableau, and model explanation outputs. <a href="/projects/airport-prediction/">Project</a></span></div>
 </div>
 
 ## Skills
 
-<div class="feature-grid">
-  <div class="feature-card"><h3>Healthcare Data Analytics</h3><p>EHR and clinical data analysis, clinical narratives, cohort construction, analytic dataset development, NHAMCS-ED, real-world data boundaries, and clinical research workflows.</p></div>
-  <div class="feature-card"><h3>Programming and Data Workflows</h3><p>Python, Pandas, NumPy, R, SAS, SQL, data cleaning, ETL pipelines, reproducible files, dashboard-oriented analysis, and manuscript-support workflows.</p></div>
-  <div class="feature-card"><h3>Statistical Modeling</h3><p>Descriptive and inferential statistics, hypothesis testing, linear and logistic regression, generalized linear models, mixed models, recurrent-event survival analysis, and Bayesian/statistical study design concepts.</p></div>
-  <div class="feature-card"><h3>Predictive Modeling and NLP</h3><p>Scikit-learn, XGBoost, gradient boosting, clinical text analysis, multimodal modeling, model evaluation, calibration thinking, SHAP/permutation-style interpretation, and evidence-boundary communication.</p></div>
-</div>
+- **Healthcare Data Analytics:** EHR/clinical data analysis, clinical narratives, cohort construction, analytic dataset development, NHAMCS-ED, real-world data boundaries, and clinical research workflows.
+- **Programming & Data Analysis:** Python, Pandas, NumPy, R, SAS, SQL, data cleaning, ETL pipelines, reproducible analysis files, and dashboard-oriented reporting.
+- **Statistical Modeling:** Descriptive and inferential statistics, hypothesis testing, linear regression, logistic regression, generalized linear models, mixed models, recurrent-event survival analysis, and Bayesian/statistical study design concepts.
+- **Predictive Modeling & Clinical NLP:** Scikit-learn, XGBoost, gradient boosting, clinical text analysis/NLP, multimodal modeling, model evaluation, calibration thinking, SHAP/permutation-style interpretation, and interpretable machine learning.
+- **Research & Communication:** Matplotlib, Tableau, manuscript support, interdisciplinary collaboration, reviewer-response evidence preparation, and research workflow documentation.
 
 ## Relevant Coursework
 
