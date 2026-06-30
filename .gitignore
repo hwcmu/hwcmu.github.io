@@ -2,6 +2,12 @@
 ._*
 .hugo_build.lock
 .hugo-check/
+public/
 resources/_gen/
 static/CV.docx
 .private/
+
+# Local writing drafts that are not part of this portfolio surface yet.
+content/blogs/sel-as-human-agency-in-ai-era.md
+content/blogs/CASEL Wheel.png
+content/blogs/two mindsets.jpeg
