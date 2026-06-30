@@ -26,6 +26,11 @@ url: "/persona/"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry" data-tags="writing tools questions" data-text="ai answer cognitive offloading judgment desire wanting moonshot academy self education human agency writing tools questions">
+    <span class="series-kicker">First blog article</span>
+    <h3><a href="/persona/now-that-ai-can-answer/">Now That AI Can Answer, What Should We Still Train Ourselves To Do?</a></h3>
+    <p>A sharper reflective essay on AI, judgment, cognitive offloading, and the unsettling question of what we still want to do ourselves.</p>
+  </article>
   <article class="persona-entry" data-tags="work questions" data-text="question first work style research boundaries clinical data collaboration">
     <span class="series-kicker">Work style</span>
     <h3>Question first, method second</h3>
