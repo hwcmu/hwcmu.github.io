@@ -3,6 +3,7 @@ title: "Persona"
 description: "Reflective notes, tags, and search for how I think and work."
 hideMeta: true
 url: "/persona/"
+translationKey: "persona"
 ---
 
 <div class="page-hero tone-persona">

@@ -59,7 +59,11 @@
                 {{- if (not site.Params.disableLangToggle) }}
                     {{- $lang := .Lang}}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                    {{- with site.Home.Translations }}
+                    {{- $translations := .Translations }}
+                    {{- if not $translations }}
+                        {{- $translations = site.Home.Translations }}
+                    {{- end }}
+                    {{- with $translations }}
                     <ul class="lang-switch">
                         {{- if $separator }}<li>|</li>{{ end }}
                         {{- range . -}}
@@ -82,7 +86,7 @@
             </div>
         </div>
         {{- $currentPage := . }}
-        {{- if ne .RelPermalink "/persona/" }}
+        {{- if and (eq .Lang "en") (not (in (slice "/persona/" "/zh/persona/") .RelPermalink)) }}
         <ul id="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}

@@ -1,5 +1,7 @@
 baseURL: "https://hwcmu.github.io/"  # [修改这里] 换成你的GitHub用户名，注意最后有个斜杠
 languageCode: "en-us"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 title: "Hairong Wang"
 theme: "PaperMod"
 
@@ -20,6 +22,7 @@ params:
   author: Hairong Wang
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
+  displayFullLangName: true
 
   label:
     text: Home
@@ -61,3 +64,32 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+languages:
+  en:
+    languageName: English
+    languageCode: en-us
+    weight: 1
+    params:
+      languageAltTitle: English
+      displayFullLangName: true
+  zh:
+    languageName: 中文
+    languageCode: zh-cn
+    weight: 2
+    title: "王海容"
+    params:
+      languageAltTitle: 中文
+      displayFullLangName: true
+      description: "匹兹堡大学研究健康数据科学家与数据分析师 | 临床 AI、真实世界证据、医疗数据工作流与可解释建模"
+      keywords: [临床 AI, 真实世界证据, 生物统计, 医疗数据科学, 机器学习, 临床工作流, 匹兹堡大学, VA Pittsburgh, CMU, Georgia Tech]
+      label:
+        text: 首页
+      profileMode:
+        enabled: true
+        title: "你好，我是王海容"
+        subtitle: "我在匹兹堡大学从事研究健康数据科学和数据分析工作，关注临床 AI、医疗数据工作流，以及能被研究者和审稿人检查的可解释模型。"
+        imageUrl: "/images/avatar.png"
+        buttons:
+          - name: CV
+            url: "/cv/"
