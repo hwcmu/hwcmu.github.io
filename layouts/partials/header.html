@@ -3,7 +3,7 @@
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
-            {{- $home_url := "" | absLangURL }}
+            {{- $home_url := "" | absURL }}
             <a href="{{ $home_url }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if site.Params.label.icon }}
                 {{- $img := resources.Get site.Params.label.icon }}
@@ -56,7 +56,7 @@
                 </button>
                 {{- end }}
                 
-                {{- if (not site.Params.disableLangToggle) }}
+                {{- if and (not site.Params.disableLangToggle) (isset .Params "translationkey") (eq .Params.translationkey "persona") }}
                     {{- $lang := .Lang}}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                     {{- $translations := .Translations }}

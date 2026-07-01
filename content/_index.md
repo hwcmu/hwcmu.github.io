@@ -1,7 +1,6 @@
 ---
 title: "Home"
 hideMeta: true
-translationKey: "home"
 ---
 
 <div class="page-hero tone-home">

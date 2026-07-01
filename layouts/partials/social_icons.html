@@ -1,0 +1,10 @@
+<div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
+    {{- range site.Params.socialIcons }}
+    {{- $url := trim .url " " }}
+    {{- $is_external := findRE "://" $url }}
+    <a href="{{ $url | safeURL }}" {{ if $is_external }}target="_blank" {{ end }}rel="noopener noreferrer me"
+        title="{{ (.title | default .name) | title }}">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- end }}
+</div>

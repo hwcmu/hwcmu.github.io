@@ -33,9 +33,6 @@ params:
     title: "Hi 👋, I'm Hairong Wang"
     subtitle: "Research health data scientist and data analyst at the University of Pittsburgh. I build clinical AI, healthcare data workflows, and interpretable models for real-world research."
     imageUrl: "/images/avatar.png"
-    buttons:
-      - name: CV
-        url: "/cv/"
   # 社交链接 (显示在首页底部)
   socialIcons:
     - name: linkedin
@@ -44,6 +41,9 @@ params:
       url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
     - name: email
       url: "mailto:hairongcmu@gmail.com"
+    - name: cv
+      title: CV
+      url: "/cv/"
 
 menu:
   main:
@@ -77,19 +77,6 @@ languages:
     languageName: 中文
     languageCode: zh-cn
     weight: 2
-    title: "王海容"
     params:
       languageAltTitle: 中文
       displayFullLangName: true
-      description: "匹兹堡大学研究健康数据科学家与数据分析师 | 临床 AI、真实世界证据、医疗数据工作流与可解释建模"
-      keywords: [临床 AI, 真实世界证据, 生物统计, 医疗数据科学, 机器学习, 临床工作流, 匹兹堡大学, VA Pittsburgh, CMU, Georgia Tech]
-      label:
-        text: 首页
-      profileMode:
-        enabled: true
-        title: "你好，我是王海容"
-        subtitle: "我在匹兹堡大学从事研究健康数据科学和数据分析工作，关注临床 AI、医疗数据工作流，以及能被研究者和审稿人检查的可解释模型。"
-        imageUrl: "/images/avatar.png"
-        buttons:
-          - name: CV
-            url: "/cv/"
