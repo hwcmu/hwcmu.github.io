@@ -6,6 +6,7 @@ draft: false
 url: "/zh/persona/now-that-ai-can-answer/"
 translationUrl: "/persona/now-that-ai-can-answer/"
 translationLabel: "English"
+translationCta: "Read in English"
 description: "当 AI 几乎能回答一切时，一个成年人还需要训练什么？我把几个看似合理的答案逐个拆开，最后留下一个我还没有解决的问题：真正的边界也许不是 AI 能不能做，而是我还想不想亲自做。"
 series: ["Persona"]
 tags: ["AI Education", "Human Agency", "Cognitive Offloading"]

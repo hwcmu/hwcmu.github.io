@@ -1,0 +1,5 @@
+{{- if .Params.translationUrl }}
+<div class="article-language-link">
+  <a href="{{ .Params.translationUrl | absURL }}">{{ .Params.translationCta | default (printf "Read in %s" .Params.translationLabel) }}</a>
+</div>
+{{- end }}
