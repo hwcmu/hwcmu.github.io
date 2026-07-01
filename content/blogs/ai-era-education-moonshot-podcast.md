@@ -6,7 +6,7 @@ draft: false
 url: "/persona/now-that-ai-can-answer/"
 description: "Once AI can answer almost anything, what's left for an adult to train? I take every decent answer in turn and pull it apart, and end on a question I haven't solved: the real boundary isn't whether AI can do a thing, but whether I still want to do it myself — and even that wanting gets quietly worn away by the tool."
 series: ["Persona"]
-tags: ["AI Education", "Self Education", "Human Agency", "Cognitive Offloading", "Persona"]
+tags: ["AI Education", "Human Agency", "Cognitive Offloading"]
 build:
   list: never
   render: always
