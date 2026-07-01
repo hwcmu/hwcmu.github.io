@@ -1,6 +1,6 @@
 baseURL: "https://hwcmu.github.io/"  # [修改这里] 换成你的GitHub用户名，注意最后有个斜杠
 languageCode: "en-us"
-title: "Hairong Wang"
+title: "Hairong"
 theme: "PaperMod"
 
 enableRobotsTXT: true
@@ -14,10 +14,10 @@ minify:
 
 params:
   env: production
-  title: Hairong Wang
+  title: Hairong
   description: "Research health data scientist and data analyst at the University of Pittsburgh | Clinical AI, real-world evidence, healthcare data workflows, and interpretable modeling"
   keywords: [Clinical AI, Real-World Evidence, Biostatistics, Healthcare Data Science, Machine Learning, AI-assisted Analytics, Clinical Workflows, University of Pittsburgh, VA Pittsburgh, CMU, Georgia Tech]
-  author: Hairong Wang
+  author: Hairong
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
 
@@ -27,7 +27,7 @@ params:
   # 首页配置
   profileMode:
     enabled: true
-    title: "Hi 👋, I'm Hairong Wang"
+    title: "Hi 👋, I'm Hairong"
     subtitle: "Research health data scientist and data analyst at the University of Pittsburgh. I build clinical AI, healthcare data workflows, and interpretable models for real-world research."
     imageUrl: "/images/avatar.png"
   # 社交链接 (显示在首页底部)
