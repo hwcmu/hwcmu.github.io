@@ -56,23 +56,19 @@
                 </button>
                 {{- end }}
                 
-                {{- if and (not site.Params.disableLangToggle) (in (slice "/persona/" "/zh/persona/") .RelPermalink) }}
+                {{- if and (not site.Params.disableLangToggle) .Params.translationUrl }}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                     <ul class="lang-switch">
                         {{- if $separator }}<li>|</li>{{ end }}
                         <li>
-                            {{- if eq .RelPermalink "/zh/persona/" }}
-                            <a href="{{ "/persona/" | absURL }}" title="English" aria-label="English">English</a>
-                            {{- else }}
-                            <a href="{{ "/zh/persona/" | absURL }}" title="中文" aria-label="中文">中文</a>
-                            {{- end }}
+                            <a href="{{ .Params.translationUrl | absURL }}" title="{{ .Params.translationLabel }}" aria-label="{{ .Params.translationLabel }}">{{ .Params.translationLabel }}</a>
                         </li>
                     </ul>
                 {{- end }}
             </div>
         </div>
         {{- $currentPage := . }}
-        {{- if and (eq .Lang "en") (not (in (slice "/persona/" "/zh/persona/") .RelPermalink)) }}
+        {{- if and (eq .Lang "en") (not (or (eq .RelPermalink "/persona/") (hasPrefix .RelPermalink "/zh/persona/"))) }}
         <ul id="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}

@@ -4,6 +4,8 @@ subtitle: "— or the sharper question: what do you still want to do yourself?"
 date: 2026-06-28
 draft: false
 url: "/persona/now-that-ai-can-answer/"
+translationUrl: "/zh/persona/now-that-ai-can-answer/"
+translationLabel: "中文"
 description: "Once AI can answer almost anything, what's left for an adult to train? I take every decent answer in turn and pull it apart, and end on a question I haven't solved: the real boundary isn't whether AI can do a thing, but whether I still want to do it myself — and even that wanting gets quietly worn away by the tool."
 series: ["Persona"]
 tags: ["AI Education", "Human Agency", "Cognitive Offloading"]
