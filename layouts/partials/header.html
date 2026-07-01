@@ -56,32 +56,18 @@
                 </button>
                 {{- end }}
                 
-                {{- if and (not site.Params.disableLangToggle) (isset .Params "translationkey") (eq .Params.translationkey "persona") }}
-                    {{- $lang := .Lang}}
+                {{- if and (not site.Params.disableLangToggle) (in (slice "/persona/" "/zh/persona/") .RelPermalink) }}
                     {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
-                    {{- $translations := .Translations }}
-                    {{- if not $translations }}
-                        {{- $translations = site.Home.Translations }}
-                    {{- end }}
-                    {{- with $translations }}
                     <ul class="lang-switch">
                         {{- if $separator }}<li>|</li>{{ end }}
-                        {{- range . -}}
-                        {{- if ne $lang .Lang }}
                         <li>
-                            <a href="{{- .Permalink -}}" title="{{ .Language.Params.languageAltTitle | default (.Language.LanguageName | emojify) | default (.Lang | title) }}"
-                                aria-label="{{ .Language.LanguageName | default (.Lang | title) }}">
-                                {{- if (and site.Params.displayFullLangName (.Language.LanguageName)) }}
-                                {{- .Language.LanguageName | emojify -}}
-                                {{- else }}
-                                {{- .Lang | title -}}
-                                {{- end -}}
-                            </a>
+                            {{- if eq .RelPermalink "/zh/persona/" }}
+                            <a href="{{ "/persona/" | absURL }}" title="English" aria-label="English">English</a>
+                            {{- else }}
+                            <a href="{{ "/zh/persona/" | absURL }}" title="中文" aria-label="中文">中文</a>
+                            {{- end }}
                         </li>
-                        {{- end -}}
-                        {{- end}}
                     </ul>
-                    {{- end }}
                 {{- end }}
             </div>
         </div>

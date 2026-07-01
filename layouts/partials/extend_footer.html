@@ -16,7 +16,7 @@
   });
 </script>
 
-{{- if eq .RelPermalink "/persona/" }}
+{{- if in (slice "/persona/" "/zh/persona/") .RelPermalink }}
 <script>
   (() => {
     const input = document.getElementById('persona-search-input');

@@ -2,7 +2,7 @@
 title: "Persona"
 description: "关于我如何思考、写作和工作的轻量反思空间。"
 hideMeta: true
-translationKey: "persona"
+url: "/zh/persona/"
 ---
 
 <div class="page-hero tone-persona">

@@ -1,7 +1,5 @@
 baseURL: "https://hwcmu.github.io/"  # [修改这里] 换成你的GitHub用户名，注意最后有个斜杠
 languageCode: "en-us"
-defaultContentLanguage: en
-defaultContentLanguageInSubdir: false
 title: "Hairong Wang"
 theme: "PaperMod"
 
@@ -22,7 +20,6 @@ params:
   author: Hairong Wang
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
-  displayFullLangName: true
 
   label:
     text: Home
@@ -64,19 +61,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-languages:
-  en:
-    languageName: English
-    languageCode: en-us
-    weight: 1
-    params:
-      languageAltTitle: English
-      displayFullLangName: true
-  zh:
-    languageName: 中文
-    languageCode: zh-cn
-    weight: 2
-    params:
-      languageAltTitle: 中文
-      displayFullLangName: true
