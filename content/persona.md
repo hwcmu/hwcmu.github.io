@@ -20,6 +20,7 @@ translationKey: "persona"
   <div class="chip-row persona-tags" aria-label="Filter persona entries by tag">
     <button class="chip persona-tag active" type="button" data-tag="all">All</button>
     <button class="chip persona-tag" type="button" data-tag="ai-education">AI Education</button>
+    <button class="chip persona-tag" type="button" data-tag="sel">SEL</button>
     <button class="chip persona-tag" type="button" data-tag="human-agency">Human Agency</button>
     <button class="chip persona-tag" type="button" data-tag="cognitive-offloading">Cognitive Offloading</button>
   </div>
@@ -34,6 +35,16 @@ translationKey: "persona"
       <span class="chip">AI Education</span>
       <span class="chip">Human Agency</span>
       <span class="chip">Cognitive Offloading</span>
+    </div>
+  </article>
+  <article class="persona-entry" data-tags="sel ai-education human-agency cognitive-offloading" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency cognitive offloading">
+    <span class="series-kicker">Podcast essay</span>
+    <h3><a href="/persona/the-class-i-never-took/">The Class I Never Took</a></h3>
+    <p>A bilingual reflection on SEL, AI, friction, and why the ability to bear necessary discomfort may become a core condition of freedom.</p>
+    <div class="chip-row">
+      <span class="chip">SEL</span>
+      <span class="chip">AI Education</span>
+      <span class="chip">Human Agency</span>
     </div>
   </article>
 </div>
