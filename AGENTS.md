@@ -67,6 +67,7 @@ For the Hugo website:
 - `About` is not used as a navigation page.
 - `Persona` is not a main navigation item. It is reached from the two-color mask button on the homepage, linking to `/persona/`.
 - The Persona page is a light reflective blog, tag, and search space. Do not add complex taxonomy or category machinery by default.
+- For Persona and blog article cards, use at most 3 reader-facing tags/keywords per article. Keep visible tag buttons, `data-tags`, and frontmatter `tags` aligned; do not add hidden extra filtering tags that are not shown on the card.
 - The public CV is a webpage at `/cv/`, not a PDF download. Do not add a CV download button unless the user explicitly asks.
 
 ## Research Collaboration Safety
