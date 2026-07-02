@@ -474,6 +474,10 @@
     var(--entry);
 }
 
+.post-content .persona-entry[hidden] {
+  display: none;
+}
+
 .post-content .persona-entry h3 {
   margin: 0 0 0.35rem;
   font-size: 1.05rem;
