@@ -16,11 +16,13 @@
   });
 </script>
 
-{{- if eq .RelPermalink "/persona/" }}
 <script>
   (() => {
+    const list = document.getElementById('persona-list');
+    if (!list) return;
+
     const input = document.getElementById('persona-search-input');
-    const entries = Array.from(document.querySelectorAll('.persona-entry'));
+    const entries = Array.from(list.querySelectorAll('.persona-entry'));
     const tags = Array.from(document.querySelectorAll('.persona-tag'));
     const empty = document.getElementById('persona-empty');
     let activeTag = 'all';
@@ -60,4 +62,3 @@
     input?.addEventListener('input', filterEntries);
   })();
 </script>
-{{- end }}
