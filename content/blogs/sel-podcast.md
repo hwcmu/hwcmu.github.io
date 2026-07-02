@@ -8,7 +8,7 @@ translationLabel: "中文"
 translationCta: "Read in Chinese"
 description: "A reflective podcast-style essay on SEL, AI, friction, discomfort, freedom, and why necessary difficulty may become one of the most important forms of education."
 series: ["Persona"]
-tags: ["SEL", "AI Education", "Social Emotional Learning", "Human Agency", "Cognitive Offloading"]
+tags: ["SEL", "AI Education", "Human Agency"]
 build:
   list: never
   render: always

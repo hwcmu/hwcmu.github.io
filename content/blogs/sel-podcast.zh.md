@@ -8,7 +8,7 @@ translationLabel: "English"
 translationCta: "Read in English"
 description: "从探月学院、SEL 和 AI 时代的低摩擦生活出发，思考为什么必要的困难可能是自由和幸福的底层训练。"
 series: ["Persona"]
-tags: ["SEL", "AI Education", "Social Emotional Learning", "Human Agency", "Cognitive Offloading"]
+tags: ["SEL", "AI Education", "Human Agency"]
 build:
   list: never
   render: always
