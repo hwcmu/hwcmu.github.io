@@ -17,12 +17,12 @@ translationKey: "persona"
 <div class="persona-search">
   <label for="persona-search-input">Search Persona</label>
   <input id="persona-search-input" type="search" placeholder="Search reflections, tags, or themes..." autocomplete="off">
-  <div class="chip-row persona-tags" aria-label="Filter persona entries by tag">
-    <button class="chip persona-tag active" type="button" data-tag="all">All</button>
-    <button class="chip persona-tag" type="button" data-tag="ai-education">AI Education</button>
-    <button class="chip persona-tag" type="button" data-tag="sel">SEL</button>
-    <button class="chip persona-tag" type="button" data-tag="human-agency">Human Agency</button>
-    <button class="chip persona-tag" type="button" data-tag="cognitive-offloading">Cognitive Offloading</button>
+  <div class="topic-tag-row persona-tags" aria-label="Filter persona entries by tag">
+    <button class="topic-tag persona-tag active" type="button" data-tag="all">All</button>
+    <button class="topic-tag persona-tag" type="button" data-tag="ai-education">AI Education</button>
+    <button class="topic-tag persona-tag" type="button" data-tag="sel">SEL</button>
+    <button class="topic-tag persona-tag" type="button" data-tag="human-agency">Human Agency</button>
+    <button class="topic-tag persona-tag" type="button" data-tag="cognitive-offloading">Cognitive Offloading</button>
   </div>
 </div>
 
@@ -31,20 +31,20 @@ translationKey: "persona"
     <span class="series-kicker">First blog article</span>
     <h3><a href="/persona/now-that-ai-can-answer/">Now That AI Can Answer, What Should We Still Train Ourselves To Do?</a></h3>
     <p>A sharper reflective essay on AI, judgment, cognitive offloading, and the unsettling question of what we still want to do ourselves.</p>
-    <div class="chip-row">
-      <span class="chip">AI Education</span>
-      <span class="chip">Human Agency</span>
-      <span class="chip">Cognitive Offloading</span>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag persona-tag" type="button" data-tag="ai-education">AI Education</button>
+      <button class="topic-tag persona-tag" type="button" data-tag="human-agency">Human Agency</button>
+      <button class="topic-tag persona-tag" type="button" data-tag="cognitive-offloading">Cognitive Offloading</button>
     </div>
   </article>
   <article class="persona-entry" data-tags="sel ai-education human-agency cognitive-offloading" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency cognitive offloading">
     <span class="series-kicker">Podcast essay</span>
     <h3><a href="/persona/the-class-i-never-took/">The Class I Never Took</a></h3>
     <p>A bilingual reflection on SEL, AI, friction, and why the ability to bear necessary discomfort may become a core condition of freedom.</p>
-    <div class="chip-row">
-      <span class="chip">SEL</span>
-      <span class="chip">AI Education</span>
-      <span class="chip">Human Agency</span>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag persona-tag" type="button" data-tag="sel">SEL</button>
+      <button class="topic-tag persona-tag" type="button" data-tag="ai-education">AI Education</button>
+      <button class="topic-tag persona-tag" type="button" data-tag="human-agency">Human Agency</button>
     </div>
   </article>
 </div>

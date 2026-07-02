@@ -255,6 +255,11 @@
   text-decoration: none;
 }
 
+.post-content button.topic-tag {
+  font: inherit;
+  cursor: pointer;
+}
+
 .post-content .topic-tag:hover {
   border-color: rgba(118, 91, 84, 0.44);
   color: var(--primary);
@@ -407,6 +412,10 @@
   font: inherit;
 }
 
+.post-content .persona-entry-tags {
+  margin: 0.85rem 0 0;
+}
+
 .post-content .persona-tag.active {
   border-color: rgba(99, 85, 124, 0.48);
   color: var(--primary);
@@ -441,6 +450,13 @@
 .post-content .persona-search input:focus {
   outline: 2px solid rgba(99, 85, 124, 0.28);
   border-color: rgba(99, 85, 124, 0.48);
+}
+
+.post-content .persona-tag:hover,
+.post-content .persona-tag.active {
+  border-color: rgba(99, 85, 124, 0.48);
+  background: rgba(99, 85, 124, 0.12);
+  color: var(--primary);
 }
 
 .post-content .persona-list {

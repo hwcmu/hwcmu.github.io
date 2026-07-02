@@ -25,6 +25,15 @@
     const empty = document.getElementById('persona-empty');
     let activeTag = 'all';
 
+    const setActiveTag = (tagName) => {
+      activeTag = tagName || 'all';
+      tags.forEach((item) => {
+        const isActive = item.dataset.tag === activeTag;
+        item.classList.toggle('active', isActive);
+        item.setAttribute('aria-pressed', String(isActive));
+      });
+    };
+
     const filterEntries = () => {
       const query = (input?.value || '').trim().toLowerCase();
       let visibleCount = 0;
@@ -41,9 +50,9 @@
     };
 
     tags.forEach((tag) => {
+      tag.setAttribute('aria-pressed', String(tag.classList.contains('active')));
       tag.addEventListener('click', () => {
-        activeTag = tag.dataset.tag;
-        tags.forEach((item) => item.classList.toggle('active', item === tag));
+        setActiveTag(tag.dataset.tag);
         filterEntries();
       });
     });
