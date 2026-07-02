@@ -37,7 +37,7 @@ translationKey: "persona"
       <button class="topic-tag persona-tag" type="button" data-tag="cognitive-offloading">Cognitive Offloading</button>
     </div>
   </article>
-  <article class="persona-entry" data-tags="sel ai-education human-agency cognitive-offloading" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency cognitive offloading">
+  <article class="persona-entry" data-tags="sel ai-education human-agency" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency">
     <span class="series-kicker">Podcast essay</span>
     <h3><a href="/persona/the-class-i-never-took/">The Class I Never Took</a></h3>
     <p>A bilingual reflection on SEL, AI, friction, and why the ability to bear necessary discomfort may become a core condition of freedom.</p>
