@@ -18,13 +18,30 @@
 
 <script>
   (() => {
-    const list = document.getElementById('persona-list');
-    if (!list) return;
+    document.querySelectorAll('.publication-topic-explorer').forEach(() => {
+      document.querySelectorAll('.post-content li').forEach((item) => {
+        const tagNode = Array.from(item.querySelectorAll('strong')).find((node) => node.textContent.trim().toLowerCase() === 'tags:');
+        if (!tagNode) return;
 
-    const input = document.getElementById('persona-search-input');
-    const entries = Array.from(list.querySelectorAll('.persona-entry'));
-    const tags = Array.from(document.querySelectorAll('.persona-tag'));
-    const empty = document.getElementById('persona-empty');
+        const tagText = (tagNode.parentElement?.textContent || '').replace(/^Tags:\s*/i, '');
+        const tagSlugs = tagText
+          .split('·')
+          .map((tag) => tag.trim().toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''))
+          .filter(Boolean);
+
+        if (tagSlugs.length) {
+          item.dataset.topicEntry = '';
+          item.dataset.tags = tagSlugs.join(' ');
+          item.classList.add('topic-entry', 'publication-entry');
+        }
+      });
+    });
+
+    const entries = Array.from(document.querySelectorAll('[data-topic-entry]'));
+    const tags = Array.from(document.querySelectorAll('.topic-filter'));
+    if (!entries.length || !tags.length) return;
+
+    const empty = document.querySelector('.topic-empty');
     let activeTag = 'all';
 
     const setActiveTag = (tagName) => {
@@ -37,13 +54,11 @@
     };
 
     const filterEntries = () => {
-      const query = (input?.value || '').trim().toLowerCase();
       let visibleCount = 0;
 
       entries.forEach((entry) => {
-        const tagMatch = activeTag === 'all' || entry.dataset.tags.split(' ').includes(activeTag);
-        const textMatch = !query || entry.textContent.toLowerCase().includes(query) || entry.dataset.text.includes(query);
-        const isVisible = tagMatch && textMatch;
+        const entryTags = (entry.dataset.tags || '').split(/\s+/);
+        const isVisible = activeTag === 'all' || entryTags.includes(activeTag);
         entry.hidden = !isVisible;
         if (isVisible) visibleCount += 1;
       });
@@ -58,7 +73,5 @@
         filterEntries();
       });
     });
-
-    input?.addEventListener('input', filterEntries);
   })();
 </script>

@@ -4,15 +4,15 @@ description: "Selected data science, clinical analytics, and applied AI projects
 hideMeta: true
 ---
 
-<div class="page-hero tone-projects">
-  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5h16"/><path d="M7 7.5V5.8A1.8 1.8 0 0 1 8.8 4h6.4A1.8 1.8 0 0 1 17 5.8v1.7"/><rect x="4" y="7.5" width="16" height="12" rx="2"/><path d="M9 13h6"/></svg></div>
-  <div>
-    <p class="eyebrow">Applied work</p>
-    <p class="lead">Selected projects where analytics, clinical context, product thinking, and reproducible workflows turn messy problems into usable systems.</p>
-    <div class="chip-row">
-      <span class="chip">Clinical analytics</span>
-      <span class="chip">Product systems</span>
-      <span class="chip">Real-time ML</span>
-    </div>
+<div class="topic-explorer" data-topic-scope="list">
+  <h3>Explore by Topics</h3>
+  <div class="topic-tag-row" aria-label="Filter projects by topic">
+    <button class="topic-tag topic-filter active" type="button" data-tag="all">All</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="healthcare">Healthcare</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="machine-learning">Machine Learning</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="nlp">NLP</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="product-analytics">Product Analytics</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="tableau">Tableau</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="python">Python</button>
   </div>
 </div>

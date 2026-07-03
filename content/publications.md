@@ -5,18 +5,20 @@ date: 2025-12-03
 weight: 6
 hideMeta: true
 ---
-<div class="page-hero tone-papers">
-  <div class="page-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v14H6z"/><path d="M15 3v4h4"/><path d="M9 9h5"/><path d="M9 12h4"/><circle cx="15.5" cy="16.5" r="2.2"/><path d="m14.2 18.2-.7 2.3 2-1 2 1-.7-2.3"/></svg></div>
-  <div>
-    <p class="eyebrow">Publication record</p>
-    <p class="lead">A compact publication list with DOI links and code repositories where they are available.</p>
-    <div class="chip-row">
-      <span class="chip">Clinical AI</span>
-      <span class="chip">Sustainability analytics</span>
-      <span class="chip">Environmental sensing</span>
-    </div>
+<div class="topic-explorer publication-topic-explorer">
+  <h3>Explore by Topics</h3>
+  <div class="topic-tag-row" aria-label="Filter papers by topic">
+    <button class="topic-tag topic-filter active" type="button" data-tag="all">All</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="clinical-ai">Clinical AI</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="emergency-care">Emergency Care</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="clinical-nlp">Clinical NLP</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="sustainability-analytics">Sustainability Analytics</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="energy-transition">Energy Transition</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="environmental-monitoring">Environmental Monitoring</button>
   </div>
 </div>
+
+<p class="topic-empty" hidden>No matching papers yet.</p>
 
 ## Selected Publications
 
@@ -26,7 +28,7 @@ These selected papers represent the main arc of my work: clinical AI and healthc
 
 1. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
    **Citation:** Zhang, X., Wang, H., Yu, G., & Zhang, W. (2025). *DIGITAL HEALTH*, 11.  
-   **Tags:** Clinical AI · Emergency Care · NLP · Predictive Modeling  
+   **Tags:** Clinical AI · Emergency Care · NLP  
    **Links:** [DOI](https://doi.org/10.1177/20552076251331319)
 
 2. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization: a comparative analysis of natural language processing techniques**  
@@ -69,7 +71,7 @@ These selected papers represent the main arc of my work: clinical AI and healthc
 
 1. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
    **Citation:** Zhang, X., Wang, H., Yu, G., & Zhang, W. (2025). *DIGITAL HEALTH*, 11.  
-   **Tags:** Clinical AI · Emergency Care · NLP · Predictive Modeling  
+   **Tags:** Clinical AI · Emergency Care · NLP  
    **Links:** [DOI](https://doi.org/10.1177/20552076251331319)
 
 2. **Integrating machine learning into life cycle assessment: Review and future outlook**  
@@ -84,7 +86,7 @@ These selected papers represent the main arc of my work: clinical AI and healthc
 
 4. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization: a comparative analysis of natural language processing techniques**  
    **Citation:** Wang, H., Ling, H., & Zhang, X. (2025). *PeerJ Computer Science*, 11, e3441.  
-   **Tags:** Clinical AI · Multimodal EHR · Clinical NLP · Utilization Prediction  
+   **Tags:** Clinical AI · Multimodal EHR · Clinical NLP  
    **Links:** [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction)
 
 5. **High Aspect Ratio Polymer Nanocarriers for Gene Delivery and Expression in Plants**  

@@ -241,6 +241,22 @@
   margin: 0.75rem 0 1.45rem;
 }
 
+.post-content .topic-explorer {
+  margin: 0.35rem 0 1.4rem;
+}
+
+.post-content .topic-explorer h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.post-content .topic-explorer p {
+  margin: 0 0 0.3rem;
+  color: var(--secondary);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .post-content .topic-tag {
   display: inline-flex;
   align-items: center;
@@ -263,6 +279,28 @@
 .post-content .topic-tag:hover {
   border-color: rgba(118, 91, 84, 0.44);
   color: var(--primary);
+}
+
+.post-content .topic-tag.active {
+  border-color: rgba(118, 91, 84, 0.48);
+  color: var(--primary);
+  background: rgba(118, 91, 84, 0.12);
+}
+
+.topic-entry[hidden],
+.publication-entry[hidden] {
+  display: none;
+}
+
+.entry-topic-tags {
+  position: relative;
+  z-index: 2;
+  margin: 0.65rem 0 0.25rem;
+}
+
+.topic-empty {
+  color: var(--secondary);
+  font-style: italic;
 }
 
 .post-content .collab-panel {
