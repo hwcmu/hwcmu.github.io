@@ -64,13 +64,6 @@
   margin-top: 0;
 }
 
-.social-icons .social-icon-cv svg,
-.social-icons .social-icon-orcid svg,
-.social-icons .social-icon-persona svg {
-  width: 28px;
-  height: 28px;
-}
-
 .post-content .tone-persona {
   --ink-rgb: 99, 85, 124;
   --ink-strong: rgb(88, 72, 116);
