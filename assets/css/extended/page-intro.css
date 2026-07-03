@@ -71,11 +71,6 @@
   height: 28px;
 }
 
-.social-icons .social-icon-cv svg {
-  transform: scale(1.08);
-  transform-origin: center;
-}
-
 .post-content .tone-persona {
   --ink-rgb: 99, 85, 124;
   --ink-strong: rgb(88, 72, 116);
