@@ -518,7 +518,7 @@
 }
 
 .main:has(.sticky-glossary) {
-  max-width: min(1200px, calc(100vw - var(--gap) * 2));
+  max-width: min(1360px, calc(100vw - var(--gap) * 2));
 }
 
 .post-single:has(.sticky-glossary) .post-header,
@@ -530,7 +530,7 @@
 
 .post-content:has(.sticky-glossary) {
   display: grid;
-  grid-template-columns: minmax(0, var(--main-width)) minmax(22rem, 24rem);
+  grid-template-columns: minmax(0, var(--main-width)) minmax(28rem, 30rem);
   column-gap: 2rem;
   align-items: start;
 }
@@ -566,7 +566,7 @@
 
 .post-content .sticky-glossary dl {
   display: grid;
-  grid-template-columns: minmax(9.5rem, 42%) minmax(0, 1fr);
+  grid-template-columns: minmax(14rem, 15rem) minmax(0, 1fr);
   column-gap: 0.85rem;
   row-gap: 0.65rem;
   margin: 0.65rem 0 0;
@@ -577,6 +577,7 @@
   color: var(--primary);
   font-weight: 700;
   overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 .post-content .sticky-glossary dd {
@@ -584,7 +585,7 @@
   color: var(--secondary);
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1320px) {
   .main:has(.sticky-glossary) {
     max-width: calc(var(--main-width) + var(--gap) * 2);
   }
@@ -608,6 +609,10 @@
     max-height: none;
     margin: 1rem 0 1.25rem;
     box-shadow: none;
+  }
+
+  .post-content .sticky-glossary dt {
+    white-space: normal;
   }
 }
 
