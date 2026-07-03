@@ -23,11 +23,15 @@
                     {{- $img = $img.Resize "150x150" }}
                 {{- end }}
             {{- end }}
+            <a class="profile-avatar-link" href="/persona/" aria-label="Open Persona">
             <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
                 height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+            </a>
         {{- else }}
+        <a class="profile-avatar-link" href="/persona/" aria-label="Open Persona">
         <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        </a>
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>

@@ -5,55 +5,8 @@ date: 2025-12-03
 weight: 6
 hideMeta: true
 ---
-<div class="topic-explorer publication-topic-explorer">
-  <h3>Explore by Topics</h3>
-  <div class="topic-tag-row" aria-label="Filter papers by topic">
-    <button class="topic-tag topic-filter active" type="button" data-tag="all">All</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="clinical-ai">Clinical AI</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="emergency-care">Emergency Care</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="clinical-nlp">Clinical NLP</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="sustainability-analytics">Sustainability Analytics</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="energy-transition">Energy Transition</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="environmental-monitoring">Environmental Monitoring</button>
-  </div>
-</div>
 
-<p class="topic-empty" hidden>No matching papers yet.</p>
-
-## Selected Publications
-
-These selected papers represent the main arc of my work: clinical AI and healthcare analytics as the current focus, supported by prior research in sustainability systems, autonomous sensing, and applied environmental technologies.
-
-### Clinical AI & Healthcare Analytics
-
-1. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
-   **Citation:** Zhang, X., Wang, H., Yu, G., & Zhang, W. (2025). *DIGITAL HEALTH*, 11.  
-   **Tags:** Clinical AI · Emergency Care · NLP  
-   **Links:** [DOI](https://doi.org/10.1177/20552076251331319)
-
-2. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization: a comparative analysis of natural language processing techniques**  
-   **Citation:** Wang, H., Ling, H., & Zhang, X. (2025). *PeerJ Computer Science*, 11, e3441.  
-   **Tags:** Multimodal EHR · Clinical NLP · Utilization Prediction  
-   **Links:** [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction)
-
-3. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
-   **Citation:** Wang, H., & Zhang, X. (2025). *Journal of Personalized Medicine*, 15(8), 358.  
-   **Tags:** Personalized Medicine · Emergency Care · Clinical Prediction  
-   **Links:** [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction)
-
-### Sustainability & System-Level Analytics
-
-4. **Integrating machine learning into life cycle assessment: Review and future outlook**  
-   **Citation:** Wang, H. (2025). *PLOS Climate*.  
-   **Tags:** Machine Learning · Life Cycle Assessment · Sustainability Analytics  
-   **Links:** [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review)
-
-5. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
-   **Citation:** Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*.  
-   **Tags:** Energy Transition · Stock-Based Metrics · Global Systems Analytics  
-   **Links:** [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring)
-
-## Full Publication List
+## Publication List
 
 ### 2026
 

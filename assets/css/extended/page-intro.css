@@ -64,6 +64,21 @@
   margin-top: 0;
 }
 
+.profile-avatar-link {
+  display: inline-flex;
+  border-radius: 999px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.profile-avatar-link:hover {
+  transform: translateY(-1px);
+}
+
+.profile-avatar-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 5px;
+}
+
 .post-content .tone-persona {
   --ink-rgb: 99, 85, 124;
   --ink-strong: rgb(88, 72, 116);
