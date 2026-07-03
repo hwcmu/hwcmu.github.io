@@ -104,33 +104,4 @@ So keep this distinction in mind:
 
 ---
 
-## 5. The One-Page Checklist
-
-**When splitting the data**
-
-- [ ] Does the data have timestamps? If so, turn off shuffling by default and split by time.
-- [ ] Are all training samples chronologically earlier than the validation samples?
-- [ ] Is "the samples are independent" being misused as an excuse to scramble time? Think about the macro-environment.
-
-**Features and preprocessing**
-
-- [ ] Does each feature use only information available up to the prediction time point?
-- [ ] Are scaling, imputation, and encoding all learned on the training set only?
-- [ ] Are you using any future field that would not actually be available at prediction time?
-
-**Evaluation**
-
-- [ ] Are you looking at both discrimination, such as AUC, and calibration?
-- [ ] Have you done temporal external validation, or even geographic validation?
-- [ ] Are you using walk-forward evaluation rather than a single cutoff?
-
-**Facing a disruptive period, such as a pandemic, policy shock, or mega-sale**
-
-- [ ] Is the training set anchored on stable-period data?
-- [ ] Is the disruptive period used for testing, not mixed into training?
-- [ ] When drift is detected, is recalibration preferred over a full retrain?
-- [ ] Is there a drift-monitoring and recalibration-trigger mechanism after launch?
-
----
-
 *The takeaway: **a random split tests recitation, a temporal split tests real understanding; disruptive data is a touchstone when you test on it and a poison when you train on it; samples can be independent, but eras are not.***
