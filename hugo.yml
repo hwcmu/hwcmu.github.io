@@ -36,11 +36,18 @@ params:
       url: "https://www.linkedin.com/in/hairong-wang/"
     - name: github
       url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
-    - name: email
-      url: "mailto:hairongcmu@gmail.com"
+    - name: googlescholar
+      title: Google Scholar
+      url: "https://scholar.google.com/citations?user=omqwO78AAAAJ&hl=en"
+    - name: orcid
+      title: ORCID
+      url: "https://orcid.org/my-orcid?orcid=0000-0001-6523-1676"
     - name: cv
       title: CV
       url: "/cv/"
+    - name: persona
+      title: Persona
+      url: "/persona/"
 
 menu:
   main:

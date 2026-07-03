@@ -4,7 +4,17 @@
     {{- $is_external := findRE "://" $url }}
     <a href="{{ $url | safeURL }}" {{ if $is_external }}target="_blank" {{ end }}rel="noopener noreferrer me"
         title="{{ (.title | default .name) | title }}">
+        {{- if eq .name "persona" -}}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 7.5c2.4-1.2 5.1-1.5 8-.6 2.9-.9 5.6-.6 8 .6v4.1c0 4.4-3.1 7.8-8 8.9-4.9-1.1-8-4.5-8-8.9z" stroke-width="2" />
+            <path d="M12 6.9v13.4" stroke-width="1.5" />
+            <path d="M7.5 12.1c1.2-.7 2.3-.7 3.4 0M13.1 12.1c1.2-.7 2.3-.7 3.4 0" stroke-width="1.7" />
+            <path d="M8.3 15.8c1.1.7 2.3.7 3.7.1 1.4.6 2.6.6 3.7-.1" stroke-width="1.5" />
+        </svg>
+        {{- else -}}
         {{ partial "svg.html" . }}
+        {{- end -}}
     </a>
     {{- end }}
 </div>
