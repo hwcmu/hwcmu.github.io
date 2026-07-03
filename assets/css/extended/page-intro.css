@@ -64,13 +64,16 @@
   margin-top: 0;
 }
 
-.social-icons a .persona-mask-icon {
-  display: block;
-  width: 26px;
-  height: 26px;
-  background: currentColor;
-  -webkit-mask: url("/images/persona-mask.png") center / contain no-repeat;
-  mask: url("/images/persona-mask.png") center / contain no-repeat;
+.social-icons .social-icon-cv svg,
+.social-icons .social-icon-orcid svg,
+.social-icons .social-icon-persona svg {
+  width: 28px;
+  height: 28px;
+}
+
+.social-icons .social-icon-cv svg {
+  transform: scale(1.08);
+  transform-origin: center;
 }
 
 .post-content .tone-persona {
