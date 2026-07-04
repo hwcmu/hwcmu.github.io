@@ -32,22 +32,22 @@ params:
     imageUrl: "/images/avatar.png"
   # 社交链接 (显示在首页底部)
   socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/hairong-wang/"
-    - name: github
-      url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
-    - name: googlescholar
-      title: Google Scholar
-      url: "https://scholar.google.com/citations?user=omqwO78AAAAJ&hl=en"
-    - name: orcid
-      title: ORCID
-      url: "https://orcid.org/my-orcid?orcid=0000-0001-6523-1676"
-    - name: cv
-      title: CV
-      url: "/cv/"
     - name: persona
       title: Persona
       url: "/persona/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/hairong-wang/"
+    - name: cv
+      title: CV
+      url: "/cv/"
+    - name: github
+      url: "https://github.com/hwcmu" # [修改这里] 换成你的GitHub用户名
+    - name: orcid
+      title: ORCID
+      url: "https://orcid.org/my-orcid?orcid=0000-0001-6523-1676"
+    - name: googlescholar
+      title: Google Scholar
+      url: "https://scholar.google.com/citations?user=omqwO78AAAAJ&hl=en"
 
 menu:
   main:
