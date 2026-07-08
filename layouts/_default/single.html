@@ -22,8 +22,8 @@
     {{- $isPersonaArticle := in (.Params.series | default slice) "Persona" -}}
     {{- if or .Params.translationUrl $isPersonaArticle }}
       <div class="article-action-links">
-        {{- partial "article_language_link.html" . -}}
         {{- partial "article_persona_link.html" . -}}
+        {{- partial "article_language_link.html" . -}}
       </div>
     {{- end }}
     {{- if not (.Param "hideMeta") }}
