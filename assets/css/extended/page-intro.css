@@ -533,11 +533,15 @@
   font-style: italic;
 }
 
-.article-language-link {
+.article-action-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
   margin-top: 0.85rem;
 }
 
-.article-language-link a {
+.article-language-link a,
+.article-persona-link a {
   display: inline-flex;
   align-items: center;
   min-height: 34px;
@@ -550,7 +554,8 @@
   text-decoration: none;
 }
 
-.article-language-link a:hover {
+.article-language-link a:hover,
+.article-persona-link a:hover {
   border-color: var(--secondary);
   color: var(--content);
 }

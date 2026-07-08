@@ -1,0 +1,6 @@
+{{- if in (.Params.series | default slice) "Persona" }}
+{{- $label := cond (hasPrefix .RelPermalink "/zh/") "返回 Persona" "Back to Persona" }}
+<div class="article-persona-link">
+  <a href="{{ "/persona/" | absURL }}">{{ $label }}</a>
+</div>
+{{- end }}

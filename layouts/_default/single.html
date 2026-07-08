@@ -19,7 +19,13 @@
       {{ .Description }}
     </div>
     {{- end }}
-    {{- partial "article_language_link.html" . -}}
+    {{- $isPersonaArticle := in (.Params.series | default slice) "Persona" -}}
+    {{- if or .Params.translationUrl $isPersonaArticle }}
+      <div class="article-action-links">
+        {{- partial "article_language_link.html" . -}}
+        {{- partial "article_persona_link.html" . -}}
+      </div>
+    {{- end }}
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
