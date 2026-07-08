@@ -19,18 +19,17 @@ translationKey: "persona"
     <button class="topic-tag topic-filter" type="button" data-tag="data-integration">Data Integration</button>
     <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
     <button class="topic-tag topic-filter" type="button" data-tag="data-boundaries">Data Boundaries</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="surveillance">Surveillance</button>
   </div>
 </div>
 
 <div class="persona-list" id="persona-list">
-  <article class="persona-entry topic-entry" data-topic-entry data-tags="governance data-boundaries surveillance" data-text="governance data boundaries surveillance mission creep service monitoring classification intervention ontology palantir public systems">
-    <h3><a href="/persona/service-or-surveillance/">The Same Machine: Service or Surveillance?</a></h3>
-    <p>A bilingual reflection on how the same operational data layer can make public service work better or make classification and intervention easier.</p>
+  <article class="persona-entry topic-entry" data-topic-entry data-tags="governance data-boundaries ai-systems" data-text="governance data boundaries ai systems mission creep service classification intervention ontology palantir public systems">
+    <h3><a href="/persona/service-or-governance/">The Same Machine: Service or Governance?</a></h3>
+    <p>A bilingual reflection on how the same operational data layer can make public service work better while raising governance and data-use boundary questions.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
       <button class="topic-tag topic-filter" type="button" data-tag="data-boundaries">Data Boundaries</button>
-      <button class="topic-tag topic-filter" type="button" data-tag="surveillance">Surveillance</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="ai-systems">AI Systems</button>
     </div>
   </article>
   <article class="persona-entry topic-entry" data-topic-entry data-tags="ontology ai-systems data-integration" data-text="ontology ai systems data integration activated map palantir operational layer records reality actions">
