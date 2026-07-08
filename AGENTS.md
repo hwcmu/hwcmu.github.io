@@ -70,6 +70,20 @@ For the Hugo website:
 - For Persona and blog article cards, use at most 3 reader-facing tags/keywords per article. Keep visible tag buttons, `data-tags`, and frontmatter `tags` aligned; do not add hidden extra filtering tags that are not shown on the card.
 - The public CV is a webpage at `/cv/`, not a PDF download. Do not add a CV download button unless the user explicitly asks.
 
+## Public Article Sensitivity Gate
+
+Before publishing or pushing any new public article, Persona entry, Note, Project description, homepage copy, or profile/publication-facing text, run a targeted sensitivity check for public-facing risk.
+
+Treat this as a required pre-publish gate, separate from ordinary secret/cache checks:
+
+- Check for wording that could be read as negative, accusatory, or politically sensitive toward U.S. government agencies, immigration authorities, law enforcement, courts, border/customs systems, visa systems, or public-benefit programs.
+- Check for direct or easily identifiable examples involving immigration, deportation, enforcement, Medicaid/Medicare, health-data sharing, government surveillance, targeting, scoring, dossiers, confidence scores, or similar public-sector uses.
+- Check both English and Chinese text, including titles, slugs, descriptions, tags, visible card text, alt text, OpenGraph/frontmatter fields, and old URLs introduced by the change.
+- If the article does not require a concrete institution or country to make the point, abstract the example to neutral language such as `large organization`, `service workflow`, `high-trust service setting`, `data-use boundary`, or `governance risk`.
+- Prefer structural, methodology, or governance framing over naming specific agencies, political actors, or enforcement use cases.
+- If a concrete public-sector example is necessary, flag the risk to the user before publishing and ask whether to keep, soften, anonymize, or remove it.
+- Before commit, run a focused keyword scan over touched public content for terms such as `immigration`, `deportation`, `enforcement`, `ICE`, `CBP`, `USCIS`, `Medicaid`, `Medicare`, `surveillance`, `targeting`, `dossier`, `confidence score`, `移民`, `驱逐`, `执法`, `医保`, `监控`, `定位`, `置信分数`, and old sensitive slugs.
+
 ## Research Collaboration Safety
 
 When helping with academic or research work, act as a research assistant, coding assistant, structure advisor, and formatting checker. Do not treat the AI as the author, theory originator, evidence interpreter, or final decision-maker.
