@@ -40,6 +40,8 @@ So the crucial question was never "is the system looking at my data?" It's: **ho
 
 There is an even quieter mechanism at work, often called *mission creep*: data collected for one purpose later gets reused for a purpose the original subjects did not expect. In high-trust service settings, this can become especially delicate because the data is intimate, the people affected may be vulnerable, and the consequences of a wrong label can be hard to unwind.
 
+The U.K. National Health Service's Federated Data Platform is a useful public example here. Its stated goal is to connect patient and operational data across NHS organizations so planning, coordination, and care delivery can work better. NHS England has described the data as remaining under NHS control, with vendors acting as processors and access governed by controls. At the same time, public debate around the platform has focused on consent, transparency, access to identifiable patient data, and how much the public understands about the system's boundaries. That is exactly the kind of case where the technical question and the trust question cannot be separated.
+
 That is why I find the governance question more important than the vendor question. If a platform connects records across institutions, the public-facing issue is not only whether the system is efficient. It is whether the purpose boundary is explicit, whether access is narrow, whether identifiable data is protected, and whether affected people have a realistic path to understand and correct decisions that touch them.
 
 ## So what's the deciding variable?

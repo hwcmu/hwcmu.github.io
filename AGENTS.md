@@ -81,6 +81,7 @@ Treat this as a required pre-publish gate, separate from ordinary secret/cache c
 - Check both English and Chinese text, including titles, slugs, descriptions, tags, visible card text, alt text, OpenGraph/frontmatter fields, and old URLs introduced by the change.
 - If the article does not require a concrete institution or country to make the point, abstract the example to neutral language such as `large organization`, `service workflow`, `high-trust service setting`, `data-use boundary`, or `governance risk`.
 - Prefer structural, methodology, or governance framing over naming specific agencies, political actors, or enforcement use cases.
+- Public, non-U.S., non-immigration/non-law-enforcement examples may be retained when they are useful to the argument, especially healthcare or data-governance examples, but frame them neutrally around transparency, consent, access control, and data-use boundaries.
 - If a concrete public-sector example is necessary, flag the risk to the user before publishing and ask whether to keep, soften, anonymize, or remove it.
 - Before commit, run a focused keyword scan over touched public content for terms such as `immigration`, `deportation`, `enforcement`, `ICE`, `CBP`, `USCIS`, `Medicaid`, `Medicare`, `surveillance`, `targeting`, `dossier`, `confidence score`, `移民`, `驱逐`, `执法`, `医保`, `监控`, `定位`, `置信分数`, and old sensitive slugs.
 
