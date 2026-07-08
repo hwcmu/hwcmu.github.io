@@ -17,10 +17,22 @@ translationKey: "persona"
     <button class="topic-tag topic-filter" type="button" data-tag="ontology">Ontology</button>
     <button class="topic-tag topic-filter" type="button" data-tag="ai-systems">AI Systems</button>
     <button class="topic-tag topic-filter" type="button" data-tag="data-integration">Data Integration</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="data-boundaries">Data Boundaries</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="surveillance">Surveillance</button>
   </div>
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-tags="governance data-boundaries surveillance" data-text="governance data boundaries surveillance mission creep service monitoring classification intervention ontology palantir public systems">
+    <h3><a href="/persona/service-or-surveillance/">The Same Machine: Service or Surveillance?</a></h3>
+    <p>A bilingual reflection on how the same operational data layer can make public service work better or make classification and intervention easier.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="data-boundaries">Data Boundaries</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="surveillance">Surveillance</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-tags="ontology ai-systems data-integration" data-text="ontology ai systems data integration activated map palantir operational layer records reality actions">
     <h3><a href="/persona/activated-map/">An Activated Map: The Layer Where AI Finally Touches Reality</a></h3>
     <p>A bilingual reflection on ontology as the layer that turns scattered records into operational objects, relationships, and actions.</p>
