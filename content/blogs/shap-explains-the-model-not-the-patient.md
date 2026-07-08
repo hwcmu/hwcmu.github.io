@@ -7,8 +7,6 @@ series: ["Boundary Notes"]
 tags: ["Clinical AI", "Model Interpretation", "SHAP"]
 ---
 
-# SHAP Explains the Model, Not the Patient
-
 In clinical AI papers, I often see SHAP plots used as if they explain the disease process itself. The figure may look technical and persuasive, but the interpretation often goes too far:
 
 > "This variable has a high SHAP value, so it is an important clinical cause."

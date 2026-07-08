@@ -14,8 +14,6 @@ build:
   render: always
 ---
 
-# The Same Machine: Service or Governance?
-
 The previous piece told a rather optimistic story: a fragmented service workflow became dramatically faster once the underlying objects and actions were modeled clearly.
 
 This piece is about the flip side of that same story.

@@ -14,8 +14,6 @@ build:
   render: always
 ---
 
-# The Class I Never Took
-
 > AI can generate your answers.  
 > It cannot bear your discomfort for you.
 

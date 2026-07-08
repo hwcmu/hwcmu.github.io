@@ -15,8 +15,6 @@ build:
   render: always
 ---
 
-# Now That AI Can Answer, What Should We Still Train Ourselves To Do?
-
 I started thinking about how a person grows up in the age of AI not from some new tool, but from a line on Moonshot Academy's site: *raise inwardly rich individuals, and actively engaged citizens*. It sounds like it's about children. But the more I sat with it, the more it felt like a question turned back on those of us who already left school: if AI gets better and better at answering, summarizing, writing, and generating plans, what is left for us to train?
 
 Start by taking apart a word. "AI can answer" — but *answering* means completely different things in different places. In an exam it's matching the official key. At work it's delivering a workable plan. In life, answering is bearing a choice. AI is superb at the first few. But in the sense of *living in the world that comes after the choice*, it isn't answering at all — it produces the answer without having to live inside it.

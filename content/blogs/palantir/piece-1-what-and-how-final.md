@@ -14,8 +14,6 @@ build:
   render: always
 ---
 
-# An "Activated Map": The Layer Where AI Finally Touches Reality
-
 A few days ago I came across a technology talk about a large organization trying to modernize a fragmented service workflow. It was not really in my usual lane, but I watched the whole thing, and then kept thinking about it long after.
 
 Here is the basic shape of the story. The organization had spent years trying to modernize records across hundreds of systems, but the pieces still did not line up. Then it tried a different approach: a service workflow opened for use, and the workflow moved dramatically faster because the underlying objects, relationships, and actions had finally been connected.
