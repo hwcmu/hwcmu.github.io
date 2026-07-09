@@ -1,5 +1,5 @@
 ---
-title: "The Class I Never Took"
+title: "The Class I Never Took (2/2)"
 date: 2026-07-02
 draft: false
 url: "/persona/the-class-i-never-took/"

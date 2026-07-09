@@ -23,8 +23,8 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
-  <article class="persona-entry topic-entry" data-topic-entry data-tags="governance data-boundaries ai-systems" data-text="governance data boundaries ai systems mission creep service classification intervention ontology palantir public systems">
-    <h3><a href="/persona/service-or-governance/">The Same Machine: Service or Governance?</a></h3>
+  <article class="persona-entry topic-entry" data-topic-entry data-skin="systems-grid" data-tags="governance data-boundaries ai-systems" data-text="governance data boundaries ai systems mission creep service classification intervention ontology palantir public systems">
+    <h3><a href="/persona/service-or-governance/">The Same Machine: Service or Governance? (2/3)</a></h3>
     <p>A bilingual reflection on how the same operational data layer can make public service work better while raising governance and data-use boundary questions.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
@@ -32,8 +32,8 @@ translationKey: "persona"
       <button class="topic-tag topic-filter" type="button" data-tag="ai-systems">AI Systems</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-tags="ontology ai-systems data-integration" data-text="ontology ai systems data integration activated map palantir operational layer records reality actions">
-    <h3><a href="/persona/activated-map/">An Activated Map: The Layer Where AI Finally Touches Reality</a></h3>
+  <article class="persona-entry topic-entry" data-topic-entry data-skin="systems-grid" data-tags="ontology ai-systems data-integration" data-text="ontology ai systems data integration activated map palantir operational layer records reality actions">
+    <h3><a href="/persona/activated-map/">An Activated Map: The Layer Where AI Finally Touches Reality (1/3)</a></h3>
     <p>A bilingual reflection on ontology as the layer that turns scattered records into operational objects, relationships, and actions.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="ontology">Ontology</button>
@@ -41,8 +41,8 @@ translationKey: "persona"
       <button class="topic-tag topic-filter" type="button" data-tag="data-integration">Data Integration</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-tags="ai-education human-agency cognitive-offloading" data-text="ai answer cognitive offloading judgment desire wanting moonshot academy self education human agency">
-    <h3><a href="/persona/now-that-ai-can-answer/">Now That AI Can Answer, What Should We Still Train Ourselves To Do?</a></h3>
+  <article class="persona-entry topic-entry" data-topic-entry data-skin="learning-lines" data-tags="ai-education human-agency cognitive-offloading" data-text="ai answer cognitive offloading judgment desire wanting moonshot academy self education human agency">
+    <h3><a href="/persona/now-that-ai-can-answer/">Now That AI Can Answer, What Should We Still Train Ourselves To Do? (1/2)</a></h3>
     <p>A sharper reflective essay on AI, judgment, cognitive offloading, and the unsettling question of what we still want to do ourselves.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="ai-education">AI Education</button>
@@ -50,8 +50,8 @@ translationKey: "persona"
       <button class="topic-tag topic-filter" type="button" data-tag="cognitive-offloading">Cognitive Offloading</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-tags="sel ai-education human-agency" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency">
-    <h3><a href="/persona/the-class-i-never-took/">The Class I Never Took</a></h3>
+  <article class="persona-entry topic-entry" data-topic-entry data-skin="learning-lines" data-tags="sel ai-education human-agency" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency">
+    <h3><a href="/persona/the-class-i-never-took/">The Class I Never Took (2/2)</a></h3>
     <p>A bilingual reflection on SEL, AI, friction, and why the ability to bear necessary discomfort may become a core condition of freedom.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="sel">SEL</button>

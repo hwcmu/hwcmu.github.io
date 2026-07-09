@@ -1,5 +1,5 @@
 ---
-title: "我从没上过的那门课"
+title: "我从没上过的那门课（2/2）"
 date: 2026-07-02
 draft: false
 url: "/zh/persona/the-class-i-never-took/"

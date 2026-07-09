@@ -512,6 +512,60 @@
     var(--entry);
 }
 
+.post-content .persona-entry[data-skin] {
+  --skin-accent: rgba(99, 85, 124, 0.42);
+  --skin-soft: rgba(99, 85, 124, 0.08);
+  --skin-line: rgba(99, 85, 124, 0.14);
+  position: relative;
+  overflow: hidden;
+  border-left: 4px solid var(--skin-accent);
+  background:
+    linear-gradient(135deg, var(--skin-soft), transparent 62%),
+    var(--entry);
+}
+
+.post-content .persona-entry[data-skin] > * {
+  position: relative;
+  z-index: 1;
+}
+
+.post-content .persona-entry[data-skin]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.72;
+}
+
+.post-content .persona-entry[data-skin="systems-grid"] {
+  --skin-accent: rgba(24, 123, 118, 0.62);
+  --skin-soft: rgba(24, 123, 118, 0.09);
+  --skin-line: rgba(24, 123, 118, 0.14);
+}
+
+.post-content .persona-entry[data-skin="systems-grid"]::before {
+  background:
+    linear-gradient(90deg, var(--skin-line) 1px, transparent 1px),
+    linear-gradient(0deg, var(--skin-line) 1px, transparent 1px);
+  background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(115deg, transparent 0%, #000 12%, #000 52%, transparent 82%);
+  mask-image: linear-gradient(115deg, transparent 0%, #000 12%, #000 52%, transparent 82%);
+}
+
+.post-content .persona-entry[data-skin="learning-lines"] {
+  --skin-accent: rgba(184, 113, 38, 0.62);
+  --skin-soft: rgba(184, 113, 38, 0.09);
+  --skin-line: rgba(184, 113, 38, 0.16);
+}
+
+.post-content .persona-entry[data-skin="learning-lines"]::before {
+  background:
+    repeating-linear-gradient(-8deg, transparent 0 12px, var(--skin-line) 13px 14px),
+    linear-gradient(90deg, transparent 0 72%, var(--skin-soft) 72% 100%);
+  -webkit-mask-image: linear-gradient(110deg, transparent 0%, #000 16%, #000 56%, transparent 86%);
+  mask-image: linear-gradient(110deg, transparent 0%, #000 16%, #000 56%, transparent 86%);
+}
+
 .post-content .persona-entry[hidden] {
   display: none;
 }
