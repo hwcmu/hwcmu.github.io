@@ -3,6 +3,7 @@ title: "一张活地图：AI 真正落地的那一层（1/3）"
 description: "一篇关于本体、组织现实与 AI 落地边界的反思短文。"
 date: 2026-07-05
 draft: false
+personaKicker: "杂谈 · Palantir 笔记"
 url: "/zh/persona/activated-map/"
 translationUrl: "/persona/activated-map/"
 translationLabel: "English"

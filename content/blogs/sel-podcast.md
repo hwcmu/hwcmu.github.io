@@ -2,6 +2,7 @@
 title: "The Class I Never Took (2/2)"
 date: 2026-07-02
 draft: false
+personaKicker: "Essay · SEL and AI"
 url: "/persona/the-class-i-never-took/"
 translationUrl: "/zh/persona/the-class-i-never-took/"
 translationLabel: "中文"

@@ -9,6 +9,7 @@ tags: ["Civilization", "History", "Reading Notes"]
 hideTitle: true
 hideDescription: true
 hideMeta: true
+inlineLanguageToggle: true
 disableAnchoredHeadings: true
 ---
 
@@ -16,43 +17,6 @@ disableAnchoredHeadings: true
   .anti-time-machine {
     --atm-accent: rgba(99, 85, 124, 0.72);
     --atm-accent-soft: rgba(99, 85, 124, 0.12);
-  }
-
-  .anti-time-machine .atm-topbar {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0.25rem 0 1.45rem;
-  }
-
-  .anti-time-machine .atm-toggle {
-    display: inline-flex;
-    overflow: hidden;
-    min-height: 34px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--entry);
-  }
-
-  .anti-time-machine .atm-toggle button {
-    padding: 0.3rem 0.75rem;
-    border: 0;
-    background: transparent;
-    color: var(--secondary);
-    cursor: pointer;
-    font: inherit;
-    font-size: 0.84rem;
-    font-weight: 600;
-    transition: color 0.25s, background 0.25s;
-  }
-
-  .anti-time-machine .atm-toggle button.is-active {
-    background: var(--atm-accent-soft);
-    color: var(--primary);
-  }
-
-  .anti-time-machine .atm-toggle button:focus-visible {
-    outline: 2px solid var(--atm-accent);
-    outline-offset: 2px;
   }
 
   .anti-time-machine .atm-panel {
@@ -89,7 +53,7 @@ disableAnchoredHeadings: true
     height: 0;
     margin: 2.2rem 0 2.55rem;
     border: 0;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--persona-rule);
   }
 
   .anti-time-machine .atm-lead::first-letter {
@@ -112,7 +76,7 @@ disableAnchoredHeadings: true
   .anti-time-machine .atm-strata i {
     display: block;
     height: 1px;
-    background: var(--border);
+    background: var(--persona-rule);
   }
 
   .anti-time-machine .atm-strata i:nth-child(1) {
@@ -154,20 +118,10 @@ disableAnchoredHeadings: true
       animation: none;
     }
 
-    .anti-time-machine .atm-toggle button {
-      transition: none;
-    }
   }
 </style>
 
 <div class="anti-time-machine" data-anti-time-machine>
-  <div class="atm-topbar" role="group" aria-label="语言切换 / Language">
-    <div class="atm-toggle">
-      <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
-      <button class="is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
-    </div>
-  </div>
-
   <section class="atm-panel" lang="zh" data-lang-panel="zh">
     <p class="atm-kicker">杂谈 · 重读《枪炮、病菌与钢铁》</p>
     <h1>文明真正保存的，不是智慧，而是优势</h1>
@@ -254,7 +208,8 @@ disableAnchoredHeadings: true
 <script>
   (() => {
     document.querySelectorAll("[data-anti-time-machine]").forEach((root) => {
-      const buttons = Array.from(root.querySelectorAll("[data-lang-button]"));
+      const article = root.closest("article") || document;
+      const buttons = Array.from(article.querySelectorAll("[data-lang-button]"));
       const panels = Array.from(root.querySelectorAll("[data-lang-panel]"));
 
       const setLanguage = (language) => {

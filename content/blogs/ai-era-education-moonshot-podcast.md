@@ -3,6 +3,7 @@ title: "Now That AI Can Answer, What Should We Still Train Ourselves To Do? (1/2
 subtitle: "— or the sharper question: what do you still want to do yourself?"
 date: 2026-06-28
 draft: false
+personaKicker: "Essay · AI and Education"
 url: "/persona/now-that-ai-can-answer/"
 translationUrl: "/zh/persona/now-that-ai-can-answer/"
 translationLabel: "中文"

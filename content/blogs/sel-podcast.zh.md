@@ -2,6 +2,7 @@
 title: "我从没上过的那门课（2/2）"
 date: 2026-07-02
 draft: false
+personaKicker: "杂谈 · SEL 与 AI"
 url: "/zh/persona/the-class-i-never-took/"
 translationUrl: "/persona/the-class-i-never-took/"
 translationLabel: "English"

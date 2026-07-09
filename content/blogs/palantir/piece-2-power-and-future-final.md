@@ -3,6 +3,7 @@ title: "The Same Machine: Service or Governance? (2/3)"
 description: "A reflective note on how the same operational data layer can support better service while raising governance and data-use boundary questions."
 date: 2026-07-08
 draft: false
+personaKicker: "Essay · Palantir Notes"
 url: "/persona/service-or-governance/"
 translationUrl: "/zh/persona/service-or-governance/"
 translationLabel: "中文"

@@ -1,8 +1,19 @@
 {{- define "main" }}
 
-<article class="post-single">
+{{- $isPersonaArticle := in (.Params.series | default slice) "Persona" -}}
+
+<article class="post-single{{ if $isPersonaArticle }} persona-single{{ end }}">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
+    {{- if and $isPersonaArticle (not (.Param "hideArticleActions")) (or .Params.translationUrl $isPersonaArticle) }}
+      <div class="article-action-links">
+        {{- partial "article_persona_link.html" . -}}
+        {{- partial "article_language_link.html" . -}}
+      </div>
+    {{- end }}
+    {{- if and $isPersonaArticle (not (.Param "hideTitle")) (.Param "personaKicker") }}
+      <p class="persona-reading-kicker">{{ .Param "personaKicker" }}</p>
+    {{- end }}
     {{- if not (.Param "hideTitle") }}
       <h1 class="post-title entry-hint-parent">
         {{ .Title }}
@@ -16,17 +27,25 @@
         {{- end }}
       </h1>
     {{- end }}
-    {{- if and .Description (not (.Param "hideDescription")) }}
-    <div class="post-description">
-      {{ .Description }}
-    </div>
+    {{- if and $isPersonaArticle (not (.Param "hideDescription")) }}
+      {{- with (or (.Param "subtitle") .Description) }}
+      <div class="post-description persona-reading-dek">
+        {{ . }}
+      </div>
+      {{- end }}
+    {{- else if and .Description (not (.Param "hideDescription")) }}
+      <div class="post-description">
+        {{ .Description }}
+      </div>
     {{- end }}
-    {{- $isPersonaArticle := in (.Params.series | default slice) "Persona" -}}
-    {{- if or .Params.translationUrl $isPersonaArticle }}
+    {{- if and (not $isPersonaArticle) (or .Params.translationUrl $isPersonaArticle) }}
       <div class="article-action-links">
         {{- partial "article_persona_link.html" . -}}
         {{- partial "article_language_link.html" . -}}
       </div>
+    {{- end }}
+    {{- if and $isPersonaArticle (not (.Param "hideTitle")) }}
+      <hr class="persona-reading-divider">
     {{- end }}
     {{- if not (.Param "hideMeta") }}
     <div class="post-meta">

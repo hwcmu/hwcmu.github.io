@@ -608,6 +608,62 @@
   margin-top: 0.85rem;
 }
 
+.persona-single {
+  --persona-rule: rgba(99, 85, 124, 0.28);
+}
+
+:root[data-theme="dark"] .persona-single {
+  --persona-rule: rgba(180, 166, 204, 0.34);
+}
+
+.persona-single .article-action-links {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.25rem 0 1.45rem;
+}
+
+.persona-reading-kicker {
+  margin: 0 0 1.1rem;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.persona-reading-dek {
+  color: var(--secondary);
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.persona-reading-divider {
+  height: 0;
+  margin: 2.2rem 0 2.55rem;
+  border: 0;
+  border-top: 1px solid var(--persona-rule);
+}
+
+.persona-single .post-content h2::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 11px;
+  margin: 2.9rem auto 1.65rem;
+  background:
+    linear-gradient(var(--persona-rule), var(--persona-rule)) center top / 46px 1px no-repeat,
+    linear-gradient(var(--persona-rule), var(--persona-rule)) center center / 30px 1px no-repeat,
+    linear-gradient(var(--persona-rule), var(--persona-rule)) center bottom / 16px 1px no-repeat;
+}
+
+.persona-single .post-content > p:first-of-type::first-letter {
+  float: left;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--primary);
+  font-size: 2.8em;
+  font-weight: 600;
+  line-height: 0.82;
+}
+
 .article-persona-link a {
   display: inline-flex;
   align-items: center;

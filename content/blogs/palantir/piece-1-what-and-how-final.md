@@ -3,6 +3,7 @@ title: "An Activated Map: The Layer Where AI Finally Touches Reality (1/3)"
 description: "A reflective note on ontology as the operational layer that lets AI work with real objects, relationships, and actions."
 date: 2026-07-05
 draft: false
+personaKicker: "Essay · Palantir Notes"
 url: "/persona/activated-map/"
 translationUrl: "/zh/persona/activated-map/"
 translationLabel: "中文"

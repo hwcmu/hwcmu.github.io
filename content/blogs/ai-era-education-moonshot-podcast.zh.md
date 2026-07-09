@@ -3,6 +3,7 @@ title: "当 AI 能回答一切，我们还应该训练自己做什么？（1/2�
 subtitle: "或者说，更尖锐的问题是：你还想亲自做什么？"
 date: 2026-06-28
 draft: false
+personaKicker: "杂谈 · AI 与教育"
 url: "/zh/persona/now-that-ai-can-answer/"
 translationUrl: "/persona/now-that-ai-can-answer/"
 translationLabel: "English"

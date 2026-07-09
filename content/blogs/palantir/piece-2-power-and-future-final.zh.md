@@ -3,6 +3,7 @@ title: "同一套能力，服务还是治理（2/3）"
 description: "一篇关于本体化数据能力、用途边界、治理与公共服务效率的反思短文。"
 date: 2026-07-08
 draft: false
+personaKicker: "杂谈 · Palantir 笔记"
 url: "/zh/persona/service-or-governance/"
 translationUrl: "/persona/service-or-governance/"
 translationLabel: "English"
