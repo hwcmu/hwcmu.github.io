@@ -19,10 +19,22 @@ translationKey: "persona"
     <button class="topic-tag topic-filter" type="button" data-tag="data-integration">Data Integration</button>
     <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
     <button class="topic-tag topic-filter" type="button" data-tag="data-boundaries">Data Boundaries</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="civilization">Civilization</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="history">History</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="reading-notes">Reading Notes</button>
   </div>
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-skin="history-strata" data-tags="civilization history reading-notes" data-text="civilization history reading notes anti time machine jared diamond guns germs steel advantage preservation geography qualifications">
+    <h3><a href="/persona/anti-time-machine/">What Civilization Preserves Is Not Wisdom, but Advantage</a></h3>
+    <p>A bilingual reading note on <em>Guns, Germs, and Steel</em>, preservation, advantage, and why real reading keeps the qualifications alive.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="civilization">Civilization</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="history">History</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="reading-notes">Reading Notes</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-skin="systems-grid" data-tags="governance data-boundaries ai-systems" data-text="governance data boundaries ai systems mission creep service classification intervention ontology palantir public systems">
     <h3><a href="/persona/service-or-governance/">The Same Machine: Service or Governance? (2/3)</a></h3>
     <p>A bilingual reflection on how the same operational data layer can make public service work better while raising governance and data-use boundary questions.</p>

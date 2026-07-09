@@ -566,6 +566,20 @@
   mask-image: linear-gradient(110deg, transparent 0%, #000 16%, #000 56%, transparent 86%);
 }
 
+.post-content .persona-entry[data-skin="history-strata"] {
+  --skin-accent: rgba(99, 95, 55, 0.62);
+  --skin-soft: rgba(99, 95, 55, 0.09);
+  --skin-line: rgba(99, 95, 55, 0.17);
+}
+
+.post-content .persona-entry[data-skin="history-strata"]::before {
+  background:
+    repeating-linear-gradient(0deg, transparent 0 9px, var(--skin-line) 10px 11px),
+    linear-gradient(135deg, transparent 0 58%, var(--skin-soft) 58% 100%);
+  -webkit-mask-image: linear-gradient(120deg, transparent 0%, #000 15%, #000 58%, transparent 88%);
+  mask-image: linear-gradient(120deg, transparent 0%, #000 15%, #000 58%, transparent 88%);
+}
+
 .post-content .persona-entry[hidden] {
   display: none;
 }
