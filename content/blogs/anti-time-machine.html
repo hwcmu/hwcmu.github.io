@@ -14,37 +14,12 @@ disableAnchoredHeadings: true
 
 <style>
   .anti-time-machine {
-    --atm-bg: #edede7;
-    --atm-ink: #24241f;
-    --atm-muted: #75746c;
-    --atm-faint: #a7a69c;
-    --atm-accent: #2e5a57;
-    --atm-rule: #cfcdc4;
-    margin: 0.75rem auto 1.6rem;
+    --atm-accent: rgba(99, 85, 124, 0.72);
+    --atm-accent-soft: rgba(99, 85, 124, 0.12);
+    margin: 0 auto 1.6rem;
     max-width: 720px;
-    padding: clamp(2.8rem, 8vw, 5.2rem) clamp(1.25rem, 5vw, 2.2rem) clamp(3rem, 8vw, 5rem);
-    border: 1px solid rgba(99, 95, 55, 0.22);
-    border-radius: 8px;
-    background:
-      repeating-linear-gradient(0deg, transparent 0 17px, rgba(99, 95, 55, 0.08) 18px 19px),
-      linear-gradient(135deg, rgba(99, 95, 55, 0.08), transparent 58%),
-      var(--atm-bg);
-    color: var(--atm-ink);
-    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", STSong, "Noto Serif SC", Georgia, serif;
-    font-size: 18px;
-    line-height: 1.85;
-    letter-spacing: 0.005em;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-
-  html[data-theme="dark"] .anti-time-machine {
-    --atm-bg: #16181a;
-    --atm-ink: #d8d6cd;
-    --atm-muted: #96958c;
-    --atm-faint: #5a5b54;
-    --atm-accent: #6fa9a2;
-    --atm-rule: #2e3033;
+    color: var(--content);
+    line-height: 1.78;
   }
 
   .anti-time-machine * {
@@ -54,22 +29,22 @@ disableAnchoredHeadings: true
   .anti-time-machine .atm-topbar {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: clamp(2.4rem, 6vw, 3.25rem);
+    margin: 0.25rem 0 1.45rem;
   }
 
   .anti-time-machine .atm-toggle {
     display: inline-flex;
     overflow: hidden;
-    border: 1px solid var(--atm-rule);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    background: color-mix(in srgb, var(--atm-bg) 88%, var(--atm-ink));
+    background: var(--entry);
   }
 
   .anti-time-machine .atm-toggle button {
     padding: 0.34rem 0.88rem;
     border: 0;
     background: transparent;
-    color: var(--atm-muted);
+    color: var(--secondary);
     cursor: pointer;
     font: inherit;
     font-size: 0.72rem;
@@ -78,8 +53,8 @@ disableAnchoredHeadings: true
   }
 
   .anti-time-machine .atm-toggle button.is-active {
-    background: var(--atm-accent);
-    color: var(--atm-bg);
+    background: var(--atm-accent-soft);
+    color: var(--primary);
   }
 
   .anti-time-machine .atm-toggle button:focus-visible {
@@ -103,7 +78,7 @@ disableAnchoredHeadings: true
 
   .anti-time-machine .atm-kicker {
     margin: 0 0 1.45rem;
-    color: var(--atm-faint);
+    color: var(--secondary);
     font-size: 0.72rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -111,16 +86,16 @@ disableAnchoredHeadings: true
 
   .anti-time-machine h1 {
     margin: 0 0 1.1rem;
-    color: var(--atm-ink);
-    font-size: clamp(1.75rem, 5.4vw, 2.45rem);
-    font-weight: 600;
-    line-height: 1.2;
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
     letter-spacing: 0;
   }
 
   .anti-time-machine .atm-dek {
     margin: 0 0 0.45rem;
-    color: var(--atm-muted);
+    color: var(--secondary);
     font-size: 1.05rem;
     font-style: italic;
     line-height: 1.5;
@@ -130,8 +105,7 @@ disableAnchoredHeadings: true
     height: 0;
     margin: 2.2rem 0 2.55rem;
     border: 0;
-    border-top: 1px solid var(--atm-ink);
-    opacity: 0.55;
+    border-top: 1px solid var(--border);
   }
 
   .anti-time-machine p {
@@ -141,8 +115,8 @@ disableAnchoredHeadings: true
   .anti-time-machine .atm-lead::first-letter {
     float: left;
     padding: 0.06em 0.12em 0 0;
-    color: var(--atm-ink);
-    font-size: 3.1em;
+    color: var(--primary);
+    font-size: 2.8em;
     font-weight: 600;
     line-height: 0.82;
   }
@@ -166,8 +140,7 @@ disableAnchoredHeadings: true
   .anti-time-machine .atm-strata i {
     display: block;
     height: 1px;
-    background: var(--atm-faint);
-    opacity: 0.75;
+    background: var(--border);
   }
 
   .anti-time-machine .atm-strata i:nth-child(1) {
@@ -185,8 +158,8 @@ disableAnchoredHeadings: true
   .anti-time-machine .atm-colophon {
     margin-top: 3.55rem;
     padding-top: 1.2rem;
-    border-top: 1px solid var(--atm-rule);
-    color: var(--atm-faint);
+    border-top: 1px solid var(--border);
+    color: var(--secondary);
     font-size: 0.8rem;
     font-style: italic;
     line-height: 1.6;
