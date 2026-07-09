@@ -16,14 +16,6 @@ disableAnchoredHeadings: true
   .anti-time-machine {
     --atm-accent: rgba(99, 85, 124, 0.72);
     --atm-accent-soft: rgba(99, 85, 124, 0.12);
-    margin: 0 auto 1.6rem;
-    max-width: 720px;
-    color: var(--content);
-    line-height: 1.78;
-  }
-
-  .anti-time-machine * {
-    box-sizing: border-box;
   }
 
   .anti-time-machine .atm-topbar {
@@ -35,20 +27,21 @@ disableAnchoredHeadings: true
   .anti-time-machine .atm-toggle {
     display: inline-flex;
     overflow: hidden;
+    min-height: 34px;
     border: 1px solid var(--border);
     border-radius: 999px;
     background: var(--entry);
   }
 
   .anti-time-machine .atm-toggle button {
-    padding: 0.34rem 0.88rem;
+    padding: 0.3rem 0.75rem;
     border: 0;
     background: transparent;
     color: var(--secondary);
     cursor: pointer;
     font: inherit;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
+    font-size: 0.84rem;
+    font-weight: 600;
     transition: color 0.25s, background 0.25s;
   }
 
@@ -84,15 +77,6 @@ disableAnchoredHeadings: true
     text-transform: uppercase;
   }
 
-  .anti-time-machine h1 {
-    margin: 0 0 1.1rem;
-    color: var(--primary);
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: 0;
-  }
-
   .anti-time-machine .atm-dek {
     margin: 0 0 0.45rem;
     color: var(--secondary);
@@ -108,10 +92,6 @@ disableAnchoredHeadings: true
     border-top: 1px solid var(--border);
   }
 
-  .anti-time-machine p {
-    margin: 0 0 1.35em;
-  }
-
   .anti-time-machine .atm-lead::first-letter {
     float: left;
     padding: 0.06em 0.12em 0 0;
@@ -119,14 +99,6 @@ disableAnchoredHeadings: true
     font-size: 2.8em;
     font-weight: 600;
     line-height: 0.82;
-  }
-
-  .anti-time-machine .atm-thesis {
-    font-size: 1.06em;
-  }
-
-  .anti-time-machine strong {
-    font-weight: 600;
   }
 
   .anti-time-machine .atm-strata {
@@ -177,12 +149,6 @@ disableAnchoredHeadings: true
     }
   }
 
-  @media (max-width: 600px) {
-    .anti-time-machine {
-      font-size: 17px;
-    }
-  }
-
   @media (prefers-reduced-motion: reduce) {
     .anti-time-machine .atm-panel {
       animation: none;
@@ -197,12 +163,12 @@ disableAnchoredHeadings: true
 <div class="anti-time-machine" data-anti-time-machine>
   <div class="atm-topbar" role="group" aria-label="语言切换 / Language">
     <div class="atm-toggle">
-      <button class="is-active" type="button" data-lang-button="zh" aria-pressed="true">中文</button>
-      <button type="button" data-lang-button="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+      <button class="is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
     </div>
   </div>
 
-  <section class="atm-panel is-active" lang="zh" data-lang-panel="zh">
+  <section class="atm-panel" lang="zh" data-lang-panel="zh">
     <p class="atm-kicker">杂谈 · 重读《枪炮、病菌与钢铁》</p>
     <h1>文明真正保存的，不是智慧，而是优势</h1>
     <p class="atm-dek">时间本是最大的平等者；文明，是我们对抗它的第一台机器。</p>
@@ -243,7 +209,7 @@ disableAnchoredHeadings: true
     <p class="atm-colophon">读后感 · 关于 Jared Diamond《枪炮、病菌与钢铁：人类社会的命运》（1997）。文中“公元 1500 年”指作者自陈的解释范围大致到此；“地理决定历史”是流行的压缩版，而非原书主张。</p>
   </section>
 
-  <section class="atm-panel" lang="en" data-lang-panel="en">
+  <section class="atm-panel is-active" lang="en" data-lang-panel="en">
     <p class="atm-kicker">Essay · Rereading Guns, Germs, and Steel</p>
     <h1>What Civilization Preserves Is Not Wisdom, but Advantage</h1>
     <p class="atm-dek">Time is the great equalizer. Civilization is the first machine we built to fight it.</p>
@@ -309,7 +275,7 @@ disableAnchoredHeadings: true
         button.addEventListener("click", () => setLanguage(button.dataset.langButton));
       });
 
-      setLanguage("zh");
+      setLanguage("en");
     });
   })();
 </script>

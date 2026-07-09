@@ -1,5 +1,14 @@
 {{- if .Params.translationUrl }}
 <div class="article-language-link">
-  <a href="{{ .Params.translationUrl | absURL }}">{{ .Params.translationCta | default (printf "Read in %s" .Params.translationLabel) }}</a>
+  {{- $isZh := hasPrefix .RelPermalink "/zh/" -}}
+  <div class="article-language-toggle" role="group" aria-label="Language">
+    {{- if $isZh }}
+      <button class="is-active" type="button" aria-pressed="true">中文</button>
+      <a href="{{ .Params.translationUrl | absURL }}" aria-pressed="false">EN</a>
+    {{- else }}
+      <a href="{{ .Params.translationUrl | absURL }}" aria-pressed="false">中文</a>
+      <button class="is-active" type="button" aria-pressed="true">EN</button>
+    {{- end }}
+  </div>
 </div>
 {{- end }}
