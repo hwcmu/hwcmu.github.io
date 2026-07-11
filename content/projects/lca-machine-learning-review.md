@@ -3,6 +3,10 @@ title: "Machine Learning for Life Cycle Assessment"
 date: 2025-10-16
 description: "A review and research-synthesis project mapping machine-learning methods to the four ISO phases of life cycle assessment."
 tags: ["Sustainability", "Machine Learning", "LCA"]
+projectType: "Research Synthesis"
+role: "Lead author · Review design · Bibliometric analysis"
+doi: "10.1371/journal.pclm.0000732"
+codeUrl: "https://github.com/hwcmu/LCA-AI_review"
 url: "/projects/lca-machine-learning-review/"
 aliases: ["/blogs/lca-ml-review/"]
 ---
@@ -27,7 +31,3 @@ The work combined literature review, bibliometric analysis, and method synthesis
 ## Project Contribution
 
 The main contribution is a phase-by-phase framework connecting machine-learning methods to specific LCA tasks, limitations, and research needs. It also provides a reproducible code base for the review's bibliometric workflow.
-
-## Publication and Code
-
-[Read the paper](https://doi.org/10.1371/journal.pclm.0000732) · [View the code](https://github.com/hwcmu/LCA-AI_review)

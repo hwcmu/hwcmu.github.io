@@ -1,8 +1,9 @@
 {{- define "main" }}
 
 {{- $isPersonaArticle := in (.Params.series | default slice) "Persona" -}}
+{{- $isProject := eq .Section "projects" -}}
 
-<article class="post-single{{ if $isPersonaArticle }} persona-single{{ end }}">
+<article class="post-single{{ if $isPersonaArticle }} persona-single{{ end }}{{ if $isProject }} project-single{{ end }}">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     {{- if and $isPersonaArticle (not (.Param "hideArticleActions")) (or .Params.translationUrl $isPersonaArticle) }}
@@ -10,6 +11,9 @@
         {{- partial "article_persona_link.html" . -}}
         {{- partial "article_language_link.html" . -}}
       </div>
+    {{- end }}
+    {{- if $isProject }}
+      <p class="project-kicker">{{ .Param "projectType" | default "Project" }} · {{ .Date.Format "2006" }}</p>
     {{- end }}
     {{- if and $isPersonaArticle (not (.Param "hideTitle")) (.Param "personaKicker") }}
       <p class="persona-reading-kicker">{{ .Param "personaKicker" }}</p>
@@ -38,6 +42,18 @@
         {{ .Description }}
       </div>
     {{- end }}
+    {{- if $isProject }}
+      {{- with .Param "role" }}
+      <p class="project-role"><span class="project-role-label">Role</span><span class="project-role-value">{{ . }}</span></p>
+      {{- end }}
+      {{- with .Params.tags }}
+      <div class="project-header-tags" aria-label="Project topics">
+        {{- range first 3 . }}<span>{{ . }}</span>{{- end }}
+      </div>
+      {{- end }}
+      {{- partial "project_evidence_links.html" . -}}
+      <hr class="project-header-divider">
+    {{- end }}
     {{- if and (not $isPersonaArticle) (or .Params.translationUrl $isPersonaArticle) }}
       <div class="article-action-links">
         {{- partial "article_persona_link.html" . -}}
@@ -47,7 +63,7 @@
     {{- if and $isPersonaArticle (not (.Param "hideTitle")) }}
       <hr class="persona-reading-divider">
     {{- end }}
-    {{- if not (.Param "hideMeta") }}
+    {{- if and (not $isProject) (not (.Param "hideMeta")) }}
     <div class="post-meta">
       {{- partial "post_meta.html" . -}}
       {{- partial "translation_list.html" . -}}
@@ -71,12 +87,14 @@
   {{- end }}
 
   <footer class="post-footer">
+    {{- if not $isProject }}
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
       {{- range ($.GetTerms $tags) }}
       <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>
+    {{- end }}
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}

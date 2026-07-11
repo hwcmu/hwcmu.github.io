@@ -88,7 +88,11 @@
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
+    {{- if and (eq $page.Section "projects") .Description }}
+    <p>{{ .Description | plainify | htmlUnescape }}</p>
+    {{- else }}
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- end }}
   </div>
   {{- end }}
   {{- with (.Param "tags") }}
@@ -97,6 +101,9 @@
     <button class="topic-tag topic-filter" type="button" data-tag="{{ urlize . }}">{{ . }}</button>
     {{- end }}
   </div>
+  {{- end }}
+  {{- if eq $page.Section "projects" }}
+    {{- partial "project_evidence_markers.html" $page }}
   {{- end }}
   {{- if not (.Param "hideMeta") }}
   <footer class="entry-footer">

@@ -1,0 +1,11 @@
+{{- $isPrivate := eq (.Param "codeStatus") "private" -}}
+{{- if or .Params.doi .Params.codeUrl .Params.demoUrl .Params.posterUrl .Params.productUrl $isPrivate }}
+<div class="project-evidence-markers" aria-label="Available project materials">
+  {{- with .Params.doi }}<span>Paper</span>{{- end }}
+  {{- with .Params.codeUrl }}<span>Code</span>{{- end }}
+  {{- with .Params.demoUrl }}<span>Demo</span>{{- end }}
+  {{- with .Params.posterUrl }}<span>Poster</span>{{- end }}
+  {{- with .Params.productUrl }}<span>Product</span>{{- end }}
+  {{- if $isPrivate }}<span>Private Code</span>{{- end }}
+</div>
+{{- end }}
