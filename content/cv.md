@@ -74,7 +74,7 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 ### Environmental Data Science
 
 1. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
-   Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring)
+   Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
 2. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208. [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)
