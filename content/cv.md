@@ -73,26 +73,29 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 
 ### Environmental Data Science
 
-1. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
+1. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
+   Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies)
+
+2. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
    Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
-2. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
+3. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208. [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)
 
-3. **AI-assisted screening for asbestos fibers in soil using Mask R-CNN and computer vision on polarized light micrography**  
+4. **AI-assisted screening for asbestos fibers in soil using Mask R-CNN and computer vision on polarized light micrography**  
    Wang, H., Piao, W., & Gregory, L. (2025). Under review.
 
-4. **Integrating machine learning into life cycle assessment: Review and future outlook**  
+5. **Integrating machine learning into life cycle assessment: Review and future outlook**  
    Wang, H. (2025). *PLOS Climate*. [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review) · [Project](/projects/lca-machine-learning-review/)
 
-5. **Applications of microbial induced calcium carbonate precipitation in historical architecture restoration - a mini review**  
+6. **Applications of microbial induced calcium carbonate precipitation in historical architecture restoration - a mini review**  
    Wang, H., & Wang, S. (2025). *Journal of Infrastructure Preservation and Resilience*, 6. [DOI](https://doi.org/10.1186/s43065-025-00125-3)
 
-6. **High Aspect Ratio Polymer Nanocarriers for Gene Delivery and Expression in Plants**  
+7. **High Aspect Ratio Polymer Nanocarriers for Gene Delivery and Expression in Plants**  
    Zhang, Y., Shin, J., Sun, H., Chang, H.-F., Martinez, M. R., Perkins, L. A., Yan, J., Cao, Y., Wang, H., Giraldo, J. P., Matyjaszewski, K., Sheen, J., Tilton, R. D., Marelli, B., & Lowry, G. V. (2025). *Nano Letters*, 25(2), 681-690. [DOI](https://doi.org/10.1021/acs.nanolett.4c04704)
 
-7. **Path to autonomous soil sampling and analysis by ground-based robots**  
+8. **Path to autonomous soil sampling and analysis by ground-based robots**  
    Norby, J., Wang, S., Wang, H., Deng, S., Jones, N., Mishra, A., Pavlov, C., He, H., Subramanian, S., Thangavelu, V., Sihota, N., Hoelen, T., Johnson, A. M., & Lowry, G. V. (2024). *Journal of Environmental Management*, 360, 121130. [DOI](https://doi.org/10.1016/j.jenvman.2024.121130)
 
-8. **Impact of polymer molecular weight on the efficiency of temperature swing solvent extraction for desalination of concentrated brines**  
+9. **Impact of polymer molecular weight on the efficiency of temperature swing solvent extraction for desalination of concentrated brines**  
    Lopes, A. R., Wang, H., Dong, J., Han, J., Hatakeyama, E. S., Hoelen, T. P., & Lowry, G. V. (2022). *Desalination*, 543, 116104. [DOI](https://doi.org/10.1016/j.desal.2022.116104)

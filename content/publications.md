@@ -10,12 +10,17 @@ hideMeta: true
 
 ### 2026
 
-1. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
+1. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
+   **Citation:** Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*.  
+   **Tags:** Solar Energy · Network Analysis · Project Ecology  
+   **Links:** [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies)
+
+2. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
    **Citation:** Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*.  
    **Tags:** Sustainability Analytics · System-Level Modeling · Energy Transition  
    **Links:** [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
-2. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
+3. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    **Citation:** Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208.  
    **Tags:** Autonomous Sensing · Environmental Monitoring · Applied Environmental Technology  
    **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)
