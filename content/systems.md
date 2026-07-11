@@ -22,7 +22,7 @@ hideMeta: true
 
 <div class="work-list">
   <div class="work-item"><strong>A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems</strong><span><em>Energy, Ecology and Environment</em>, 2026. <a href="https://doi.org/10.1007/s40974-026-00425-8">DOI</a> · <a href="https://github.com/hwcmu/stock-based-power-transition-monitoring">Code</a></span></div>
-  <div class="work-item"><strong>Integrating machine learning into life cycle assessment</strong><span><em>PLOS Climate</em>, 2025. <a href="https://doi.org/10.1371/journal.pclm.0000732">DOI</a> · <a href="https://github.com/hwcmu/LCA-AI_review">Code</a></span></div>
+  <div class="work-item"><strong>Integrating machine learning into life cycle assessment</strong><span><em>PLOS Climate</em>, 2025. <a href="/projects/lca-machine-learning-review/">Project</a> · <a href="https://doi.org/10.1371/journal.pclm.0000732">DOI</a> · <a href="https://github.com/hwcmu/LCA-AI_review">Code</a></span></div>
   <div class="work-item"><strong>Temperature swing solvent extraction for desalination of concentrated brines</strong><span><em>Desalination</em>, 2022. <a href="https://doi.org/10.1016/j.desal.2022.116104">DOI</a></span></div>
 </div>
 

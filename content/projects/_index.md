@@ -12,6 +12,8 @@ hideMeta: true
     <button class="topic-tag topic-filter" type="button" data-tag="machine-learning">Machine Learning</button>
     <button class="topic-tag topic-filter" type="button" data-tag="nlp">NLP</button>
     <button class="topic-tag topic-filter" type="button" data-tag="product-analytics">Product Analytics</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="sustainability">Sustainability</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="lca">LCA</button>
     <button class="topic-tag topic-filter" type="button" data-tag="tableau">Tableau</button>
     <button class="topic-tag topic-filter" type="button" data-tag="python">Python</button>
   </div>

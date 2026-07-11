@@ -2,6 +2,7 @@
 title: "Notes"
 description: "Short essays and method notes."
 hideMeta: true
+url: "/blogs/"
 ---
 
 <div class="topic-explorer" data-topic-scope="list">
@@ -12,7 +13,7 @@ hideMeta: true
     <button class="topic-tag topic-filter" type="button" data-tag="model-evaluation">Model Evaluation</button>
     <button class="topic-tag topic-filter" type="button" data-tag="data-leakage">Data Leakage</button>
     <button class="topic-tag topic-filter" type="button" data-tag="nhamcs">NHAMCS</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="sustainability">Sustainability</button>
-    <button class="topic-tag topic-filter" type="button" data-tag="machine-learning">Machine Learning</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="survey-data">Survey Data</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="model-interpretation">Model Interpretation</button>
   </div>
 </div>

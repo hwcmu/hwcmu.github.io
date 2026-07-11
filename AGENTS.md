@@ -73,6 +73,16 @@ For the Hugo website:
 - Keep hand-authored Persona cards in reverse chronological order by publication date, newest first and oldest last. Add `data-date="YYYY-MM-DD"` to each Persona card so ordering is auditable.
 - The public CV is a webpage at `/cv/`, not a PDF download. Do not add a CV download button unless the user explicitly asks.
 
+### Content Roles and Local Structure
+
+- Use `content/projects/` for published case studies that answer: what was built, analyzed, or delivered, and how was the work done?
+- Use `content/notes/` for published method notes and reusable judgments that answer: what was learned, and what boundary should another researcher understand? Preserve the public Notes URL under `/blogs/`.
+- Use `content/persona/` for published reflective writing and bilingual Persona series. Keep published series in descriptive subfolders such as `ai-education/`, `palantir/`, and `reading/`.
+- Keep Publications as the single list page `content/publications.md`. It is the canonical record of formal papers and does not need a draft subfolder.
+- A paper belongs in Publications first. It may also have a Project page when the workflow, methods, or contribution deserve a case study. Create a Note only when there is a distinct, independently useful methodological lesson; do not duplicate a paper abstract across sections.
+- Projects, Notes, and Persona each have a local `drafts/` subfolder. Draft contents are ignored by Git because this is a public repository; only the section marker is tracked. Move a draft into the published part of its section when it is ready.
+- Materials associated with an already-published Persona series are not drafts. Keep unused local originals under `local-assets/persona/<series>/`, outside Hugo's `content/` tree; promote only deliberate public assets into `static/images/` and reference them from the article.
+
 ## Public Article Sensitivity Gate
 
 Before publishing or pushing any new public article, Persona entry, Note, Project description, homepage copy, or profile/publication-facing text, run a targeted sensitivity check for public-facing risk.

@@ -83,7 +83,7 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
    Wang, H., Piao, W., & Gregory, L. (2025). Under review.
 
 4. **Integrating machine learning into life cycle assessment: Review and future outlook**  
-   Wang, H. (2025). *PLOS Climate*. [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review)
+   Wang, H. (2025). *PLOS Climate*. [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review) · [Project](/projects/lca-machine-learning-review/)
 
 5. **Applications of microbial induced calcium carbonate precipitation in historical architecture restoration - a mini review**  
    Wang, H., & Wang, S. (2025). *Journal of Infrastructure Preservation and Resilience*, 6. [DOI](https://doi.org/10.1186/s43065-025-00125-3)

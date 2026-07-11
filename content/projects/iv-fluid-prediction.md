@@ -1,7 +1,7 @@
 ---
-title: "Multimodal AI for ER Resource Prediction"
+title: "Multimodal Prediction of IV Fluid Utilization"
 date: 2025-12-09
-description: "Developed a hybrid predictive model fusing structured clinical data with NLP analysis of patient narratives to optimize IV fluid utilization in Emergency Departments."
+description: "A multimodal clinical prediction project combining structured emergency-department variables with reason-for-visit text to study IV fluid utilization."
 tags: ["NLP", "Machine Learning", "Healthcare"]
 weight: 2
 ---

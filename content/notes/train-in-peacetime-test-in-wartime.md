@@ -3,6 +3,7 @@ title: "Train in Peacetime, Test in Wartime"
 date: 2026-07-03
 draft: false
 description: "A method note on temporal validation, data splitting, drift, and why disruptive periods should often be used as stress tests rather than training fuel."
+url: "/blogs/train-in-peacetime-test-in-wartime/"
 series: ["Boundary Notes", "Research Workflow Notes"]
 tags: ["Temporal Validation", "Data Leakage", "Model Evaluation"]
 ---

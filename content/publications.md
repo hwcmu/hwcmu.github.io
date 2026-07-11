@@ -30,7 +30,7 @@ hideMeta: true
 2. **Integrating machine learning into life cycle assessment: Review and future outlook**  
    **Citation:** Wang, H. (2025). *PLOS Climate*.  
    **Tags:** Sustainability Analytics · Machine Learning · Life Cycle Assessment  
-   **Links:** [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review)
+   **Links:** [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review) · [Project](/projects/lca-machine-learning-review/)
 
 3. **Applications of microbial induced calcium carbonate precipitation in historical architecture restoration - a mini review**  
    **Citation:** Wang, H., & Wang, S. (2025). *Journal of Infrastructure Preservation and Resilience*, 6.  
@@ -40,7 +40,7 @@ hideMeta: true
 4. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization: a comparative analysis of natural language processing techniques**  
    **Citation:** Wang, H., Ling, H., & Zhang, X. (2025). *PeerJ Computer Science*, 11, e3441.  
    **Tags:** Clinical AI · Multimodal EHR · Clinical NLP  
-   **Links:** [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction)
+   **Links:** [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction) · [Project](/projects/iv-fluid-prediction/)
 
 5. **High Aspect Ratio Polymer Nanocarriers for Gene Delivery and Expression in Plants**  
    **Citation:** Zhang, Y., Shin, J., Sun, H., Chang, H.-F., Martinez, M. R., Perkins, L. A., Yan, J., Cao, Y., Wang, H., Giraldo, J. P., Matyjaszewski, K., Sheen, J., Tilton, R. D., Marelli, B., & Lowry, G. V. (2025). *Nano Letters*, 25(2), 681-690.  

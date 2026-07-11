@@ -31,7 +31,7 @@ hideMeta: true
 
 <div class="work-list">
   <div class="work-item"><strong>Hospital admission prediction using gradient boosting and GPT-2</strong><span><em>DIGITAL HEALTH</em>, 2025. <a href="https://doi.org/10.1177/20552076251331319">DOI</a></span></div>
-  <div class="work-item"><strong>Multimodal prediction of IV fluid utilization</strong><span><em>PeerJ Computer Science</em>, 2025. <a href="https://doi.org/10.7717/peerj-cs.3441">DOI</a> · <a href="https://github.com/hwcmu/IVF-prediction">Code</a></span></div>
+  <div class="work-item"><strong>Multimodal prediction of IV fluid utilization</strong><span><em>PeerJ Computer Science</em>, 2025. <a href="/projects/iv-fluid-prediction/">Project</a> · <a href="https://doi.org/10.7717/peerj-cs.3441">DOI</a> · <a href="https://github.com/hwcmu/IVF-prediction">Code</a></span></div>
   <div class="work-item"><strong>Personalized prediction of EKG use in emergency care</strong><span><em>Journal of Personalized Medicine</em>, 2025. <a href="https://doi.org/10.3390/jpm15080358">DOI</a> · <a href="https://github.com/hwcmu/EKG-prediction">Code</a></span></div>
 </div>
 
