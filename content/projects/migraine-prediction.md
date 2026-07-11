@@ -3,7 +3,6 @@ title: "AI-Powered Migraine Forecast System"
 date: 2025-12-06
 description: "Established the core product analytics framework and architected a physician-guided forecasting for PeachyDay, boosting user engagement by 12%."
 tags: ["Product Analytics", "Machine Learning", "Healthcare"]
-weight: 1
 ---
 
 ![Migraine Forecast Architecture](/images/migraine-forecast.png)

@@ -82,6 +82,7 @@ For the Hugo website:
 - A paper belongs in Publications first. It may also have a Project page when the workflow, methods, or contribution deserve a case study. Create a Note only when there is a distinct, independently useful methodological lesson; do not duplicate a paper abstract across sections.
 - Projects, Notes, and Persona each have a local `drafts/` subfolder. Draft contents are ignored by Git because this is a public repository; only the section marker is tracked. Move a draft into the published part of its section when it is ready.
 - Materials associated with an already-published Persona series are not drafts. Keep unused local originals under `local-assets/persona/<series>/`, outside Hugo's `content/` tree; promote only deliberate public assets into `static/images/` and reference them from the article.
+- Keep every reader-facing content list in reverse chronological order: newest first and oldest last. Hugo-generated lists must sort by `date` descending rather than manual `weight`; hand-authored Persona cards and Publication year groups must follow the same rule.
 
 ## Public Article Sensitivity Gate
 

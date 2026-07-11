@@ -3,7 +3,6 @@ title: "Machine Learning for Life Cycle Assessment"
 date: 2025-10-16
 description: "A review and research-synthesis project mapping machine-learning methods to the four ISO phases of life cycle assessment."
 tags: ["Sustainability", "Machine Learning", "LCA"]
-weight: 3
 url: "/projects/lca-machine-learning-review/"
 aliases: ["/blogs/lca-ml-review/"]
 ---

@@ -5,7 +5,6 @@ date: 2025-12-13
 description: "Predicts flight delays using 4M+ records and live NOAA weather via TabPy. Bridges ML & BI with real-time SHAP explanations."
 # 标签要打准，方便检索
 tags: ["Tableau", "Python", "Machine Learning"]
-weight: 10  # 数字越小，排得越靠前
 ---
 
 ![Dashboard Demo](/images/airport.png)
