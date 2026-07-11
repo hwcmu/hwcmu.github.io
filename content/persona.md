@@ -26,6 +26,15 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-11" data-skin="systems-grid" data-tags="ontology ai-systems governance" data-text="ontology ai systems governance palantir action gate entity resolution mcp clinical semantics audit permissions">
+    <h3><a href="/persona/between-knowing-and-doing/">The Gate Between Knowing and Doing (3/3)</a></h3>
+    <p>A bilingual technical companion on operational ontologies, entity resolution, governed actions, and the boundary between AI suggestions and real-world execution.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="ontology">Ontology</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="ai-systems">AI Systems</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-09" data-skin="history-strata" data-tags="civilization history reading-notes" data-text="civilization history reading notes anti time machine jared diamond guns germs steel advantage preservation geography qualifications">
     <h3><a href="/persona/anti-time-machine/">What Civilization Preserves Is Not Wisdom, but Advantage</a></h3>
     <p>A bilingual reading note on <em>Guns, Germs, and Steel</em>, preservation, advantage, and why real reading keeps the qualifications alive.</p>
