@@ -78,6 +78,10 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
+  {{- if $isProject }}
+  {{- partial "project_highlights.html" . }}
+  {{- end }}
+
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}

@@ -5,6 +5,14 @@ description: "A review and research-synthesis project mapping machine-learning m
 tags: ["Sustainability", "Machine Learning", "LCA"]
 projectType: "Research Synthesis"
 role: "Lead author · Review design · Bibliometric analysis"
+highlight:
+  title: "Organize machine learning by the decision it supports"
+  text: "Instead of cataloging algorithms, the review maps each method to a specific life cycle assessment phase, workflow constraint, and interpretation boundary."
+supportingHighlights:
+  - title: "The evidence map is reproducible"
+    text: "The bibliometric workflow preserves how the literature was organized rather than leaving the synthesis as an untraceable reading list."
+  - title: "Judgment remains visible"
+    text: "System boundaries, functional units, allocation, and final interpretation remain domain decisions even when machine learning assists the workflow."
 doi: "10.1371/journal.pclm.0000732"
 codeUrl: "https://github.com/hwcmu/LCA-AI_review"
 url: "/projects/lca-machine-learning-review/"
@@ -13,13 +21,13 @@ aliases: ["/blogs/lca-ml-review/"]
 
 ![Framework mapping machine-learning methods to life cycle assessment phases](/images/lca-ml-framework.svg)
 
-## Project Overview
+## Where Machine Learning Actually Helps
 
 Life cycle assessment (LCA) evaluates environmental impacts across a product or system lifecycle. Its practical bottlenecks vary by phase: evidence can be fragmented, inventory data incomplete, impact calculations expensive, and final interpretations sensitive to assumptions.
 
 This project asks where machine learning can address a specific LCA workflow problem without being treated as a generic replacement for domain judgment.
 
-## Review and Synthesis Workflow
+## Organizing the Evidence by Decision
 
 The work combines literature review, bibliometric mapping, and phase-by-phase method synthesis. Papers were organized around the four standard LCA phases so that each machine-learning use case could be read in relation to the decision it supports.
 
@@ -32,13 +40,13 @@ The work combines literature review, bibliometric mapping, and phase-by-phase me
 
 This structure shifts the review away from a list of algorithms and toward the analytical conditions under which a method is useful.
 
-## What the Synthesis Shows
+## The Most Useful Opportunities Come Earlier
 
 The strongest opportunities are often not in replacing the final LCA model. They appear earlier in the workflow: organizing evidence, identifying data gaps, estimating missing inventory values, and reducing computational burden where repeated simulations are required.
 
 The review also highlights recurring risks. A model can make a workflow faster while obscuring system boundaries, transferring poorly across product systems, or presenting imputed values with more certainty than the source data support.
 
-## Reproducibility and Boundaries
+## Where Human Judgment Still Matters
 
 The accompanying repository preserves the bibliometric workflow and supporting materials used to organize the review. This makes the search-derived evidence map inspectable while keeping the conceptual synthesis tied to the published paper.
 

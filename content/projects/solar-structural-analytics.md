@@ -6,19 +6,27 @@ description: "A global infrastructure data analysis project that turns nearly 10
 tags: ["Structural Analytics", "Network Science", "Infrastructure Data"]
 projectType: "Research Project"
 role: "Lead author · Representation design · Network analysis · Validation"
+highlight:
+  title: "Normalize before you compare"
+  text: "The defining analytical move is to compare countries by the internal composition of their solar portfolios, preventing the largest markets from dominating the similarity space."
+supportingHighlights:
+  - title: "Count and capacity tell different stories"
+    text: "Parallel matrices distinguish project frequency from system weight, revealing structures that a single aggregate view would collapse."
+  - title: "The clusters had to beat a null world"
+    text: "Degree-preserving null networks and sensitivity checks test whether the observed camps are stronger than patterns produced by network configuration alone."
 doi: "10.1007/s40974-026-00428-5"
 codeUrl: "https://github.com/hwcmu/global-solar-project-ecologies"
 ---
 
 ![Capacity-based national camps in global utility-scale solar development](/images/solar-capacity-camps-map.png)
 
-## Analytical Goal
+## The Question Behind the Map
 
 Aggregate megawatts show how large a country's solar portfolio is, but not how that portfolio is organized. This project turns phase-level infrastructure records into comparable national profiles, allowing countries with very different scales to be analyzed by project size, development status, and internal composition.
 
 The analysis supports the open-access paper *Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar*.
 
-## Data and Representation
+## Turning Projects into Comparable Profiles
 
 The retained dataset contains:
 
@@ -36,7 +44,7 @@ I represented each country across **16 predefined size-status modes**:
 
 This 4 x 4 design converts a country from a single total into a structured feature profile. Separate matrices preserve two analytical views: project counts and capacity weights.
 
-## Modeling Workflow
+## Why Normalization Changes the Picture
 
 The pipeline:
 
@@ -52,7 +60,7 @@ The pipeline:
 
 Normalization is the key analytical decision. In the raw capacity projection, the five largest countries account for **0.665** of total projection strength; after normalization, their share falls to **0.093**. The count view falls from **0.614** to **0.084**. This changes the task from ranking national scale to comparing internal portfolio structure.
 
-## Results
+## Two Views of the Same Solar System
 
 The model identifies:
 
@@ -64,7 +72,7 @@ The model identifies:
 
 The correspondence analysis shows why both matrices are necessary. A country may contain many small operating projects by count while a few very large announced or pre-construction projects dominate its capacity profile.
 
-## Validation and Interpretation
+## How Strong Is the Pattern?
 
 The observed communities were compared with degree-preserving null networks:
 
@@ -77,7 +85,7 @@ Across **40** null replicates, no randomized graph reached the observed modulari
 
 A mode-salience audit then identified the features driving differentiation. The strongest shared signals came from operating projects below 50 MW and announced or pre-construction projects between 50 and 500 MW; the 500+ MW announced mode was especially important in the capacity view.
 
-## What the Analysis Adds
+## What to Keep in Mind
 
 The value of this project lies less in producing another country ranking than in showing how analytical design changes what becomes visible. Defining a comparable unit, separating count from capacity, normalizing before projection, and testing the resulting communities all help distinguish structural patterns from simple differences in scale.
 

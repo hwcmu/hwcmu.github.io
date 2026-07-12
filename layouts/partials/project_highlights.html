@@ -1,0 +1,20 @@
+{{- $page := . -}}
+{{- with .Params.highlight }}
+<section class="project-highlights" aria-labelledby="project-highlights-title">
+  <div class="project-highlight-primary">
+    <p class="project-highlight-eyebrow">What stands out</p>
+    <h2 id="project-highlights-title">{{ .title }}</h2>
+    <p>{{ .text }}</p>
+  </div>
+  {{- with $page.Params.supportingHighlights }}
+  <div class="project-highlight-secondary" aria-label="Supporting highlights">
+    {{- range first 2 . }}
+    <div class="project-highlight-supporting">
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+</section>
+{{- end }}

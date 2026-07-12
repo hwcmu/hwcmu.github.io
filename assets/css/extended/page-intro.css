@@ -726,6 +726,59 @@ a.project-evidence-link:hover {
   border-top: 1px solid var(--border);
 }
 
+.project-highlights {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 2rem;
+  margin: -0.25rem 0 2.2rem;
+  padding: 0 0 1.6rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--project-accent) 42%, var(--border));
+}
+
+.project-highlight-eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.project-highlight-primary h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.project-highlight-primary > p:last-child,
+.project-highlight-supporting p {
+  margin: 0;
+  color: var(--content);
+  line-height: 1.62;
+}
+
+.project-highlight-secondary {
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--project-accent);
+}
+
+.project-highlight-supporting + .project-highlight-supporting {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-highlight-supporting h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.project-highlight-supporting p {
+  color: var(--secondary);
+  font-size: 0.88rem;
+}
+
 .project-single .post-content {
   font-size: 1rem;
   line-height: 1.78;
@@ -805,6 +858,22 @@ a.project-evidence-link:hover {
 }
 
 @media (max-width: 680px) {
+  .project-highlights {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: -0.4rem;
+  }
+
+  .project-highlight-primary h2 {
+    font-size: 1.28rem;
+  }
+
+  .project-highlight-secondary {
+    padding: 1.1rem 0 0;
+    border-top: 2px solid var(--project-accent);
+    border-left: 0;
+  }
+
   .project-role {
     display: block;
   }
