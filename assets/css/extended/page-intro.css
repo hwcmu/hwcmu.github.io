@@ -626,6 +626,18 @@
   letter-spacing: 0;
 }
 
+.project-single .post-header {
+  margin-bottom: 0;
+}
+
+.project-single .post-description {
+  max-width: 46rem;
+  margin-top: 0.75rem;
+  color: var(--secondary);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
 .project-role {
   display: flex;
   gap: 0.55rem;
@@ -714,6 +726,51 @@ a.project-evidence-link:hover {
   border-top: 1px solid var(--border);
 }
 
+.project-single .post-content {
+  font-size: 1rem;
+  line-height: 1.78;
+}
+
+.project-single .post-content h2 {
+  margin: 2.55rem 0 0.85rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid color-mix(in srgb, var(--project-accent) 42%, var(--border));
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.project-single .post-content h3 {
+  margin: 1.6rem 0 0.65rem;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.project-single .post-content p,
+.project-single .post-content ul,
+.project-single .post-content ol,
+.project-single .post-content table,
+.project-single .post-content blockquote,
+.project-single .post-content pre {
+  margin-bottom: 1.15rem;
+}
+
+.project-single .post-content li + li {
+  margin-top: 0.3rem;
+}
+
+.project-single .post-content blockquote {
+  padding: 0.15rem 0 0.15rem 1rem;
+  border-left-color: var(--project-accent);
+  color: var(--content);
+}
+
+.project-single .post-content table {
+  display: table;
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .project-evidence-markers {
   gap: 0.75rem;
   margin-top: 0.8rem;
@@ -733,10 +790,52 @@ a.project-evidence-link:hover {
   vertical-align: 0.08em;
 }
 
-.project-single .post-content > p:first-child img,
-.project-single .post-content > div:first-child img {
+.project-single .post-content img {
+  display: block;
   width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  border: 1px solid var(--border);
   border-radius: 6px;
+  background: color-mix(in srgb, var(--entry) 60%, var(--theme));
+}
+
+.project-single .post-content p:has(> img:only-child) {
+  margin: 0.35rem 0 2rem;
+}
+
+@media (max-width: 680px) {
+  .project-role {
+    display: block;
+  }
+
+  .project-role-label {
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+
+  .project-evidence-links {
+    align-items: stretch;
+  }
+
+  .project-evidence-link {
+    justify-content: center;
+  }
+
+  .project-single .post-content {
+    line-height: 1.72;
+  }
+
+  .project-single .post-content h2 {
+    margin-top: 2.15rem;
+    font-size: 1.24rem;
+  }
+
+  .project-single .post-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
 
 .persona-single {

@@ -11,33 +11,37 @@ codeUrl: "https://github.com/hwcmu/IVF-prediction"
 
 ![Multimodal architecture for IV fluid utilization prediction](/images/iv-fluid-architecture.svg)
 
-## Project Overview
-In Emergency Departments (ED), accurate prediction of resource utilization (like IV fluids) is critical for operational efficiency. Traditional models often ignore the rich information hidden in **unstructured patient narratives** (Chief Complaints). 
+## Research Question
 
-This project aimed to bridge this gap by developing a **Multimodal Machine Learning pipeline** that integrates structured clinical variables with NLP-derived text features.
+Emergency-department datasets contain both structured variables and short reason-for-visit narratives. This project tests whether those brief text fields add useful predictive information for IV fluid utilization, and whether more complex language representations are necessarily better for this task.
 
-## Methodology
+## Data and Multimodal Design
 
-### Data Source
-* Analyzed **13,115 patient records** from the National Hospital Ambulatory Medical Care Survey (NHAMCS-ED).
-* **Input**: Mixed data types including demographics (structured) and triage notes (unstructured).
+The analysis uses **13,115** adult visits from the National Hospital Ambulatory Medical Care Survey emergency-department data. Inputs include demographics, visit characteristics, clinical variables, and short patient-reason text.
 
-### The "Early Fusion" Strategy
-I implemented an Early Fusion approach to combine distinct data modalities:
-1.  **Structured Pipeline**: Processed clinical variables (vitals, age, history).
-2.  **NLP Pipeline**: Experimented with three techniques to vectorize patient text:
-    * *Baseline*: CountVectorizer (Bag-of-Words).
-    * *Static Embeddings*: Word2Vec.
-    * *Transformer*: Pre-trained **GPT-2** embeddings.
-3.  **Modeling**: Concatenated features were fed into **Logistic Regression** and **Gradient Boosting Classifiers (GBC)**.
+The workflow keeps the two modalities separate until modeling:
 
-## Key Technical Insight
-**"Simpler can be better."** Contrary to the popular trend of using Large Language Models (LLMs) for everything, my comparative analysis revealed a crucial insight:
+1. structured variables are cleaned and encoded,
+2. visit narratives are represented with CountVectorizer, Word2Vec, or pretrained GPT-2 embeddings,
+3. structured and text features are combined through early fusion, and
+4. logistic regression and gradient boosting models are compared under the same evaluation framework.
 
-> **CountVectorizer outperformed GPT-2** for this specific use case (AUC 0.786 vs 0.772).
+This design makes the contribution of each text representation visible rather than treating the multimodal model as a single opaque system.
 
-**Why?** Emergency department narratives are typically **short, telegraphic, and keyword-driven** (e.g., "chest pain", "nausea"). They lack the complex semantic structures that Transformers like GPT-2 excel at capturing. Frequency-based methods (CountVectorizer) proved more effective at extracting these direct predictive signals without the noise of deep semantic layers.
+## Model Comparison
 
-## Results and Impact
-* **Performance**: The integrated GBC model (Structured + NLP) achieved the highest **AUC of 0.786**, significantly outperforming models using structured data alone.
-* **Clinical Value**: Demonstrated that integrating free-text narratives provides a robust framework for improving clinical decision-making and resource allocation in the ED.
+The highest-performing integrated gradient boosting configuration reached an **AUC of 0.786**. The CountVectorizer representation outperformed the GPT-2 embedding configuration, which reached **0.772**.
+
+That result is useful because the narratives are short, telegraphic, and often organized around direct symptom terms. In this setting, word frequency can preserve the signal the model needs without introducing the additional complexity of a contextual embedding.
+
+The finding is not that simple NLP is always superior. It is that representation choice should follow the structure of the text and the decision being modeled.
+
+## Interpretation and Boundaries
+
+Adding reason-for-visit text improved the model's ability to study utilization beyond structured variables alone. It also showed that a comparative pipeline can be more informative than selecting a language model in advance.
+
+This remains a retrospective analysis of a public survey dataset. The outcome describes observed IV fluid utilization, not whether treatment was clinically necessary. The model is not a treatment recommendation system, and its performance should not be assumed to transfer to a specific hospital without external validation.
+
+## What the Analysis Adds
+
+The project brings cohort preparation, mixed-data preprocessing, NLP comparison, model evaluation, and interpretation into one reproducible workflow. Its central lesson is methodological: multimodal clinical modeling works best when each data source is tested for what it actually contributes, with the outcome and intended claim kept visible.

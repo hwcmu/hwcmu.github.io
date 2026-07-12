@@ -15,19 +15,31 @@ aliases: ["/blogs/lca-ml-review/"]
 
 ## Project Overview
 
-Life cycle assessment (LCA) is a structured method for evaluating environmental impacts across a product or system lifecycle. In practice, it can be slowed by fragmented literature, manual data collection, missing inventory values, and computationally expensive impact models.
+Life cycle assessment (LCA) evaluates environmental impacts across a product or system lifecycle. Its practical bottlenecks vary by phase: evidence can be fragmented, inventory data incomplete, impact calculations expensive, and final interpretations sensitive to assumptions.
 
-This project examined where machine learning can support the LCA workflow without treating it as a generic black box. The resulting framework maps specific methods to the four standard ISO phases and distinguishes workflow assistance from scientific interpretation.
+This project asks where machine learning can address a specific LCA workflow problem without being treated as a generic replacement for domain judgment.
 
-## Research Approach
+## Review and Synthesis Workflow
 
-The work combined literature review, bibliometric analysis, and method synthesis. The central organizing question was not simply whether machine learning could be used in LCA, but where it could address a concrete workflow constraint.
+The work combines literature review, bibliometric mapping, and phase-by-phase method synthesis. Papers were organized around the four standard LCA phases so that each machine-learning use case could be read in relation to the decision it supports.
 
-1. **Goal and scope:** NLP can help screen literature and organize evidence relevant to system-boundary decisions, while the final boundary remains a research judgment.
-2. **Life cycle inventory:** Statistical learning and probabilistic imputation can support missing-data estimation when uncertainty is carried forward explicitly.
-3. **Impact assessment:** Surrogate models can approximate computationally intensive calculations when their domain of validity is defined and tested.
-4. **Interpretation:** Model explanation and sensitivity analysis can help identify influential assumptions, but they do not replace causal or domain interpretation.
+| LCA phase | Potential machine-learning role | Important boundary |
+| --- | --- | --- |
+| Goal and scope | Literature screening and evidence organization | System boundaries remain a research judgment |
+| Life cycle inventory | Missing-data estimation and probabilistic imputation | Uncertainty must be carried forward |
+| Impact assessment | Surrogate modeling for expensive calculations | Validity depends on the training domain |
+| Interpretation | Sensitivity analysis and model explanation | Explanation does not establish causality |
 
-## Project Contribution
+This structure shifts the review away from a list of algorithms and toward the analytical conditions under which a method is useful.
 
-The main contribution is a phase-by-phase framework connecting machine-learning methods to specific LCA tasks, limitations, and research needs. It also provides a reproducible code base for the review's bibliometric workflow.
+## What the Synthesis Shows
+
+The strongest opportunities are often not in replacing the final LCA model. They appear earlier in the workflow: organizing evidence, identifying data gaps, estimating missing inventory values, and reducing computational burden where repeated simulations are required.
+
+The review also highlights recurring risks. A model can make a workflow faster while obscuring system boundaries, transferring poorly across product systems, or presenting imputed values with more certainty than the source data support.
+
+## Reproducibility and Boundaries
+
+The accompanying repository preserves the bibliometric workflow and supporting materials used to organize the review. This makes the search-derived evidence map inspectable while keeping the conceptual synthesis tied to the published paper.
+
+The project does not claim that machine learning resolves the normative choices built into LCA. Functional units, system boundaries, allocation rules, and interpretation still require domain expertise. The contribution is a clearer map of where computational methods can help and where human judgment remains irreducible.

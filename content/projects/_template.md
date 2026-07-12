@@ -27,6 +27,10 @@ Reusable Project template
 - Set codeStatus: "private" when code exists but is not public.
 - Keep exactly three reader-facing tags.
 - Replace the placeholder date before publishing; lists sort newest first.
+- For most projects, aim for roughly 400-650 words across 4-6 descriptive sections.
+- Write for an informed general reader. Let analytical ability emerge through the data design, method choices, validation, results, and boundaries rather than adding a resume-style skills list.
+- Use at least one real project visual when a deliberate public asset exists.
+- Keep the opening concise, avoid repeating the paper abstract, and close with the project's contribution or interpretation boundary.
 -->
 
 ![Clear description of the primary project visual](/images/project-image.png)
