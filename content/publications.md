@@ -20,7 +20,12 @@ hideMeta: true
    **Tags:** Sustainability Analytics · System-Level Modeling · Energy Transition  
    **Links:** [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
-3. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
+3. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
+   **Citation:** Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934.  
+   **Tags:** Environmental AI · Computer Vision · Asbestos Screening  
+   **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934)
+
+4. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    **Citation:** Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208.  
    **Tags:** Autonomous Sensing · Environmental Monitoring · Applied Environmental Technology  
    **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)

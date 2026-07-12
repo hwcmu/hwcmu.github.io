@@ -79,11 +79,11 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 2. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
    Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
-3. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
-   Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208. [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)
+3. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
+   Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934. [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934)
 
-4. **AI-assisted screening for asbestos fibers in soil using Mask R-CNN and computer vision on polarized light micrography**  
-   Wang, H., Piao, W., & Gregory, L. (2025). Under review.
+4. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
+   Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208. [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)
 
 5. **Integrating machine learning into life cycle assessment: Review and future outlook**  
    Wang, H. (2025). *PLOS Climate*. [DOI](https://doi.org/10.1371/journal.pclm.0000732) · [Code](https://github.com/hwcmu/LCA-AI_review) · [Project](/projects/lca-machine-learning-review/)
