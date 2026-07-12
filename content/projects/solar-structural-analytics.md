@@ -12,158 +12,73 @@ codeUrl: "https://github.com/hwcmu/global-solar-project-ecologies"
 
 ![Capacity-based national camps in global utility-scale solar development](/images/solar-capacity-camps-map.png)
 
-## Project Overview
+## Analytical Goal
 
-Two countries can report the same amount of solar capacity. But are they building solar in the same way?
+Aggregate megawatts show how large a country's solar portfolio is, but not how that portfolio is organized. This project turns phase-level infrastructure records into comparable national profiles, allowing countries with very different scales to be analyzed by project size, development status, and internal composition.
 
-That question drives this project. Aggregate megawatt rankings can tell us which countries are large, but they often hide the internal structure of national solar development. One country may be built around many already-operating small and mid-sized projects. Another may appear equally large because a small number of very large projects sit in the announced or pre-construction pipeline.
+The analysis supports the open-access paper *Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar*.
 
-This project reframes utility-scale solar development as a structural data problem: not just **how many megawatts** a country reports, but **how its solar portfolio is actually composed**.
+## Data and Representation
 
-The work is based on my open-access paper, *Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar*, published in *Energy, Ecology and Environment* in 2026.
+The retained dataset contains:
 
-## The Core Problem
-
-Traditional country comparisons compress solar development into aggregate volume: total capacity, number of projects, or rank. Those metrics are useful, but they flatten important differences.
-
-The project asks a more diagnostic question:
-
-> Similar megawatts can represent very different development structures.
-
-A country dominated by operating 5-50 MW projects is not structurally equivalent to a country dominated by announced 500+ MW projects, even if their total capacity looks similar. The first reflects a more distributed operating base; the second may reflect concentrated future ambition that has not yet materialized.
-
-The analytical goal was therefore to move from a country-level total to a country-level structure.
-
-## Data Scale
-
-The retained analytical scope included:
-
-- **98,942** phase-level utility-scale solar project records,
+- **98,942** phase-level solar project records,
 - **94** countries,
-- **3.57 TW** of retained utility-scale solar capacity,
-- **16** predefined size-status modes, and
-- **2** complementary analytical views: capacity and count.
+- **3.57 TW** of retained capacity, and
+- operating, construction, pre-construction, and announced project phases.
 
-The source data came from the February 2026 release of the Global Solar Power Tracker. The analysis retained operating, construction, pre-construction, and announced project phases, then represented each country by the internal composition of its project portfolio.
-
-## Representation Design
-
-The key design move was to represent each country through a clean 4 x 4 structure:
+I represented each country across **16 predefined size-status modes**:
 
 | Dimension | Categories |
 | --- | --- |
 | Project size | 1-5 MW, 5-50 MW, 50-500 MW, 500+ MW |
 | Project status | operating, construction, pre-construction, announced |
 
-Crossing these two dimensions produces **16 size-status modes**. Each country becomes a normalized profile across those modes.
+This 4 x 4 design converts a country from a single total into a structured feature profile. Separate matrices preserve two analytical views: project counts and capacity weights.
 
-That turns the question from:
+## Modeling Workflow
 
-> How much solar does this country have?
+The pipeline:
 
-into:
-
-> What kind of solar development structure does this country have?
-
-This is the main representation-design contribution of the project. It makes countries comparable by internal structure rather than by sheer scale.
-
-## Why Normalization Matters
+1. filters and standardizes phase-level records,
+2. assigns each project to a size-status mode,
+3. builds country-by-mode count and capacity matrices,
+4. row-normalizes each country profile,
+5. computes cosine similarity and sparse top-k country projections,
+6. applies Louvain community detection, and
+7. audits community strength, sensitivity, and mode-level interpretation.
 
 ![Structural normalization contrast for country projections](/images/solar-structural-normalization.png)
 
-Without normalization, the similarity space is dominated by a few very large countries. Row normalization shifts the comparison from absolute national volume to within-country portfolio structure.
+Normalization is the key analytical decision. In the raw capacity projection, the five largest countries account for **0.665** of total projection strength; after normalization, their share falls to **0.093**. The count view falls from **0.614** to **0.084**. This changes the task from ranking national scale to comparing internal portfolio structure.
 
-In the raw projection, the top five countries accounted for **0.665** of total capacity-projection strength. After row normalization, that share fell to **0.093**. In the count projection, the top-five share similarly fell from **0.614** to **0.084**.
+## Results
 
-That shift matters because the project is not trying to re-rank countries by size. It is trying to compare how countries organize their solar development portfolios.
+The model identifies:
 
-## Two Views, Two Worlds
-
-The project builds two complementary views of the same global solar system.
-
-**Capacity view: system weight**  
-This view is sensitive to where the megawatts are concentrated. It highlights large projects, mega-project pipelines, and system-level infrastructure weight.
-
-**Count view: project ecology**  
-This view is sensitive to project frequency. It shows whether a country is made up of many small projects, a mixture of mid-sized projects, or a sparse portfolio dominated by a few large entries.
-
-The result is not one universal classification. It is a pair of related but non-interchangeable structural lenses:
-
-- **6** capacity-based national camps,
-- **5** count-based project ecologies, and
-- only partial alignment between the two.
-
-The core finding is simple:
-
-> Project abundance is not the same as system weight.
-
-A country can look like a small-operating ecology by project count while belonging to a large announced or pre-construction camp by capacity, because a few very large projects control most of the megawatts.
-
-## Count-Capacity Correspondence
+- **6** capacity-based national camps, describing system weight,
+- **5** count-based project ecologies, describing project frequency, and
+- only partial alignment between the two views.
 
 ![Cross-view correspondence between count ecologies and capacity camps](/images/solar-count-capacity-correspondence.png)
 
-The cross-view correspondence figure is the most important result visually. It shows that count ecologies and capacity camps overlap, but they do not map one-to-one.
+The correspondence analysis shows why both matrices are necessary. A country may contain many small operating projects by count while a few very large announced or pre-construction projects dominate its capacity profile.
 
-Some operating-heavy country groups align strongly across views. For example, a high-purity small-operating ecology maps substantially into a 1-5 MW operating capacity camp. But other ecologies disperse across several capacity camps, especially where many small projects coexist with a few large announced or pre-construction projects.
+## Validation and Interpretation
 
-That divergence is the point. Count and capacity are both necessary because they answer different infrastructure questions.
-
-## Validation, Not Just Clustering
-
-This project is not only an exploratory clustering exercise. The detected communities were tested against a degree-preserving null model to evaluate whether the structure was stronger than expected from network configuration alone.
-
-The observed modularity was far above the null baseline:
+The observed communities were compared with degree-preserving null networks:
 
 | View | Observed modularity | Null mean | z-score |
 | --- | ---: | ---: | ---: |
-| Capacity projection | **0.684** | 0.314 | **37.1** |
-| Count projection | **0.618** | 0.293 | **33.3** |
+| Capacity | **0.684** | 0.314 | **37.1** |
+| Count | **0.618** | 0.293 | **33.3** |
 
-Across **40** null replicates, no randomized graph reached the observed modularity in either view.
+Across **40** null replicates, no randomized graph reached the observed modularity. Sensitivity checks also tested alternative size bins and country-inclusion rules.
 
-This matters because the page is not claiming that an algorithm simply drew attractive groups. The validation shows that the country groupings reflect statistically strong structure in the data.
+A mode-salience audit then identified the features driving differentiation. The strongest shared signals came from operating projects below 50 MW and announced or pre-construction projects between 50 and 500 MW; the 500+ MW announced mode was especially important in the capacity view.
 
-## What Actually Differentiates Countries
+## What the Analysis Adds
 
-The project also audits which size-status modes drive cross-national differentiation. The 16 modes are not equally important. Most of the signal concentrates in a compact structural core:
+The value of this project lies less in producing another country ranking than in showing how analytical design changes what becomes visible. Defining a comparable unit, separating count from capacity, normalizing before projection, and testing the resulting communities all help distinguish structural patterns from simple differences in scale.
 
-- operating | 1-5 MW,
-- operating | 5-50 MW,
-- announced | 50-500 MW,
-- pre-construction | 50-500 MW.
-
-Two additional modes are more view-specific:
-
-- pre-construction | 5-50 MW is more count-specific,
-- announced | 500+ MW is more capacity-specific.
-
-The takeaway:
-
-> Global solar differentiation is driven by a compact structural core, not by all project categories equally.
-
-That mode-salience audit helps explain why the country groups form, rather than stopping at the fact that they exist.
-
-## What This Project Demonstrates
-
-Although the empirical domain is global solar infrastructure, the analytical capabilities are portable across many data-intensive fields.
-
-This project demonstrates:
-
-- large-scale public infrastructure data cleaning and scope design,
-- feature representation for cross-country comparison,
-- row normalization and similarity-space construction,
-- sparse country-network projection,
-- Louvain community detection,
-- dual-view analysis of count and capacity data,
-- null-model validation and sensitivity analysis,
-- feature-interpretation through mode salience auditing, and
-- scientific visualization for policy-oriented interpretation.
-
-The same underlying skill set is transferable to healthcare, public data systems, and other domains where the hard part is not only building a model, but defining the analytical unit, constructing comparable profiles, validating structure, and explaining what drives the result.
-
-## Technical Notes
-
-The analysis uses cosine similarity on row-normalized country-mode profiles, then constructs sparse top-k country projections before applying Louvain community detection. Capacity serves as the primary analytical path, while count provides a complementary project-frequency lens.
-
-Robustness checks include degree-preserving null-model comparisons, alternative size-bin specifications, and alternative country-inclusion criteria. The goal is not exact membership invariance under every specification, but continuity in the broader structural differentiation logic.
+The workflow is reproducible from retained records through matrices, diagnostics, figures, and sensitivity checks. It is also deliberately bounded: capacity structure does not directly measure electricity generation, project completion, land use, grid integration, or policy effectiveness.
