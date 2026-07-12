@@ -74,7 +74,7 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 ### Environmental Data Science
 
 1. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
-   Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies)
+   Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies) · [Project](/projects/solar-structural-analytics/)
 
 2. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
    Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)

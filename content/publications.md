@@ -13,7 +13,7 @@ hideMeta: true
 1. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
    **Citation:** Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*.  
    **Tags:** Solar Energy · Network Analysis · Project Ecology  
-   **Links:** [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies)
+   **Links:** [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies) · [Project](/projects/solar-structural-analytics/)
 
 2. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
    **Citation:** Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934.  

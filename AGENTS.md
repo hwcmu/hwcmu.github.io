@@ -86,6 +86,20 @@ For the Hugo website:
 - Start new Project pages from `content/projects/_template.md`. Keep the body structure flexible, but use the shared frontmatter fields for `projectType`, `role`, `doi`, artifact URLs, and `codeStatus`; never hand-code differently colored evidence buttons inside individual Project bodies. A DOI must render as `Read Paper` through the shared Project header.
 - Start new Persona articles from `content/persona/_template.md`. Preserve the established English-default bilingual workflow, shared article controls, three-tag alignment, card date ordering, and locked reading typography described in that template.
 
+### Published Paper Release Workflow
+
+When a paper moves to its version of record, treat the repository, Project page, Publications list, and CV as one linked release:
+
+1. Confirm the version-of-record title, authors, venue, publication date, DOI, and canonical article URL from authoritative metadata.
+2. Prepare or update the public code repository using the `publish-paper-code-repo` skill. Keep only the public reproduction path, clear notebook outputs, exclude private/reviewer/generated material, document non-redistributed data, run the reproducibility and safety checks, then commit and push.
+3. Publish the matching Project draft from `content/projects/drafts/` using `content/projects/_template.md`. Move deliberate public images into `static/images/`, set `draft: false`, add the DOI identifier and public `codeUrl`, remove obsolete private-code/build flags, and rely on the shared Project header for `Read Paper` and `Code` actions.
+4. Update the paper entry in `content/publications.md` with canonical `DOI`, `Code`, and `Project` links. Keep year groups and entries in reverse chronological order by formal publication date.
+5. Update the corresponding CV publication entry with the same DOI, Code, and Project links when that paper is listed there.
+6. Run the public-article sensitivity gate over all touched public text, verify local links and promoted assets, run Hugo to a temporary destination, and inspect the exact staged scope for secrets, caches, generated files, or unrelated changes.
+7. Commit and push the code repository first, then commit and push the portfolio source. Report both URLs and commit hashes.
+
+Follow this workflow by default. Deviate only when a paper has no public code, no useful Project case study, uncertain redistribution rights, or another explicit exception; state that exception in the completion report.
+
 ## Public Article Sensitivity Gate
 
 Before publishing or pushing any new public article, Persona entry, Note, Project description, homepage copy, or profile/publication-facing text, run a targeted sensitivity check for public-facing risk.
