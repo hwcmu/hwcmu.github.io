@@ -45,7 +45,7 @@ hideMeta: true
 3. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
    **Citation:** Wang, H., & Zhang, X. (2025). *Journal of Personalized Medicine*, 15(8), 358.  
    **Tags:** Clinical AI · Personalized Medicine · Emergency Care  
-   **Links:** [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction)
+   **Links:** [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction) · [Project](/projects/ekg-utilization-prediction/)
 
 4. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
    **Citation:** Zhang, X., Wang, H., Yu, G., & Zhang, W. (2025). *DIGITAL HEALTH*, 11.  

@@ -57,7 +57,7 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
    Wang, H., Ling, H., & Zhang, X. (2025). *PeerJ Computer Science*, 11, e3441. [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction)
 
 3. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
-   Wang, H., & Zhang, X. (2025). *Journal of Personalized Medicine*, 15(8), 358. [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction)
+   Wang, H., & Zhang, X. (2025). *Journal of Personalized Medicine*, 15(8), 358. [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction) · [Project](/projects/ekg-utilization-prediction/)
 
 4. **Mapping Acute Encounters in End-Stage Renal Disease: A Multi-scale Network Analysis of Presenting Reasons and Diagnoses in NHAMCS-ED (2020-2022)**  
    Wang, H., & Zhang, X. (2026). Under review.
