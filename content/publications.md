@@ -10,22 +10,27 @@ hideMeta: true
 
 ### 2026
 
-1. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
+1. **Mapping acute encounters in end-stage renal disease: a multi-scale network analysis of presenting reasons and diagnoses**  
+   **Citation:** Wang, H., & Zhang, X. (2026). *Network Modeling Analysis in Health Informatics and Bioinformatics*, 15, 164.  
+   **Tags:** End-Stage Renal Disease · Network Analysis · Emergency Care  
+   **Links:** [DOI](https://doi.org/10.1007/s13721-026-00848-7)
+
+2. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
    **Citation:** Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*.  
    **Tags:** Solar Energy · Network Analysis · Project Ecology  
    **Links:** [DOI](https://doi.org/10.1007/s40974-026-00428-5) · [Code](https://github.com/hwcmu/global-solar-project-ecologies) · [Project](/projects/solar-structural-analytics/)
 
-2. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
+3. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
    **Citation:** Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934.  
    **Tags:** Environmental AI · Computer Vision · Asbestos Screening  
    **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934) · [Code](https://github.com/hwcmu/asbestos-plm-screening)
 
-3. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
+4. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
    **Citation:** Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*.  
    **Tags:** Sustainability Analytics · System-Level Modeling · Energy Transition  
    **Links:** [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
-4. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
+5. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    **Citation:** Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208.  
    **Tags:** Autonomous Sensing · Environmental Monitoring · Applied Environmental Technology  
    **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)

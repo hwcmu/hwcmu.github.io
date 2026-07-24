@@ -50,17 +50,17 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 
 ### Healthcare Data Science
 
-1. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
+1. **Mapping acute encounters in end-stage renal disease: a multi-scale network analysis of presenting reasons and diagnoses**  
+   Wang, H., & Zhang, X. (2026). *Network Modeling Analysis in Health Informatics and Bioinformatics*, 15, 164. [DOI](https://doi.org/10.1007/s13721-026-00848-7)
+
+2. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
    Zhang, X., Wang, H., Yu, G., & Zhang, W. (2025). *DIGITAL HEALTH*, 11. [DOI](https://doi.org/10.1177/20552076251331319)
 
-2. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization: a comparative analysis of natural language processing techniques**  
+3. **Integrating multimodal clinical data to predict intravenous (IV) fluid utilization: a comparative analysis of natural language processing techniques**  
    Wang, H., Ling, H., & Zhang, X. (2025). *PeerJ Computer Science*, 11, e3441. [DOI](https://doi.org/10.7717/peerj-cs.3441) · [Code](https://github.com/hwcmu/IVF-prediction)
 
-3. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
+4. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
    Wang, H., & Zhang, X. (2025). *Journal of Personalized Medicine*, 15(8), 358. [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction) · [Project](/projects/ekg-utilization-prediction/)
-
-4. **Mapping Acute Encounters in End-Stage Renal Disease: A Multi-scale Network Analysis of Presenting Reasons and Diagnoses in NHAMCS-ED (2020-2022)**  
-   Wang, H., & Zhang, X. (2026). Under review.
 
 5. **From Algorithms to Empathy: A Review of AI-Enabled Ecosystems for Alzheimer's Diagnosis, Rehabilitation, and Care**  
    Wang, H., & Zhang, X. (2026). Under review.
