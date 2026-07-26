@@ -8,19 +8,9 @@ series: ["Boundary Notes"]
 tags: ["Clinical AI", "Model Interpretation", "SHAP"]
 ---
 
-In clinical AI papers, I often see SHAP plots used as if they explain the disease process itself. The figure may look technical and persuasive, but the interpretation often goes too far:
-
-> "This variable has a high SHAP value, so it is an important clinical cause."
-
-That is usually not justified.
-
-SHAP is useful. It can show what a trained model relied on when making a prediction. But its boundary should be clear:
+In clinical AI papers, SHAP plots are sometimes treated as explanations of disease itself. They are not. SHAP shows what a trained model relied on for a prediction:
 
 > SHAP explains model behavior. It does not prove disease mechanism, treatment effect, or real-world causality.
-
-This note is for clinicians, clinical researchers, and reviewers who read machine-learning papers but do not work in AI methods every day.
-
----
 
 ## 1. What SHAP Actually Explains
 
@@ -39,16 +29,7 @@ Suppose a model predicts high risk of hospital admission. SHAP asks:
 | Current smoker | +0.08 | Pushed the model prediction upward |
 | Normal oxygen saturation | -0.05 | Pulled the model prediction downward |
 
-The exact scale depends on the model. In some implementations, SHAP values are on an internal model scale, such as log-odds, not directly percentage-point risk changes.
-
-```mermaid
-flowchart LR
-    A["Baseline prediction"] --> B["Age pushes up"]
-    B --> C["Blood pressure pushes up"]
-    C --> D["Smoking pushes up"]
-    D --> E["Oxygen saturation pulls down"]
-    E --> F["Final model prediction"]
-```
+The scale depends on the model. In some implementations, values are on an internal scale such as log-odds, not percentage-point risk changes.
 
 The safe interpretation is simple:
 
@@ -58,36 +39,13 @@ The safe interpretation is simple:
 
 ## 2. Model Dependence Is Not Causality
 
-Clinical readers often want to know whether a feature is a cause, a risk marker, or just something the model used. SHAP answers only one part of that.
+SHAP can answer why a model predicted high risk and which variables it relied on. It cannot establish whether a variable causes an outcome or whether intervening on it would change risk.
 
-| Question | Can SHAP answer it? |
-|---|---|
-| Why did the model predict high risk for this patient? | Yes |
-| Which variables did the model rely on? | Yes |
-| Is this variable associated with the outcome? | Partly, through the model |
-| Does this variable cause the outcome? | No |
-| If we intervene on this variable, how much will risk change? | No |
-
-Example: imagine a model predicting one-year coronary heart disease risk. One input variable is the number of cardiology follow-up visits. Patients with more visits may have higher future risk because sicker patients are followed more closely.
-
-SHAP may show that follow-up visits strongly increase the model's predicted risk. But the clinical interpretation should be:
+For example, a model may use cardiology follow-up visits to predict one-year cardiac risk. More visits can mark underlying illness severity, so the careful interpretation is:
 
 > "The model is using follow-up frequency as a marker of underlying illness severity."
 
-not:
-
-> "Cardiology visits cause heart disease."
-
-```mermaid
-flowchart TD
-    U["Underlying illness severity"] --> V["More follow-up visits"]
-    U --> Y["Higher future cardiac risk"]
-    V --> M["Model uses visit frequency<br/>as a risk marker"]
-    M --> S["High SHAP contribution"]
-    V -. "not necessarily causal" .-> Y
-```
-
-This is the core danger: if we confuse SHAP with causality, we may turn a severity marker into a false treatment target.
+not “cardiology visits cause heart disease.” Confusing a severity marker with a cause turns a model explanation into a false treatment target.
 
 ---
 
@@ -95,31 +53,9 @@ This is the core danger: if we confuse SHAP with causality, we may turn a severi
 
 SHAP is helpful when used for the right question.
 
-**Explain an individual prediction**
+For an individual prediction, SHAP can show whether a model relied on age, vital signs, laboratory results, symptoms, or text-derived features. It can also audit shortcuts: hospital ID, timestamps, data-entry artifacts, or variables recorded after the prediction point should prompt investigation.
 
-> "Why did the model flag this patient as high risk?"
-
-SHAP can show whether the model relied on age, vital signs, labs, symptoms, or text-derived features.
-
-**Audit model behavior**
-
-SHAP can help detect whether the model learned clinically plausible patterns or suspicious shortcuts.
-
-Good signs:
-
-- Known risk markers appear important.
-- Direction roughly matches clinical expectations.
-- Similar patients have similar explanations.
-
-Warning signs:
-
-- Hospital ID, bed number, timestamp artifacts, or data-entry patterns dominate the explanation.
-- Variables recorded after the prediction time appear important.
-- Site-specific workflow variables replace patient-level information.
-
-**Communicate model behavior**
-
-Better:
+It is also useful for communicating model behavior. Better:
 
 > "The model assigned higher predicted risk partly because this patient had high blood pressure and abnormal labs."
 
@@ -131,25 +67,17 @@ Too strong:
 
 ## 4. Common Misuses and Limits
 
-Most SHAP problems in clinical AI papers come from overinterpretation.
-
-**Using SHAP as causal evidence**
-
-SHAP cannot tell us whether lowering blood pressure, changing medication, or ordering a test would change the outcome. That requires clinical evidence, causal inference, randomized trials, or strong study design.
-
-**Treating high-SHAP variables as treatment targets**
-
-High-SHAP variables may be non-modifiable, severity markers, proxy variables, or consequences of disease. Clinical action still requires asking:
+Most problems come from overinterpretation. SHAP cannot tell us whether lowering blood pressure, changing medication, or ordering a test would change an outcome; that needs clinical evidence and an appropriate causal design. A high-SHAP variable may be non-modifiable, a severity marker, a proxy, or a consequence of disease. Before acting, ask:
 
 > Is this feature modifiable, causal, and supported by evidence?
 
 **Over-reading correlated features**
 
-Clinical variables are often correlated: age, comorbidity burden, utilization, labs, disease severity, and documentation volume. SHAP may split credit across related variables in ways that look precise but are not clinically definitive.
+Clinical variables are often correlated. SHAP may split credit across related features in ways that look precise but are not clinically definitive.
 
 **Ignoring survey weights and complex sampling**
 
-In nationally representative or complex survey datasets, SHAP interpretation can be tricky. If a model is trained on an unweighted analytic sample, SHAP explains that model in that sample. It does not automatically describe nationally weighted clinical patterns.
+For nationally representative or complex survey data, SHAP explains the fitted analytic-sample model; it does not automatically describe nationally weighted clinical patterns.
 
 Reviewer question:
 
@@ -157,29 +85,15 @@ Reviewer question:
 
 **Using SHAP instead of validation**
 
-A convincing SHAP plot can make a model look clinically intuitive, but it does not prove the model is reliable. A clinical AI paper still needs clear outcome definition, leakage control, discrimination and calibration assessment, temporal or external validation when possible, and evidence that the prediction could support a meaningful clinical decision.
-
-SHAP can audit what the model learned. It cannot rescue a poorly designed prediction study.
+A convincing SHAP plot does not establish reliability. A clinical AI paper still needs a clear outcome, leakage control, discrimination and calibration assessment, appropriate validation, and a plausible use case. SHAP can audit what a model learned; it cannot rescue a poorly designed study.
 
 ---
 
 ## 5. A Small Case: EKG Use Prediction
 
-My EKG use prediction work is a useful example of this boundary. The model predicted whether an emergency department visit involved EKG use. Interpretability analyses included feature selection, SHAP values, and permutation feature importance. The published article is available at [DOI: 10.3390/jpm15080358](https://doi.org/10.3390/jpm15080358).
+My EKG-use prediction work illustrates the boundary. The model predicted whether an emergency-department visit involved EKG use; its interpretation analyses included feature selection, SHAP values, and permutation feature importance. The published article is available at [DOI: 10.3390/jpm15080358](https://doi.org/10.3390/jpm15080358).
 
-| Question | Careful interpretation |
-|---|---|
-| What did SHAP explain? | Which structured clinical variables and text-derived features contributed to the model's prediction of EKG utilization. |
-| What should we not claim? | That those variables caused the patient to biologically need an EKG. |
-| Why does this matter? | EKG use is partly a clinical decision and workflow behavior, not only a disease state. |
-
-Better wording:
-
-> "SHAP values were used to examine model-based predictors of EKG utilization and to audit whether the model relied on clinically plausible signals."
-
-Overclaim:
-
-> "SHAP identified the clinical causes of EKG use."
+SHAP explained which structured and text-derived features contributed to a prediction of EKG utilization; it did not show that these features biologically caused a need for EKG. This matters because EKG use is partly a clinical decision and workflow behavior, not only a disease state.
 
 ---
 
@@ -187,34 +101,16 @@ Overclaim:
 
 Before accepting a SHAP interpretation in a clinical AI paper, ask:
 
-- What exact model output is being explained?
-- Is the language limited to model prediction, not causality?
-- Are high-SHAP features possible leakage variables?
-- Are the top features clinically plausible?
-- Are they modifiable causes, non-modifiable markers, or proxies?
-- Are global and local SHAP explanations separated?
-- If survey weights or complex sampling are used, is the interpretation target clear?
+- What exact model output is being explained, and is the language limited to prediction rather than causality?
+- Could the leading features be leakage variables, proxies, or non-modifiable severity markers?
+- Are global and local explanations separated, and is the interpretation target clear for survey data?
 - Has the model been validated and calibrated?
 
-If these questions are clear, SHAP can be helpful. If not, the SHAP figure may be decorative rather than informative.
-
-The takeaway:
-
-> SHAP is useful for explaining what the model used to make a prediction, but it should not be used alone to claim what causes disease or what clinicians should intervene on.
-
-Let SHAP answer:
-
-> "How did the model think?"
-
-Let clinical evidence, validation, and causal reasoning answer:
-
-> "What should we do?"
+If these questions are unclear, the figure is decorative rather than informative. Let SHAP answer “How did the model think?”; let clinical evidence, validation, and causal reasoning answer “What should we do?”
 
 ---
 
 ## Sources
-
-For SHAP itself, the most authoritative sources are the original SHAP paper and the official SHAP documentation. For clinical AI review, I also link reporting and risk-of-bias guidance that is more directly relevant to prediction-model papers and clinical AI evaluation.
 
 - Lundberg, S. M., & Lee, S.-I. *A Unified Approach to Interpreting Model Predictions*. NeurIPS 2017 / arXiv. https://arxiv.org/abs/1705.07874
 - SHAP documentation: *An introduction to explainable AI with Shapley values*. https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html
