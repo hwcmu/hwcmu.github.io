@@ -46,15 +46,19 @@ The pipeline has five operational stages. Evaluation is not a sixth stage at the
 
 ```mermaid
 flowchart LR
-    A["Curate corpus"] --> B["Parse and preserve evidence"]
-    B --> C["Retrieve and rerank"]
-    C --> D["Assemble context"]
-    D --> E["Generate, cite, or abstain"]
-    F["Gold evidence and expected behavior"] -. evaluates .-> A
-    F -. evaluates .-> B
-    F -. evaluates .-> C
-    F -. evaluates .-> D
-    F -. evaluates .-> E
+    F["Gold evidence and<br/>expected behavior"]
+    subgraph pipeline["Evidence pipeline"]
+        direction TB
+        A["Curate corpus"] --> B["Parse and preserve evidence"]
+        B --> C["Retrieve and rerank"]
+        C --> D["Assemble context"]
+        D --> E["Generate, cite, or abstain"]
+    end
+    F -.-> A
+    F -.-> B
+    F -.-> C
+    F -.-> D
+    F -.-> E
 ```
 
 Each stage requires a different intervention. Increasing `top_k` cannot repair a missing source. Changing the prompt cannot restore a qualifier lost during parsing. A high retrieval score cannot prove that the model used the retrieved evidence faithfully.
