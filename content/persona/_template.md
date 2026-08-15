@@ -15,6 +15,8 @@ translationLabel: "中文"
 translationCta: "Read in Chinese"
 series: ["Persona"]
 tags: ["Topic One", "Topic Two", "Topic Three"]
+provenanceStatus: "blocked"
+provenanceSources: []
 build:
   list: never
   render: never
@@ -28,6 +30,7 @@ Reusable Persona template
 - In the Chinese file, reverse translationUrl and use translationLabel: "English".
 - Keep Back to Persona and the language toggle in the shared template; do not add a custom top bar.
 - Keep exactly three visible tags and mirror them in frontmatter, card data-tags, and card buttons.
+- Set `provenanceStatus` in both language files. Use `verified` only after checking every publication-relevant claim against the public URLs listed in `provenanceSources`; use `not-applicable` with an empty list only when no external claim needs verification.
 - Add the new card to content/persona/_index.md in reverse chronological order with data-date.
 - The body may be reorganized freely, but retain the shared kicker, subtitle, opening divider, drop cap, and h2 strata styling.
 - For a single-file bilingual HTML article, use inlineLanguageToggle: true instead of a paired page.
