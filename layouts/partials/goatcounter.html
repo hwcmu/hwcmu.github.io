@@ -57,7 +57,6 @@
     if (!feedbackButton) return;
 
     const feedbackLabel = feedbackButton.querySelector('[data-feedback-label]');
-    const feedbackStatus = document.querySelector('[data-feedback-status]');
     const storageKey = `vov-useful:${pagePath}`;
 
     const setAcknowledged = () => {
@@ -65,7 +64,6 @@
       feedbackButton.setAttribute('aria-pressed', 'true');
       feedbackButton.disabled = true;
       if (feedbackLabel) feedbackLabel.textContent = 'Thank you';
-      if (feedbackStatus) feedbackStatus.textContent = 'Feedback recorded.';
     };
 
     try {

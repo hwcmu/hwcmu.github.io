@@ -609,12 +609,25 @@
 }
 
 .article-feedback {
-  display: flex;
+  --feedback-accent: rgba(72, 101, 96, 0.68);
+  --feedback-accent-soft: rgba(72, 101, 96, 0.09);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.75rem;
-  margin-top: 2.8rem;
-  padding-top: 1.2rem;
+  gap: 1rem;
+  margin: 2.8rem 0 1.65rem;
+  padding: 1rem 0.15rem 1rem 1rem;
   border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 3px solid var(--feedback-accent);
+}
+
+.article-feedback-question {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
 }
 
 .article-feedback-button {
@@ -625,9 +638,9 @@
   min-width: 106px;
   min-height: 38px;
   padding: 0.35rem 0.75rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--feedback-accent);
   border-radius: 6px;
-  background: var(--entry);
+  background: var(--feedback-accent-soft);
   color: var(--primary);
   cursor: pointer;
   font: inherit;
@@ -637,8 +650,8 @@
 }
 
 .article-feedback-button:hover {
-  border-color: var(--secondary);
-  background: var(--code-bg);
+  border-color: var(--primary);
+  background: rgba(72, 101, 96, 0.15);
 }
 
 .article-feedback-button:focus-visible {
@@ -647,8 +660,8 @@
 }
 
 .article-feedback-button.is-selected {
-  border-color: rgba(72, 101, 96, 0.5);
-  background: rgba(72, 101, 96, 0.1);
+  border-color: var(--feedback-accent);
+  background: var(--feedback-accent-soft);
   color: var(--primary);
   cursor: default;
 }
@@ -668,14 +681,17 @@
   font-size: 1.05rem;
 }
 
-.article-feedback-status {
-  color: var(--secondary);
-  font-size: 0.78rem;
+:root[data-theme="dark"] .article-feedback {
+  --feedback-accent: rgba(147, 182, 174, 0.68);
+  --feedback-accent-soft: rgba(147, 182, 174, 0.12);
 }
 
-:root[data-theme="dark"] .article-feedback-button.is-selected {
-  border-color: rgba(147, 182, 174, 0.58);
-  background: rgba(147, 182, 174, 0.12);
+:root[data-theme="dark"] .article-feedback-button:hover {
+  background: rgba(147, 182, 174, 0.18);
+}
+
+.persona-single .article-feedback + h2::before {
+  margin-top: 1.8rem;
 }
 
 .project-single {

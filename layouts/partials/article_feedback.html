@@ -1,9 +1,9 @@
 {{- if or (eq .Section "notes") (eq .Section "persona") }}
 <div class="article-feedback" data-article-feedback>
+  <p class="article-feedback-question">Was this useful?</p>
   <button class="article-feedback-button" type="button" data-useful-feedback aria-pressed="false">
     <span class="article-feedback-icon" aria-hidden="true">&#9825;</span>
-    <span data-feedback-label>Useful</span>
+    <span data-feedback-label aria-live="polite">Useful</span>
   </button>
-  <span class="article-feedback-status" data-feedback-status aria-live="polite"></span>
 </div>
 {{- end }}

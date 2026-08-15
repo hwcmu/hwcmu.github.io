@@ -16,6 +16,22 @@
   });
 </script>
 
+<script>
+  (() => {
+    const feedback = document.querySelector('[data-article-feedback]');
+    const content = document.querySelector('.post-content');
+    if (!feedback || !content) return;
+
+    const sourceHeadingPattern = /^(sources?|references?|sources? and further reading|further reading|notes and sources?|参考资料|参考文献|来源)$/i;
+    const sourceHeading = Array.from(content.querySelectorAll('h2, h3')).find((heading) => {
+      const label = heading.textContent.replace(/#\s*$/, '').trim().replace(/\s+/g, ' ');
+      return sourceHeadingPattern.test(label);
+    });
+
+    if (sourceHeading) content.insertBefore(feedback, sourceHeading);
+  })();
+</script>
+
 {{- partial "goatcounter.html" . -}}
 
 <script>
