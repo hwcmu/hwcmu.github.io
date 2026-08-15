@@ -26,6 +26,15 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-08-15" data-skin="learning-lines" data-tags="attention digital-life human-agency" data-text="attention digital life human agency irresistible stopping rule friction autoplay open loop autonomy ai">
+    <h3><a href="/persona/the-right-to-stop/">The Right to Stop</a></h3>
+    <p>A bilingual reading reflection on natural stopping cues, digital friction, and why autonomy in the AI age includes deciding when enough is enough.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="attention">Attention</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="digital-life">Digital Life</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="human-agency">Human Agency</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-11" data-skin="systems-grid" data-tags="ontology ai-systems governance" data-text="ontology ai systems governance palantir action gate entity resolution mcp clinical semantics audit permissions">
     <h3><a href="/persona/between-knowing-and-doing/">The Gate Between Knowing and Doing (3/3)</a></h3>
     <p>A bilingual technical companion on operational ontologies, entity resolution, governed actions, and the boundary between AI suggestions and real-world execution.</p>
