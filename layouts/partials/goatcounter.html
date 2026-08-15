@@ -1,0 +1,97 @@
+{{- with site.Params.goatCounterCode }}
+{{- if eq hugo.Environment "production" }}
+<script>
+  (() => {
+    const pagePath = window.location.pathname
+      .replace(/^\/zh(?=\/persona\/)/, '')
+      .replace(/\/+$/, '') || '/';
+    const pageKey = pagePath.replace(/^\/+|\/+$/g, '').replace(/\//g, '-') || 'home';
+
+    const sendEvent = (eventName, title) => {
+      if (!window.goatcounter || typeof window.goatcounter.count !== 'function') return false;
+
+      window.goatcounter.count({
+        path: `${eventName}:${pageKey}`,
+        title,
+        event: true
+      });
+      return true;
+    };
+
+    const classifyLink = (link) => {
+      let url;
+      try {
+        url = new URL(link.href, window.location.href);
+      } catch {
+        return '';
+      }
+
+      const host = url.hostname.replace(/^www\./, '');
+      if (host === 'doi.org') return 'paper';
+      if (host === 'github.com') return 'github';
+      if (host === 'scholar.google.com') return 'scholar';
+      if (host === 'orcid.org') return 'orcid';
+      if (host === 'linkedin.com') return 'linkedin';
+      if (url.origin === window.location.origin && url.pathname.replace(/\/+$/, '') === '/cv') return 'cv';
+      if (link.classList.contains('social-icon-persona')) return 'persona';
+      if (link.closest('.article-language-toggle')) return 'language';
+      return '';
+    };
+
+    document.querySelectorAll('a[href]').forEach((link) => {
+      const eventName = classifyLink(link);
+      if (!eventName) return;
+
+      link.addEventListener('click', () => {
+        sendEvent(eventName, `${eventName} link from ${document.title}`);
+      });
+    });
+
+    document.querySelectorAll('[data-lang-button]').forEach((button) => {
+      button.addEventListener('click', () => {
+        sendEvent('language', `Language switch from ${document.title}`);
+      });
+    });
+
+    const feedbackButton = document.querySelector('[data-useful-feedback]');
+    if (!feedbackButton) return;
+
+    const feedbackLabel = feedbackButton.querySelector('[data-feedback-label]');
+    const feedbackStatus = document.querySelector('[data-feedback-status]');
+    const storageKey = `vov-useful:${pagePath}`;
+
+    const setAcknowledged = () => {
+      feedbackButton.classList.add('is-selected');
+      feedbackButton.setAttribute('aria-pressed', 'true');
+      feedbackButton.disabled = true;
+      if (feedbackLabel) feedbackLabel.textContent = 'Thank you';
+      if (feedbackStatus) feedbackStatus.textContent = 'Feedback recorded.';
+    };
+
+    try {
+      if (window.localStorage.getItem(storageKey) === '1') setAcknowledged();
+    } catch {
+      // Feedback still works when local storage is unavailable.
+    }
+
+    feedbackButton.addEventListener('click', () => {
+      if (feedbackButton.getAttribute('aria-pressed') === 'true') return;
+
+      const recordFeedback = (attemptsLeft) => {
+        if (sendEvent('useful', `Useful feedback for ${document.title}`) || attemptsLeft === 0) return;
+        window.setTimeout(() => recordFeedback(attemptsLeft - 1), 250);
+      };
+
+      recordFeedback(4);
+      try {
+        window.localStorage.setItem(storageKey, '1');
+      } catch {
+        // The acknowledgement remains visible for this page view.
+      }
+      setAcknowledged();
+    });
+  })();
+</script>
+<script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{{- end }}
+{{- end }}

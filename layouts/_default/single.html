@@ -105,6 +105,8 @@
   </div>
   {{- end }}
 
+  {{- partial "article_feedback.html" . }}
+
   <footer class="post-footer">
     {{- if not $isProject }}
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

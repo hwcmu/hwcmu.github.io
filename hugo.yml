@@ -14,6 +14,7 @@ minify:
 
 params:
   env: production
+  goatCounterCode: "vov"
   title: Hairong
   description: "Research health data scientist and data analyst at the University of Pittsburgh | Clinical AI, real-world evidence, healthcare data workflows, and interpretable modeling"
   keywords: [Clinical AI, Real-World Evidence, Biostatistics, Healthcare Data Science, Machine Learning, AI-assisted Analytics, Clinical Workflows, University of Pittsburgh, VA Pittsburgh, CMU, Georgia Tech]
