@@ -2,6 +2,9 @@
 title: "Scale-Up Is a Regime Change, Not a Multiplication Problem"
 date: 2026-08-08
 draft: false
+contentType: "reading-note"
+sourceBook: "Scale"
+sourceBookZh: "规模"
 description: "Why a laptop benchmark cannot be multiplied into a production forecast when memory, network, skew, and coordination become new bottlenecks."
 url: "/blogs/scale-up-is-a-regime-change/"
 series: ["Data Systems Notes"]

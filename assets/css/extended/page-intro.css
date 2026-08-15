@@ -626,6 +626,28 @@
   letter-spacing: 0;
 }
 
+.reading-note-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.32rem;
+  margin: 0 0 0.8rem;
+  color: var(--secondary);
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.reading-note-kicker cite {
+  color: var(--content);
+  font-style: italic;
+}
+
+.reading-note-kicker.is-zh cite {
+  font-style: normal;
+}
+
 .project-single .post-header {
   margin-bottom: 0;
 }

@@ -5,6 +5,10 @@ description: "Search and social description."
 date: 2099-01-01
 draft: true
 personaKicker: "Essay · Topic"
+# For book-derived essays, replace personaKicker with these structured fields:
+# contentType: "reading-note"
+# sourceBook: "English Book Title"
+# sourceBookZh: "中文书名"
 url: "/persona/article-slug/"
 translationUrl: "/zh/persona/article-slug/"
 translationLabel: "中文"

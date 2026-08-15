@@ -2,6 +2,8 @@
 
 {{- $isPersonaArticle := in (.Params.series | default slice) "Persona" -}}
 {{- $isProject := eq .Section "projects" -}}
+{{- $isReadingNote := eq (.Param "contentType") "reading-note" -}}
+{{- $isChineseReadingNote := and $isReadingNote (strings.HasPrefix .RelPermalink "/zh/") -}}
 
 <article class="post-single{{ if $isPersonaArticle }} persona-single{{ end }}{{ if $isProject }} project-single{{ end }}">
   <header class="post-header">
@@ -15,7 +17,20 @@
     {{- if $isProject }}
       <p class="project-kicker">{{ .Param "projectType" | default "Project" }} · {{ .Date.Format "2006" }}</p>
     {{- end }}
-    {{- if and $isPersonaArticle (not (.Param "hideTitle")) (.Param "personaKicker") }}
+    {{- if and $isReadingNote (not (.Param "hideTitle")) (.Param "sourceBook") }}
+      {{- $bookLabel := .Param "sourceBook" -}}
+      {{- if $isChineseReadingNote -}}
+        {{- with .Param "sourceBookZh" -}}
+          {{- $bookLabel = printf "《%s》" . -}}
+        {{- end -}}
+      {{- end -}}
+      <p class="reading-note-kicker{{ if $isChineseReadingNote }} is-zh{{ end }}">
+        <span>{{ if $isChineseReadingNote }}读书笔记{{ else }}Reading Note{{ end }}</span>
+        <span aria-hidden="true">—</span>
+        <cite>{{ $bookLabel }}</cite>
+      </p>
+    {{- end }}
+    {{- if and $isPersonaArticle (not $isReadingNote) (not (.Param "hideTitle")) (.Param "personaKicker") }}
       <p class="persona-reading-kicker">{{ .Param "personaKicker" }}</p>
     {{- end }}
     {{- if not (.Param "hideTitle") }}
