@@ -16,8 +16,8 @@ params:
   env: production
   goatCounterCode: "vov"
   title: Hairong
-  description: "Data analyst at the University of Pittsburgh and statistician at VA Pittsburgh | Clinical analytics, biostatistics, AI-enabled research workflows, and systems thinking"
-  keywords: [Clinical Analytics, Biostatistics, Healthcare Data Science, AI-enabled Research Workflows, Clinical Data, Network Analysis, Trajectory Analysis, Complex Systems, University of Pittsburgh, VA Pittsburgh]
+  description: "Research health data scientist and data analyst at the University of Pittsburgh | Clinical AI, real-world evidence, healthcare data workflows, and interpretable modeling"
+  keywords: [Clinical AI, Real-World Evidence, Biostatistics, Healthcare Data Science, Machine Learning, AI-assisted Analytics, Clinical Workflows, University of Pittsburgh, VA Pittsburgh, CMU, Georgia Tech]
   author: Hairong
   # 默认使用系统主题，但也允许用户切换
   defaultTheme: auto
@@ -28,8 +28,8 @@ params:
   # 首页配置
   profileMode:
     enabled: true
-    title: "Hi, I'm Hairong"
-    subtitle: "Data Analyst at the University of Pittsburgh · Statistician at VA Pittsburgh"
+    title: "Hi 👋, I'm Hairong"
+    subtitle: "Research health data scientist and data analyst at the University of Pittsburgh. I build clinical AI, healthcare data workflows, and interpretable models for real-world research."
     imageUrl: "/images/avatar.png"
   # 社交链接 (显示在首页底部)
   socialIcons:
