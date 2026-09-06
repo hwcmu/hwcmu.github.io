@@ -11,7 +11,7 @@ url: "/persona/the-right-to-stop/"
 translationUrl: "/zh/persona/the-right-to-stop/"
 translationLabel: "中文"
 translationCta: "Read in Chinese"
-series: ["Persona", "Reading Notes"]
+series: ["Persona", "Irresistible"]
 tags: ["Attention", "Digital Life", "Human Agency"]
 provenanceStatus: "verified"
 provenanceSources:

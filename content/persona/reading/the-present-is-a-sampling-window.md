@@ -11,7 +11,7 @@ url: "/persona/the-present-is-a-sampling-window/"
 translationUrl: "/zh/persona/the-present-is-a-sampling-window/"
 translationLabel: "中文"
 translationCta: "Read in Chinese"
-series: ["Persona", "Reading Notes"]
+series: ["Persona", "The Power of Now"]
 tags: ["Presence", "Decision Making", "Mental Models"]
 provenanceStatus: "verified"
 provenanceSources:
