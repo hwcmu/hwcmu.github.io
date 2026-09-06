@@ -26,6 +26,15 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-09-05" data-skin="learning-lines" data-tags="presence decision-making mental-models" data-text="presence decision making mental models power of now sampling window planning worry stopping rule reading notes">
+    <h3><a href="/persona/the-present-is-a-sampling-window/">The Present Moment Is a Sampling Window</a></h3>
+    <p>A bilingual reading reflection on present-moment awareness, longer-timescale risks, and a stopping-rule test for separating planning from worry.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="presence">Presence</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="decision-making">Decision Making</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="mental-models">Mental Models</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-08-15" data-skin="learning-lines" data-tags="attention digital-life human-agency" data-text="attention digital life human agency irresistible stopping rule friction autoplay open loop autonomy ai">
     <h3><a href="/persona/the-right-to-stop/">The Right to Stop</a></h3>
     <p>A bilingual reading reflection on natural stopping cues, digital friction, and why autonomy in the AI age includes deciding when enough is enough.</p>
