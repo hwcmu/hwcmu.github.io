@@ -51,7 +51,7 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 ### Healthcare Data Science
 
 1. **Mapping acute encounters in end-stage renal disease: a multi-scale network analysis of presenting reasons and diagnoses**  
-   Wang, H., & Zhang, X. (2026). *Network Modeling Analysis in Health Informatics and Bioinformatics*, 15, 164. [DOI](https://doi.org/10.1007/s13721-026-00848-7)
+   Wang, H., & Zhang, X. (2026). *Network Modeling Analysis in Health Informatics and Bioinformatics*, 15, 164. [DOI](https://doi.org/10.1007/s13721-026-00848-7) · [Project](/projects/esrd-acute-encounter-networks/)
 
 2. **Machine learning-driven prediction of hospital admissions using gradient boosting and GPT-2**  
    Zhang, X., Wang, H., Yu, G., & Zhang, W. (2025). *DIGITAL HEALTH*, 11. [DOI](https://doi.org/10.1177/20552076251331319)

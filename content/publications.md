@@ -13,7 +13,7 @@ hideMeta: true
 1. **Mapping acute encounters in end-stage renal disease: a multi-scale network analysis of presenting reasons and diagnoses**  
    **Citation:** Wang, H., & Zhang, X. (2026). *Network Modeling Analysis in Health Informatics and Bioinformatics*, 15, 164.  
    **Tags:** End-Stage Renal Disease · Network Analysis · Emergency Care  
-   **Links:** [DOI](https://doi.org/10.1007/s13721-026-00848-7)
+   **Links:** [DOI](https://doi.org/10.1007/s13721-026-00848-7) · [Project](/projects/esrd-acute-encounter-networks/)
 
 2. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  
    **Citation:** Wang, H., Hong, C., & Sun, J. (2026). *Energy, Ecology and Environment*.  
