@@ -4,6 +4,7 @@ date: 2026-07-03
 draft: false
 description: "A method note on matching validation and training periods to the setting where a clinical model will be used."
 url: "/blogs/temporal-validation-disruptive-periods/"
+aliases: ["/blogs/train-in-peacetime-test-in-wartime/"]
 series: ["Boundary Notes", "Research Workflow Notes"]
 tags: ["Temporal Validation", "Data Leakage", "Model Evaluation"]
 ---

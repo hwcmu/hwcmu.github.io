@@ -7,6 +7,7 @@ sourceBook: "Scale"
 sourceBookZh: "规模"
 description: "A modeling note on sample-relative standardization and dimensionless features that encode relationships across physical scales."
 url: "/blogs/z-score-sample-relative/"
+aliases: ["/blogs/z-score-is-not-a-dimensionless-feature/"]
 series: ["Modeling Decisions"]
 tags: ["Dimensional Analysis", "Feature Engineering", "Model Transfer"]
 provenanceStatus: "verified"
