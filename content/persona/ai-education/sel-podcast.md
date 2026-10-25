@@ -7,7 +7,7 @@ url: "/persona/the-class-i-never-took/"
 translationUrl: "/zh/persona/the-class-i-never-took/"
 translationLabel: "中文"
 translationCta: "Read in Chinese"
-description: "A reflective podcast-style essay on SEL, AI, friction, discomfort, freedom, and why necessary difficulty may become one of the most important forms of education."
+description: "A personal reflection on social and emotional learning, AI tools, and when supported practice helps more than a shortcut."
 series: ["Persona"]
 tags: ["SEL", "AI Education", "Human Agency"]
 build:
@@ -15,21 +15,21 @@ build:
   render: always
 ---
 
-> AI can generate your answers.  
-> It cannot bear your discomfort for you.
+> AI can help draft a response.
+> I still have to decide what to say and do.
 
 Lately I've fallen down a rabbit hole about education.
 
-It started almost by accident. I was listening to a show that picks apart the Chinese education system, and it led me to schools trying to do things differently, places like Moonshot Academy. And one thing kept surfacing, three letters I'd never once seen on a timetable growing up:
+It started almost by accident. I was listening to an education podcast, and it led me to schools trying different approaches, including Moonshot Academy. One term kept surfacing, three letters I did not remember seeing on my own timetable:
 
 **SEL.**
 
 <figure>
   <img src="/images/sel-casel-wheel.png" alt="CASEL social and emotional learning wheel" loading="lazy">
-  <figcaption>SEL is not just a soft add-on. It names a set of capacities around selfhood, relationships, and responsible choice.</figcaption>
+  <figcaption>CASEL groups social and emotional learning around self-awareness, self-management, social awareness, relationships, and responsible decision-making.</figcaption>
 </figure>
 
-SEL: social and emotional learning. It's a course these schools actually teach.
+SEL means social and emotional learning. Some schools teach these skills explicitly.
 
 My first reaction was: you can teach *that* as a class?
 
@@ -43,138 +43,42 @@ But that phrase, *supposed to just know it*, is exactly what stopped me.
 
 Because I never took that class.
 
-No one in my generation did.
+I do not know how common that experience was for my generation.
 
-So I started asking: if nobody taught us, where did we learn it?
+So I started asking where I had practiced those skills.
 
-## The world taught it, for free and by force
+## Learning Outside the Classroom
 
-The answer gave me a chill.
+I learned some of it in ordinary situations outside school: making an apology, sitting with boredom, or working through a difficult conversation. I did not have a course name for those experiences or much guidance. That makes me curious about what structured teaching might have offered.
 
-The world taught it. For free, by force.
+Informal learning is uneven, and hardship can make learning harder. Those experiences cannot substitute for good teaching.
 
-For most of history, no one taught this in a classroom. You couldn't skip the boredom, so you learned to sit with yourself. You couldn't outsource the apology, so you stood in front of someone and felt the shame. You couldn't route around the hard conversation, so you had it.
+## AI Changes the Effort of Some Tasks
 
-The friction wasn't a flaw in growing up.
+AI can reduce the effort of drafting, searching, and rehearsing a response. It can also offer an unhelpful or inaccurate answer. In my own work, the choice is whether to use it for a first attempt or after I have tried one myself.
 
-**It was the curriculum.**
+That leaves me with a question:
 
-Brutal, unfair, uneven, but it ran on everyone, all the time, with no exit.
+> When should I use a shortcut, and when do I still need the practice?
 
-So it's only half true that my generation never had SEL.
+The question for education is which manageable challenges help a learner practice, and when support or a tool helps more.
 
-We were never taught it. But we were forced through it. We got a wild version: unnamed, unprotected, tangled up with repression and shame. It made some of us resilient and others just silent.
+## Convenience, Practice, and Choice
 
-Not a good teacher.
+Convenience can be useful. An easier way to draft a message or explore an idea may leave more time for other work. It does not tell us, by itself, how a person will feel or what they will learn.
 
-But a relentless one.
+For my own practice, I want to notice when a tool helps me prepare for a difficult task and when I use it to skip the part I meant to learn. Writing a first attempt before asking for help is one small way to make that choice visible.
 
-## AI makes friction optional
+This is a personal routine, not evidence that using AI causes a loss of autonomy. The useful question is whether the routine still serves the goal I chose.
 
-Now here's the rupture.
+## Practice Needs Support
 
-AI, for the first time, makes the friction optional.
+I mean manageable effort in a task someone values, with enough support to learn from mistakes. Harmful hardship is a different matter. There is no universal amount of difficulty that every learner needs.
 
-Bored? Scroll.
+CASEL describes social and emotional learning as skills that can be taught and practiced in classrooms, homes, and communities. That framework gives me a more precise way to think about the abilities I once assumed people simply acquired on their own.
 
-Don't know what to say? Generate it.
+My question now is practical: when a tool removes effort, which part was unnecessary work, and which part was the practice I wanted to keep?
 
-Don't want to sit in not-knowing? Ask, and get an answer in two seconds.
+## Source
 
-Don't want the roughness of a real person? Turn to something endlessly patient that never makes you wait, never misunderstands, never says, "I don't have the energy tonight."
-
-And here's the trap that keeps me up:
-
-> The ability to *choose* friction is the exact ability that friction was supposed to build.
-
-The child who most needs to be pushed through difficulty is the one who'll skip it, because skipping is free now, and the muscle that would make him choose the hard road only grows by being forced to use it.
-
-## Is a frictionless person happy?
-
-So ask the question underneath all of it.
-
-Someone who avoids every friction: is he happy?
-
-I don't think so, and not for the reasons we tell ourselves.
-
-Happiness isn't a substance you stockpile. It's a contrast.
-
-Rest is sweet because you were tired. Reunion moves you because you were apart. Put a person in a world that's always warm, always answered, always instant, and he doesn't feel bliss.
-
-He feels *flat*.
-
-Everything arrives, and nothing lights up.
-
-And meaning, which isn't the same as feeling good, comes almost entirely from paying something that couldn't be replaced.
-
-AI's whole gift is removing the cost.
-
-So a frictionless life barely passes on "feeling okay," and scores near zero on "this mattered."
-
-## Is a person who cannot bear discomfort free?
-
-Then the darker question:
-
-Is he being controlled?
-
-Yes, except it won't look like control.
-
-We picture control as force pushing against your will. But a system that only ever gives you what you want triggers no resistance, because it never goes against you.
-
-It goes *with* you.
-
-Orwell feared someone taking your books; Huxley feared you'd stop wanting to read.
-
-The perfect cage isn't the one that hurts. It's the one so comfortable you never look for the door.
-
-And the way in is the thing we keep circling:
-
-**not being able to bear discomfort.**
-
-A person who can't stand one moment of unease is the easiest on earth to hold. Offer relief, and you own him. Every time he reaches for the thing that soothes, he hands over a sliver of himself.
-
-So bearing friction isn't the opposite of freedom.
-
-It *is* freedom.
-
-Whoever can sit with boredom can't be captured by the endless scroll. Whoever can sit with uncertainty can't be owned by the instant answer.
-
-The capacity to endure not being satisfied: that's the whole of it.
-
-Which means happiness and freedom turn out to be one structure seen from two sides.
-
-Both rest on a single question:
-
-**can you bear it?**
-
-## This is not a sermon about suffering
-
-Let me be honest, or this becomes a sermon about the nobility of suffering.
-
-It isn't.
-
-Depression isn't meaningful friction. It's an illness to treat. Poverty, humiliation, and violence make trauma, not people, and anything that helps someone escape them is a pure good.
-
-I mean only the other kind: the ache on the way to something you care about.
-
-The climb, not the beating.
-
-Telling them apart is the hardest lesson in the whole course.
-
-## Maybe education has to protect necessary difficulty
-
-So maybe the real task of education now was never simply "teach SEL."
-
-Maybe it's stranger and sadder:
-
-to guard, for every child, a minimum dose of necessary difficulty.
-
-To protect friction the way you'd protect a nutrient.
-
-Enough boredom to learn to be alone. Enough failure to learn you survive it. Enough real, rough, inconvenient people to learn what a person even is.
-
-Because AI can generate your answers.
-
-It can't bear your discomfort for you.
-
-And the day you let it, that's the day you hand over the one muscle that was keeping you free.
+- [CASEL: What Is SEL?](https://casel.org/what-is-sel/)

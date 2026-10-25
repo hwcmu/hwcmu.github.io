@@ -56,40 +56,40 @@ translationKey: "persona"
       <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-09" data-skin="history" data-pattern="history-strata" data-series="guns-germs-and-steel" data-tags="civilization history reading-notes" data-text="civilization history reading notes anti time machine jared diamond guns germs steel advantage preservation geography qualifications">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-09" data-skin="history" data-pattern="history-strata" data-series="guns-germs-and-steel" data-tags="civilization history reading-notes" data-text="civilization history reading notes jared diamond guns germs steel resources storage institutions qualifications">
     <p class="persona-entry-series">Reading · Guns, Germs, and Steel</p>
-    <h3><a href="/persona/anti-time-machine/">What Civilization Preserves Is Not Wisdom, but Advantage</a></h3>
-    <p>A bilingual reading note on <em>Guns, Germs, and Steel</em>, preservation, advantage, and why real reading keeps the qualifications alive.</p>
+    <h3><a href="/persona/anti-time-machine/">What Societies Preserve Across Generations</a></h3>
+    <p>A bilingual reading note on how resources can endure across generations, with limits to that explanation.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="civilization">Civilization</button>
       <button class="topic-tag topic-filter" type="button" data-tag="history">History</button>
       <button class="topic-tag topic-filter" type="button" data-tag="reading-notes">Reading Notes</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-08" data-skin="systems" data-pattern="systems-grid" data-series="palantir" data-tags="governance data-boundaries ai-systems" data-text="governance data boundaries ai systems mission creep service classification intervention ontology palantir public systems">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-08" data-skin="systems" data-pattern="systems-grid" data-series="palantir" data-tags="governance data-boundaries ai-systems" data-text="governance data boundaries ai systems service workflow definitions access review ontology palantir">
     <p class="persona-entry-series">Series · Palantir</p>
-    <h3><a href="/persona/service-or-governance/">The Same Machine: Service or Governance? (2/3)</a></h3>
-    <p>A bilingual reflection on how the same operational data layer can make public service work better while raising governance and data-use boundary questions.</p>
+    <h3><a href="/persona/service-or-governance/">The Same Layer: Service and Governance (2/3)</a></h3>
+    <p>A bilingual note on the definitions, access rules, and review paths needed for an operational data layer.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="governance">Governance</button>
       <button class="topic-tag topic-filter" type="button" data-tag="data-boundaries">Data Boundaries</button>
       <button class="topic-tag topic-filter" type="button" data-tag="ai-systems">AI Systems</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-05" data-skin="systems" data-pattern="systems-grid" data-series="palantir" data-tags="ontology ai-systems data-integration" data-text="ontology ai systems data integration activated map palantir operational layer records reality actions">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-05" data-skin="systems" data-pattern="systems-grid" data-series="palantir" data-tags="ontology ai-systems data-integration" data-text="ontology ai systems data integration operational map palantir records relationships actions">
     <p class="persona-entry-series">Series · Palantir</p>
-    <h3><a href="/persona/activated-map/">An Activated Map: The Layer Where AI Finally Touches Reality (1/3)</a></h3>
-    <p>A bilingual reflection on ontology as the layer that turns scattered records into operational objects, relationships, and actions.</p>
+    <h3><a href="/persona/activated-map/">An Operational Map: Connecting Records to Actions (1/3)</a></h3>
+    <p>A bilingual reflection on how an operational ontology can connect records, relationships, and defined actions.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="ontology">Ontology</button>
       <button class="topic-tag topic-filter" type="button" data-tag="ai-systems">AI Systems</button>
       <button class="topic-tag topic-filter" type="button" data-tag="data-integration">Data Integration</button>
     </div>
   </article>
-  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-02" data-skin="learning" data-pattern="learning-lines" data-series="ai-education" data-tags="sel ai-education human-agency" data-text="sel social emotional learning ai friction discomfort freedom moonshot academy necessary difficulty human agency">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-07-02" data-skin="learning" data-pattern="learning-lines" data-series="ai-education" data-tags="sel ai-education human-agency" data-text="sel social emotional learning ai practice support shortcut moonshot academy human agency">
     <p class="persona-entry-series">Series · AI Education</p>
     <h3><a href="/persona/the-class-i-never-took/">The Class I Never Took (2/2)</a></h3>
-    <p>A bilingual reflection on SEL, AI, friction, and why the ability to bear necessary discomfort may become a core condition of freedom.</p>
+    <p>A bilingual reflection on SEL, AI tools, and when supported practice helps more than a shortcut.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="sel">SEL</button>
       <button class="topic-tag topic-filter" type="button" data-tag="ai-education">AI Education</button>
@@ -99,7 +99,7 @@ translationKey: "persona"
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-06-28" data-skin="learning" data-pattern="learning-lines" data-series="ai-education" data-tags="ai-education human-agency cognitive-offloading" data-text="ai answer cognitive offloading judgment desire wanting moonshot academy self education human agency">
     <p class="persona-entry-series">Series · AI Education</p>
     <h3><a href="/persona/now-that-ai-can-answer/">Now That AI Can Answer, What Should We Still Train Ourselves To Do? (1/2)</a></h3>
-    <p>A sharper reflective essay on AI, judgment, cognitive offloading, and the unsettling question of what we still want to do ourselves.</p>
+    <p>A bilingual reflection on AI, survey evidence, and which tasks we still want to practice ourselves.</p>
     <div class="topic-tag-row persona-entry-tags">
       <button class="topic-tag topic-filter" type="button" data-tag="ai-education">AI Education</button>
       <button class="topic-tag topic-filter" type="button" data-tag="human-agency">Human Agency</button>

@@ -1,16 +1,16 @@
 ---
-title: "Train in Peacetime, Test in Wartime"
+title: "Test Clinical Models Across Disruptive Periods"
 date: 2026-07-03
 draft: false
-description: "A method note on temporal validation, data splitting, drift, and why disruptive periods should often be used as stress tests rather than training fuel."
-url: "/blogs/train-in-peacetime-test-in-wartime/"
+description: "A method note on matching validation and training periods to the setting where a clinical model will be used."
+url: "/blogs/temporal-validation-disruptive-periods/"
 series: ["Boundary Notes", "Research Workflow Notes"]
 tags: ["Temporal Validation", "Data Leakage", "Model Evaluation"]
 ---
 
-> Random splitting can be reasonable for static data. When data has a **time** dimension, however, it can let a model learn from a future environment and make optimistic scores look more convincing than they are.
+> Random splitting can support internal validation in a defined source population. When the intended use is in a later period, a separate temporal assessment can test whether performance changes over time.
 >
-> This note covers three things: the traps you fall into when time is a variable, how to handle a disruptive period like the pandemic, and a set of practices you can actually follow.
+> This note covers the prediction time, evaluation period, and changes in clinical practice that can affect a model's use.
 
 <aside class="sticky-glossary">
   <details open>
@@ -52,18 +52,17 @@ They are not testing the same ability:
 
 | | Random split | Temporal split |
 | --- | --- | --- |
-| Hidden assumption | Data is static; time does not matter | The environment evolves in one direction over time |
-| What it tests | **Interpolation**: can it fill in the blanks? | **Extrapolation**: can it travel through time? |
-| Realistic? | Leaks the future into the past | Matches real deployment: past predicts future |
-| Score behavior | Tends to be optimistic | Usually lower, but more honest |
+| Main question | How does the model perform in a sample drawn from the development setting? | How does a fixed model perform in a later period? |
+| Useful for | Internal validation when the target population matches the source | Checking performance across a time boundary relevant to use |
+| Limitation | Does not by itself establish future performance | One later period does not establish performance in every future setting |
 
-In one line: **a random split tests whether the model can recite; a temporal split tests whether it actually understands.**
+The choice depends on the claim. A temporal split is useful when future use is the question, but it does not replace sound internal validation or make a model "understand" a clinical process.
 
 ---
 
 ## 2. The Most Common Traps When Time Is a Variable
 
-**Trap 1: Random shuffling causes time travel.** Later-year samples in training give the model tomorrow's environment. Scores may look clean offline and degrade in a real future.
+**Trap 1: A mixed-period split may miss temporal change.** If the intended use is later deployment, training and testing on a random mix of years can hide performance drift.
 
 **Trap 2: Independent samples do not make eras independent.** Even if patients or visits never repeat, the system around them changes; what leaks is the future environment.
 
@@ -75,11 +74,11 @@ In one line: **a random split tests whether the model can recite; a temporal spl
 
 ## 3. How to Do Temporal Validation Properly
 
-**Split by time, not by row number.** Pick a cutoff, train on what came before, and validate on what came after. That mirrors deployment: history predicts an unknown future.
+**Match the split to the intended use.** For later deployment, evaluate a fixed model on observations collected after its training period. Keep a separate internal validation strategy for model development.
 
-**Use walk-forward evaluation when one cutoff is too fragile.** Keep sliding the training window forward and predict only the segment immediately after it. The names vary by field, but the principle is constant: **the training set always sits in the validation set's past.**
+**Use walk-forward evaluation when one cutoff is too fragile.** Keep sliding the training window forward and predict only the segment immediately after it. This can show how performance changes across several time boundaries.
 
-**Prefer external validation when the claim is external.** Temporal validation asks whether the model generalizes across time. Geographic validation asks whether it generalizes across environments. Internal cross-validation alone cannot answer those questions.
+**Validate across the boundary being claimed.** A later period at the same site tests a time boundary; a different site tests a setting boundary. Internal cross-validation alone cannot answer those questions.
 
 ---
 
@@ -87,16 +86,20 @@ In one line: **a random split tests whether the model can recite; a temporal spl
 
 COVID was a **regime shift**: bed availability, staffing, discharge thresholds, and access to community care changed together. Inputs, baseline outcome rates, and feature-outcome relationships all shifted.
 
-**Train in peacetime, test in wartime.** We want a model to learn durable regularities, not the distortions of one damaged environment. Mixing a crisis into training can make scarcity-era decisions look like patient characteristics.
+Whether to train on a disruptive period depends on the intended use. If the model is meant for ordinary operations, a disruptive period can be a valuable stress test. If the model must operate during a disruption, excluding that period from training may make the development data less relevant.
 
-Train on relatively stable pre-pandemic data, then treat pandemic and post-pandemic years as stress tests. If the model still identifies high-risk cases, it has captured something more durable than one year’s quirks.
+For either aim, keep evaluation periods separate from training, describe what changed in care delivery, and measure discrimination and calibration in each period. Performance in one disrupted period does not prove that a model has learned a stable mechanism.
 
 So keep this distinction in mind:
 
-> **Disruptive data used for testing is a touchstone for the model's mettle; used for training, it drags the model's baseline off course.**
+> **A disruptive period can test transport across time or supply relevant training data. Its role follows from the target setting and a prespecified evaluation plan.**
 
-When drift appears, consider recalibration before rebuilding. A temporal split makes drift visible; a mixed split can average it away. Adjusting overall risk level, and sometimes calibration slope, may be preferable to retraining. Temporal validation is a rehearsal for how a model will age.
+When drift appears, diagnose the change before deciding between recalibration, updating, or rebuilding. A temporal assessment makes drift visible, but the appropriate response depends on what shifted and where the model will be used.
 
 ---
 
-*The takeaway: **a random split tests recitation, a temporal split tests real understanding; disruptive data is a touchstone when you test on it and a poison when you train on it; samples can be independent, but eras are not.***
+*The takeaway: choose training and validation periods for the intended use, keep future outcomes out of model development, and report performance where the model is meant to operate.*
+
+## Source
+
+- Riley RD, et al. [Evaluation of clinical prediction models (part 1): from development to external validation](https://www.bmj.com/content/384/bmj-2023-074819). *BMJ*. 2024.

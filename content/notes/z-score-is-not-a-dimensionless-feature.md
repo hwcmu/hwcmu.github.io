@@ -1,12 +1,12 @@
 ---
-title: "A Z-Score Is Not a Dimensionless Feature"
+title: "A Z-Score Is Unitless but Sample-Relative"
 date: 2026-09-19
 draft: false
 contentType: "reading-note"
 sourceBook: "Scale"
 sourceBookZh: "规模"
-description: "A modeling boundary between sample-relative standardization and dimensionless features designed to preserve behavior across units and scale."
-url: "/blogs/z-score-is-not-a-dimensionless-feature/"
+description: "A modeling note on sample-relative standardization and dimensionless features that encode relationships across physical scales."
+url: "/blogs/z-score-sample-relative/"
 series: ["Modeling Decisions"]
 tags: ["Dimensional Analysis", "Feature Engineering", "Model Transfer"]
 provenanceStatus: "verified"

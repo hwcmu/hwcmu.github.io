@@ -8,7 +8,7 @@ url: "/persona/now-that-ai-can-answer/"
 translationUrl: "/zh/persona/now-that-ai-can-answer/"
 translationLabel: "中文"
 translationCta: "Read in Chinese"
-description: "Once AI can answer almost anything, what's left for an adult to train? I take every decent answer in turn and pull it apart, and end on a question I haven't solved: the real boundary isn't whether AI can do a thing, but whether I still want to do it myself — and even that wanting gets quietly worn away by the tool."
+description: "A personal reflection on using AI for practice, the limits of survey evidence, and which tasks I still want to do myself."
 series: ["Persona"]
 tags: ["AI Education", "Human Agency", "Cognitive Offloading"]
 build:
@@ -16,42 +16,41 @@ build:
   render: always
 ---
 
-I started thinking about how a person grows up in the age of AI not from some new tool, but from a line on Moonshot Academy's site: *raise inwardly rich individuals, and actively engaged citizens*. It sounds like it's about children. But the more I sat with it, the more it felt like a question turned back on those of us who already left school: if AI gets better and better at answering, summarizing, writing, and generating plans, what is left for us to train?
+I started thinking about how a person grows in the age of AI after reading Moonshot Academy's description of education as both inner development and active participation. It is written for children, but it raised a question for me as an adult: if AI gets better at answering, summarizing, writing, and generating plans, what do I still want to practice myself?
 
-Start by taking apart a word. "AI can answer" — but *answering* means completely different things in different places. In an exam it's matching the official key. At work it's delivering a workable plan. In life, answering is bearing a choice. AI is superb at the first few. But in the sense of *living in the world that comes after the choice*, it isn't answering at all — it produces the answer without having to live inside it.
+Start by taking apart a word. "AI can answer" — but *answering* means different things in different places. In an exam it may mean matching an official key. At work it may mean proposing a workable plan. In life, answering can also mean bearing a choice. AI can help with the first tasks, but it does not live with the consequences of a choice.
 
-> When answers get cheap, the scarce thing is no longer the reply, but whether anyone is still willing to pose a question worth answering — and to live in the world that answer brings.
+> I want to ask which decisions require more than a quick answer, and which parts I must still own.
 
-## AI is a magnifier, not a ladder
+## AI as a practice tool
 
-The most obvious response is: then use AI to train yourself — make it a sparring partner, not a stand-in. Have it attack your weakest claim, hand you counterexamples, force you to write the ugly first draft before it gets to tear it apart. This is right, and there's evidence for it: one much-cited study found that the more people trusted AI, the less they thought for themselves — while the people more confident in their *own* judgment were the ones who wrestled hardest with what it produced.
+One response is to use AI as a sparring partner: ask it for counterexamples, but write down my own claim first. A survey of 319 knowledge workers found an association between greater confidence in AI and less self-reported critical-thinking effort in AI-assisted tasks; confidence in one's own ability showed the opposite association. The survey does not show that AI caused a lasting loss of judgment.
 
-But the same fact has a shadow side. **Using AI as a sparring partner and using it as a crutch are the same motion — both remove friction.** Removing friction is the entire point of the tool: it writes for you, thinks for you, smooths your sentences for you. And judgment grows precisely in the friction of doing it yourself, getting it wrong, and going back over it. Once the friction is gone, most people don't "free up energy for higher training" — they just stop training. So "using AI to train yourself" isn't a stable state; it's swimming upstream against the grain of the tool, a choice you have to make again every single day. Its default gravity is always pulling you down.
+That finding does not settle how a person should use the tool. AI can make drafting and revision easier. In my own work, I worry that convenience can also reduce the time I spend checking a claim or struggling through a first attempt. Using it for practice takes a deliberate choice about which steps I still do myself.
 
-## "Then design the environment, don't rely on willpower" — which also doesn't hold
+## A routine can help, within limits
 
 So someone says: don't count on self-discipline, build the training into your defaults — for anything that matters, write down your own judgment before letting AI in; have it surface the opposing case by default; show your work to real people every week. This is genuinely sturdier than just shouting "try harder."
 
-But it dodges two things. First, installing that anti-laziness scaffolding for yourself takes exactly the foresight and persistence we just said a tired person doesn't have — it doesn't abolish willpower, it only relocates it to the one-time moment of setup. Second, the people who'd bother to build such an environment are usually already the ones with the strongest judgment, the ones who least need saving; the people who most need the training are precisely the ones who'd never think to build it. The benefit, once again, goes to those who already have.
+That design has limits too. Setting it up takes time, and people differ in how much support they have to maintain it. I cannot assume the same routine will work for everyone.
 
 ## Maybe I've been asking the wrong question
 
 Having pulled all of that apart, I started doubting this essay's own title.
 
-Because over a long enough horizon, "can AI do it" probably stops being the boundary — almost everything qualifies. The only boundary left is this: **not whether it *can* do a thing for me, but whether I still *want* to do that thing myself.**
+As AI takes on more tasks, capability alone may become a less useful boundary for my choices. Another question is: **do I still want to do this task myself?**
 
 > Whatever I truly want to do, I'll use AI to make myself stronger at it, and then do it myself; whatever I don't want to do, I'll let it do for me.
 
-It's a beautiful line, and it ruthlessly filters out a lot of fake loves — plenty of people think they love writing when what they love is being seen. Once the result can be generated cheaply, only one question is left: are you still willing to live through the clumsy, stuck, repetitive process?
+That line helps me examine why I write. When a result can be generated quickly, am I still willing to spend time on the clumsy, repetitive parts of the process?
 
-But it has a last and deepest crack: it treats *desire* as a fixed asset you can take inventory of, as if sitting quietly and asking yourself were enough. Yet if the tool reshapes the person who uses it, then "what do I want to do myself" has no stable answer — it drifts, and it drifts downhill, because "do it myself" is always the more expensive option. The cruelest atrophy isn't outsourcing the things you don't want to do — that's healthy. It's that the act of outsourcing, year after year, quietly rewrites what you want at all. You don't decide one day to give up the thing you swore you'd never hand over. You hand it over a little at a time, on one tired evening after another, without ever noticing.
+But desire can change with habit. I cannot tell from one survey whether AI use changes what people want to do over years; that is a question, not an established effect. For myself, I want to notice whether I keep choosing a shortcut for a task I once valued doing.
 
-> Take away your skill and you'll be angry. Wear away your wanting, and you won't even miss it.
+> The useful check is whether my reasons for doing a task are changing along with my tools.
 
-So I won't give you a conclusion. I should even admit this: an essay arguing *don't hand your judgment to AI* was itself revised together with AI — I can't pretend it's hand-made, only that every uncomfortable tradeoff in it is one I pressed down on myself. If anything reliable is left, it's probably just this: go back and ask yourself that question on a schedule, and honestly note which way the answer is drifting. Not to defend some fixed answer — but so that, when it's being quietly rewritten, you can at least notice.
+This essay was revised with AI, and I remain responsible for its claims. I plan to return to the question periodically: which tasks do I still want to practice myself, and why? My answer may change; recording it is a way to notice that change without assuming what caused it.
 
 ## Sources
 
-- [Moonshot Academy](https://moonshotacademy.cn/): frames itself around holistic, character-centered, innovative education, with the stated aim of "raising inwardly rich individuals and actively engaged citizens."
-- Lee et al., *The Impact of Generative AI on Critical Thinking* (Microsoft Research & Carnegie Mellon University, CHI 2025): higher confidence in AI is associated with less critical thinking; higher confidence in one's own ability with more. [ACM paper](https://dl.acm.org/doi/full/10.1145/3706598.3713778)
-- See also research on cognitive offloading: more frequent AI use correlates with lower critical-thinking scores, with heavier dependence among younger users.
+- [Moonshot Academy](https://moonshotacademy.cn/): describes its educational aims in terms of inner development and active participation.
+- Lee et al., *The Impact of Generative AI on Critical Thinking* (Microsoft Research & Carnegie Mellon University, CHI 2025): survey of 319 knowledge workers reporting associations between confidence and critical-thinking effort in AI-assisted tasks. [ACM paper](https://dl.acm.org/doi/full/10.1145/3706598.3713778)

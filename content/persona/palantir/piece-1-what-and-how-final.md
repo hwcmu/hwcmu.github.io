@@ -1,6 +1,6 @@
 ---
-title: "An Activated Map: The Layer Where AI Finally Touches Reality (1/3)"
-description: "A reflective note on ontology as the operational layer that lets AI work with real objects, relationships, and actions."
+title: "An Operational Map: Connecting Records to Actions (1/3)"
+description: "A reflective note on how an operational ontology can connect records, relationships, and defined actions."
 date: 2026-07-05
 draft: false
 personaKicker: "Essay · Palantir Notes"
@@ -15,11 +15,11 @@ build:
   render: always
 ---
 
-A few days ago I came across a technology talk about a large organization trying to modernize a fragmented service workflow. It was not really in my usual lane, but I watched the whole thing, and then kept thinking about it long after.
+A technology talk about connecting fragmented records into an operational model stayed with me. It raised a practical question: what changes when a workflow can use shared definitions of objects, relationships, and actions?
 
-Here is the basic shape of the story. The organization had spent years trying to modernize records across hundreds of systems, but the pieces still did not line up. Then it tried a different approach: a service workflow opened for use, and the workflow moved dramatically faster because the underlying objects, relationships, and actions had finally been connected.
+Consider a common integration problem. Records sit in different systems, each with its own identifiers and definitions. Connecting them can reduce the reconciliation needed for a service request, provided the mappings are accurate and maintained.
 
-The difference wasn't the budget, and it wasn't some smarter AI. The difference is that this time the organization modeled *reality* first, and only then let the software run on top of it.
+The useful idea is to define what the records refer to before asking software or AI to act on them.
 
 The more I sat with it, the clearer it became that this was not really about one sector at all. It's the problem that any field tangled up in "too many systems, all speaking past each other" eventually has to face.
 
@@ -27,36 +27,36 @@ The more I sat with it, the clearer it became that this was not really about one
 
 We tend to assume the data is already sitting in databases, so surely you just connect it? The trouble is that a database stores *records*, not *reality*.
 
-Think of a large institution as an enormous library where hundreds of departments each write their own books. Finance calls a person "payee 12345"; another office calls him "applicant W. Smith"; a third system records him as "holder A-77." The problem was never a shortage of books. It's that nobody — and especially no machine — knows those three books describe the same person. (This shows up in every field. Since moving into data work myself in recent years, one of my sharpest impressions is exactly this: the same thing tends to exist as several IDs that don't line up.)
+Think of a large institution as a library where different departments write their own books. Finance uses one identifier for a record; another office uses a different one. Without a reliable mapping, a workflow may not know whether those records refer to the same object. I have seen versions of this problem in data work: one object can have several IDs that do not line up automatically.
 
-The traditional fix is to move all the books into one building — a data warehouse. The location is unified, but the books still use different languages and numbering, and there's still no master index saying "these three records = one real person." So every time someone needs the data, they reconcile and re-stitch it by hand. That's why "data integration" is something many institutions never truly solve, even after decades.
+A data warehouse can bring records together, but storage in one place does not by itself reconcile conflicting identifiers or definitions. Teams may also use master-data management, matching rules, and manual review. The ongoing work is to document how records correspond and how exceptions are handled.
 
 ## An ontology: an activated map you can act on
 
 An ontology does something different: on top of those underlying records, it builds an *activated map*.
 
-That map holds three things — objects (real things that exist: a person, an asset, an application), relationships (who *owns* what; which program an application *relates to*), and actions (approve this request, trigger the next step). It points the fragments scattered across many systems at the same real object. In practical terms, it turns many disconnected records into one coherent operating file.
+That map holds three things — objects (such as an asset or a request), relationships (how those objects connect), and actions (such as moving a request to its next step). It can link records from different systems to a shared object while keeping their source and uncertainty visible.
 
-Pay special attention to that last word, *actions*. This is the biggest difference between an ontology and an ordinary report or dashboard: a report lets you *see* the state of things; an ontology lets you *see it and act on it directly*. And every action carries permissions and leaves a trail — who did what, when, and on what basis.
+Pay special attention to that last word, *actions*. An operational ontology can expose permitted changes as defined actions rather than leaving every workflow to write directly to a source table. Permissions, approval steps, and decision logs still have to be configured and checked; the ontology alone does not guarantee them.
 
 ## Why it's powerful: four advantages
 
-First, align once, benefit everywhere. Previously, every new application and every analysis meant re-stitching the data from scratch. Now you align once, and afterward each workflow — including AI-assisted ones — works off the same unified object. The operational gain comes from the fact that the underlying connections are already built.
+First, shared definitions can reduce repeated mapping work. A new workflow may reuse an existing object model, though changes in source data and business rules still need maintenance.
 
-Second, relationships are *stored*, not *recomputed*. You follow the chain — a person → their assets → related requests → affected actions — in one hop, instead of reassembling it every time.
+Second, relationships can be made explicit and reusable. A workflow can follow a defined link between an object and a request, while retaining the ability to inspect how that link was established.
 
-Third, it can *act*, not just *look*. This is the precondition for letting AI do real work, and the line that separates it from a pile of read-only analytics tools.
+Third, predefined actions can connect analysis to an operational workflow. Whether AI may invoke them, and under what review, is a separate design choice.
 
-Fourth, it *overlays* rather than *rebuilds*. Not a single legacy system is deleted; the ontology sits on top. Past efforts failed again and again precisely because they tried to tear down and rewrite the old systems. The ontology sidesteps that dead end.
+Fourth, a shared layer can sit over existing systems without requiring all of them to be replaced. It still depends on integration work and on the quality of those source systems.
 
 ## But won't the AI go rogue?
 
-Short answer: not easily. It's only allowed to pull facts from real objects — and if the fact isn't there, it returns nothing rather than inventing one. It can only trigger predefined actions that come with validation and approval, the way a chess engine only accepts legal moves. So even if it "wants" the wrong thing, the worst case is a rejected action or one flagged for review — not an irreversible action at large scale. (The mechanics are the subject of the third piece in this series.)
+There is no automatic guarantee. A system can restrict an AI assistant to permission-aware reads and predefined actions, require approval for consequential changes, and record decisions for review. Those controls narrow what an error can reach when they are correctly configured and tested. Missing data can still lead to a wrong answer, and an allowed action can still have an unintended effect. (The mechanics are the subject of the third piece in this series.)
 
 ## A question to sit with
 
-Back to that talk. The thing worth pausing on is this: why is "integrating the data" — which sounds so utterly ordinary — something decades and hundreds of millions couldn't achieve?
+The thing worth pausing on is why "integrating the data" can remain difficult even after substantial investment.
 
-Because the hard part was never the technology. The hard part is that an organization first has to answer: what, exactly, is my world made of? How do those things relate? Who is accountable for them? Put those questions on the table and you're touching departmental boundaries, ownership of responsibility, even the distribution of power. What an ontology really forces you to confront isn't messy data — it's a "reality" the organization itself never quite worked out.
+Technology and organizational definitions both matter. An organization has to decide which objects a workflow uses, how they relate, who maintains each definition, and how disputed records are corrected. An ontology makes those choices explicit enough to inspect and revise.
 
-Which is exactly where the next piece picks up: once an organization finally builds "reality" this clearly and this operably, does that very clarity turn into a kind of power we haven't reckoned with before?
+The next piece asks how an organization should govern those definitions and the actions built on them.

@@ -12,7 +12,7 @@ supportingHighlights:
   - title: "Metrics come before modeling"
     text: "A shared product analytics framework made adoption, onboarding, and retention visible before new predictive features were evaluated."
   - title: "Feedback gives users value now"
-    text: "Personalized longitudinal summaries returned useful patterns to more than 1,000 users and were associated with a 12% engagement increase."
+    text: "Personalized longitudinal summaries turned user logs into readable feedback that people could revisit."
 productUrl: "https://www.peachyday.co/"
 codeStatus: "private"
 ---
@@ -35,7 +35,7 @@ The forecasting workflow combines user history, health observations, activity, a
 
 ![PeachyDay system architecture with physician-in-the-loop](/images/migraine-architecture.png)
 
-The pipeline uses a random forest model with post-processing designed to reduce abrupt risk changes and limit unnecessary alerts. The resulting forecast improved accuracy by **18%** over the project baseline.
+The pipeline uses a random forest model with post-processing designed to reduce abrupt risk changes and limit unnecessary alerts. Its performance should be judged against a clearly defined baseline and outcome; those internal evaluation details are not public.
 
 Clinical collaboration shaped both the inputs and the behavior of the output. The objective was not to imitate a diagnostic system, but to produce a risk signal that could support reflection and planning without overstating certainty.
 
@@ -43,7 +43,7 @@ Clinical collaboration shaped both the inputs and the behavior of the output. Th
 
 Prediction alone did not solve the engagement problem. Users needed a reason to keep recording information even when no immediate forecast changed.
 
-I therefore developed a personalized data-story workflow for more than **1,000 users**, summarizing longitudinal patterns in a format inspired by annual listening summaries. This feedback loop was associated with a **12% increase** in user engagement.
+I therefore developed a personalized data-story workflow that summarizes longitudinal patterns in a format inspired by annual listening summaries. It gives users a way to revisit the information they recorded over time.
 
 ## Connecting Prediction and Product Value
 

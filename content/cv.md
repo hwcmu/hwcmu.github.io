@@ -62,15 +62,6 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
 4. **Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care**  
    Wang, H., & Zhang, X. (2025). *Journal of Personalized Medicine*, 15(8), 358. [DOI](https://doi.org/10.3390/jpm15080358) · [Code](https://github.com/hwcmu/EKG-prediction) · [Project](/projects/ekg-utilization-prediction/)
 
-5. **From Algorithms to Empathy: A Review of AI-Enabled Ecosystems for Alzheimer's Diagnosis, Rehabilitation, and Care**  
-   Wang, H., & Zhang, X. (2026). Under review.
-
-6. **Network Analysis of Alzheimer's Comorbidities and Symptoms in the Emergency Department**  
-   Wang, H., Fetia J., Jiang Y., Zhang W., & Zhang, X. (2026). Under review.
-
-7. **CLEAR Team for amyloid-targeting therapy screening in Veterans with early symptomatic Alzheimer's disease: protocol for a randomized controlled trial**  
-   Wang, H., Zhang, X., Fetia J., & O'Donnell, A. (2026). In preparation.
-
 ### Environmental Data Science
 
 1. **Beyond megawatts: Structural configurations and project ecologies in global utility-scale solar**  

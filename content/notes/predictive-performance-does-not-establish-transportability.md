@@ -60,7 +60,7 @@ Feature attribution can help surface site markers and workflow proxies, but it i
 | A different population | Prespecified subgroup and population validation |
 | A live clinical workflow | Prospective evaluation with calibration and operational outcomes |
 
-For the time boundary specifically, [Train in Peacetime, Test in Wartime](/blogs/train-in-peacetime-test-in-wartime/) covers temporal holdouts, preprocessing leakage, calibration drift, and disruptive-period stress tests. Here the broader rule is what matters: do not ask one validation design to support a boundary it never crossed.
+For the time boundary specifically, [Test Clinical Models Across Disruptive Periods](/blogs/temporal-validation-disruptive-periods/) covers temporal assessments, preprocessing leakage, calibration drift, and changes in the target setting. Here the broader rule is what matters: do not ask one validation design to support a boundary it never crossed.
 
 ## Diagnose the Shift Before Repairing the Model
 
