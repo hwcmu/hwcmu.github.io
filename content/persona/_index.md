@@ -26,6 +26,16 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-10-31" data-skin="reading" data-pattern="alchemist-path" data-series="before-departure-after-arrival" data-tags="reading decisions uncertainty" data-text="reading decisions uncertainty the alchemist before departure after arrival treasure journey outcomes hindsight decision quality">
+    <p class="persona-entry-series">Reading · The Alchemist · Before Departure, After Arrival</p>
+    <h3><a href="/persona/does-finding-treasure-justify-the-journey/">Does Finding Treasure Mean He Was Right to Leave? (3/3)</a></h3>
+    <p>A bilingual reading reflection on hindsight, decision quality under uncertainty, and learning from outcomes without pretending they were predictable.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="reading">Reading</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="decisions">Decisions</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="uncertainty">Uncertainty</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-09-05" data-skin="reading" data-pattern="present-rings" data-series="power-of-now" data-tags="presence decision-making mental-models" data-text="presence decision making mental models power of now sampling window planning worry stopping rule reading notes">
     <p class="persona-entry-series">Reading · The Power of Now</p>
     <h3><a href="/persona/the-present-is-a-sampling-window/">The Present Moment Is a Sampling Window</a></h3>

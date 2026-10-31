@@ -602,6 +602,14 @@
   mask-image: linear-gradient(105deg, transparent 0%, #000 30%, #000 82%, transparent 100%);
 }
 
+.post-content .persona-entry[data-pattern="alchemist-path"]::before {
+  background:
+    repeating-linear-gradient(-16deg, transparent 0 17px, var(--skin-line) 18px 19px, transparent 20px 36px),
+    radial-gradient(circle at 82% 24%, var(--skin-soft), transparent 52%);
+  -webkit-mask-image: linear-gradient(105deg, transparent 0%, #000 26%, #000 80%, transparent 100%);
+  mask-image: linear-gradient(105deg, transparent 0%, #000 26%, #000 80%, transparent 100%);
+}
+
 .post-content .persona-entry[hidden] {
   display: none;
 }
