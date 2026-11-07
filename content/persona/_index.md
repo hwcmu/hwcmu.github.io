@@ -10,6 +10,9 @@ translationKey: "persona"
   <h3>Explore by Topics</h3>
   <div class="topic-tag-row" aria-label="Filter persona entries by topic">
     <button class="topic-tag topic-filter active" type="button" data-tag="all">All</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="ai">AI</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="future-of-work">Future of Work</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="human-connection">Human Connection</button>
     <button class="topic-tag topic-filter" type="button" data-tag="ai-education">AI Education</button>
     <button class="topic-tag topic-filter" type="button" data-tag="sel">SEL</button>
     <button class="topic-tag topic-filter" type="button" data-tag="human-agency">Human Agency</button>
@@ -26,6 +29,16 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-11-07" data-skin="reading" data-pattern="scale-network" data-series="scale-in-ai-age" data-tags="ai future-of-work human-connection" data-text="ai future of work human connection scale in the ai age efficiency productivity cities social networks relationships stopping rules">
+    <p class="persona-entry-series">Reading · Scale · Scale in the AI Age</p>
+    <h3><a href="/persona/ai-saves-time-expands-reach/">AI Saves Time and Expands Our Reach. Why Do We Feel Busier? (3/3)</a></h3>
+    <p>A bilingual reflection on why faster work and wider networks do not automatically turn efficiency into freedom.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="ai">AI</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="future-of-work">Future of Work</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="human-connection">Human Connection</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-10-31" data-skin="reading" data-pattern="alchemist-path" data-series="before-departure-after-arrival" data-tags="reading decisions uncertainty" data-text="reading decisions uncertainty the alchemist before departure after arrival treasure journey outcomes hindsight decision quality">
     <p class="persona-entry-series">Reading · The Alchemist · Before Departure, After Arrival</p>
     <h3><a href="/persona/does-finding-treasure-justify-the-journey/">Does Finding Treasure Mean He Was Right to Leave? (3/3)</a></h3>
