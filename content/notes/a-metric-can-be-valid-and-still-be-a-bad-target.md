@@ -8,6 +8,7 @@ sourceBookZh: "欲罢不能"
 description: "Why measurement validity does not guarantee that a metric remains useful after people or systems begin optimizing it."
 url: "/blogs/a-metric-can-be-valid-and-still-be-a-bad-target/"
 series: ["Boundary Notes", "Modeling Decisions"]
+topic: "Statistics & Modeling"
 tags: ["Measurement", "Goodhart's Law", "Clinical Endpoints"]
 provenanceStatus: "verified"
 provenanceSources:

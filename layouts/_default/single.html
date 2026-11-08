@@ -87,6 +87,9 @@
     </div>
     {{- end }}
   </header>
+  {{- if $isPersonaArticle }}
+    {{- partial "persona_series_nav.html" . }}
+  {{- end }}
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}

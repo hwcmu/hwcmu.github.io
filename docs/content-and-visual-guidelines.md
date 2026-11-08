@@ -103,15 +103,29 @@ Projects foreground contribution and artifacts through the shared Project header
 
 New classifications should help readers find material across the whole section, including paginated content. A topic control must not imply a global search while filtering only the current page.
 
+### Topic filters and summaries — implemented
+
+- Every published Note and Project defines a single visible `topic` in frontmatter, separate from its up-to-three `tags`.
+- Notes use Clinical Data & Evaluation / Statistics & Modeling / Data & Computing Systems / AI & Research Methods.
+- Projects use Clinical & Health / Environment & Energy / Data Products & Tools.
+- Section topic controls are generated from published content. Cards display their primary topic; keyword buttons continue to filter by visible tags without silently widening their meaning.
+- Notes and Projects render their complete, date-descending collections on one index page so both topic and keyword filters cover the entire section. Revisit the loading strategy if the collections become large; preserve complete filtering when doing so. The old `/blogs/page/2/` URL redirects to `/blogs/`.
+- Use the authored `description` for Note and Project card summaries. Fall back to an automatic summary only when no description exists.
+
+### Mathematics and series navigation — implemented
+
+- Write inline math as `\(...\)` and display math as `$$...$$` or `\[...\]`. Single dollar signs remain ordinary text, avoiding accidental currency parsing.
+- Hugo renders math to MathML at build time through the passthrough hook. Invalid formulas fail the build; no client-side math library is required. Verify actual equations in the browser after changes.
+- Register numbered Persona series in `data/persona_series.yaml`, listing only published English source paths, their order, and the planned total. Paired Chinese pages are resolved by the shared navigation partial.
+- The series directory follows part order, identifies the current article, and marks missing parts as not yet published without exposing draft titles or linking to drafts. Incomplete series cards also state which parts are available; update that status when another part is published.
+
 ## Proposed organization — not yet implemented or finalized
 
 These are planning options, not instructions to migrate content or change navigation:
 
 - Persona: Reading / Environment & Everyday Life / Reflections, with technology and society retained as topic labels where useful. Final grouping and naming remain open.
-- Notes: Clinical Data & Evaluation / Statistics & Modeling / Data & Computing Systems / AI & Research Methods. Final grouping and naming remain open.
-- Projects: Clinical & Health / Environment & Energy / Data Products & Tools, if the collection benefits from those filters.
 - Notes may become either evolving topical notes or self-contained essays; the author has not yet selected a uniform editorial model. Do not force either structure.
-- Search, curated reading paths, formula rendering repairs, and cross-page filtering fixes require their own implementation scope. This document does not mark them complete.
+- Search and curated cross-section reading paths remain future work. The topic filtering, mathematics, and numbered-series navigation described above are implemented.
 
 ## Before publication or visual changes
 

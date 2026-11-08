@@ -5,6 +5,7 @@ draft: false
 description: "A practical framework for testing where evidence is lost between source documents, retrieval, citations, and a final answer."
 url: "/blogs/rag-evidence-pipeline/"
 series: ["AI Systems Notes", "Boundary Notes"]
+topic: "AI & Research Methods"
 tags: ["RAG", "AI Evaluation", "Evidence Systems"]
 provenanceStatus: "verified"
 provenanceSources:

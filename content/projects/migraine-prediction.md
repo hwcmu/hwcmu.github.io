@@ -2,6 +2,7 @@
 title: "AI-Powered Migraine Forecast System"
 date: 2025-12-06
 description: "A digital-health analytics project connecting product metrics, physician-guided forecasting, and personalized feedback for migraine management."
+topic: "Clinical & Health"
 tags: ["Product Analytics", "Machine Learning", "Healthcare"]
 projectType: "Product Analytics Project"
 role: "Data scientist · Product analytics · Forecasting"

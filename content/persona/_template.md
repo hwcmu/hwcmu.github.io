@@ -36,6 +36,7 @@ Reusable Persona template
 - Treat `Reading Notes` as a content family, not a series name. For book-derived pieces, use the book or an explicitly named multi-article project as the second `series` value.
 - Give each card a two-axis visual identity: `data-skin` selects the restrained broad-topic color family, while `data-pattern` selects the series-specific linework. Add a stable kebab-case `data-series` key and a concise visible `.persona-entry-series` label. Reuse the same pattern within one series; do not reuse it for an unrelated book merely because both pieces are reading notes.
 - Use `(n/total)` or `（n/total）` in the visible title only when a multi-article series and its total are actually planned. A standalone first piece does not need `(1/?)`.
+- For a numbered series, register the published English source path and part order in data/persona_series.yaml; the shared navigation resolves the Chinese pair and marks unpublished parts without linking drafts. Update any incomplete-series status on the Persona card when publishing a new part.
 - The body may be reorganized freely, but retain the shared kicker, subtitle, opening divider, drop cap, and h2 strata styling.
 - For a single-file bilingual HTML article, use inlineLanguageToggle: true instead of a paired page.
 -->

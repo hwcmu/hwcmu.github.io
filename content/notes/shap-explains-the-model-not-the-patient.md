@@ -5,6 +5,7 @@ draft: false
 description: "A concise clinical AI review note on what SHAP can and cannot tell clinicians, researchers, and reviewers."
 url: "/blogs/shap-explains-the-model-not-the-patient/"
 series: ["Boundary Notes"]
+topic: "Clinical Data & Evaluation"
 tags: ["Clinical AI", "Model Interpretation", "SHAP"]
 ---
 

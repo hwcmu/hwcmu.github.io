@@ -8,6 +8,7 @@ sourceBookZh: "规模"
 description: "Why Hilbert and Z-order mappings accelerate multidimensional search without replacing exact spatial predicates."
 url: "/blogs/spatial-index-is-a-candidate-filter/"
 series: ["Data Systems Notes"]
+topic: "Data & Computing Systems"
 tags: ["Spatial Indexing", "Database Design", "Space-Filling Curves"]
 provenanceStatus: "verified"
 provenanceSources:

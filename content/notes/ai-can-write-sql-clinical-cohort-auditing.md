@@ -5,6 +5,7 @@ draft: false
 description: "A practical note on reviewing AI-generated SQL for silent errors in clinical cohort construction."
 url: "/blogs/ai-can-write-sql-clinical-cohort-auditing/"
 series: ["Clinical Data Engineering", "Boundary Notes"]
+topic: "Clinical Data & Evaluation"
 tags: ["Clinical SQL", "Cohort Construction", "AI Code Review"]
 provenanceStatus: "verified"
 provenanceSources:

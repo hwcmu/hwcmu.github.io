@@ -5,6 +5,7 @@ draft: false
 description: "Practical notes on prediction timing, survey design, data cleaning, and clinical NLP boundaries."
 url: "/blogs/nhamcs-ed-data-processing-technical-notes/"
 series: ["Dataset Autopsies", "Boundary Notes"]
+topic: "Clinical Data & Evaluation"
 tags: ["NHAMCS", "Clinical AI", "Survey Data"]
 ---
 

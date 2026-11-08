@@ -9,6 +9,7 @@ description: "A modeling note on sample-relative standardization and dimensionle
 url: "/blogs/z-score-sample-relative/"
 aliases: ["/blogs/z-score-is-not-a-dimensionless-feature/"]
 series: ["Modeling Decisions"]
+topic: "Statistics & Modeling"
 tags: ["Dimensional Analysis", "Feature Engineering", "Model Transfer"]
 provenanceStatus: "verified"
 provenanceSources:
@@ -74,13 +75,13 @@ This is stronger than saying the feature "helps the model." It says why the feat
 
 Dividing by a variable silently fixes its exponent at one.
 
-A per-capita outcome $Y/N$ assumes that $Y$ should scale proportionally with population. If the appropriate baseline is instead
+A per-capita outcome \(Y/N\) assumes that \(Y\) should scale proportionally with population. If the appropriate baseline is instead
 
 $$
 Y \propto N^b,
 $$
 
-with $b \neq 1$, the ratio leaves systematic size effects behind. The same problem appears when a clinical measurement is divided by body size without checking the appropriate allometric relationship.
+with \(b \neq 1\), the ratio leaves systematic size effects behind. The same problem appears when a clinical measurement is divided by body size without checking the appropriate allometric relationship.
 
 Ratios introduce other risks:
 

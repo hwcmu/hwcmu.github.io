@@ -2,6 +2,7 @@
 title: "Multimodal Prediction of IV Fluid Utilization"
 date: 2025-12-09
 description: "A multimodal clinical prediction project combining structured emergency-department variables with reason-for-visit text to study IV fluid utilization."
+topic: "Clinical & Health"
 tags: ["NLP", "Machine Learning", "Healthcare"]
 projectType: "Research Project"
 role: "Lead author · Data analysis · Multimodal modeling"

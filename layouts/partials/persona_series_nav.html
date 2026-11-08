@@ -1,0 +1,30 @@
+{{- $page := . -}}
+{{- $isZh := strings.HasPrefix .RelPermalink "/zh/" -}}
+{{- $source := replace .File.Path ".zh.md" ".md" -}}
+{{- range site.Data.persona_series -}}
+  {{- if where .items "page" $source -}}
+  <nav class="persona-series-nav" aria-label="{{ if $isZh }}系列阅读顺序{{ else }}Series reading order{{ end }}">
+    <details{{ if lt (len .items) .total }} open{{ end }}>
+      <summary>{{ if $isZh }}系列：{{ .titleZh }} · 已发布 {{ len .items }}/{{ .total }} 篇{{ else }}Series: {{ .title }} · {{ len .items }} of {{ .total }} published{{ end }}</summary>
+      <ol>
+        {{- $series := . -}}
+        {{- range seq .total -}}
+          {{- $part := . -}}
+          {{- with where $series.items "order" $part -}}
+            {{- $path := (index . 0).page -}}
+            {{- if $isZh }}{{ $path = replace $path ".md" ".zh.md" }}{{ end -}}
+            {{- with site.GetPage $path -}}
+              {{- if .Draft }}{{ errorf "Persona series references a draft: %s" $path }}{{ end -}}
+              <li>{{ if eq .RelPermalink $page.RelPermalink }}<span aria-current="page">{{ .Title }}</span>{{ else }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</li>
+            {{- else -}}
+              {{- errorf "Persona series page not found: %s" $path -}}
+            {{- end -}}
+          {{- else -}}
+            <li class="series-unpublished">{{ if $isZh }}第 {{ $part }} 篇 · 尚未发布{{ else }}Part {{ $part }} · Not yet published{{ end }}</li>
+          {{- end -}}
+        {{- end -}}
+      </ol>
+    </details>
+  </nav>
+  {{- end -}}
+{{- end -}}

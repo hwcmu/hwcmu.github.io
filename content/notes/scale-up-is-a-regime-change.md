@@ -8,6 +8,7 @@ sourceBookZh: "规模"
 description: "Why a laptop benchmark cannot be multiplied into a production forecast when memory, network, skew, and coordination become new bottlenecks."
 url: "/blogs/scale-up-is-a-regime-change/"
 series: ["Data Systems Notes"]
+topic: "Data & Computing Systems"
 tags: ["Data Engineering", "Performance Modeling", "Distributed Systems"]
 provenanceStatus: "verified"
 provenanceSources:

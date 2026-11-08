@@ -8,6 +8,7 @@ sourceBookZh: "规模"
 description: "A clinical AI review framework for testing whether a model can cross hospitals, devices, populations, workflows, and time periods."
 url: "/blogs/predictive-performance-does-not-establish-transportability/"
 series: ["Boundary Notes"]
+topic: "Clinical Data & Evaluation"
 tags: ["Model Evaluation", "Dataset Shift", "Transportability"]
 provenanceStatus: "verified"
 provenanceSources:

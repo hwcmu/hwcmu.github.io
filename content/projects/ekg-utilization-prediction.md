@@ -3,6 +3,7 @@ title: "Predicting EKG Utilization from Clinical Variables and Patient Narrative
 date: 2025-08-06
 draft: false
 description: "A published multimodal clinical AI study combining structured emergency-care variables with patient-reported text to model observed EKG utilization."
+topic: "Clinical & Health"
 tags: ["Clinical AI", "NLP", "Healthcare Utilization"]
 projectType: "Published Research Project"
 role: "Lead author · Study design · Clinical NLP · Multimodal modeling"

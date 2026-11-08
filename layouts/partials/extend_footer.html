@@ -60,12 +60,15 @@
     if (!entries.length || !tags.length) return;
 
     const empty = document.querySelector('.topic-empty');
+    const status = document.querySelector('[data-topic-status]');
     let activeTag = 'all';
+    let activeKind = 'tag';
 
-    const setActiveTag = (tagName) => {
-      activeTag = tagName || 'all';
+    const setActiveTag = (button) => {
+      activeKind = button.dataset.topic !== undefined ? 'topic' : 'tag';
+      activeTag = button.dataset[activeKind] || 'all';
       tags.forEach((item) => {
-        const isActive = item.dataset.tag === activeTag;
+        const isActive = item.dataset[activeKind] === activeTag;
         item.classList.toggle('active', isActive);
         item.setAttribute('aria-pressed', String(isActive));
       });
@@ -76,18 +79,22 @@
 
       entries.forEach((entry) => {
         const entryTags = (entry.dataset.tags || '').split(/\s+/);
-        const isVisible = activeTag === 'all' || entryTags.includes(activeTag);
+        const matches = activeKind === 'topic'
+          ? entry.dataset.topic === activeTag
+          : entryTags.includes(activeTag);
+        const isVisible = activeTag === 'all' || matches;
         entry.hidden = !isVisible;
         if (isVisible) visibleCount += 1;
       });
 
       if (empty) empty.hidden = visibleCount !== 0;
+      if (status) status.textContent = `${visibleCount} of ${entries.length} items`;
     };
 
     tags.forEach((tag) => {
       tag.setAttribute('aria-pressed', String(tag.classList.contains('active')));
       tag.addEventListener('click', () => {
-        setActiveTag(tag.dataset.tag);
+        setActiveTag(tag);
         filterEntries();
       });
     });

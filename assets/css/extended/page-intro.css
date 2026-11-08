@@ -234,7 +234,7 @@
 }
 
 
-.post-content .topic-tag-row {
+.topic-tag-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
@@ -257,7 +257,7 @@
   line-height: 1.55;
 }
 
-.post-content .topic-tag {
+.topic-tag {
   display: inline-flex;
   align-items: center;
   min-height: 1.7rem;
@@ -271,17 +271,17 @@
   text-decoration: none;
 }
 
-.post-content button.topic-tag {
+button.topic-tag {
   font: inherit;
   cursor: pointer;
 }
 
-.post-content .topic-tag:hover {
+.topic-tag:hover {
   border-color: rgba(118, 91, 84, 0.44);
   color: var(--primary);
 }
 
-.post-content .topic-tag.active {
+.topic-tag.active {
   border-color: rgba(118, 91, 84, 0.48);
   color: var(--primary);
   background: rgba(118, 91, 84, 0.12);
@@ -296,6 +296,60 @@
   position: relative;
   z-index: 2;
   margin: 0.65rem 0 0.25rem;
+}
+
+.entry-topic-label {
+  margin: 0 0 0.5rem;
+  color: var(--secondary);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.persona-series-nav {
+  margin: 1.25rem 0 2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.persona-series-nav summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.persona-series-nav ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.persona-series-nav li + li {
+  margin-top: 0.55rem;
+}
+
+.persona-series-nav a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.persona-series-nav [aria-current="page"] {
+  font-weight: 600;
+}
+
+.series-unpublished,
+.post-content .persona-entry .persona-series-status {
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+.post-content .persona-entry .persona-series-status {
+  margin-bottom: 0.45rem;
+}
+
+.math-display {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  padding: 0.5rem 0;
 }
 
 .topic-empty {

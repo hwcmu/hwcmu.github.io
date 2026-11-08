@@ -2,6 +2,7 @@
 title: "Machine Learning for Life Cycle Assessment"
 date: 2025-10-16
 description: "A review and research-synthesis project mapping machine-learning methods to the four ISO phases of life cycle assessment."
+topic: "Environment & Energy"
 tags: ["Sustainability", "Machine Learning", "LCA"]
 projectType: "Research Synthesis"
 role: "Lead author · Review design · Bibliometric analysis"

@@ -3,6 +3,7 @@ title: "Mapping Acute ESRD Care: From Presenting Reasons to Diagnostic Networks"
 date: 2026-07-23
 draft: false
 description: "A multi-scale clinical network analysis connecting presenting reasons, ICD-10 chapters, and diagnosis-code pathways across ESRD-indicated emergency encounters."
+topic: "Clinical & Health"
 tags: ["Clinical Network Analysis", "Emergency Care", "Kidney Disease"]
 provenanceStatus: "verified"
 provenanceSources:

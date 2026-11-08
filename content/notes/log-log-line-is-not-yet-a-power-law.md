@@ -8,6 +8,7 @@ sourceBookZh: "规模"
 description: "A practical guide to reading scaling exponents without confusing a useful visual pattern with a validated power-law model."
 url: "/blogs/log-log-line-is-not-yet-a-power-law/"
 series: ["Modeling Decisions"]
+topic: "Statistics & Modeling"
 tags: ["Power Laws", "Statistical Modeling", "Model Diagnostics"]
 provenanceStatus: "verified"
 provenanceSources:
@@ -32,7 +33,7 @@ $$
 \log Y = \log Y_0 + b \log X.
 $$
 
-The exponent $b$ becomes the slope. When $Y$ is a total quantity and $X$ is system size, comparing $b$ with 1 can be informative: $b<1$ suggests sublinear scaling, $b=1$ proportional scaling, and $b>1$ superlinear scaling.
+The exponent \(b\) becomes the slope. When \(Y\) is a total quantity and \(X\) is system size, comparing \(b\) with 1 can be informative: \(b<1\) suggests sublinear scaling, \(b=1\) proportional scaling, and \(b>1\) superlinear scaling.
 
 But several different questions are routinely collapsed into that one picture.
 
@@ -70,7 +71,7 @@ The log-log graph remains useful. It reveals orders of magnitude, heteroscedasti
 
 ### 1. Name the claim
 
-Are you modeling a conditional mean, a median, a quantile, or a distributional tail? What does $b$ mean for this particular outcome? The language of "sublinear" and "superlinear" is useful only after the numerator, denominator, and unit of analysis are clear.
+Are you modeling a conditional mean, a median, a quantile, or a distributional tail? What does \(b\) mean for this particular outcome? The language of "sublinear" and "superlinear" is useful only after the numerator, denominator, and unit of analysis are clear.
 
 ### 2. Plot more than one view
 
@@ -86,7 +87,7 @@ For tail distributions, Clauset, Shalizi, and Newman recommend estimating the lo
 
 ### 5. Test what the exponent is supposed to predict
 
-If a mechanism implies $b=3/4$, report uncertainty around the estimate and test related implications. If the exponent changes sharply under a reasonable inclusion rule, it is not yet a stable system property.
+If a mechanism implies \(b=3/4\), report uncertainty around the estimate and test related implications. If the exponent changes sharply under a reasonable inclusion rule, it is not yet a stable system property.
 
 ## The Boundary
 

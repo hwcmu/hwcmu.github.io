@@ -3,6 +3,7 @@ title: "Fossil Persistence and Renewable Expansion in Global Power Systems"
 date: 2026-07-11
 draft: false
 description: "A stock-based monitoring framework for distinguishing renewable build-out from actual fossil-fuel asset displacement in global power systems."
+topic: "Environment & Energy"
 tags: ["Energy Systems", "Sustainability", "Data Governance"]
 projectType: "Research Project"
 role: "Lead author · Framework design · Data analysis"

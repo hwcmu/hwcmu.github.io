@@ -13,7 +13,7 @@ Data analyst and research health data scientist focused on clinical analytics, h
 <div class="work-list">
   <div class="work-item"><strong>PhD in Environmental Engineering, Data Science Concentration</strong><span>Carnegie Mellon University, Pittsburgh, PA. Aug 2021 - Aug 2025.</span></div>
   <div class="work-item"><strong>MS in Data Analytics</strong><span>Georgia Institute of Technology, Atlanta, GA. Aug 2024 - July 2026.</span></div>
-  <div class="work-item"><strong>MS in Computer Science</strong><span>Georgia Institute of Technology, Atlanta, GA. Expected start Aug 2026.</span></div>
+  <div class="work-item"><strong>MS in Computer Science</strong><span>Georgia Institute of Technology, Atlanta, GA. Aug 2026 - present.</span></div>
 </div>
 
 ## Work Experience
@@ -21,7 +21,7 @@ Data analyst and research health data scientist focused on clinical analytics, h
 <div class="work-list">
   <div class="work-item"><strong>Research Health Data Scientist, University of Pittsburgh</strong><span>Jan 2026 - present. Build the main clinical analytics thread of my current work: clinical NLP, multimodal prediction, EHR and public clinical data workflows, model evaluation, and reproducible evidence for emergency care and real-world healthcare research.</span></div>
   <div class="work-item"><strong>Data Analyst, University of Pittsburgh</strong><span>Jan 2026 - present. Support Alzheimer’s disease and cognitive-health research through AI literature synthesis, clinical NLP, network analysis of symptoms and comorbidities, dataset preparation, statistical analysis, and manuscript-oriented evidence summaries.</span></div>
-  <div class="work-item"><strong>Data Scientist, Peachy Day</strong><span>Oct 2025 - Dec 2026. Built SQL-based pipelines for user health, weather, and app activity data; developed migraine-risk and recurrent-event modeling workflows; supported product analytics, feature attribution, and user-level reporting for personalized insights.</span></div>
+  <div class="work-item"><strong>Data Scientist, Peachy Day</strong><span>Oct 2025 - Dec 2025. Built SQL-based pipelines for user health, weather, and app activity data; developed migraine-risk and recurrent-event modeling workflows; supported product analytics, feature attribution, and user-level reporting for personalized insights.</span></div>
   <div class="work-item"><strong>Graduate Research Assistant, Carnegie Mellon University</strong><span>Aug 2021 - Oct 2025. Developed computer vision, Gaussian process regression, active learning, geospatial modeling, and uncertainty-aware workflows for environmental sensing and system-level analytics.</span></div>
 </div>
 

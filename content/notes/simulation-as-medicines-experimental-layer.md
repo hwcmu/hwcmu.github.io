@@ -5,6 +5,7 @@ draft: false
 description: "Why the next phase of medical AI may depend on hybrid simulators, virtual patients, and models that can test interventions rather than merely predict outcomes."
 url: "/blogs/simulation-medicine-experimental-layer/"
 series: ["Future of Medical AI", "Boundary Notes"]
+topic: "AI & Research Methods"
 tags: ["Medical Simulation", "Clinical AI", "Digital Twins"]
 ---
 

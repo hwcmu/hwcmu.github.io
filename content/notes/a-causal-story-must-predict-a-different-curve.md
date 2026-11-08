@@ -8,6 +8,7 @@ sourceBookZh: "贪婪的多巴胺"
 description: "How competing explanations become testable when they imply different dose-response shapes, time courses, controls, or response allocations."
 url: "/blogs/a-causal-story-must-predict-a-different-curve/"
 series: ["Research Workflow Notes", "Modeling Decisions"]
+topic: "Statistics & Modeling"
 tags: ["Causal Inference", "Experimental Design", "Identifiability"]
 provenanceStatus: "verified"
 provenanceSources:

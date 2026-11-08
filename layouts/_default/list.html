@@ -47,7 +47,31 @@
 
 {{- $pages = $pages.ByDate.Reverse }}
 
-{{- $paginator := .Paginate $pages }}
+{{- $isFilteredSection := and .IsSection (in (slice "notes" "projects") .Section) }}
+{{- $paginator := false }}
+{{- if $isFilteredSection }}
+  {{- range $pages }}
+    {{- if not .Params.topic }}{{ errorf "Set a visible topic for %s before publishing" .File.Path }}{{ end }}
+  {{- end }}
+  {{- $paginator = .Paginate $pages (math.Max 1 (len $pages)) }}
+{{- else }}
+  {{- $paginator = .Paginate $pages }}
+{{- end }}
+
+{{- if $isFilteredSection }}
+<div class="post-content">
+  <div class="topic-explorer">
+    <h3>Explore by Topics</h3>
+    <div class="topic-tag-row" aria-label="Filter {{ .Title | lower }} by topic">
+      <button class="topic-tag topic-filter active" type="button" data-topic="all" aria-pressed="true">All</button>
+      {{- range $pages.GroupByParam "topic" }}
+      <button class="topic-tag topic-filter" type="button" data-topic="{{ .Key | urlize }}" aria-pressed="false">{{ .Key }}</button>
+      {{- end }}
+    </div>
+    <p class="topic-status" role="status" data-topic-status>{{ len $pages }} of {{ len $pages }} items</p>
+  </div>
+</div>
+{{- end }}
 
 {{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- partial "home_info.html" . }}
@@ -66,14 +90,15 @@
 {{- end }}
 
 {{- $tagSlugs := slice }}
-{{- range (.Param "tags") }}
+{{- range first 3 (.Param "tags" | default slice) }}
 {{- $tagSlugs = $tagSlugs | append (urlize .) }}
 {{- end }}
 
-<article class="{{ $class }}" data-topic-entry data-tags="{{ delimit $tagSlugs " " }}">
+<article class="{{ $class }}" data-topic-entry data-topic="{{ .Params.topic | default "" | urlize }}" data-tags="{{ delimit $tagSlugs " " }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
+    {{- with .Params.topic }}<p class="entry-topic-label">{{ . }}</p>{{- end }}
     <h2 class="entry-hint-parent">
       {{- .Title }}
       {{- if .Draft }}
@@ -88,7 +113,7 @@
   </header>
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
-    {{- if and (eq $page.Section "projects") .Description }}
+    {{- if and (in (slice "projects" "notes") $page.Section) .Description }}
     <p>{{ .Description | plainify | htmlUnescape }}</p>
     {{- else }}
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>

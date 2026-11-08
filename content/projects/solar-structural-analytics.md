@@ -3,6 +3,7 @@ title: "Beyond Megawatts: Structural Analytics for Global Utility-Scale Solar"
 date: 2026-07-12
 draft: false
 description: "A global infrastructure data analysis project that turns nearly 100,000 solar project records into interpretable national development typologies."
+topic: "Environment & Energy"
 tags: ["Structural Analytics", "Network Science", "Infrastructure Data"]
 projectType: "Research Project"
 role: "Lead author · Representation design · Network analysis · Validation"

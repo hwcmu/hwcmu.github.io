@@ -6,6 +6,7 @@ description: "A method note on matching validation and training periods to the s
 url: "/blogs/temporal-validation-disruptive-periods/"
 aliases: ["/blogs/train-in-peacetime-test-in-wartime/"]
 series: ["Boundary Notes", "Research Workflow Notes"]
+topic: "Clinical Data & Evaluation"
 tags: ["Temporal Validation", "Data Leakage", "Model Evaluation"]
 ---
 

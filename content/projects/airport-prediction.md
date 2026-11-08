@@ -2,6 +2,7 @@
 title: "Real-Time Flight Delay Prediction"
 date: 2025-12-13
 description: "An end-to-end prediction system connecting historical flight records, live NOAA weather, Python inference, and a Tableau decision interface."
+topic: "Data Products & Tools"
 tags: ["Tableau", "Python", "Machine Learning"]
 projectType: "Technical Project"
 role: "Data pipeline · Modeling · Dashboard integration"

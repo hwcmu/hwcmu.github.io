@@ -8,6 +8,7 @@ sourceBookZh: "规模"
 description: "How Zipf-like key frequencies create distributed stragglers, why the head matters more than the long tail, and how to choose a repair."
 url: "/blogs/data-skew-is-a-heavy-head-problem/"
 series: ["Data Systems Notes"]
+topic: "Data & Computing Systems"
 tags: ["Data Skew", "Apache Spark", "Heavy-Tailed Data"]
 provenanceStatus: "verified"
 provenanceSources:

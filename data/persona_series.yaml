@@ -1,0 +1,34 @@
+- id: ai-education
+  title: AI Education
+  titleZh: AI 与教育
+  total: 2
+  items:
+    - order: 1
+      page: persona/ai-education/ai-era-education-moonshot-podcast.md
+    - order: 2
+      page: persona/ai-education/sel-podcast.md
+- id: palantir
+  title: Palantir
+  titleZh: Palantir
+  total: 3
+  items:
+    - order: 1
+      page: persona/palantir/piece-1-what-and-how-final.md
+    - order: 2
+      page: persona/palantir/piece-2-power-and-future-final.md
+    - order: 3
+      page: persona/palantir/piece-3-technical-deep-dive-final.md
+- id: before-departure-after-arrival
+  title: Before Departure, After Arrival
+  titleZh: 出发之前，抵达之后
+  total: 3
+  items:
+    - order: 3
+      page: persona/reading/does-finding-treasure-justify-the-journey.md
+- id: scale-in-ai-age
+  title: Scale in the AI Age
+  titleZh: AI 时代的《规模》
+  total: 3
+  items:
+    - order: 3
+      page: persona/reading/ai-saves-time-expands-reach.md
