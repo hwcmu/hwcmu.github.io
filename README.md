@@ -41,6 +41,8 @@ Published articles are edited in place. Their earlier unpublished versions are n
 
 ## Drafts and publication
 
+Read [Content and visual guidelines](docs/content-and-visual-guidelines.md) before researching, drafting, or publishing. It defines the Projects / Notes / Persona roles, Persona's color and series-pattern registry, and the lower-right texture limits; it also separates active rules from reserved styles and unresolved planning options.
+
 Only the `_index.md` marker in each `drafts/` directory is tracked. Draft contents are ignored by Git, and the markers cascade `draft: true` and disable rendering and listing. Local drafts therefore need their own backup; pushing this repository does not back them up.
 
 For a new Project or Persona article, start from its section's `_template.md`. New Project and Note drafts require `provenanceStatus` and `provenanceSources`; see `AGENTS.md` for the evidence requirements and publication checks. Publish a ready draft by moving it into the published section and completing the relevant publication checks.

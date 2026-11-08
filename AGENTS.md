@@ -1,5 +1,7 @@
 # GitHub / Portfolio Workbench
 
+Before researching, drafting, placing, publishing, or styling content, read [Content and visual guidelines](docs/content-and-visual-guidelines.md). It is the canonical reference for section roles, Persona color/series identities, and lower-right texture limits. Reserved styles and proposed navigation groups are explicitly marked; do not treat them as implemented or authorize a broader redesign from them.
+
 This chat is the user's standing workbench for GitHub documentation and portfolio maintenance.
 
 ## Baseline Operating Rules

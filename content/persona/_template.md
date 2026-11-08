@@ -25,11 +25,12 @@ build:
 <!--
 Reusable Persona template
 
+- Read docs/content-and-visual-guidelines.md before choosing the topic color and series pattern. Use its registry; textures stay in the lower-right corner, capped at min(32%, 10rem) wide and min(5.5rem, 50%) high with opacity 0.55. Reserved skins require shared CSS implementation before use.
 - Publish English at /persona/... and make it the card's default destination.
 - Create a paired Chinese file using the same structure, usually with .zh.md.
 - In the Chinese file, reverse translationUrl and use translationLabel: "English".
 - Keep Back to Persona and the language toggle in the shared template; do not add a custom top bar.
-- Keep exactly three visible tags and mirror them in frontmatter, card data-tags, and card buttons.
+- Keep at most three visible tags and mirror them in frontmatter, card data-tags, and card buttons.
 - Set `provenanceStatus` in both language files. Use `verified` only after checking every publication-relevant claim against the public URLs listed in `provenanceSources`; use `not-applicable` with an empty list only when no external claim needs verification.
 - Add the new card to content/persona/_index.md in reverse chronological order with `data-date`.
 - Treat `Reading Notes` as a content family, not a series name. For book-derived pieces, use the book or an explicitly named multi-article project as the second `series` value.
