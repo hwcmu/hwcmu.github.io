@@ -532,9 +532,13 @@
 .post-content .persona-entry[data-skin]::before {
   content: "";
   position: absolute;
-  inset: 0;
+  right: 0;
+  bottom: 0;
+  width: min(32%, 10rem);
+  height: 5.5rem;
+  max-height: 50%;
   pointer-events: none;
-  opacity: 0.72;
+  opacity: 0.55;
 }
 
 .post-content .persona-entry[data-skin="systems"] {
