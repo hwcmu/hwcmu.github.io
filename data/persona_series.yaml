@@ -30,5 +30,7 @@
   titleZh: AI 时代的《规模》
   total: 3
   items:
+    - order: 2
+      page: persona/reading/when-prediction-is-not-enough.md
     - order: 3
       page: persona/reading/ai-saves-time-expands-reach.md

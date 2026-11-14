@@ -11,6 +11,8 @@ translationKey: "persona"
   <div class="topic-tag-row" aria-label="Filter persona entries by topic">
     <button class="topic-tag topic-filter active" type="button" data-tag="all">All</button>
     <button class="topic-tag topic-filter" type="button" data-tag="ai">AI</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="healthcare">Healthcare</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="scientific-reasoning">Scientific Reasoning</button>
     <button class="topic-tag topic-filter" type="button" data-tag="future-of-work">Future of Work</button>
     <button class="topic-tag topic-filter" type="button" data-tag="human-connection">Human Connection</button>
     <button class="topic-tag topic-filter" type="button" data-tag="ai-education">AI Education</button>
@@ -29,9 +31,20 @@ translationKey: "persona"
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-11-14" data-skin="reading" data-pattern="scale-network" data-series="scale-in-ai-age" data-tags="ai healthcare scientific-reasoning" data-text="ai healthcare scientific reasoning scale in the ai age prediction explanation mechanism generalization hospital models external validation">
+    <p class="persona-entry-series">Reading · Scale · Scale in the AI Age</p>
+    <p class="persona-series-status">Parts 2–3 are available; part 1 is not yet published.</p>
+    <h3><a href="/persona/when-prediction-is-not-enough/">A Model Predicts Well. Why Is That Not Enough? (2/3)</a></h3>
+    <p>A bilingual reflection on prediction, mechanism, and why strong performance may not travel with a model.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="ai">AI</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="healthcare">Healthcare</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="scientific-reasoning">Scientific Reasoning</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-11-07" data-skin="reading" data-pattern="scale-network" data-series="scale-in-ai-age" data-tags="ai future-of-work human-connection" data-text="ai future of work human connection scale in the ai age efficiency productivity cities social networks relationships stopping rules">
     <p class="persona-entry-series">Reading · Scale · Scale in the AI Age</p>
-    <p class="persona-series-status">Part 3 is available; parts 1–2 are not yet published.</p>
+    <p class="persona-series-status">Parts 2–3 are available; part 1 is not yet published.</p>
     <h3><a href="/persona/ai-saves-time-expands-reach/">AI Saves Time and Expands Our Reach. Why Do We Feel Busier? (3/3)</a></h3>
     <p>A bilingual reflection on why faster work and wider networks do not automatically turn efficiency into freedom.</p>
     <div class="topic-tag-row persona-entry-tags">
