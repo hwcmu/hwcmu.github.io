@@ -27,10 +27,23 @@ translationKey: "persona"
     <button class="topic-tag topic-filter" type="button" data-tag="civilization">Civilization</button>
     <button class="topic-tag topic-filter" type="button" data-tag="history">History</button>
     <button class="topic-tag topic-filter" type="button" data-tag="reading-notes">Reading Notes</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="dopamine">Dopamine</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="systems-thinking">Systems Thinking</button>
+    <button class="topic-tag topic-filter" type="button" data-tag="data-science">Data Science</button>
   </div>
 </div>
 
 <div class="persona-list" id="persona-list">
+  <article class="persona-entry topic-entry" data-topic-entry data-date="2026-11-21" data-skin="reading" data-pattern="dopamine-pulses" data-series="molecule-of-more" data-tags="dopamine systems-thinking data-science" data-text="dopamine systems thinking data science the molecule of more reward prediction wanting liking creativity self efficacy optimization control">
+    <p class="persona-entry-series">Reading · The Molecule of More</p>
+    <h3><a href="/persona/dopamine-book-eight-engineering-systems/">I Read a Dopamine Book and Found Eight Engineering Systems</a></h3>
+    <p>Eight engineering metaphors inspired by <em>The Molecule of More</em>, with a clear line between useful analogy and neuroscience fact.</p>
+    <div class="topic-tag-row persona-entry-tags">
+      <button class="topic-tag topic-filter" type="button" data-tag="dopamine">Dopamine</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="systems-thinking">Systems Thinking</button>
+      <button class="topic-tag topic-filter" type="button" data-tag="data-science">Data Science</button>
+    </div>
+  </article>
   <article class="persona-entry topic-entry" data-topic-entry data-date="2026-11-14" data-skin="reading" data-pattern="scale-network" data-series="scale-in-ai-age" data-tags="ai healthcare scientific-reasoning" data-text="ai healthcare scientific reasoning scale in the ai age prediction explanation mechanism generalization hospital models external validation">
     <p class="persona-entry-series">Reading · Scale · Scale in the AI Age</p>
     <p class="persona-series-status">Parts 2–3 are available; part 1 is not yet published.</p>

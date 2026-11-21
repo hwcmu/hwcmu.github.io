@@ -92,6 +92,7 @@ opacity: 0.55;
 | `power-of-now` | The Power of Now | `reading` | `present-rings` |
 | `before-departure-after-arrival` | The Alchemist · Before Departure, After Arrival | `reading` | `alchemist-path` |
 | `scale-in-ai-age` | Scale · Scale in the AI Age | `reading` | `scale-network` |
+| `molecule-of-more` | The Molecule of More | `reading` | `dopamine-pulses` |
 
 ### Reading pages
 
