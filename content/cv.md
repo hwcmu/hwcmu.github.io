@@ -26,10 +26,12 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 *May 2026 – Present · Full-time · Pittsburgh, PA*
 
-- **Clinical Research & Operational Analytics:** Support cohort construction, study design, statistical analysis, and interpretation using real-world healthcare data.
+- **Clinical Research & Operational Analytics:** Support cohort construction, study design, and interpretation using real-world healthcare data; apply regression, survival analysis, clinical NLP, and predictive modeling in R and Python.
 - **SQL & Longitudinal Data Workflows:** Extract, clean, and structure longitudinal healthcare data from complex healthcare systems for reproducible research and decision support.
-- **Statistical & AI/ML Methods:** Apply regression, survival analysis, clinical NLP, and predictive modeling using R and Python to address clinical and operational questions.
-- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: As part of my University of Pittsburgh appointment, serve as a Statistician at the VA, supporting research projects through study design, clinical data workflows, statistical analysis, and interpretation. Current work includes statistical support for the **CLEAR TEAM** multicenter randomized controlled trial.
+- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: Serve as a Statistician at the VA as part of my University of Pittsburgh appointment.
+  - **Study Design & Statistical Analysis:** Support study design, statistical analysis, and interpretation across clinical research projects.
+  - **Clinical Data Workflows:** Support clinical data preparation and analytical workflows for research studies.
+  - **CLEAR TEAM Trial:** Provide statistical support for the multicenter randomized controlled trial as one of the projects within this assignment.
 
 ### Research Health Data Scientist · University of Pittsburgh
 
@@ -55,7 +57,8 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 *Oct 2025 – Dec 2025*
 
-- **Product & Health Data Pipelines:** Built SQL-based pipelines integrating user health logs, weather feeds, and app activity data to support product analytics and longitudinal reporting.
+- **Product & Health Data Pipelines:** Built SQL-based pipelines integrating user health logs, weather feeds, and app activity data.
+- **Product Analytics & Reporting:** Defined product metrics and developed longitudinal reporting workflows using integrated health and activity data.
 - **Forecasting & Personalization:** Developed migraine-risk and recurrent-event modeling workflows with feature attribution, translating model outputs into user-level personalized insights.
 
 ---
