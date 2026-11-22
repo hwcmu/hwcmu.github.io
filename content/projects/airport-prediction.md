@@ -1,8 +1,8 @@
 ---
 title: "Real-Time Flight Delay Prediction"
 date: 2025-12-13
-description: "An end-to-end prediction system connecting historical flight records, live NOAA weather, Python inference, and a Tableau decision interface."
-topic: "Data Products & Tools"
+description: "Connected 4M+ historical flight records, live NOAA temperatures, and TabPy scoring to a Tableau interface with explanations for predicted delays."
+topic: "Applied ML & Data Products"
 tags: ["Tableau", "Python", "Machine Learning"]
 projectType: "Technical Project"
 role: "Data pipeline · Modeling · Dashboard integration"
@@ -12,49 +12,38 @@ highlight:
 supportingHighlights:
   - title: "Weather arrives at prediction time"
     text: "Live conditions are assembled with route and timing features instead of relying on a fixed historical snapshot."
-  - title: "Every score comes with a reason"
-    text: "SHAP surfaces the three strongest contributors so a delay probability is accompanied by an inspectable explanation."
+  - title: "Predicted delays have inspectable contributors"
+    text: "For flights predicted to be delayed, the dashboard surfaces three SHAP contributors to help users inspect the model output."
 codeUrl: "https://github.com/hwcmu/Real-Time-Flight-Delay-Prediction-TabPy-Tableau-NOAA-Integration"
 posterUrl: "/docs/project-poster.pdf"
 ---
 
 ![Tableau interface for real-time flight delay prediction](/images/airport.png)
 
-## From Flight Records to a Live Decision
+## Connect Offline Training to an Interactive Interface
 
-Flight delays depend on conditions that change across routes, airports, and time. This project connects a model trained on more than **4 million historical flight records** with live weather inputs, allowing a user to explore delay risk through a Tableau interface.
+I built a prediction workflow connecting more than **4 million historical flight records**, current NOAA weather observations, Python inference through TabPy, and a Tableau interface. The engineering task was to carry data and feature definitions from offline modeling into an interactive scoring path.
 
-The main challenge was not only training a classifier. It was building a complete path from historical data and an external API to fast inference, explanation, and a usable front end.
+The repository documents a **15-feature logistic regression model** and separate endpoints for probability, class label, and explanation. The dashboard is the interface to the Python workflow rather than a separate implementation of the model.
 
-## How the Pieces Connect
+## Distinguish Live Inputs from Historical Context
 
-The workflow combines Bureau of Transportation Statistics records with NOAA weather data:
+1. Historical Bureau of Transportation Statistics records supply route, schedule, and operational features.
+2. A historical lookup table supplies rolling statistics and other contextual values.
+3. The NOAA API supplies current origin and destination temperatures.
+4. Python assembles the hybrid feature vector and applies the trained logistic regression model.
+5. TabPy returns results to Tableau; for predicted delays, the explanation endpoint supplies the top three SHAP contributors.
 
-1. historical flight records are cleaned and summarized into route and timing features,
-2. rolling statistics provide recent operational context,
-3. the NOAA API supplies current weather conditions,
-4. the features are passed to a logistic regression model, and
-5. TabPy returns the predicted delay probability to Tableau.
+This distinction matters: a live weather request does not make every input live. Several rolling features remain historical lookups. Explanations describe the fitted prediction and should not be presented as established causes of a delay.
 
-Logistic regression was selected as a practical balance between probability output, inference speed, and interpretability. The project uses SHAP to identify the three features contributing most strongly to each prediction, so the dashboard shows not only a risk estimate but also the conditions influencing it.
+## Choose a Model That Fits the Serving Path
 
-## Why the Interface Matters
+Logistic regression provides probability outputs and a comparatively simple inference path. TabPy lets the workbook request scoring and explanation through a shared Python backend, keeping feature processing separate from presentation.
 
-The dashboard acts as the decision surface rather than the analytical engine. Users select a route and flight context in Tableau; TabPy connects those inputs to the Python model and returns the prediction and explanation.
+The public materials support this architecture. They do not establish a latency service-level objective, a production concurrency limit, or a quantified accuracy sacrifice relative to a heavier model, so those are not claimed here.
 
-This separation keeps the components modular:
+## Understand the Demo Boundary
 
-- Tableau handles interaction and visual communication,
-- Python handles feature processing and inference,
-- NOAA provides live environmental context, and
-- the historical dataset supplies the learned delay patterns.
+The complete interactive workflow requires a running TabPy service and the corresponding Tableau connection. Tableau Public does not support that external service; the public image and poster therefore illustrate the interface rather than offering a live hosted prediction endpoint.
 
-## What the Public Demo Can Show
-
-Tableau Public does not support an external TabPy service. The public dashboard image and poster therefore show a static demonstration, while the repository documents the complete local architecture and integration workflow.
-
-The project is a prediction prototype rather than an airline operations system. Its outputs depend on the quality and timing of the weather feed, the stability of historical route patterns, and the features available at inference time.
-
-## What Makes the System Useful
-
-The useful part of this project is the connection between modeling and delivery. A model becomes operational only when live inputs are assembled consistently, inference is fast enough for interaction, and the result is communicated in a form that a user can inspect. The project makes that full chain visible from data pipeline to dashboard.
+As a prototype, the system shows how historical ML features, current external inputs, and a BI interface can be connected. Operational use would require separate evaluation of input freshness, API failure behavior, model drift, and performance under the intended traffic pattern.

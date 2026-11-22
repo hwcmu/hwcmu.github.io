@@ -2,9 +2,7 @@
 title: "Predictive Performance Does Not Establish Transportability"
 date: 2026-10-24
 draft: false
-contentType: "reading-note"
-sourceBook: "Scale"
-sourceBookZh: "规模"
+contentType: "method-note"
 description: "A clinical AI review framework for testing whether a model can cross hospitals, devices, populations, workflows, and time periods."
 url: "/blogs/predictive-performance-does-not-establish-transportability/"
 series: ["Boundary Notes"]
@@ -12,7 +10,6 @@ topic: "Clinical Data & Evaluation"
 tags: ["Model Evaluation", "Dataset Shift", "Transportability"]
 provenanceStatus: "verified"
 provenanceSources:
-  - "https://www.penguinrandomhouse.com/books/314049/scale-by-geoffrey-west/"
   - "https://doi.org/10.1214/10-STS330"
   - "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002683"
   - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8665481/"
@@ -20,9 +17,9 @@ provenanceSources:
   - "https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html"
 ---
 
-A model that performs well on held-out data has passed an important test. It has not passed every test implied by the word "generalizable."
+A high test-set AUC establishes discrimination in an evaluated sample. It does not establish that a model will remain useful after it moves to another hospital, device, population, workflow, or time period.
 
-Internal validation estimates performance under a particular sampling and data-generating process. Transportability asks a stronger question: will the relationship remain useful after the population, institution, workflow, device, time period, or decision context changes?
+Before describing a clinical model as generalizable, I separate internal performance from transportability: whether its predictive signal survives the specific change of setting that the intended use requires. Local ordering habits, acquisition artifacts, or documentation practices may carry predictive information without carrying across that boundary.
 
 > Predictive performance is evidence about a model in an evaluated environment. Transportability is a claim about environments that were not interchangeable by default.
 
@@ -88,13 +85,10 @@ Before making a generalization claim, document:
 
 The review should end with a bounded statement, not the word "generalizable." For example:
 
-> The model retained discrimination and calibration in a temporally later cohort from the same health system; performance in other institutions has not been established.
-
-That sentence is less dramatic than a universal claim. It is also much more useful.
+*The model retained discrimination and calibration in a temporally later cohort from the same health system; performance in other institutions has not been established.*
 
 ## Sources
 
-- Geoffrey West. [*Scale*](https://www.penguinrandomhouse.com/books/314049/scale-by-geoffrey-west/). Penguin Books.
 - Shmueli G. [To Explain or to Predict?](https://doi.org/10.1214/10-STS330). *Statistical Science*. 2010.
 - Zech JR, et al. [Variable Generalization Performance of a Deep Learning Model to Detect Pneumonia in Chest Radiographs](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002683). *PLOS Medicine*. 2018.
 - Finlayson SG, et al. [The Clinician and Dataset Shift in Artificial Intelligence](https://pmc.ncbi.nlm.nih.gov/articles/PMC8665481/). *New England Journal of Medicine*. 2021.

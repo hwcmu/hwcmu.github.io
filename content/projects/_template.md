@@ -3,7 +3,7 @@ title: "Project Title"
 date: 2099-01-01
 draft: true
 description: "One sentence describing the problem, approach, and project output."
-topic: "" # Required: Clinical & Health / Environment & Energy / Data Products & Tools
+topic: "" # Required: use one of the exact titles in data/project_groups.yaml
 tags: ["Topic One", "Topic Two", "Topic Three"]
 projectType: "Research Project"
 role: "Your role · Main contribution"

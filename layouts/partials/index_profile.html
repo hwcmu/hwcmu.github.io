@@ -31,7 +31,9 @@
         {{- end }}
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
-        <span>{{ .subtitle | markdownify }}</span>
+        {{- with .roleLine }}<p class="profile-role">{{ . }}</p>{{- end }}
+        <div class="profile-summary">{{ .subtitle | markdownify }}</div>
+        {{- with .credentials }}<p class="profile-credentials">{{ . }}</p>{{- end }}
         {{- partial "social_icons.html" -}}
 
         {{- with .buttons }}

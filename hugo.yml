@@ -16,7 +16,7 @@ params:
   env: production
   goatCounterCode: "vov"
   title: Hairong
-  description: "Research health data scientist and data analyst at the University of Pittsburgh | Clinical AI, real-world evidence, healthcare data workflows, and interpretable modeling"
+  description: "Hairong Wang studies when real-world data and AI-generated outputs can support decisions in health and sustainability systems."
   keywords: [Clinical AI, Real-World Evidence, Biostatistics, Healthcare Data Science, Machine Learning, AI-assisted Analytics, Clinical Workflows, University of Pittsburgh, VA Pittsburgh, CMU, Georgia Tech]
   author: Hairong
   # 默认使用系统主题，但也允许用户切换
@@ -29,7 +29,9 @@ params:
   profileMode:
     enabled: true
     title: "Hi 👋, I'm Hairong"
-    subtitle: "Research health data scientist and data analyst at the University of Pittsburgh. I build clinical AI, healthcare data workflows, and interpretable models for real-world research."
+    roleLine: "Research Health Data Scientist · University of Pittsburgh"
+    credentials: "Ph.D., Carnegie Mellon · M.S. in Analytics, Georgia Tech · M.S. in Computer Science, in progress"
+    subtitle: "I study the conditions under which **real-world data** and **AI-generated outputs** are reliable enough to support decisions in **health and sustainability systems**."
     imageUrl: "/images/avatar.png"
   # 社交链接 (显示在首页底部)
   socialIcons:

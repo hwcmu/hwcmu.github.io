@@ -2,8 +2,8 @@
 title: "Mapping Acute ESRD Care: From Presenting Reasons to Diagnostic Networks"
 date: 2026-07-23
 draft: false
-description: "A multi-scale clinical network analysis connecting presenting reasons, ICD-10 chapters, and diagnosis-code pathways across ESRD-indicated emergency encounters."
-topic: "Clinical & Health"
+description: "Mapped 533 ESRD-indicated encounters across 47,092 ED records to test how cohort definitions and network choices change the clinical picture."
+topic: "Health & Clinical Decision Systems"
 tags: ["Clinical Network Analysis", "Emergency Care", "Kidney Disease"]
 provenanceStatus: "verified"
 provenanceSources:
@@ -11,8 +11,8 @@ provenanceSources:
 projectType: "Research Project"
 role: "Lead author · Cohort design · Network analysis · Robustness assessment"
 highlight:
-  title: "Trace the encounter from symptom to diagnostic backbone"
-  text: "Three linked representations show how broad presenting reasons converge onto a renal-centered diagnostic architecture, connecting information available at presentation with diagnoses recorded after evaluation."
+  title: "Check the cohort before modeling its pathways"
+  text: "Only 34.0% of encounters identified by the ESRD chronic-condition flag included N18.6 in the available visit diagnoses. The flag and code-only definitions select different cohorts."
 supportingHighlights:
   - title: "One cohort, three clinical scales"
     text: "Chapter-level, diagnosis-code, and symptom-diagnosis layers separate system-wide coupling from specific pathways without collapsing the encounter into a frequency table."
@@ -23,13 +23,11 @@ doi: "10.1007/s13721-026-00848-7"
 
 ![Diagnosis-code backbone for ESRD-indicated emergency encounters](/images/esrd-diagnosis-code-backbone.jpg)
 
-## Why a Frequency Table Was Not Enough
+## Which Encounters Does a Code-Only Cohort Miss?
 
 Emergency encounters among people with end-stage renal disease (ESRD) rarely fit inside one organ system. A patient may arrive with weakness, dyspnea, digestive symptoms, or another broad complaint, while the eventual diagnostic record spans renal, cardiovascular, metabolic, infectious, and dialysis-related concerns.
 
-This project asks a structural question:
-
-> How do presenting reasons and diagnoses organize together within an acute ESRD encounter?
+I designed a multi-scale network analysis to examine how presenting reasons and diagnoses occur together, then tested whether the observed structure depended on the cohort definition or edge weights.
 
 Using the 2020-2022 National Hospital Ambulatory Medical Care Survey emergency-department files, I identified **533 ESRD-indicated encounters** from **47,092 public-use records**. The analysis is deliberately encounter-level and unweighted: its purpose is to map co-occurrence structure within the analytic sample, not estimate national prevalence.
 
@@ -73,7 +71,7 @@ Two further checks tested whether the result was driven by explicit `N18.6` codi
 
 ## What This Map Can Support
 
-The project translates heterogeneous emergency records into an interpretable clinical map that can generate hypotheses for triage pathways, cross-service coordination, and decision-support design.
+The project turns heterogeneous emergency records into a clinical map for hypothesis generation and cohort-definition review. The first engineering decision is the inclusion rule: downstream models cannot recover encounters excluded by an inappropriate code filter. The [clinical SQL review](/blogs/ai-can-write-sql-clinical-cohort-auditing/) develops this audit principle at the query level.
 
 It does not establish causal direction, patient trajectories, severity, or treatment effects. NHAMCS limits presenting reasons and diagnoses to five fields, lacks longitudinal patient identifiers and dialysis modality, and the unweighted networks are not national estimates. The observed pathways should therefore guide prospective questions, not be treated as validated clinical rules.
 

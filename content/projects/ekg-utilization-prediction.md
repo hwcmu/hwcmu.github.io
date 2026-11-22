@@ -1,9 +1,9 @@
 ---
-title: "Predicting EKG Utilization from Clinical Variables and Patient Narratives"
+title: "Multimodal Prediction of EKG Use in Emergency Care"
 date: 2025-08-06
 draft: false
-description: "A published multimodal clinical AI study combining structured emergency-care variables with patient-reported text to model observed EKG utilization."
-topic: "Clinical & Health"
+description: "Combined structured ED data with Clinical-BERT narrative features to predict observed EKG use, reaching AUC 0.861 with logistic regression."
+topic: "Health & Clinical Decision Systems"
 tags: ["Clinical AI", "NLP", "Healthcare Utilization"]
 projectType: "Published Research Project"
 role: "Lead author · Study design · Clinical NLP · Multimodal modeling"
@@ -21,45 +21,30 @@ codeUrl: "https://github.com/hwcmu/EKG-prediction"
 
 ![ROC comparison across structured, narrative, and combined EKG-utilization models](/images/ekg-multimodal-roc.jpg)
 
-## What Does an EKG Prediction Model Actually Predict?
+## Define the Outcome Before Explaining the Model
 
-An electrocardiogram is central to evaluating chest pain, dyspnea, arrhythmia, and other potentially serious presentations in emergency care. But an EKG is not performed during every visit. Its use reflects a mixture of symptoms, measured physiology, comorbidity, triage severity, clinician judgment, and local workflow.
+I developed a multimodal prediction workflow for **observed EKG use** in emergency care. An EKG-use label reflects symptoms and measured physiology, but also clinician judgment, triage practice, and the circumstances of a visit. Predicting that label does not establish whether a test is medically necessary.
 
-This project asked whether structured clinical variables and short patient-reported narratives could be combined to predict whether an EKG was performed during an emergency department visit.
+The study used **13,115 adult visits** from the 2021 NHAMCS-ED survey. EKG use was recorded in **30.6%** of visits. This is an encounter-level survey, rather than a longitudinal hospital EHR with patient trajectories.
 
-The outcome boundary is essential: the model predicts **observed EKG utilization**. It does not determine whether a patient should receive an EKG, and it does not identify biological necessity.
+## Compare the Modalities Before Combining Them
 
-## Two Data Modalities, One Clinical Encounter
+The structured inputs included demographics, vital signs, comorbidities, arrival mode, insurance, and triage acuity. Lasso selected a parsimonious structured feature set; Clinical-BERT represented the short chief-complaint and reason-for-visit narratives.
 
-The published study analyzed **13,115 adult emergency department visits** from the nationally representative 2021 National Hospital Ambulatory Medical Care Survey-Emergency Department dataset. EKGs were recorded in **30.6%** of visits.
+I compared logistic regression, support vector machines, random forests, and XGBoost across structured-only, narrative-only, and late-fusion combined configurations. This makes the incremental contribution of each modality inspectable instead of reporting only a final multimodal score.
 
-The analysis separated the available information into two modalities:
+## A Linear Model Remained Competitive
 
-- structured variables, including demographics, vital signs, comorbidities, arrival mode, insurance, and triage acuity; and
-- short narrative fields describing the patient's chief complaint and reason for visit.
+For logistic regression, AUC increased from **0.772 with structured inputs** and **0.823 with narrative features** to **0.861 with the combined model**. The combined support vector machine reached **0.860**.
 
-Lasso was used to select a parsimonious structured feature set. The narrative fields were represented with Clinical-BERT embeddings. Logistic regression, support vector machines, random forests, and XGBoost were then compared under structured-only, text-only, and late-fusion combined conditions.
+The result supports complementary information in the two inputs. It also shows why classifier complexity and representation quality should be evaluated separately: a linear classifier remained competitive once the modalities were combined.
 
-This design made the contribution of the narrative visible instead of treating the final model as one opaque multimodal system.
+SHAP and permutation feature importance were used to inspect predictive behavior. An attribution to a symptom or demographic variable describes the fitted model's prediction of EKG use; it does not identify a biological cause of cardiac disease. The companion [SHAP note](/blogs/shap-explains-the-model-not-the-patient/) develops that distinction using this project.
 
-## What Changed When the Modalities Were Combined?
+## What Would Need Testing Before Deployment?
 
-Structured variables alone produced an AUC of approximately **0.772**. Text-only configurations reached approximately **0.822 to 0.823**. The strongest combined models reached **0.861 for logistic regression** and **0.860 for the support vector machine**.
+These results support retrospective modeling of utilization. They do not validate a live triage queue, a pre-order prompt, or a rule for withholding an EKG.
 
-The result is useful for two reasons. First, patient-reported text captured information that was not fully represented by coded fields. Second, a comparatively simple linear model remained competitive after the two modalities were combined.
+Before such a use, the prediction time and feature availability would need explicit verification in the target workflow. Calibration, false negatives, subgroup performance, and external or prospective validation would also need evaluation. NHAMCS visits cannot be linked to unique patients, and survey-based associations should not be treated as patient-level causal effects.
 
-The study also used SHAP values and permutation feature importance to audit model behavior. Those tools help explain which inputs influenced prediction, but they do not convert utilization predictors into causes of disease or proof of clinical need.
-
-## What the Result Can and Cannot Support
-
-The study shows that structured emergency-care variables and short patient narratives contain complementary information about EKG use. It does not show that the model is ready to recommend testing in a live hospital.
-
-Important boundaries remain:
-
-- NHAMCS-ED is a national visit survey, not a longitudinal hospital EHR;
-- visits cannot be linked back to unique patients;
-- the analysis models observed practice and may reproduce existing workflow patterns;
-- discrimination does not establish calibration or benefit at a clinical decision threshold; and
-- external validation is required before considering deployment in a specific care setting.
-
-The transferable contribution is the analytical discipline: define the prediction target, preserve the distinction between care behavior and clinical need, compare each modality fairly, and interpret the model at the level the data can support.
+The reproducible contribution is the comparison: define the target, evaluate modalities separately and together, and interpret the model at the level its labels can support.

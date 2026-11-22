@@ -23,7 +23,7 @@ hideMeta: true
 3. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
    **Citation:** Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934.  
    **Tags:** Environmental AI · Computer Vision · Asbestos Screening  
-   **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934) · [Code](https://github.com/hwcmu/asbestos-plm-screening)
+   **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934) · [Code](https://github.com/hwcmu/asbestos-plm-screening) · [Project](/projects/asbestos-plm-screening/)
 
 4. **A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems**  
    **Citation:** Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*.  

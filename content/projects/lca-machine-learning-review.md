@@ -1,8 +1,8 @@
 ---
-title: "Machine Learning for Life Cycle Assessment"
+title: "Integrating Machine Learning into Life Cycle Assessment"
 date: 2025-10-16
-description: "A review and research-synthesis project mapping machine-learning methods to the four ISO phases of life cycle assessment."
-topic: "Environment & Energy"
+description: "Mapped ML methods to LCA workflow bottlenecks, with explicit limits on imputed inventories, surrogate predictions, and final interpretation."
+topic: "Sustainability & Environmental Decision Systems"
 tags: ["Sustainability", "Machine Learning", "LCA"]
 projectType: "Research Synthesis"
 role: "Lead author · Review design · Bibliometric analysis"
@@ -22,33 +22,35 @@ aliases: ["/blogs/lca-ml-review/"]
 
 ![Framework mapping machine-learning methods to life cycle assessment phases](/images/lca-ml-framework.svg)
 
-## Where Machine Learning Actually Helps
+## Where Can Estimated Data Help an LCA?
 
-Life cycle assessment (LCA) evaluates environmental impacts across a product or system lifecycle. Its practical bottlenecks vary by phase: evidence can be fragmented, inventory data incomplete, impact calculations expensive, and final interpretations sensitive to assumptions.
+Life cycle assessment (LCA) often depends on incomplete inventories, inconsistent process descriptions, and computationally expensive impact calculations. Machine learning can help with these tasks, but an estimated value should not acquire the status of a measured observation simply because it fills a gap in a table.
 
-This project asks where machine learning can address a specific LCA workflow problem without being treated as a generic replacement for domain judgment.
+In this review, I organized the literature around the four LCA phases. The aim was to connect methods to concrete workflow problems and identify what remains uncertain after a model is introduced.
 
-## Organizing the Evidence by Decision
+## Organize the Evidence Around the Workflow
 
-The work combines literature review, bibliometric mapping, and phase-by-phase method synthesis. Papers were organized around the four standard LCA phases so that each machine-learning use case could be read in relation to the decision it supports.
+I combined literature review with a reproducible bibliometric search and keyword co-occurrence mapping. The accompanying repository preserves the bibliometric workflow; the published paper develops the phase-specific synthesis.
 
-| LCA phase | Potential machine-learning role | Important boundary |
+| LCA phase | Where ML can assist | What still needs checking |
 | --- | --- | --- |
-| Goal and scope | Literature screening and evidence organization | System boundaries remain a research judgment |
-| Life cycle inventory | Missing-data estimation and probabilistic imputation | Uncertainty must be carried forward |
-| Impact assessment | Surrogate modeling for expensive calculations | Validity depends on the training domain |
-| Interpretation | Sensitivity analysis and model explanation | Explanation does not establish causality |
+| Goal and scope | Literature screening and evidence organization | Functional units and system boundaries |
+| Life cycle inventory | Missing-data estimation and probabilistic imputation | Training coverage and propagated uncertainty |
+| Impact assessment | Surrogate and hybrid models for expensive calculations | Validity beyond the training domain |
+| Interpretation | Sensitivity analysis and model explanation | Whether the explanation supports the intended decision |
 
-This structure shifts the review away from a list of algorithms and toward the analytical conditions under which a method is useful.
+This organization makes it possible to discuss a method's purpose and limitations without treating all applications of ML as equivalent.
 
-## The Most Useful Opportunities Come Earlier
+## Prioritize the Data Bottleneck
 
-The strongest opportunities are often not in replacing the final LCA model. They appear earlier in the workflow: organizing evidence, identifying data gaps, estimating missing inventory values, and reducing computational burden where repeated simulations are required.
+The review identifies opportunities early in the workflow: organizing evidence, locating missing inventory information, and estimating inputs where data collection is difficult. Probabilistic approaches can make uncertainty in estimated inputs visible; surrogate models can reduce repeated computational work within an evaluated domain.
 
-The review also highlights recurring risks. A model can make a workflow faster while obscuring system boundaries, transferring poorly across product systems, or presenting imputed values with more certainty than the source data support.
+These are opportunities identified in a methodological review, rather than a benchmark establishing one algorithm's return on investment. Their usefulness depends on the process, data coverage, and validation design.
 
-## Where Human Judgment Still Matters
+## Carry Uncertainty into the Final Claim
 
-The accompanying repository preserves the bibliometric workflow and supporting materials used to organize the review. This makes the search-derived evidence map inspectable while keeping the conceptual synthesis tied to the published paper.
+A filled inventory cell can conceal extrapolation to a technology, geography, or operating condition absent from the training data. A faster impact predictor can also make an analysis appear more certain than its input assumptions justify.
 
-The project does not claim that machine learning resolves the normative choices built into LCA. Functional units, system boundaries, allocation rules, and interpretation still require domain expertise. The contribution is a clearer map of where computational methods can help and where human judgment remains irreducible.
+For a decision-facing LCA, estimated inputs should retain their provenance and uncertainty. Domain coverage and sensitivity to modeling choices need to remain visible alongside the final impact estimate.
+
+Functional units, system boundaries, allocation, and interpretation remain research judgments. The contribution of this project is a workflow-based evidence map that helps analysts choose where ML can assist and what it leaves unresolved.

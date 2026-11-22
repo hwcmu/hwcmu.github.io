@@ -12,7 +12,7 @@ Data analyst and research health data scientist focused on clinical analytics, h
 
 <div class="work-list">
   <div class="work-item"><strong>PhD in Environmental Engineering, Data Science Concentration</strong><span>Carnegie Mellon University, Pittsburgh, PA. Aug 2021 - Aug 2025.</span></div>
-  <div class="work-item"><strong>MS in Data Analytics</strong><span>Georgia Institute of Technology, Atlanta, GA. Aug 2024 - July 2026.</span></div>
+  <div class="work-item"><strong>MS in Analytics</strong><span>Georgia Institute of Technology, Atlanta, GA. Aug 2024 - July 2026.</span></div>
   <div class="work-item"><strong>MS in Computer Science</strong><span>Georgia Institute of Technology, Atlanta, GA. Aug 2026 - present.</span></div>
 </div>
 
@@ -71,7 +71,7 @@ Big Data for Healthcare; Computing for Data Systems; Natural Language Processing
    Wang, H., & Hong, C. (2026). *Energy, Ecology and Environment*. [DOI](https://doi.org/10.1007/s40974-026-00425-8) · [Code](https://github.com/hwcmu/stock-based-power-transition-monitoring) · [Project](/projects/fossil-persistence-renewable-expansion/)
 
 3. **Deep learning-assisted chrysotile asbestos screening in soil: A hierarchical statistical approach to error propagation**  
-   Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934. [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934)
+   Wang, H., Piao, W., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 514, 142934. [DOI](https://doi.org/10.1016/j.jhazmat.2026.142934) · [Code](https://github.com/hwcmu/asbestos-plm-screening) · [Project](/projects/asbestos-plm-screening/)
 
 4. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208. [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)

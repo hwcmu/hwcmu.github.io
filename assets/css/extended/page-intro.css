@@ -1,5 +1,100 @@
 
 /* Lightweight visual system for top-level portfolio pages. */
+.profile-role {
+  margin: 0.7rem 0 1rem;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.profile-summary {
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+.profile-credentials {
+  max-width: 39rem;
+  margin: 1rem auto 0;
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--secondary);
+}
+
+.post-content .focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+.post-content .focus-card {
+  padding-top: 0.85rem;
+  border-top: 2px solid var(--primary);
+}
+
+.focus-number {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--secondary);
+}
+
+.post-content .focus-card h3 {
+  margin: 0.7rem 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.post-content .focus-card p,
+.post-content .focus-card a {
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.project-group-header {
+  margin: 2.5rem 0 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-group-header h2 {
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.project-group-header p {
+  margin-top: 0.5rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+.project-group[hidden] {
+  display: none;
+}
+
+.post-content .featured-project {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid var(--primary);
+  background: var(--code-bg);
+}
+
+.post-content .featured-project h2 {
+  margin: 0.6rem 0;
+  font-size: 1.25rem;
+}
+
+.post-content .featured-project p:last-child {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .post-content .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .post-content .page-hero {
   --ink-rgb: 74, 105, 105;
   --ink-strong: rgb(68, 96, 96);

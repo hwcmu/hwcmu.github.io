@@ -110,10 +110,18 @@ New classifications should help readers find material across the whole section, 
 
 - Every published Note and Project defines a single visible `topic` in frontmatter, separate from its up-to-three `tags`.
 - Notes use Clinical Data & Evaluation / Statistics & Modeling / Data & Computing Systems / AI & Research Methods.
-- Projects use Clinical & Health / Environment & Energy / Data Products & Tools.
+- Projects use Health & Clinical Decision Systems / Sustainability & Environmental Decision Systems / Applied ML & Data Products. `data/project_groups.yaml` defines their display order and descriptions; each group lists its projects newest first. A separately labeled featured-research link may highlight a project without changing its publication date or repeating it in the filtered collection.
 - Section topic controls are generated from published content. Cards display their primary topic; keyword buttons continue to filter by visible tags without silently widening their meaning.
 - Notes and Projects render their complete, date-descending collections on one index page so both topic and keyword filters cover the entire section. Revisit the loading strategy if the collections become large; preserve complete filtering when doing so. The old `/blogs/page/2/` URL redirects to `/blogs/`.
 - Use the authored `description` for Note and Project card summaries. Fall back to an automatic summary only when no description exists.
+
+### Professional positioning — updated 2026-11-22
+
+- The homepage connects the professional sections through the question of when real-world data and AI-generated outputs can support decisions in health and sustainability systems.
+- Keep the three focus areas concrete: data suitability, output reliability, and system structure. Use project evidence rather than repeating the positioning sentence in every article.
+- Distinguish the completed Georgia Tech M.S. in Analytics (OMSA) from the in-progress M.S. in Computer Science (OMSCS).
+- Notes remain syntheses of valuable professional reading. Do not force unrelated notes into a uniform failure-mode essay or rewrite all notes during a targeted update.
+- Treat revision guides as editorial proposals. Preserve supported results and public evidence links; remove unverified performance, calibration, timing, deployment, and clinical-benefit claims rather than publishing placeholders.
 
 ### Mathematics and series navigation — implemented
 

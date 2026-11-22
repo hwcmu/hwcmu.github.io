@@ -64,8 +64,14 @@
     <h3>Explore by Topics</h3>
     <div class="topic-tag-row" aria-label="Filter {{ .Title | lower }} by topic">
       <button class="topic-tag topic-filter active" type="button" data-topic="all" aria-pressed="true">All</button>
+      {{- if eq .Section "projects" }}
+      {{- range site.Data.project_groups }}
+      <button class="topic-tag topic-filter" type="button" data-topic="{{ .title | urlize }}" aria-pressed="false">{{ .title }}</button>
+      {{- end }}
+      {{- else }}
       {{- range $pages.GroupByParam "topic" }}
       <button class="topic-tag topic-filter" type="button" data-topic="{{ .Key | urlize }}" aria-pressed="false">{{ .Key }}</button>
+      {{- end }}
       {{- end }}
     </div>
     <p class="topic-status" role="status" data-topic-status>{{ len $pages }} of {{ len $pages }} items</p>
@@ -78,7 +84,30 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
-{{- range $index, $page := $paginator.Pages }}
+{{- $groups := slice (dict "pages" $paginator.Pages) }}
+{{- if and .IsSection (eq .Section "projects") }}
+  {{- $groups = slice }}
+  {{- $groupedCount := 0 }}
+  {{- range site.Data.project_groups }}
+    {{- $members := where $paginator.Pages "Params.topic" .title }}
+    {{- $groupedCount = add $groupedCount (len $members) }}
+    {{- if $members }}
+      {{- $groups = $groups | append (dict "title" .title "description" .description "pages" $members) }}
+    {{- end }}
+  {{- end }}
+  {{- if ne $groupedCount (len $paginator.Pages) }}{{ errorf "Every Project topic must match a registered project group" }}{{ end }}
+{{- end }}
+{{- range $groups }}
+{{- with .title }}
+<section class="project-group" data-project-group aria-labelledby="group-{{ . | urlize }}">
+{{- end }}
+{{- if .title }}
+  <header class="project-group-header">
+    <h2 id="group-{{ .title | urlize }}">{{ .title }}</h2>
+    <p>{{ .description }}</p>
+  </header>
+{{- end }}
+{{- range $index, $page := .pages }}
 
 {{- $class := "post-entry topic-entry" }}
 
@@ -94,7 +123,7 @@
 {{- $tagSlugs = $tagSlugs | append (urlize .) }}
 {{- end }}
 
-<article class="{{ $class }}" data-topic-entry data-topic="{{ .Params.topic | default "" | urlize }}" data-tags="{{ delimit $tagSlugs " " }}">
+<article class="{{ $class }}" data-topic-entry data-date="{{ .Date.Format "2006-01-02" }}" data-topic="{{ .Params.topic | default "" | urlize }}" data-tags="{{ delimit $tagSlugs " " }}">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
@@ -137,6 +166,8 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
+{{- if .title }}</section>{{- end }}
 {{- end }}
 
 <p class="topic-empty" hidden>No matching items yet.</p>

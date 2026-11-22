@@ -1,14 +1,14 @@
 ---
 title: "AI-Powered Migraine Forecast System"
 date: 2025-12-06
-description: "A digital-health analytics project connecting product metrics, physician-guided forecasting, and personalized feedback for migraine management."
-topic: "Clinical & Health"
+description: "Connected SQL product metrics, physician-guided random-forest forecasting, and longitudinal feedback in a migraine-management product."
+topic: "Applied ML & Data Products"
 tags: ["Product Analytics", "Machine Learning", "Healthcare"]
 projectType: "Product Analytics Project"
 role: "Data scientist · Product analytics · Forecasting"
 highlight:
-  title: "Clinical judgment shapes the forecast"
-  text: "The forecasting logic was developed with physicians so feature selection and risk smoothing reflect how migraine patterns are understood, not only what improves a model score."
+  title: "Connect forecasting to a product people can use"
+  text: "The work combined product metrics, physician-guided feature selection, and risk-output smoothing, with public claims limited to the documented design."
 supportingHighlights:
   - title: "Metrics come before modeling"
     text: "A shared product analytics framework made adoption, onboarding, and retention visible before new predictive features were evaluated."
@@ -20,38 +20,30 @@ codeStatus: "private"
 
 ![Migraine forecast interface and risk trajectory](/images/migraine-forecast.png)
 
-## Designing for a Recurring Condition
+## Build the Measurement Layer Before the Forecast
 
-[PeachyDay](https://www.peachyday.co/) is a digital-health product for people managing recurrent migraines. The analytical challenge was broader than building a prediction model: the product needed a consistent way to measure engagement, translate clinical knowledge into features, and return useful feedback to people who logged data over time.
+At [PeachyDay](https://www.peachyday.co/), my work connected product analytics, physician-guided forecasting, and personalized feedback for people recording migraine-related information. The practical problem extended beyond a classifier: the team needed consistent metrics, interpretable inputs, and a useful way to return information to users.
 
-## First, Make Product Behavior Visible
+I developed SQL definitions for active use, feature adoption, onboarding progression, and retention. Dashboards made user flows and drop-off points visible, providing a shared basis for discussing product changes.
 
-I developed a metrics framework linking product questions to reproducible SQL definitions. It covered active use, feature adoption, onboarding progression, and retention, giving the team a shared basis for evaluating product changes.
+## Translate Clinical Input into a Forecasting Workflow
 
-The dashboards made user flows and drop-off points visible and helped connect roadmap decisions to observed behavior rather than isolated anecdotes. This analytics layer also provided the monitoring structure needed for later forecasting features.
-
-## Building the Forecast with Clinical Input
-
-The forecasting workflow combines user history, health observations, activity, and weather context. Feature selection was developed with clinical input so that variables such as barometric-pressure change entered the model through an interpretable rationale rather than through unconstrained feature expansion.
+The forecasting pipeline combined user history, health observations, activity, and weather context. Clinical input informed feature selection, including the use of barometric-pressure change.
 
 ![PeachyDay system architecture with physician-in-the-loop](/images/migraine-architecture.png)
 
-The pipeline uses a random forest model with post-processing designed to reduce abrupt risk changes and limit unnecessary alerts. Its performance should be judged against a clearly defined baseline and outcome; those internal evaluation details are not public.
+The workflow used a random forest with post-processing intended to reduce abrupt risk changes and unnecessary alerts. This was a design choice about the behavior of a recurring user-facing signal. Smoothing should not be confused with demonstrated probability calibration.
 
-Clinical collaboration shaped both the inputs and the behavior of the output. The objective was not to imitate a diagnostic system, but to produce a risk signal that could support reflection and planning without overstating certainty.
+User-entered records also raise evaluation questions: when observations are missing, what is known at prediction time, and whether logging behavior changes with symptoms. Those questions matter when interpreting any retrospective performance estimate.
 
-## Giving Users Something Back
+## Return Value Beyond a Risk Score
 
-Prediction alone did not solve the engagement problem. Users needed a reason to keep recording information even when no immediate forecast changed.
+I also developed personalized longitudinal summaries that let users revisit patterns in the information they had recorded. This created a feedback layer alongside the forecast and connected analytical work to ongoing product use.
 
-I therefore developed a personalized data-story workflow that summarizes longitudinal patterns in a format inspired by annual listening summaries. It gives users a way to revisit the information they recorded over time.
+The three components served different purposes: product metrics described engagement, forecasting produced a near-term risk signal, and summaries made logged history easier to review. Each needed its own outcome definition rather than a single score standing in for product success.
 
-## Connecting Prediction and Product Value
+## Keep the Public Evidence Boundary Clear
 
-The project connects three layers that are often separated:
+The code and internal evaluation details are proprietary. This page describes the design and my contribution; it does not report externally verified gains in accuracy, calibration, retention, or clinical outcomes.
 
-- product metrics define whether a feature is being used,
-- forecasting translates longitudinal data into a near-term signal, and
-- personalized summaries return value to the user.
-
-The code is proprietary, so this page documents the analytical design rather than implementation details. The forecast is a product-support feature, not a medical diagnosis or substitute for clinical care.
+The forecast is a product-support feature for awareness and planning. It is not a diagnosis, a medication recommendation, or a substitute for clinical care.

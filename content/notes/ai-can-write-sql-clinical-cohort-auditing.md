@@ -139,15 +139,11 @@ Leakage is not merely a machine-learning problem. It begins during cohort constr
 
 A useful AI-assisted workflow is:
 
-```mermaid
-flowchart TD
-    A["Define the clinical question"] --> B["Freeze target grain and time zero"]
-    B --> C["Ask AI for a query draft"]
-    C --> D["Audit joins, ordering, and eligibility"]
-    D --> E["Run structural QA"]
-    E --> F["Trace sample patients"]
-    F --> G["Approve the analytic cohort"]
-```
+1. Define the clinical question, target grain, eligibility rules, and time zero.
+2. Use AI to draft a query against those explicit definitions.
+3. Audit joins, ordering, eligibility, and feature-availability windows.
+4. Run structural checks and trace sample patients back to source records.
+5. Approve the cohort only after its rows and timing match the intended analysis.
 
 Structural checks should be explicit:
 

@@ -9,112 +9,48 @@ topic: "Clinical Data & Evaluation"
 tags: ["Clinical AI", "Model Interpretation", "SHAP"]
 ---
 
-In clinical AI papers, SHAP plots are sometimes treated as explanations of disease itself. They are not. SHAP shows what a trained model relied on for a prediction:
+In my EKG-utilization study, the outcome was whether an emergency-department visit involved an EKG. SHAP helped inspect the fitted model's predictions. Interpreting those attributions required keeping the recorded action separate from a patient's biological need for the test.
 
-> SHAP explains model behavior. It does not prove disease mechanism, treatment effect, or real-world causality.
+> SHAP explains model behavior. It does not establish disease mechanism, treatment effect, or clinical necessity.
 
-## 1. What SHAP Actually Explains
+## Start with the EKG Case
 
-SHAP stands for **SHapley Additive exPlanations**. A plain-language version is:
+The [EKG project](/projects/ekg-utilization-prediction/) combined structured emergency-care variables with patient-reported text. The study used SHAP and permutation feature importance to examine the model alongside its predictive performance.
 
-> SHAP divides a model's prediction into contributions from each input feature.
+A feature that contributes to a prediction of EKG use may reflect symptoms, care intensity, or an ordering pattern. Its attribution describes how the fitted model uses that information. It does not demonstrate that changing the feature would change disease risk, or that a particular patient should receive the test.
 
-Suppose a model predicts high risk of hospital admission. SHAP asks:
+This is an outcome-definition problem before it is an explainability problem. The [published study](https://doi.org/10.3390/jpm15080358) models observed utilization, so its explanations must stay within that interpretation.
 
-> Which features pushed this model prediction upward or downward compared with a baseline?
+## Read an Attribution on Its Own Scale
 
-| Feature | SHAP-style contribution | Plain meaning |
-|---|---:|---|
-| High blood pressure | +0.18 | Pushed the model prediction upward |
-| Older age | +0.12 | Pushed the model prediction upward |
-| Current smoker | +0.08 | Pushed the model prediction upward |
-| Normal oxygen saturation | -0.05 | Pulled the model prediction downward |
+SHAP allocates the difference between a model output and a reference value among input features. The reference data, explanation method, and model output scale all matter. Contributions may be expressed on a log-odds scale rather than as percentage-point changes in probability.
 
-The scale depends on the model. In some implementations, values are on an internal scale such as log-odds, not percentage-point risk changes.
+For an individual visit, an explanation describes that prediction. A summary across visits describes patterns in the fitted model. Neither automatically estimates a causal effect or a population-level clinical relationship.
 
-The safe interpretation is simple:
+## Use Explanations to Find Questions Worth Auditing
 
-> SHAP explains the prediction relative to a baseline. It does not automatically explain the patient's biology.
+Useful checks include whether the model relies on variables recorded after the intended prediction time, source-system identifiers, documentation artifacts, or other proxies for the label.
 
----
+An unexpected attribution is a reason to inspect the feature's provenance and timing. It is not proof of leakage by itself. Conversely, a clinically plausible plot does not establish that the model is free of leakage or will work elsewhere.
 
-## 2. Model Dependence Is Not Causality
+Correlated features require particular care: attribution can be distributed among related inputs in ways that depend on the explanation setup. A neat ranking should not be read as a definitive ranking of biological importance.
 
-SHAP can answer why a model predicted high risk and which variables it relied on. It cannot establish whether a variable causes an outcome or whether intervening on it would change risk.
+For complex survey data, the interpretation also depends on how the model was fit and evaluated. SHAP values for an analytic-sample model do not automatically describe nationally weighted clinical patterns.
 
-For example, a model may use cardiology follow-up visits to predict one-year cardiac risk. More visits can mark underlying illness severity, so the careful interpretation is:
+## Review the Claim Alongside the Plot
 
-> "The model is using follow-up frequency as a marker of underlying illness severity."
+Before accepting an interpretation, ask:
 
-not “cardiology visits cause heart disease.” Confusing a severity marker with a cause turns a model explanation into a false treatment target.
+- What output and reference population are being explained?
+- Are local explanations distinguished from global summaries?
+- Could prominent features reflect timing errors, workflow proxies, or correlated measurements?
+- Does the wording stay within prediction, or claim an intervention effect?
+- What evidence supports calibration and performance in the intended setting?
 
----
-
-## 3. When SHAP Is Useful
-
-SHAP is helpful when used for the right question.
-
-For an individual prediction, SHAP can show whether a model relied on age, vital signs, laboratory results, symptoms, or text-derived features. It can also audit shortcuts: hospital ID, timestamps, data-entry artifacts, or variables recorded after the prediction point should prompt investigation.
-
-It is also useful for communicating model behavior. Better:
-
-> "The model assigned higher predicted risk partly because this patient had high blood pressure and abnormal labs."
-
-Too strong:
-
-> "High blood pressure caused this outcome because SHAP ranked it highly."
-
----
-
-## 4. Common Misuses and Limits
-
-Most problems come from overinterpretation. SHAP cannot tell us whether lowering blood pressure, changing medication, or ordering a test would change an outcome; that needs clinical evidence and an appropriate causal design. A high-SHAP variable may be non-modifiable, a severity marker, a proxy, or a consequence of disease. Before acting, ask:
-
-> Is this feature modifiable, causal, and supported by evidence?
-
-**Over-reading correlated features**
-
-Clinical variables are often correlated. SHAP may split credit across related features in ways that look precise but are not clinically definitive.
-
-**Ignoring survey weights and complex sampling**
-
-For nationally representative or complex survey data, SHAP explains the fitted analytic-sample model; it does not automatically describe nationally weighted clinical patterns.
-
-Reviewer question:
-
-> Are SHAP values being interpreted as model explanations for the analytic sample, or as population-level clinical conclusions?
-
-**Using SHAP instead of validation**
-
-A convincing SHAP plot does not establish reliability. A clinical AI paper still needs a clear outcome, leakage control, discrimination and calibration assessment, appropriate validation, and a plausible use case. SHAP can audit what a model learned; it cannot rescue a poorly designed study.
-
----
-
-## 5. A Small Case: EKG Use Prediction
-
-My EKG-use prediction work illustrates the boundary. The model predicted whether an emergency-department visit involved EKG use; its interpretation analyses included feature selection, SHAP values, and permutation feature importance. The published article is available at [DOI: 10.3390/jpm15080358](https://doi.org/10.3390/jpm15080358).
-
-SHAP explained which structured and text-derived features contributed to a prediction of EKG utilization; it did not show that these features biologically caused a need for EKG. This matters because EKG use is partly a clinical decision and workflow behavior, not only a disease state.
-
----
-
-## 6. Reviewer Checklist
-
-Before accepting a SHAP interpretation in a clinical AI paper, ask:
-
-- What exact model output is being explained, and is the language limited to prediction rather than causality?
-- Could the leading features be leakage variables, proxies, or non-modifiable severity markers?
-- Are global and local explanations separated, and is the interpretation target clear for survey data?
-- Has the model been validated and calibrated?
-
-If these questions are unclear, the figure is decorative rather than informative. Let SHAP answer “How did the model think?”; let clinical evidence, validation, and causal reasoning answer “What should we do?”
-
----
+Feature attribution complements validation. The [transportability note](/blogs/predictive-performance-does-not-establish-transportability/) explains why an interpretable model still needs evaluation across the boundary where it will be used.
 
 ## Sources
 
-- Lundberg, S. M., & Lee, S.-I. *A Unified Approach to Interpreting Model Predictions*. NeurIPS 2017 / arXiv. https://arxiv.org/abs/1705.07874
-- SHAP documentation: *An introduction to explainable AI with Shapley values*. https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html
-- TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine-learning methods. *BMJ*, 2024. https://www.bmj.com/content/385/bmj-2023-078378
-- PROBAST-AI: risk-of-bias and applicability assessment for prediction model studies using artificial intelligence. *BMJ*, 2024. https://www.bmj.com/content/385/bmj-2023-078370
-- CONSORT-AI extension: reporting guidelines for clinical trial reports of interventions involving artificial intelligence. *Nature Medicine*, 2020. https://www.nature.com/articles/s41591-020-1034-x
+- Wang H, Zhang X. [Machine Learning for Personalized Prediction of Electrocardiogram (EKG) Use in Emergency Care](https://doi.org/10.3390/jpm15080358). *Journal of Personalized Medicine*. 2025.
+- Lundberg SM, Lee SI. [A Unified Approach to Interpreting Model Predictions](https://arxiv.org/abs/1705.07874). NeurIPS 2017.
+- SHAP documentation. [An introduction to explainable AI with Shapley values](https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html).

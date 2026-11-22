@@ -1,9 +1,9 @@
 ---
-title: "Fossil Persistence and Renewable Expansion in Global Power Systems"
+title: "Stock-Based Monitoring of Global Power Transitions"
 date: 2026-07-11
 draft: false
-description: "A stock-based monitoring framework for distinguishing renewable build-out from actual fossil-fuel asset displacement in global power systems."
-topic: "Environment & Energy"
+description: "Built stock-flow diagnostics from power-plant records to separate renewable expansion, fossil-stock change, and future project pipelines."
+topic: "Sustainability & Environmental Decision Systems"
 tags: ["Energy Systems", "Sustainability", "Data Governance"]
 projectType: "Research Project"
 role: "Lead author · Framework design · Data analysis"
@@ -21,9 +21,9 @@ codeUrl: "https://github.com/hwcmu/stock-based-power-transition-monitoring"
 
 ![Stock-pipeline diagnostic space for global power-system transition](/images/fossil-persistence-stock-pipeline.png)
 
-## A Different Way to Read the Transition
+## Separate Build-Out from Stock Replacement
 
-Renewable capacity additions are often treated as shorthand for power-sector decarbonization. This project asks a more uncomfortable question: when renewables are added, are fossil-fuel assets actually leaving the operating system, or are low-carbon assets simply being layered onto a still-persistent fossil base?
+Renewable capacity additions are often treated as shorthand for power-sector decarbonization. I built a stock-based framework to ask whether renewable expansion coincides with a reduction in operating fossil capacity, while keeping planned development separate from realized change.
 
 The work is based on my open-access paper, *A stock-based framework for monitoring fossil persistence and renewable expansion in global power systems*, published in *Energy, Ecology and Environment* in 2026.
 
@@ -35,9 +35,9 @@ Common transition indicators often blur together three different signals:
 
 They are not interchangeable. A system can look greener because renewable projects are growing while its fossil operating stock remains unchanged.
 
-## Following What Enters and Leaves
+## Make the Accounting Boundary Auditable
 
-The analysis uses unit-level Global Integrated Power Tracker records to reconstruct the operating power-plant stock from 2010 to 2026. Each unit is classified by commissioning year, retirement evidence, technology, status, capacity, and region.
+The analysis uses unit-level Global Integrated Power Tracker records from Global Energy Monitor to reconstruct the operating power-plant stock from 2010 to 2026. Each unit is classified by commissioning year, retirement evidence, technology, status, capacity, and region.
 
 The core metric is **Stock Substitution Intensity (SSI)**:
 
@@ -49,9 +49,9 @@ SSI measures stock-level structural reallocation in operating capacity. It does 
 
 The framework also compares SSI with **Pipeline Tilt (PT)**, the renewable share of announced, pre-construction, and under-construction project capacity. This separates realized stock change from forward-looking development intent.
 
-## What the Numbers Reveal
+## Renewable Expansion Can Coexist with Fossil Persistence
 
-> New renewable capacity does not automatically mean fossil-fuel capacity has been replaced.
+The relevant check is the joint movement of renewable and fossil operating stocks.
 
 Project pipelines are broadly renewable-leaning, with a median PT of **0.828**, but realized stock change is much more uneven. Among subregions with positive SSI, **12 of 14** remain expansion-led: renewable additions coexist with non-declining fossil operating capacity.
 
@@ -69,4 +69,4 @@ This asymmetry is not just a cleaning problem. A monitoring system that observes
 
 The project offers a compact way to read renewable build-out, fossil persistence, retirement evidence, and pipeline orientation together. Its main lesson is methodological as much as substantive: before using a clean-looking indicator to describe progress, ask what it can see and what it structurally misses.
 
-The world may be building more renewable capacity, but stock-level transition also depends on whether fossil assets are retiring, shrinking, or simply persisting in the background.
+These indicators can support infrastructure monitoring and questions for further analysis. They cannot establish emissions savings or operational reliability without generation, dispatch, and other relevant evidence. The [note on metrics and targets](/blogs/a-metric-can-be-valid-and-still-be-a-bad-target/) discusses why a valid measure still needs a bounded interpretation.

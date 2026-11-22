@@ -1,8 +1,8 @@
 ---
 title: "Multimodal Prediction of IV Fluid Utilization"
 date: 2025-12-09
-description: "A multimodal clinical prediction project combining structured emergency-department variables with reason-for-visit text to study IV fluid utilization."
-topic: "Clinical & Health"
+description: "Benchmarked three text representations alongside structured data from 13,115 ED visits; CountVectorizer with gradient boosting reached AUC 0.786."
+topic: "Health & Clinical Decision Systems"
 tags: ["NLP", "Machine Learning", "Healthcare"]
 projectType: "Research Project"
 role: "Lead author · Data analysis · Multimodal modeling"
@@ -20,37 +20,33 @@ codeUrl: "https://github.com/hwcmu/IVF-prediction"
 
 ![Multimodal architecture for IV fluid utilization prediction](/images/iv-fluid-architecture.svg)
 
-## A Simple Question with Two Kinds of Data
+## Does More Complex NLP Add More Useful Signal?
 
-Emergency-department datasets contain both structured variables and short reason-for-visit narratives. This project tests whether those brief text fields add useful predictive information for IV fluid utilization, and whether more complex language representations are necessarily better for this task.
+I compared structured emergency-care variables with short patient narratives to examine whether text improves prediction of IV fluid use. The study analyzed **13,115 adult visits** from the 2021 National Hospital Ambulatory Medical Care Survey emergency-department dataset (NHAMCS-ED).
 
-## Bringing Numbers and Visit Text Together
+The practical question was representation choice. Brief reason-for-visit fields contain symptom terms and shorthand; an embedding model can add computational complexity without preserving more useful information for this task.
 
-The analysis uses **13,115** adult visits from the National Hospital Ambulatory Medical Care Survey emergency-department data. Inputs include demographics, visit characteristics, clinical variables, and short patient-reason text.
+## Keep the Representation Comparison Visible
 
-The workflow keeps the two modalities separate until modeling:
+I separated text preprocessing from the downstream classifier so that the analysis could compare each representation within a common workflow:
 
-1. structured variables are cleaned and encoded,
-2. visit narratives are represented with CountVectorizer, Word2Vec, or pretrained GPT-2 embeddings,
-3. structured and text features are combined through early fusion, and
-4. logistic regression and gradient boosting models are compared under the same evaluation framework.
+1. Clean and encode structured demographic, visit, and clinical variables.
+2. Represent patient narratives using **CountVectorizer, Word2Vec, or pretrained GPT-2 embeddings**.
+3. Concatenate structured and text features through early fusion.
+4. Compare logistic regression and gradient boosting, using **five-fold cross-validation** and AUC as the primary metric.
 
-This design makes the contribution of each text representation visible rather than treating the multimodal model as a single opaque system.
+The public repository includes the text-processing, data-preparation, and model-comparison workflow. These are retrospective evaluation results; cross-validation does not demonstrate performance in another hospital.
 
-## When Simpler Language Features Win
+## Match Model Complexity to the Text
 
-The highest-performing integrated gradient boosting configuration reached an **AUC of 0.786**. The CountVectorizer representation outperformed the GPT-2 embedding configuration, which reached **0.772**.
+The integrated CountVectorizer configuration reached **AUC 0.786 with gradient boosting** and **0.781 with logistic regression**. The integrated GPT-2 gradient boosting configuration reached **0.772**. Combined inputs performed better than either modality alone in the reported comparisons.
 
-That result is useful because the narratives are short, telegraphic, and often organized around direct symptom terms. In this setting, word frequency can preserve the signal the model needs without introducing the additional complexity of a contextual embedding.
+For this dataset, the simpler representation captured useful signal from short, keyword-driven narratives. That supports testing an inexpensive baseline before selecting a larger language model. It does not establish that frequency-based features will outperform embeddings for longer notes, other outcomes, or other settings.
 
-The finding is not that simple NLP is always superior. It is that representation choice should follow the structure of the text and the decision being modeled.
+## Keep Utilization Separate from Treatment Need
 
-## What the Result Does and Does Not Mean
+The label records whether IV fluids were used during a visit. It reflects clinical decisions and practice patterns as well as patient state. The model therefore describes observed utilization; it does not determine who needs treatment.
 
-Adding reason-for-visit text improved the model's ability to study utilization beyond structured variables alone. It also showed that a comparative pipeline can be more informative than selecting a language model in advance.
+The reported discrimination is insufficient to establish probability calibration, benefit at a treatment threshold, or readiness for automated ordering. External validation and a clearly specified use case would be needed before considering a local clinical application.
 
-This remains a retrospective analysis of a public survey dataset. The outcome describes observed IV fluid utilization, not whether treatment was clinically necessary. The model is not a treatment recommendation system, and its performance should not be assumed to transfer to a specific hospital without external validation.
-
-## Why This Comparison Matters
-
-The project brings cohort preparation, mixed-data preprocessing, NLP comparison, model evaluation, and interpretation into one reproducible workflow. Its central lesson is methodological: multimodal clinical modeling works best when each data source is tested for what it actually contributes, with the outcome and intended claim kept visible.
+The [transportability note](/blogs/predictive-performance-does-not-establish-transportability/) explains why validation must cross the same boundary as the intended use. Here, the contribution is a reproducible comparison of modalities and text representations, with that boundary kept explicit.

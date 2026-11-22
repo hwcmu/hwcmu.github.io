@@ -17,6 +17,9 @@
     {{- if $isProject }}
       <p class="project-kicker">{{ .Param "projectType" | default "Project" }} · {{ .Date.Format "2006" }}</p>
     {{- end }}
+    {{- if eq (.Param "contentType") "method-note" }}
+      <p class="reading-note-kicker">Method Note</p>
+    {{- end }}
     {{- if and $isReadingNote (not (.Param "hideTitle")) (.Param "sourceBook") }}
       {{- $bookLabel := .Param "sourceBook" -}}
       {{- if $isChineseReadingNote -}}

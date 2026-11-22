@@ -87,6 +87,9 @@
         if (isVisible) visibleCount += 1;
       });
 
+      document.querySelectorAll('[data-project-group]').forEach((group) => {
+        group.hidden = !Array.from(group.querySelectorAll('[data-topic-entry]')).some((entry) => !entry.hidden);
+      });
       if (empty) empty.hidden = visibleCount !== 0;
       if (status) status.textContent = `${visibleCount} of ${entries.length} items`;
     };
