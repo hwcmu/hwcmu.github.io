@@ -31,14 +31,6 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 - **Statistical & AI/ML Methods:** Apply regression, survival analysis, clinical NLP, and predictive modeling using R and Python to address clinical and operational questions.
 - **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: As part of my University of Pittsburgh appointment, serve as a Statistician at the VA, supporting research projects through study design, clinical data workflows, statistical analysis, and interpretation. Current work includes statistical support for the **CLEAR TEAM** multicenter randomized controlled trial.
 
-### Research Associate · Carnegie Mellon University
-
-*Oct 2025 – Jun 2026 · Part-time · Pittsburgh, PA · Hybrid*
-
-- **Drinking Water Data Analysis:** Identified chemical signatures and enrichment patterns of emerging contaminants through large-scale analysis of nationwide drinking water monitoring data.
-- **Multimodal Machine Learning:** Designed workflows combining environmental records with social media and contextual variables for contamination risk prediction.
-- **Environmental Risk Assessment:** Translated heterogeneous data into vulnerability and exposure insights to support environmental risk assessment and targeted intervention.
-
 ### Research Health Data Scientist · University of Pittsburgh
 
 *Jan 2026 – May 2026 · Part-time · Pittsburgh, PA*
@@ -46,6 +38,18 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 - **EHR & Clinical NLP:** Analyzed structured EHR data and 13,000+ clinical text records using NLP techniques to support patient-level prediction and clinical decision analysis.
 - **Multimodal Prediction:** Built and validated predictive models for IV fluid administration, integrating text and structured features to improve performance over single-modality baselines.
 - **Network & Statistical Analysis:** Conducted network analysis and clinical trial–oriented statistical analyses to examine patient characteristics, treatment patterns, and care pathways.
+
+### Research Associate II / Research Associate · Carnegie Mellon University
+
+*Part-time · Pittsburgh, PA · Hybrid*
+
+**Research Associate II** · *Jan 2026 – Apr 2026*
+
+**Research Associate** · *Oct 2025 – Dec 2025*
+
+- **Drinking Water Data Analysis:** Identified chemical signatures and enrichment patterns of emerging contaminants through large-scale analysis of nationwide drinking water monitoring data.
+- **Multimodal Machine Learning:** Designed workflows combining environmental records with social media and contextual variables for contamination risk prediction.
+- **Environmental Risk Assessment:** Translated heterogeneous data into vulnerability and exposure insights to support environmental risk assessment and targeted intervention.
 
 ### Data Scientist · Peachy Day
 
