@@ -24,11 +24,20 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 ### Data Analyst · University of Pittsburgh
 
-*Jan 2026 – Present · Pittsburgh, PA*
+*May 2026 – Present · Full-time · Pittsburgh, PA*
 
-- **Clinical & Cognitive-Health Research:** Support clinical, Alzheimer’s disease, and cognitive-health studies using clinical NLP, multimodal prediction, network analysis, and statistical modeling across EHR and public clinical datasets.
-- **Data & Evidence Workflows:** Build reproducible cohort-construction and dataset-preparation pipelines, delivering analysis-ready tables, model evaluations, and manuscript-ready evidence summaries.
-- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: As part of my University of Pittsburgh appointment, serve as a Statistician at the VA, supporting research projects through study design, clinical data workflows, statistical analysis, and interpretation. Current work includes statistical support for the **CLEAR** multicenter randomized controlled trial.
+- **Clinical Research & Operational Analytics:** Support cohort construction, study design, statistical analysis, and interpretation using real-world healthcare data.
+- **SQL & Longitudinal Data Workflows:** Extract, clean, and structure longitudinal healthcare data from complex healthcare systems for reproducible research and decision support.
+- **Statistical & AI/ML Methods:** Apply regression, survival analysis, clinical NLP, and predictive modeling using R and Python to address clinical and operational questions.
+- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: As part of my University of Pittsburgh appointment, serve as a Statistician at the VA, supporting research projects through study design, clinical data workflows, statistical analysis, and interpretation. Current work includes statistical support for the **CLEAR TEAM** multicenter randomized controlled trial.
+
+### Research Health Data Scientist · University of Pittsburgh
+
+*Jan 2026 – May 2026 · Part-time · Pittsburgh, PA*
+
+- **EHR & Clinical NLP:** Analyzed structured EHR data and 13,000+ clinical text records using NLP techniques to support patient-level prediction and clinical decision analysis.
+- **Multimodal Prediction:** Built and validated predictive models for IV fluid administration, integrating text and structured features to improve performance over single-modality baselines.
+- **Network & Statistical Analysis:** Conducted network analysis and clinical trial–oriented statistical analyses to examine patient characteristics, treatment patterns, and care pathways.
 
 ### Data Scientist · Peachy Day
 
