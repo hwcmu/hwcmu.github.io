@@ -19,8 +19,12 @@ Data Analyst at the University of Pittsburgh, focused on clinical analytics, hea
 ## Work Experience
 
 <div class="work-list">
-  <div class="work-item"><strong>Statistician (IPA Assignment), U.S. Department of Veterans Affairs</strong><span>Oct 2026 - present. Assigned from the University of Pittsburgh under an Intergovernmental Personnel Act (IPA) arrangement to support VA research through statistical analysis.</span></div>
-  <div class="work-item"><strong>Data Analyst, University of Pittsburgh</strong><span>Jan 2026 - present. Support clinical, Alzheimer’s disease, and cognitive-health research through clinical NLP, multimodal prediction, EHR and public-data workflows, network analysis, dataset preparation, statistical analysis, model evaluation, and manuscript-oriented evidence summaries.</span></div>
+  <div class="work-item">
+    <strong>Data Analyst, University of Pittsburgh</strong>
+    <span>Jan 2026 - present. Support clinical, Alzheimer’s disease, and cognitive-health research through clinical NLP, multimodal prediction, EHR and public-data workflows, network analysis, dataset preparation, statistical analysis, model evaluation, and manuscript-oriented evidence summaries.</span>
+    <span><b>VA assignment:</b> Statistician, U.S. Department of Veterans Affairs, through an Intergovernmental Personnel Act (IPA) arrangement from the University of Pittsburgh. Oct 2026 - present.</span>
+    <span><b>Selected research:</b> Serve as a statistician for the CLEAR team’s multicenter randomized controlled trial.</span>
+  </div>
   <div class="work-item"><strong>Data Scientist, Peachy Day</strong><span>Oct 2025 - Dec 2025. Built SQL-based pipelines for user health, weather, and app activity data; developed migraine-risk and recurrent-event modeling workflows; supported product analytics, feature attribution, and user-level reporting for personalized insights.</span></div>
   <div class="work-item"><strong>Graduate Research Assistant, Carnegie Mellon University</strong><span>Aug 2021 - Oct 2025. Developed computer vision, Gaussian process regression, active learning, geospatial modeling, and uncertainty-aware workflows for environmental sensing and system-level analytics.</span></div>
 </div>
