@@ -28,7 +28,7 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 - **Clinical & Cognitive-Health Research:** Support clinical, Alzheimer’s disease, and cognitive-health studies using clinical NLP, multimodal prediction, network analysis, and statistical modeling across EHR and public clinical datasets.
 - **Data & Evidence Workflows:** Build reproducible cohort-construction and dataset-preparation pipelines, delivering analysis-ready tables, model evaluations, and manuscript-ready evidence summaries.
-- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: Serve as a statistician for the **CLEAR** multicenter randomized controlled trial, supporting clinical data workflows, statistical analysis, and methodological rigor.
+- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: As part of my University of Pittsburgh appointment, serve as a Statistician at the VA, supporting research projects through study design, clinical data workflows, statistical analysis, and interpretation. Current work includes statistical support for the **CLEAR** multicenter randomized controlled trial.
 
 ### Data Scientist · Peachy Day
 
