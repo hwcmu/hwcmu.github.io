@@ -134,6 +134,7 @@ New classifications should help readers find material across the whole section, 
 - The homepage connects the professional sections through the question of when real-world data and AI-generated outputs can support decisions in health and sustainability systems.
 - Keep the three focus areas concrete: data suitability, output reliability, and system structure. Use project evidence rather than repeating the positioning sentence in every article.
 - Distinguish the completed Georgia Tech M.S. in Analytics (OMSA) from the in-progress M.S. in Computer Science (OMSCS).
+- Keep CV research/project and publication selections to three or six entries. The current CV uses six research/project entries and six papers, with three papers in each of its two subject groups. This selection rule does not limit the full Projects or Papers pages. Use descriptive project names for CV links rather than the generic label `Project`.
 - Notes remain syntheses of valuable professional reading. Do not force unrelated notes into a uniform failure-mode essay or rewrite all notes during a targeted update.
 - Treat revision guides as editorial proposals. Preserve supported results and public evidence links; remove unverified performance, calibration, timing, deployment, and clinical-benefit claims rather than publishing placeholders.
 
