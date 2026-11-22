@@ -47,8 +47,9 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 **Research Associate** · *Oct 2025 – Dec 2025*
 
-- **Doctoral Manuscript Completion:** Finalized manuscripts from my doctoral research on asbestos screening and adaptive sampling.
-- **Energy & Sustainability Research:** Explored global power transitions and utility-scale solar development through infrastructure data analysis, distinguishing renewable expansion from fossil-stock replacement and comparing national solar project structures. ([Power Transitions](/projects/fossil-persistence-renewable-expansion/) · [Solar Development](/projects/solar-structural-analytics/))
+- **Asbestos Screening:** Developed Mask R-CNN workflows to detect chrysotile fibers in polarized-light microscopy images and hierarchical statistical models to propagate detection errors from fields of view to slide- and sample-level screening decisions. ([Project](/projects/asbestos-plm-screening/))
+- **Adaptive Sampling:** Applied Gaussian process regression and active learning to guide environmental sampling and model spatial uncertainty.
+- **Energy Systems Analysis:** Analyzed power-plant records to distinguish renewable expansion from fossil-stock replacement and used network analysis to compare national solar project structures. ([Power Transitions](/projects/fossil-persistence-renewable-expansion/) · [Solar Development](/projects/solar-structural-analytics/))
 
 ### Data Scientist · Peachy Day
 
