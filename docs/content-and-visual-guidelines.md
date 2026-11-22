@@ -81,7 +81,9 @@ opacity: 0.55;
 - Keep the 4px left accent and existing subtle background wash. The corner restriction applies to linework, not the restrained color wash.
 - Favor static linework. Do not introduce animated or full-card effects as part of routine publication.
 
-### Existing series-pattern registry
+### Registered series-pattern styles
+
+As of 2026-11-22, only the Moonshot Academy reflection is published in Persona, as a standalone bilingual article. The other styles below remain available for future use; they do not indicate currently published articles. Numbered reading sequences remain governed by `data/persona_series.yaml`.
 
 | `data-series` | Visible identity | Skin | Pattern |
 | --- | --- | --- | --- |

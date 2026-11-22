@@ -1,5 +1,5 @@
 ---
-title: "Now That AI Can Answer, What Should We Still Train Ourselves To Do? (1/2)"
+title: "Now That AI Can Answer, What Should We Still Train Ourselves To Do?"
 subtitle: "— or the sharper question: what do you still want to do yourself?"
 date: 2026-06-28
 draft: false
