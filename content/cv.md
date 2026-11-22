@@ -28,7 +28,7 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 - **Clinical Research & Operational Analytics:** Support cohort construction, study design, and interpretation using real-world healthcare data; apply regression, survival analysis, clinical NLP, and predictive modeling in R and Python.
 - **SQL & Longitudinal Data Workflows:** Extract, clean, and structure longitudinal healthcare data from complex healthcare systems for reproducible research and decision support.
-- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: Support study design, clinical data workflows, statistical analysis, and interpretation as part of my University of Pittsburgh appointment. Projects include the **CLEAR TEAM** multicenter randomized controlled trial.
+- **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement):** Support study design, clinical data workflows, statistical analysis, and interpretation as part of my University of Pittsburgh appointment. Projects include the **CLEAR TEAM** multicenter randomized controlled trial.
 
 ### Research Health Data Scientist · University of Pittsburgh
 
