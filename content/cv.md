@@ -47,7 +47,7 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 **Research Associate** · *Oct 2025 – Dec 2025*
 
-- **Doctoral Research & Manuscript Preparation:** Completed follow-up analyses and prepared and revised manuscripts from my doctoral research in environmental sensing, computer vision, and hierarchical error propagation.
+- **Doctoral Manuscript Completion:** Finalized manuscripts from my doctoral research on asbestos screening and adaptive sampling.
 - **Energy & Sustainability Research:** Explored global power transitions and utility-scale solar development through infrastructure data analysis, distinguishing renewable expansion from fossil-stock replacement and comparing national solar project structures. ([Power Transitions](/projects/fossil-persistence-renewable-expansion/) · [Solar Development](/projects/solar-structural-analytics/))
 
 ### Data Scientist · Peachy Day
