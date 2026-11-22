@@ -47,9 +47,9 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 **Research Associate** · *Oct 2025 – Dec 2025*
 
-- **Drinking Water Data Analysis:** Identified chemical signatures and enrichment patterns of emerging contaminants through large-scale analysis of nationwide drinking water monitoring data.
-- **Multimodal Machine Learning:** Designed workflows combining environmental records with social media and contextual variables for contamination risk prediction.
-- **Environmental Risk Assessment:** Translated heterogeneous data into vulnerability and exposure insights to support environmental risk assessment and targeted intervention.
+- **Doctoral Research & Manuscript Preparation:** Completed follow-up analyses and prepared and revised manuscripts from my doctoral research in environmental sensing, computer vision, and hierarchical error propagation.
+- **Energy & Sustainability Research:** Explored global power transitions and utility-scale solar development through infrastructure data analysis, distinguishing renewable expansion from fossil-stock replacement and comparing national solar project structures. ([Power Transitions](/projects/fossil-persistence-renewable-expansion/) · [Solar Development](/projects/solar-structural-analytics/))
+- **New Research Directions:** Analyzed nationwide drinking water monitoring data for emerging-contaminant signatures and enrichment patterns, and designed multimodal workflows combining environmental records, social media, and contextual variables for contamination risk and exposure assessment.
 
 ### Data Scientist · Peachy Day
 
