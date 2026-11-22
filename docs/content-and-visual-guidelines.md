@@ -50,7 +50,8 @@ The hex value identifies the base color, not the final rendered card color. The 
 | `systems` | Systems, technology, and governance; teal | `#187B76` / `24, 123, 118` | 0.62 | 0.09 | 0.14 | Implemented |
 | `learning` | Learning and education; ochre | `#B87126` / `184, 113, 38` | 0.62 | 0.09 | 0.16 | Implemented |
 | `history` | History and civilization; olive | `#635F37` / `99, 95, 55` | 0.62 | 0.09 | 0.17 | Implemented |
-| `environment` | Environment and everyday life; sage | `#547567` / `84, 117, 103` | 0.62 | 0.08 | 0.14 | Reserved for future implementation |
+| `environment` | Environment and everyday life; sage | `#547567` / `84, 117, 103` | 0.62 | 0.08 | 0.14 | Implemented |
+| `materials` | Materials and living systems; slate blue | `#526D8B` / `82, 109, 139` | 0.62 | 0.08 | 0.16 | Implemented |
 | `reflections` | Personal observations outside an existing family; warm gray | `#786C62` / `120, 108, 98` | 0.62 | 0.07 | 0.14 | Reserved for future implementation |
 
 Preserve the established family for existing series. Do not recolor history, learning, or systems articles merely because their source happens to be a book. Navigation groups and visual skins need not be identical: a future Reading filter may contain several established visual families.
@@ -83,18 +84,31 @@ opacity: 0.55;
 
 ### Registered series-pattern styles
 
-As of 2026-11-22, the Moonshot Academy reflection is the only standalone bilingual article published in Persona. The landing page also includes the English inline section “Before Clinical Data: Notes from the Physical World,” with three reflections linking five earlier papers; it does not create additional article or Project pages. The other styles below remain available for future use; they do not indicate currently published articles. Numbered reading sequences remain governed by `data/persona_series.yaml`.
+As of 2026-11-22, Persona contains the Moonshot Academy reflection and five standalone bilingual research reflections about earlier physical-world work. Each paper has its own card and reading page; the earlier inline block has been replaced. These are unnumbered reflections, not technical Project pages or a required reading sequence. Numbered reading sequences remain governed by `data/persona_series.yaml`. Other registered styles remain available for future use.
 
 | `data-series` | Visible identity | Skin | Pattern |
 | --- | --- | --- | --- |
 | `palantir` | Palantir | `systems` | `systems-grid` |
 | `ai-education` | AI Education | `learning` | `learning-lines` |
+| `desalination-and-what-remains` | Research Reflection · Water & Separation | `environment` | `water-ripples` |
+| `soil-robotics-and-measurement` | Research Reflection · Field Robotics | `systems` | `robotics-path` |
+| `field-sensing-and-calibration` | Research Reflection · Field Sensing | `systems` | `sensing-spectrum` |
+| `restoration-and-compatibility` | Research Reflection · Heritage Restoration | `history` | `restoration-masonry` |
+| `plant-delivery-and-system-boundaries` | Research Reflection · Plant Materials | `materials` | `plant-branches` |
 | `guns-germs-and-steel` | Guns, Germs, and Steel | `history` | `history-strata` |
 | `irresistible` | Irresistible | `reading` | `stopping-gaps` |
 | `power-of-now` | The Power of Now | `reading` | `present-rings` |
 | `before-departure-after-arrival` | The Alchemist · Before Departure, After Arrival | `reading` | `alchemist-path` |
 | `scale-in-ai-age` | Scale · Scale in the AI Age | `reading` | `scale-network` |
 | `molecule-of-more` | The Molecule of More | `reading` | `dopamine-pulses` |
+
+### Research reflections
+
+- Give each paper a standalone Persona card and bilingual reading page. Briefly explain the work, then foreground personal observations and methodological starting points; keep technical benchmarks and implementation detail in Projects. Do not invent first-person experiences.
+- Label cards `Research Reflection · <field>` and include the visible `Research Reflections` tag. Book-derived writing retains its book identity and reading-note label. Color describes the field, while the label distinguishes the kind of writing.
+- Water uses sage and ripples; robotics uses teal and a path; field sensing uses teal and a spectrum; heritage restoration uses olive and masonry; plant materials uses slate blue and branches. Preserve the shared lower-right texture limits.
+- Retain verified Paper/DOI and article-page links on cards and article resource sections. Include public code, project, or demo links when a corresponding resource is known; omit unavailable links and empty placeholders. Do not substitute a generic GitHub profile for a paper-specific code repository.
+- Reflection dates record publication of the essay, while resource labels retain the original paper year. Cross-link the existing Papers entry with `Reflection`.
 
 ### Reading pages
 

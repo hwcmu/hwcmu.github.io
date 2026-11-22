@@ -33,7 +33,7 @@ hideMeta: true
 5. **Comparison of robot-deployable sensing methods for autonomous in-field screening of total petroleum hydrocarbons**  
    **Citation:** Wang, H., Rajesh, L., Ganesh, K., Lopes, A. R., Hoelen, T. P., & Lowry, G. V. (2026). *Journal of Hazardous Materials*, 503, 141208.  
    **Tags:** Autonomous Sensing · Environmental Monitoring · Applied Environmental Technology  
-   **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208)
+   **Links:** [DOI](https://doi.org/10.1016/j.jhazmat.2026.141208) · [Reflection](/persona/field-sensing-and-calibration/)
 
 ### 2025
 
@@ -60,23 +60,23 @@ hideMeta: true
 5. **Applications of microbial induced calcium carbonate precipitation in historical architecture restoration - a mini review**  
    **Citation:** Wang, H., & Wang, S. (2025). *Journal of Infrastructure Preservation and Resilience*, 6.  
    **Tags:** Applied Environmental Technology · Materials · Infrastructure  
-   **Links:** [DOI](https://doi.org/10.1186/s43065-025-00125-3)
+   **Links:** [DOI](https://doi.org/10.1186/s43065-025-00125-3) · [Reflection](/persona/restoration-and-compatibility/)
 
 6. **High Aspect Ratio Polymer Nanocarriers for Gene Delivery and Expression in Plants**  
    **Citation:** Zhang, Y., Shin, J., Sun, H., Chang, H.-F., Martinez, M. R., Perkins, L. A., Yan, J., Cao, Y., Wang, H., Giraldo, J. P., Matyjaszewski, K., Sheen, J., Tilton, R. D., Marelli, B., & Lowry, G. V. (2025). *Nano Letters*, 25(2), 681-690.  
    **Tags:** Materials · Environmental Technology · Plant Systems  
-   **Links:** [DOI](https://doi.org/10.1021/acs.nanolett.4c04704)
+   **Links:** [DOI](https://doi.org/10.1021/acs.nanolett.4c04704) · [Reflection](/persona/plant-delivery-and-system-boundaries/)
 
 ### 2024
 
 1. **Path to autonomous soil sampling and analysis by ground-based robots**  
    **Citation:** Norby, J., Wang, S., Wang, H., Deng, S., Jones, N., Mishra, A., Pavlov, C., He, H., Subramanian, S., Thangavelu, V., Sihota, N., Hoelen, T., Johnson, A. M., & Lowry, G. V. (2024). *Journal of Environmental Management*, 360, 121130.  
    **Tags:** Autonomous Sensing · Robotics · Environmental Monitoring  
-   **Links:** [DOI](https://doi.org/10.1016/j.jenvman.2024.121130)
+   **Links:** [DOI](https://doi.org/10.1016/j.jenvman.2024.121130) · [Reflection](/persona/soil-robotics-and-measurement/)
 
 ### 2022
 
 1. **Impact of polymer molecular weight on the efficiency of temperature swing solvent extraction for desalination of concentrated brines**  
    **Citation:** Lopes, A. R., Wang, H., Dong, J., Han, J., Hatakeyama, E. S., Hoelen, T. P., & Lowry, G. V. (2022). *Desalination*, 543, 116104.  
    **Tags:** Sustainability Analytics · Desalination · Materials  
-   **Links:** [DOI](https://doi.org/10.1016/j.desal.2022.116104)
+   **Links:** [DOI](https://doi.org/10.1016/j.desal.2022.116104) · [Reflection](/persona/desalination-and-what-remains/)
