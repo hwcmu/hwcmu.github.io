@@ -29,7 +29,7 @@ params:
   profileMode:
     enabled: true
     title: "Hi 👋, I'm Hairong"
-    roleLine: "Research Health Data Scientist · University of Pittsburgh"
+    roleLine: "Data Analyst · University of Pittsburgh"
     credentials: "Ph.D., Carnegie Mellon · M.S. in Analytics, Georgia Tech · M.S. in Computer Science, in progress"
     subtitle: "I study the conditions under which **real-world data** and **AI-generated outputs** are reliable enough to support decisions in **health and sustainability systems**."
     imageUrl: "/images/avatar.png"

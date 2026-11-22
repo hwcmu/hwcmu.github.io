@@ -6,7 +6,7 @@ hideMeta: true
 
 ## Personal Statement
 
-Data analyst and research health data scientist focused on clinical analytics, healthcare data workflows, biostatistics, machine learning, and research workflow design. I work with structured EHR data, public clinical datasets, and short clinical narratives, with emphasis on cohort construction, SQL-based extraction, data cleaning, ETL pipelines, applied modeling, and interpretable results. My work centers on translating clinical and research questions into analysis-ready datasets, reproducible code, tables, figures, manuscripts, and reviewer-facing evidence, with particular attention to whether the data, timing, assumptions, and interpretation can survive clinical and methodological review.
+Data Analyst at the University of Pittsburgh, focused on clinical analytics, healthcare data workflows, biostatistics, machine learning, and research workflow design. I work with structured EHR data, public clinical datasets, and short clinical narratives, with emphasis on cohort construction, SQL-based extraction, data cleaning, ETL pipelines, applied modeling, and interpretable results. My work centers on translating clinical and research questions into analysis-ready datasets, reproducible code, tables, figures, manuscripts, and reviewer-facing evidence, with particular attention to whether the data, timing, assumptions, and interpretation can survive clinical and methodological review.
 
 ## Education
 
@@ -19,8 +19,8 @@ Data analyst and research health data scientist focused on clinical analytics, h
 ## Work Experience
 
 <div class="work-list">
-  <div class="work-item"><strong>Research Health Data Scientist, University of Pittsburgh</strong><span>Jan 2026 - present. Build the main clinical analytics thread of my current work: clinical NLP, multimodal prediction, EHR and public clinical data workflows, model evaluation, and reproducible evidence for emergency care and real-world healthcare research.</span></div>
-  <div class="work-item"><strong>Data Analyst, University of Pittsburgh</strong><span>Jan 2026 - present. Support Alzheimer’s disease and cognitive-health research through AI literature synthesis, clinical NLP, network analysis of symptoms and comorbidities, dataset preparation, statistical analysis, and manuscript-oriented evidence summaries.</span></div>
+  <div class="work-item"><strong>Statistician (IPA Assignment), U.S. Department of Veterans Affairs</strong><span>Oct 2026 - present. Assigned from the University of Pittsburgh under an Intergovernmental Personnel Act (IPA) arrangement to support VA research through statistical analysis.</span></div>
+  <div class="work-item"><strong>Data Analyst, University of Pittsburgh</strong><span>Jan 2026 - present. Support clinical, Alzheimer’s disease, and cognitive-health research through clinical NLP, multimodal prediction, EHR and public-data workflows, network analysis, dataset preparation, statistical analysis, model evaluation, and manuscript-oriented evidence summaries.</span></div>
   <div class="work-item"><strong>Data Scientist, Peachy Day</strong><span>Oct 2025 - Dec 2025. Built SQL-based pipelines for user health, weather, and app activity data; developed migraine-risk and recurrent-event modeling workflows; supported product analytics, feature attribution, and user-level reporting for personalized insights.</span></div>
   <div class="work-item"><strong>Graduate Research Assistant, Carnegie Mellon University</strong><span>Aug 2021 - Oct 2025. Developed computer vision, Gaussian process regression, active learning, geospatial modeling, and uncertainty-aware workflows for environmental sensing and system-level analytics.</span></div>
 </div>
