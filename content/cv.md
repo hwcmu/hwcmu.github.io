@@ -49,7 +49,6 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 
 - **Doctoral Research & Manuscript Preparation:** Completed follow-up analyses and prepared and revised manuscripts from my doctoral research in environmental sensing, computer vision, and hierarchical error propagation.
 - **Energy & Sustainability Research:** Explored global power transitions and utility-scale solar development through infrastructure data analysis, distinguishing renewable expansion from fossil-stock replacement and comparing national solar project structures. ([Power Transitions](/projects/fossil-persistence-renewable-expansion/) · [Solar Development](/projects/solar-structural-analytics/))
-- **New Research Directions:** Analyzed nationwide drinking water monitoring data for emerging-contaminant signatures and enrichment patterns, and designed multimodal workflows combining environmental records, social media, and contextual variables for contamination risk and exposure assessment.
 
 ### Data Scientist · Peachy Day
 
