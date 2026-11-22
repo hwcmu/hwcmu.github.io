@@ -31,6 +31,14 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 - **Statistical & AI/ML Methods:** Apply regression, survival analysis, clinical NLP, and predictive modeling using R and Python to address clinical and operational questions.
 - **VA Assignment — Statistician, U.S. Department of Veterans Affairs (IPA Arrangement)** *(Oct 2026 – Present)*: As part of my University of Pittsburgh appointment, serve as a Statistician at the VA, supporting research projects through study design, clinical data workflows, statistical analysis, and interpretation. Current work includes statistical support for the **CLEAR TEAM** multicenter randomized controlled trial.
 
+### Research Associate · Carnegie Mellon University
+
+*Oct 2025 – Jun 2026 · Part-time · Pittsburgh, PA · Hybrid*
+
+- **Drinking Water Data Analysis:** Identified chemical signatures and enrichment patterns of emerging contaminants through large-scale analysis of nationwide drinking water monitoring data.
+- **Multimodal Machine Learning:** Designed workflows combining environmental records with social media and contextual variables for contamination risk prediction.
+- **Environmental Risk Assessment:** Translated heterogeneous data into vulnerability and exposure insights to support environmental risk assessment and targeted intervention.
+
 ### Research Health Data Scientist · University of Pittsburgh
 
 *Jan 2026 – May 2026 · Part-time · Pittsburgh, PA*
@@ -46,20 +54,13 @@ My work bridges auditable data engineering (SQL, Python, R, ETL pipelines) with 
 - **Product & Health Data Pipelines:** Built SQL-based pipelines integrating user health logs, weather feeds, and app activity data to support product analytics and longitudinal reporting.
 - **Forecasting & Personalization:** Developed migraine-risk and recurrent-event modeling workflows with feature attribution, translating model outputs into user-level personalized insights.
 
-### Graduate Research Assistant · Carnegie Mellon University
-
-*Aug 2021 – Oct 2025 · Pittsburgh, PA*
-
-- **Computer Vision & Uncertainty-Aware Modeling:** Developed Mask R-CNN, Gaussian process regression, active learning, and geospatial modeling workflows for environmental sensing and field-screening systems.
-- **Error Propagation & System Analytics:** Built hierarchical statistical frameworks to quantify how model and measurement errors propagate into downstream environmental and infrastructure decisions.
-
 ---
 
 ## Selected Research & Project Experience
 
 - **Clinical NLP & Multimodal Emergency-Care Prediction:** Built comparative workflows combining structured ED variables with short patient narratives to model IV fluid utilization, EKG use, and hospital admissions; benchmarked bag-of-words, embeddings, and gradient boosting with explicit focus on clinical validity and utilization-vs.-need boundaries. ([IV Fluid Project](/projects/iv-fluid-prediction/) · [IV Fluid DOI](https://doi.org/10.7717/peerj-cs.3441) · [EKG Project](/projects/ekg-utilization-prediction/))
 - **Migraine Forecasting & Digital Health Analytics:** Defined core product metrics, built SQL analytics workflows, designed physician-guided migraine forecasting logic, and created longitudinal data-story outputs for user engagement. ([Project](/projects/migraine-prediction/))
-- **Environmental Computer Vision & Spatial Modeling:** Applied Mask R-CNN, Gaussian process regression, active learning, and sensor-data integration for uncertainty-aware environmental monitoring and autonomous field screening. ([Asbestos Project](/projects/asbestos-plm-screening/) · [Asbestos DOI](https://doi.org/10.1016/j.jhazmat.2026.142934))
+- **Doctoral Research · Carnegie Mellon University:** Developed Mask R-CNN, Gaussian process regression, active learning, and geospatial modeling workflows for environmental sensing and field screening. Built hierarchical statistical frameworks to quantify how model and measurement errors propagate into downstream environmental and infrastructure decisions. ([Asbestos Project](/projects/asbestos-plm-screening/) · [Asbestos DOI](https://doi.org/10.1016/j.jhazmat.2026.142934))
 - **Applied ML & Real-Time BI Systems:** Engineered a live flight-delay prediction pipeline linking historical flight records, NOAA weather APIs, Python/TabPy inference, and an interactive Tableau dashboard with SHAP explanations for predicted delays. ([Project](/projects/airport-prediction/))
 
 ---
