@@ -83,7 +83,7 @@ opacity: 0.55;
 
 ### Registered series-pattern styles
 
-As of 2026-11-22, only the Moonshot Academy reflection is published in Persona, as a standalone bilingual article. The other styles below remain available for future use; they do not indicate currently published articles. Numbered reading sequences remain governed by `data/persona_series.yaml`.
+As of 2026-11-22, the Moonshot Academy reflection is the only standalone bilingual article published in Persona. The landing page also includes the English inline section “Before Clinical Data: Notes from the Physical World,” with three reflections linking five earlier papers; it does not create additional article or Project pages. The other styles below remain available for future use; they do not indicate currently published articles. Numbered reading sequences remain governed by `data/persona_series.yaml`.
 
 | `data-series` | Visible identity | Skin | Pattern |
 | --- | --- | --- | --- |
