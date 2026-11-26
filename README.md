@@ -11,6 +11,7 @@ Hugo source for [hwcmu.github.io](https://hwcmu.github.io/), using the PaperMod 
 | Notes / Blogs | `content/notes/` | `content/notes/drafts/` | `/blogs/` |
 | Papers | `content/publications.md` | — | `/publications/` |
 | CV | `content/cv.md` | — | `/cv/` |
+| Profile / platform bio backups | [docs/profile/](docs/profile/README.md) | `local-assets/profile/originals/` | Repository documentation only |
 | Persona | `content/persona/` | `content/persona/drafts/` | `/persona/` |
 
 **Blogs files live in `content/notes/`, not `content/blogs/`.** The Notes section retains the `/blogs/` public URL. Individual articles can define their own URL, so check their frontmatter before renaming or moving them.
@@ -34,6 +35,8 @@ Published articles are edited in place. Their earlier unpublished versions are n
 | `.github/workflows/hugo.yaml` | Build and deploy `main` to GitHub Pages |
 | `AGENTS.md` | Repository maintenance and publication rules |
 | `local-assets/persona/` | Local working originals for Persona series; ignored by Git |
+| `docs/profile/` | Shared positioning, career facts, and separate LinkedIn, ORCID, Scholar, and bio files; maintained alongside the CV |
+| `local-assets/profile/originals/` | Original profile documents and checksum manifests; local only, ignored by Git |
 | `.private/` | Local private files and content inventory; ignored by Git |
 | `public/` | Generated website output; ignored by Git |
 | `resources/_gen/` | Generated Hugo resources; ignored by Git |

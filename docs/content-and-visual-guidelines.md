@@ -131,6 +131,7 @@ New classifications should help readers find material across the whole section, 
 
 ### Professional positioning — updated 2026-11-22
 
+- Maintain shared career facts and platform bio backups in [docs/profile/](profile/README.md) alongside the webpage CV. When role, education, research positioning, or profile links change, check the separate LinkedIn, ORCID, Google Scholar, short-bio, and spoken-introduction files in the same update. Treat saved wording as a backup, not proof that an external account was updated. Keep original internal drafts under ignored `local-assets/profile/originals/`.
 - The homepage connects the professional sections through the question of when real-world data and AI-generated outputs can support decisions in health and sustainability systems.
 - Keep the three focus areas concrete: data suitability, output reliability, and system structure. Use project evidence rather than repeating the positioning sentence in every article.
 - Distinguish the completed Georgia Tech M.S. in Analytics (OMSA) from the in-progress M.S. in Computer Science (OMSCS).
